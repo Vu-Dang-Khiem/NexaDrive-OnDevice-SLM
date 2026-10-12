@@ -80,7 +80,8 @@ def _nap_zipformer(beam: int, goi_y: bool) -> Callable[[str], str]:
     return nghe
 
 
-def nap(stt: str, beam: int = 1, goi_y: bool = False) -> Callable[[str], str]:
+def nap(stt: str, beam: int = 1, goi_y: bool = False, thu_muc: str | None = None) -> Callable[[str], str]:
+    """`thu_muc`: bản PhoWhisper khác cùng định dạng CT2 int8 (vd checkpoint fine-tune), giải mã y hệt."""
     if stt == "zipformer":
         return _nap_zipformer(beam, goi_y)
     if stt == "parakeet":
@@ -95,7 +96,7 @@ def nap(stt: str, beam: int = 1, goi_y: bool = False) -> Callable[[str], str]:
         return lambda tep: m.recognize(tep)
     from faster_whisper import WhisperModel
 
-    m = WhisperModel(MO_HINH[stt], device="cpu", compute_type="int8", cpu_threads=LUONG)
+    m = WhisperModel(thu_muc or MO_HINH[stt], device="cpu", compute_type="int8", cpu_threads=LUONG)
 
     def nghe(tep: str) -> str:
         doan, _ = m.transcribe(tep, language="vi", beam_size=beam, without_timestamps=True,
@@ -115,11 +116,12 @@ def main() -> None:
     ap.add_argument("--ra", required=True)
     ap.add_argument("--beam", type=int, default=1, help="beam search (mặc định 1 = greedy, cách đo đã khoá)")
     ap.add_argument("--goi-y", action="store_true", help="gợi ý từ vựng xe cho Whisper (initial_prompt)")
+    ap.add_argument("--thu-muc", help="PhoWhisper CT2 int8 khác, vd checkpoint fine-tune")
     a = ap.parse_args()
     bo = Path(a.bo)
     rows = [json.loads(x) for x in (bo / "manifest.jsonl").open(encoding="utf-8")]
     t0 = time.perf_counter()
-    nghe = nap(a.stt, a.beam, a.goi_y)
+    nghe = nap(a.stt, a.beam, a.goi_y, a.thu_muc)
     print(f"nạp {a.stt}: {time.perf_counter() - t0:.1f} s", flush=True)
     nghe(str(bo / rows[0]["tep"]))  # chạy nóng 1 lần, không tính giờ
     Path(a.ra).parent.mkdir(parents=True, exist_ok=True)
