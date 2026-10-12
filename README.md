@@ -13,8 +13,6 @@ Giao diện web gồm khung chat (gõ chữ hoặc nói), gọi rảnh tay bằn
 |---|---|
 | ![Mở cốp](docs/anh/mo_cop.png) | ![Nóng quá](docs/anh/nong_qua.png) |
 
-> Dự án cá nhân của **Vũ Đăng Khiêm** ([@Vu-Dang-Khiem](https://github.com/Vu-Dang-Khiem)).
-
 ---
 
 ## Ý tưởng cốt lõi
