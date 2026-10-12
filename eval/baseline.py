@@ -54,9 +54,21 @@ def danh_sach_ham() -> str:
     return "\n\n".join(f.teacher_doc() for f in CATALOG.functions if f.name != TU_CHOI)
 
 
-def build_sip_prompt(cau: str) -> str:
-    """Prompt SIP dạng ChatML (cả teacher lẫn Qwen 1,5B gốc đều là Qwen-Instruct)."""
+def build_sip_prompt(cau: str, luot_truoc: tuple[str, dict[str, Any]] | None = None) -> str:
+    """Prompt SIP dạng ChatML (cả teacher lẫn Qwen 1,5B gốc đều là Qwen-Instruct).
+
+    `luot_truoc` = (hàm, tham số) đã thực hiện ở lượt trước — tập hai lượt (bổ sung 2026-10-12). Baseline thấy ĐÚNG
+    thông tin student thấy (lời gọi lượt trước, không có câu nói lượt trước). Không có `luot_truoc` -> prompt Y HỆT
+    bản cũ (số baseline cũ chạy lại vẫn khớp)."""
     vi_du = "\n".join(f'Câu: "{c}"\nTrả lời: {json.dumps(d, ensure_ascii=False)}' for c, d in VI_DU)
+    luat_luot_truoc, dong_luot_truoc = "", ""
+    if luot_truoc is not None:
+        luat_luot_truoc = (
+            '\n- Nếu có dòng "Lượt trước", câu hiện tại có thể nói tiếp việc vừa làm (đổi chiều, làm thêm, áp dụng cho'
+            " bộ phận khác) — hiểu câu theo lượt trước; câu không liên quan thì xử lý như câu mới."
+        )
+        ham, tham_so = luot_truoc
+        dong_luot_truoc = f"Lượt trước (đã thực hiện): {ham}({json.dumps(tham_so, ensure_ascii=False)})\n"
     he_thong = f"""Bạn là tác tử điều khiển xe ô tô bằng giọng nói. Bạn CHỈ làm được các việc qua những hàm sau:
 
 {danh_sach_ham()}
@@ -65,7 +77,7 @@ Với mỗi câu của người lái, chọn MỘT trong ba hành động:
 - "goi": câu nhờ RÕ RÀNG một việc làm được -> gọi hàm (1 hoặc vài lời gọi), chỉ điền tham số mà câu nói rõ; không bịa.
 - "hoi_lai": câu chỉ than thở / kể tình huống mà một hàm có thể giúp -> đề xuất 1–2 lời gọi để hỏi lại người lái.
   Hàm chỉ đọc ({", ".join(HAM_CHI_DOC)}) thì không hỏi lại, gọi luôn. Không bao giờ đề xuất {", ".join(HAM_NHAY_CAM)}.
-- "tu_choi": việc không có hàm nào làm được, tán gẫu, hỏi kiến thức chung.
+- "tu_choi": việc không có hàm nào làm được, tán gẫu, hỏi kiến thức chung.{luat_luot_truoc}
 
 Chỉ trả về đúng một JSON, không thêm chữ nào:
 {{"hanh_dong": "goi" | "hoi_lai" | "tu_choi", "loi_goi": [{{"ham": "tên_hàm", "tham_so": {{...}}}}]}}
@@ -74,7 +86,7 @@ Ví dụ:
 {vi_du}"""
     return (
         f"<|im_start|>system\n{he_thong}<|im_end|>\n"
-        f'<|im_start|>user\nCâu: "{cau.strip()}"<|im_end|>\n<|im_start|>assistant\n'
+        f'<|im_start|>user\n{dong_luot_truoc}Câu: "{cau.strip()}"<|im_end|>\n<|im_start|>assistant\n'
     )
 
 

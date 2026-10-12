@@ -86,11 +86,13 @@ ChatGPT viết độc lập với dữ liệu train, người duyệt nhãn) ch�
 |---|---|---|---|---|---|---|---|
 | **Bản triển khai (q4 + 0,80, CPU)** | 77,0 | 64,1 | **88,0** | 74,4 | 79,2 | 56,7 | 47,1 |
 | v6.1 s42, chưa nén, không ngưỡng | 81,1 | 74,4 | 82,9 | 79,8 | 88,3 | 66,7 | 60,6 |
-| Qwen2.5-72B + mô tả hàm trong prompt | 83,8 | 56,4 | 94,9 | 70,5 | — | — | — |
-| Qwen2.5-1.5B chưa train + mô tả hàm trong prompt | 37,8 | 35,9 | 31,6 | — | — | — | — |
+| Qwen2.5-72B + mô tả hàm trong prompt | 83,8 | 56,4 | 94,9 | 70,5 | 91,7 | 81,7 | 69,2 |
+| Qwen2.5-1.5B chưa train + mô tả hàm trong prompt | 37,8 | 35,9 | 31,6 | 20,9 | 27,5 | 28,3 | 21,2 |
 
-- Model 1,5B ngang model 72B ở câu rõ ràng và có xu hướng hơn ở câu mơ hồ (72B ít hỏi lại; McNemar p 0,04–0,07 tuỳ hạt giống),
-  nhưng 72B từ chối câu ngoài phạm vi tốt hơn rõ (p ≤ 0,001).
+- So với 72B (prompt dài ~2.400 token, GPU A100), model 1,5B (prompt 33 token, CPU) **ngang ở câu rõ ràng, câu ngắn và câu gõ
+  sai** (khác biệt không có ý nghĩa thống kê), **có xu hướng hơn ở câu mơ hồ** (72B ít hỏi lại; McNemar p 0,04–0,07 tuỳ hạt
+  giống), nhưng **72B hơn rõ ở câu ngoài phạm vi** (p ≤ 0,001) **và câu hai lượt** (p 0,049 / 0,001).
+- Cùng cách nhắc bằng prompt, model 1,5B chưa train chỉ đúng 21–38% — huấn luyện là phần tạo ra khác biệt.
 - Ngưỡng 0,80 giảm **hành động sai lên xe** trên test sạch từ 41 xuống 29 (đổi lại hỏi lại nhiều hơn ở câu rõ ràng).
 
 **Các mức nén** (v6.1 s42, cùng CPU 8 luồng, cùng 701 câu test):

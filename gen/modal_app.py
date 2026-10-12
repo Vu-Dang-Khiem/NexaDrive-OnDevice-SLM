@@ -1921,7 +1921,12 @@ def baseline(
         )
 
     def lam_prompt(row: dict[str, Any]) -> str:
-        return build_sip_prompt(query_from_call_prompt(row["prompt"])) if kieu == "sip" else row["prompt"]
+        if kieu != "sip":
+            return row["prompt"]
+        m = row.get("meta") or {}
+        if "fn_1" in m and "\nLượt trước:" in row["prompt"]:  # tập hai lượt: lời gọi lượt trước như student
+            return build_sip_prompt(m["cau"], (m["fn_1"], m["args_1"]))
+        return build_sip_prompt(query_from_call_prompt(row["prompt"]))
 
     def ra_nexa(text: str) -> str:
         return sang_nexa(text) if kieu == "sip" else text.strip()

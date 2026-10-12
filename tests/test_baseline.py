@@ -19,6 +19,21 @@ def test_prompt_co_du_24_ham_va_ba_hanh_dong():
     assert p.endswith("<|im_start|>assistant\n")
 
 
+def test_khong_co_luot_truoc_thi_prompt_nhu_cu():
+    p = build_sip_prompt("Mở cốp sau")
+    assert "Lượt trước" not in p
+    assert '<|im_start|>user\nCâu: "Mở cốp sau"<|im_end|>' in p
+
+
+def test_luot_truoc_dua_loi_goi_nhu_student_thay():
+    truoc = ("control_window", {"window": "front_right", "position": "down"})
+    p = build_sip_prompt("Bên trái cũng vậy nha", truoc)
+    assert '\nLượt trước (đã thực hiện): control_window({"window": "front_right", "position": "down"})\n' in p
+    assert 'Câu: "Bên trái cũng vậy nha"<|im_end|>' in p
+    assert 'Nếu có dòng "Lượt trước"' in p
+    assert p.endswith("<|im_start|>assistant\n")
+
+
 @pytest.mark.parametrize(
     "json_ra,nexa",
     [
