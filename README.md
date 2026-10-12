@@ -13,9 +13,7 @@ Giao diện web gồm khung chat (gõ chữ hoặc nói), gọi rảnh tay bằn
 |---|---|
 | ![Mở cốp](docs/anh/mo_cop.png) | ![Nóng quá](docs/anh/nong_qua.png) |
 
-> Đồ án tốt nghiệp — Vũ Đăng Khiêm (Dang-Khiem Vu), GVHD: Nguyễn Minh Tiến (Minh-Tien Nguyen), Khoa CNTT, Trường ĐH Sư phạm
-> Kỹ thuật Hưng Yên. Báo cáo đầy đủ (tiếng Anh, mẫu ACL — phương pháp, thí nghiệm, kiểm định, hạn chế):
-> [`report/main.pdf`](report/main.pdf).
+> Dự án cá nhân của **Vũ Đăng Khiêm** ([@Vu-Dang-Khiem](https://github.com/Vu-Dang-Khiem)).
 
 ---
 
