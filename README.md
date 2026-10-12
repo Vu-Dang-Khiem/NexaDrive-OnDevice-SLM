@@ -9,9 +9,9 @@ mỗi chức năng của xe là một token riêng, nên chọn hàm chỉ cần
 
 Giao diện web gồm khung chat (gõ chữ hoặc nói), gọi rảnh tay bằng **"Hey Nexa"**, và **xe 3D** phản ứng theo câu lệnh.
 
-| "Mở cốp" → làm luôn | "Nóng quá" → hỏi lại kèm đề xuất |
-|---|---|
-| ![Mở cốp](docs/anh/mo_cop.png) | ![Nóng quá](docs/anh/nong_qua.png) |
+| "Mở cốp" → làm luôn | "Nóng quá" → hỏi lại kèm đề xuất | "Tình trạng xe thế nào" → tổng quan xe |
+|---|---|---|
+| ![Mở cốp](docs/anh/mo_cop.png) | ![Nóng quá](docs/anh/nong_qua.png) | ![Tình trạng xe](docs/anh/tinh_trang_xe.png) |
 
 ---
 
