@@ -2,8 +2,8 @@
 
 **Trợ lý giọng nói tiếng Việt điều khiển xe ô tô, chạy hoàn toàn trên máy (CPU, không cần mạng).**
 
-Một mô hình ngôn ngữ nhỏ **Qwen2.5-1.5B** được **chưng cất tri thức** từ **Qwen2.5-72B** và dùng kỹ thuật **functional token**
-(Octopus v2): mỗi chức năng của xe là một token riêng, nên chọn hàm chỉ cần sinh **một token** và prompt lúc chạy chỉ khoảng
+Một mô hình ngôn ngữ nhỏ **Qwen2.5-1.5B** được **chưng cất tri thức** từ **Qwen2.5-72B** và dùng kỹ thuật **functional token**:
+mỗi chức năng của xe là một token riêng, nên chọn hàm chỉ cần sinh **một token** và prompt lúc chạy chỉ khoảng
 **33 token** (thay vì ~2.156 token khi nhét mô tả hàm vào prompt). Bản triển khai nén **4-bit (1,04 GB)**, trả lời lượt đầu trong
 **~0,46 s (p50)** trên CPU laptop.
 
