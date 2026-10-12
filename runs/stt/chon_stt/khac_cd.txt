@@ -1,0 +1,31 @@
+﻿c03 | Chuyá»ƒn Ä‘iá»�u hoÃ  sang sÆ°á»Ÿi, Ä‘á»ƒ 28 Ä‘á»™ giÃºp mÃ¬nh. 
+  P: Chuyá»ƒn Ä‘iá»�u hoa sang sÆ°á»Ÿi Ä‘áº¿n 28 Ä‘á»™i giÃºp mÃ¬nh 
+  Z: Chuyá»ƒn Ä‘iá»�u hoa sang sÆ°á»Ÿi Ä‘á»ƒ hai tÃ¡m Ä‘á»™i giÃºp mÃ¬nh -> sai_tham_so
+c09 | Chá»‰nh mÃ¡y láº¡nh láº¡nh thÃªm ba Ä‘á»™ so vá»›i bÃ¢y giá»� nhÃ©. 
+  P: Chá»‰nh mÃ¡y láº¡nh láº¡nh tiÃªm 3 Ä‘á»™ so vá»›i bÃ¢y giá»� nhÃ© 
+  Z: Chá»‰nh mÃ¡y láº¡nh thÃªm 3 Ä‘á»™ so vá»›i bÃ¢y giá»� nhÃ© -> sai_tham_so
+c13 | Má»Ÿ cá»‘p giÃºp tÃ´i Ä‘á»ƒ Ä‘á»“ vÃ o 
+  P: Má»Ÿ cá»‘p giÃºp tÃ´i Ä‘á»ƒ lÃ´ bao 
+  Z: Má»Ÿ cÃºp giÃºp tÃ´i Ä‘á»ƒ Ä‘Ã´ bao -> tu_choi_nham
+c17 | Má»Ÿ náº¯p xÄƒng giÃ¹m 
+  P: Má»Ÿ náº¯p xÄƒng dÃ¹ng 
+  Z: Má»Ÿ láº¯p sang dÃ¹ng -> tu_choi_nham
+c23 | Muá»‘n hÃ­t chÃºt khÃ´ng khÃ­ trong lÃ nh 
+  P: Muá»‘n hÃ­t chÃºt khÃ´ng khÃ­ trong ngÃ nh 
+  Z: Muá»‘n hÃ­t chÃºt khÃ´ng khÃ­ trong lÃ nh -> sai_ham
+c25 | Má»Ÿ khoang Ä‘á»ƒ Ä‘á»“ trung tÃ¢m 
+  P: Má»Ÿ khoang Ä‘Ä©a hÃ¹ng trung tÃ¢m 
+  Z: Má»Ÿ khoa Ä‘á»ƒ Ä‘á»“ trung tÃ¢m -> goi_bua
+d05 | MÃ¡y láº¡nh cho vá»� hai sÃ¡u giÃ¹m tui. 
+  P: MÃ¡y láº¡nh cho vÃ© hai sÃ¡u dung tui 
+  Z: MÃ¡y láº¡nh cho vá»� 26 dÃ¹ng tÃºi -> sai_tham_so
+d12 | Má»Ÿ náº¯p bÃ¬nh xÄƒng há»™ cÃ¡i 
+  P: Má»Ÿ láº¯p bÃ¬nh xÄƒng há»™ cÃ¡i 
+  Z: Má»Ÿ láº¯p bÃ¬nh sang há»™ cÃ¡i -> hoi_lai_thua
+d21 | KhÃ¡t nÆ°á»›c chÃ¡y cá»• 
+  P: KhÃ¡t nÆ°á»›c cháº¡y cá»• 
+  Z: KhÃ¡t nÆ°á»›c chÃ¡y cá»• -> sai_ham
+d22 | NÃ³ng muá»‘n xá»‰u 
+  P: NÃ³ng muá»‘n sá»‰ á»¥ 
+  Z: NÃ³ muá»‘n xá»‰u -> sai_ham
+

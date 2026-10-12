@@ -1,0 +1,122 @@
+﻿c00  =  thẳng: máy lạnh chỉnh đúng hai tư độ là được.
+      mic : máy lạnh chỉnh đúng hai tư độ là được.
+c01  ≠  thẳng: tìm quán ăn quanh đây trong vòng năm ki lô mét.
+      mic : tìm quán ăn quanh đây trong vòng năm ki mô mét.
+c02  =  thẳng: máy lạnh hai năm độ.
+      mic : máy lạnh hai năm độ.
+c03  ≠  thẳng: chuyển điều hoa sang sưởi đến hai tám đội giúp mình.
+      mic : chuyển điều hoà sang sưởi đến hai tám độ giúp mình.
+c04  ≠  thẳng: nhích tiếng loa lên bồn đất thôi nhà.
+      mic : nhích tiếng hoa lên bồn đất thôi nhà.
+c05  ≠  thẳng: máy lạnh bật chế độ lạnh lấy ngay mốt độ nhé.
+      mic : máy lạnh bật dưới đồ lạnh lấy gai mốt độ nhé.
+c06  =  thẳng: bật điều hoà hàng ghế sau hai tư độ.
+      mic : bật điều hoà hàng ghế sau hai tư độ.
+c07  =  thẳng: hạ nhiệt độ điều hòa súng một độ lỡ thôi.
+      mic : hạ nhiệt độ điều hòa súng một độ lỡ thôi.
+c08  ≠  thẳng: tăng nhiệt độ mé lạnh thêm ba đội nước em.
+      mic : tăng nhiệt độ mé lạnh thêm ba độ nữa nghe.
+c09  ≠  thẳng: chỉnh máy lạnh lạnh tiêm ba độ so với bây giờ nhé.
+      mic : chỉnh máy lạnh lạnh tiêm ba độ so với bây giờ nghĩa.
+c10  ≠  thẳng: đưa nhiệt độ trong xe về hai đội trước bình.
+      mic : đưa nhiệt độ trong xe và hai hai độ trước mình.
+c11  ≠  thẳng: hạ nước gió máy lạnh số số hai nga.
+      mic : hạ lức gió máy lạnh xuống số hai nga.
+c12  =  thẳng: hình như xe bị lo lơ một bánh.
+      mic : hình như xe bị lo lơ một bánh.
+c13  =  thẳng: mở cốp giúp tôi để lô bao.
+      mic : mở cốp giúp tôi để lô bao.
+c14  ≠  thẳng: cha đường tới sân bay lộ tài tránh chạm thu phí.
+      mic : tra đường tới sân bay đội hài tránh chạm thú vị.
+c15  ≠  thẳng: quá hết cửa lại giúp tôi.
+      mic : quái cửa lại giúp tôi.
+c16  =  thẳng: bật lắp chẹo cấm sạc ra hộ mình.
+      mic : bật lắp chẹo cấm sạc ra hộ mình.
+c17  ≠  thẳng: mở nắp xăng dùng.
+      mic : mở nắp xăng dùm.
+c18  =  thẳng: tắt tiền khẩn cấp.
+      mic : tắt tiền khẩn cấp.
+c19  ≠  thẳng: nhớ lắc khoang nổ sau sẽ đi giúp tôi.
+      mic : nhớc lắc khoang nổ sau sẽ định giúp tôi.
+c20  =  thẳng: trời oi mức quá đi.
+      mic : trời oi mức quá đi.
+c21  ≠  thẳng: muốn nghe chú tin tức ra thôi.
+      mic : muốn nghe chú tin tức giao thông.
+c22  =  thẳng: đi đường buồn quá chẳng có gì nghe.
+      mic : đi đường buồn quá chẳng có gì nghe.
+c23  ≠  thẳng: muốn hít chút không khí trong ngành.
+      mic : muốn ít chút không khí trong lành.
+c24  =  thẳng: nhạc to quá không nghe thấy gì nữa.
+      mic : nhạc to quá không nghe thấy gì nữa.
+c25  ≠  thẳng: mở khoang đĩa hùng trung tâm.
+      mic : mở khoang đĩa hô trung tâm.
+c26  =  thẳng: công thức tính diện tích hình tha là gì.
+      mic : công thức tính diện tích hình tha là gì.
+c27  =  thẳng: tự lái xe bay qua đoạn tắc đường này đi.
+      mic : tự lái xe bay qua đoạn tắc đường này đi.
+c28  =  thẳng: giá vàng hôm nay bao nhiêu mù chí.
+      mic : giá vàng hôm nay bao nhiêu mù chí.
+c29  =  thẳng: hẹn báo lịch họp lúc bà giờ chiều.
+      mic : hẹn báo lịch họp lúc bà giờ chiều.
+d00  =  thẳng: nhịn điều hòa nên thêm một độ nữa cho chị.
+      mic : nhịn điều hòa nên thêm một độ nữa cho chị.
+d01  =  thẳng: chạy về quê chắc phải hơn trăm cây số.
+      mic : chạy về quê chắc phải hơn trăm cây số.
+d02  ≠  thẳng: sưởi ấm khoang sẽ giúp chị đặt hai bể bụi nhé.
+      mic : rửa ấm khoang xe giúp chị đặt hai bề độ nhé.
+d03  ≠  thẳng: xe có đủ sức chạy thêm trăm cây không.
+      mic : xe có đủ sức chạy thêm trắng cây không.
+d04  =  thẳng: để máy lạnh hai mươi ba độ giúp anh.
+      mic : để máy lạnh hai mươi ba độ giúp anh.
+d05  =  thẳng: máy lạnh cho vé hai sáu dung tui.
+      mic : máy lạnh cho vé hai sáu dung tui.
+d06  ≠  thẳng: anh muốn điều hòa ở hai giáo đỗ nhé.
+      mic : anh muốn điều hòa ở hai giáo nội nghĩa.
+d07  ≠  thẳng: nay trời mưa không.
+      mic : ngày chở mưa không.
+d08  ≠  thẳng: bật lắp dạng lên.
+      mic : bật lắp sáng lên.
+d09  ≠  thẳng: xe đi cảm giác cứ bị nhao náy.
+      mic : xe đi cảm giác cứ bị nhau này.
+d10  ≠  thẳng: có mươi bốn cái vỏ xe còn đủ hơi không.
+      mic : có mấy bốn cái vỏ xe còn đủ hơi không.
+d11  =  thẳng: tăng âm lượng lên xíu.
+      mic : tăng âm lượng lên xíu.
+d12  ≠  thẳng: mở lắp bình xăng hộ cái.
+      mic : mở nắp bình xăng hộ cái.
+d13  =  thẳng: xe có lỗi không.
+      mic : xe có lỗi không.
+d14  =  thẳng: xe còn mấy phần trăm điện vậy em.
+      mic : xe còn mấy phần trăm điện vậy em.
+d15  =  thẳng: quạt gió ùn quá.
+      mic : quạt gió ùn quá.
+d16  ≠  thẳng: ổn qua nhức hết cả đầu.
+      mic : mồn qua nhức hết cả đầu.
+d17  ≠  thẳng: trời sầm tối ở đây.
+      mic : chòi sầm túi ở đấy.
+d18  ≠  thẳng: nhạc gì mở vẻ tí như muội kêu.
+      mic : nhạc gì mở pẻ tý như muội kêu.
+d19  ≠  thẳng: bụi bay vào kế hết cả mắt.
+      mic : bụi bay vào cái hết cả mắt.
+d20  =  thẳng: xe chết máy giữa đường rồi.
+      mic : xe chết máy giữa đường rồi.
+d21  =  thẳng: khát nước chạy cổ.
+      mic : khát nước chạy cổ.
+d22  ≠  thẳng: nóng muốn sỉ ụ.
+      mic : nóng muốn dịu.
+d23  =  thẳng: đóng cửa sổ bên xe đối diện giúp anh kia với.
+      mic : đóng cửa sổ bên xe đối diện giúp anh kia với.
+d24  ≠  thẳng: là một bài thơ lụa bắt về tình yêu.
+      mic : là một bài thơ độc ác về tình yêu.
+d25  ≠  thẳng: chỉnh góc gương chiếu hậu bên trái lên cao hơn.
+      mic : chỉnh góc ngư chiếu hậu bên trái lên cao hơn.
+d26  =  thẳng: bấm nút đó giúp tôi.
+      mic : bấm nút đó giúp tôi.
+d27  =  thẳng: chiến thắng điện biên phủ diễn ra vào năm nào.
+      mic : chiến thắng điện biên phủ diễn ra vào năm nào.
+d28  =  thẳng: để yên như vậy đi.
+      mic : để yên như vậy đi.
+d29  =  thẳng: tăng công suất động cơ nên cấp đôi ngay lập tức.
+      mic : tăng công suất động cơ nên cấp đôi ngay lập tức.
+
+Giống hệt: 30/60 · mic demo trả rỗng / lỗi: 0

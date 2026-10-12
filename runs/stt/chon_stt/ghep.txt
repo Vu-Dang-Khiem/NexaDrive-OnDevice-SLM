@@ -1,0 +1,15 @@
+﻿
+== Bá»˜ B â€” chá»�n V1 / V2 (40 cÃ¢u)
+  pho       Ä‘Ãºng 22/40
+  zip       Ä‘Ãºng 20/40   so PhoWhisper: hÆ¡n 3, kÃ©m 5, p 0.727
+  V1        Ä‘Ãºng 22/40   so PhoWhisper: hÆ¡n 2, kÃ©m 2, p 1.000
+  V2        Ä‘Ãºng 22/40   so PhoWhisper: hÆ¡n 2, kÃ©m 2, p 1.000
+  tot_nhat  Ä‘Ãºng 25/40
+
+== Bá»˜ C + D â€” xÃ¡c nháº­n (láº§n dÃ¹ng láº¡i thá»© hai) (60 cÃ¢u)
+  pho       Ä‘Ãºng 38/60
+  zip       Ä‘Ãºng 32/60   so PhoWhisper: hÆ¡n 4, kÃ©m 10, p 0.180
+  V1        Ä‘Ãºng 38/60   so PhoWhisper: hÆ¡n 4, kÃ©m 4, p 1.000
+  V2        Ä‘Ãºng 38/60   so PhoWhisper: hÆ¡n 4, kÃ©m 4, p 1.000
+  tot_nhat  Ä‘Ãºng 42/60
+

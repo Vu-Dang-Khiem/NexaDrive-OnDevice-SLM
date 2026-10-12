@@ -1,0 +1,28 @@
+﻿bá»� 2383 cÃ¢u khÃ´ng dáº¥u
+30060 cÃ¢u khÃ¡c nhau Â· bá»‹ sá»­a 112 (0.37%)
+    69  sÃ¢y->sáº¥y
+     5  cua->cá»­a
+     4  troi->trá»�i
+     3  xang->xÄƒng
+     2  vÃ´->vá»�
+     2  cop->cá»‘p
+     2  cá»§a->cá»­a
+     2  kinh->kÃ­nh
+     2  say->sáº¥y
+     2  trá»£->chá»—
+     1  chÃµ->chá»—
+     1  hoÃ¡->hoÃ 
+     1  cho->chá»— | Ä‘á»¡->Ä‘á»•
+     1  Cop->Cá»‘p
+     1  Thoi->Thá»�i
+     1  cap->cáº¥p
+     1  lieu->liá»‡u
+     1  chay->cháº¡y
+     1  cam->cáº¯m
+     1  do->giÃ³
+     1  hoa->hoÃ 
+     1  cho->chá»—
+     1  quat->quáº¡t
+     1  suat->suáº¥t
+     1  sÃ¢y->sáº¥y | kinh->kÃ­nh
+

@@ -64,6 +64,6 @@ for t in ("q8_0", "q4_K_M"):
     print(f"  {t:7} output giống f16: {giong}/{len(R[t])}")
 
 print("\n=== Độ trễ lượt 1 (đọc prompt + sinh), CPU 8 luồng, cùng phiên, 701 câu")
-for t, f in MUC:
+for t, _ in MUC:
     ms = sorted(d["ms_doc_prompt"] + d["ms_sinh"] for d in R[t])
     print(f"  {t:7} p50 {median(ms):5.0f} ms · p95 {ms[int(0.95 * len(ms)) - 1]:5.0f} ms · lớn nhất {ms[-1]:5.0f} ms")

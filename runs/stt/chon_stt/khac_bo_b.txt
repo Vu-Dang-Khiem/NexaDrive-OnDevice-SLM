@@ -1,0 +1,25 @@
+﻿b01 | Báº­t Ä‘iá»�u hÃ²a 26 Ä‘á»™ gháº¿ lÃ¡i 
+   P: Báº­t Ä‘iá»�u hoÃ  hay xáº¥u thá»§ ghi lÃ¡i -> tu_choi_nham 
+   Z: Báº­t Ä‘iá»�u hÃ²a 26 Ä‘á»™ gháº¿ lÃ¡i -> dung
+b04 | Háº¡ hÃ© kÃ­nh bÃªn phá»¥ khoáº£ng 20% 
+   P: Háº¡ hiáº¿u kÃ­n báº¿p phá»¥ khoáº£ng hai mÆ°Æ¡i trÄƒm -> tu_choi_nham 
+   Z: Háº¡ hai kÃ­nh bÃªn phá»¥ khoáº£ng 20% -> dung
+b09 | Báº­t Ä‘iá»�u hÃ²a 22 Ä‘á»™ há»™ cÃ¡i 
+   P: Báº­t Ä‘iá»�u hÃ²a 22 Ä‘á»™ vá»¥ cÃ¡i -> dung 
+   Z: Báº­t Ä‘iá»�u hÃ²a 2 Ä‘á»™ há»™ cÃ¡i -> sai_tham_so
+b24 | GiÃ³ Ä‘iá»�u hÃ²a yáº¿u nhÆ° Ä‘uá»•i ruá»“i 
+   P: GiÃ³ Ä‘iá»�u hoÃ  yáº¿u nhÆ° Ä‘á»•i ruá»“i -> dung 
+   Z: GiÃ³ Ä‘iá»�u hÃ²a yáº¿u nhÆ° Ä‘uá»•i ruá»“i -> sai_tham_so
+b26 | KÃ­nh lÃ¡i má»� tá»‹t cháº³ng nhÃ¬n tháº¥y gÃ¬ 
+   P: KÃ­nh lÃ¡i má»� tá»‹t cháº³ng nhÃ¬n tháº¿ gÃ¬ -> dung 
+   Z: KÃ­nh Ä‘Ã¡i má»Ÿ tá»‹t cháº³ng nhÃ¬n tháº¥y gÃ¬ -> sai_ham
+b27 | MÆ°a háº¯t vÃ o Æ°á»›t háº¿t tay Ã¡o rá»“i 
+   P: MÆ°a háº¯t vÃ o Æ°á»›t háº¿t tÃ  Ã¡o rá»“i -> dung 
+   Z: MÆ°a háº¯t vÃ o Æ°á»›t háº¿t tay Ã¡o rá»“i -> sai_ham
+b31 | Há»§y lá»™ trÃ¬nh dáº«n Ä‘Æ°á»�ng hiá»‡n táº¡i 
+   P: Quá»³ lá»™ trÃ¬nh dáº«n Ä‘Æ°á»£c hiá»‡n táº¡i -> goi_bua 
+   Z: Há»§y lá»™ trÃ¬nh dáº«n Ä‘Æ°á»�ng hiá»‡n táº¡i -> dung
+b37 | Xe Ä‘á»�i má»›i cÃ³ cáº§n cháº¡y rá»‘t-Ä‘a khÃ´ng 
+   P: Xe Ä‘á»�i má»›i cÃ³ cáº§n cháº¡y rÃºt ra khÃ´ng -> dung 
+   Z: Xe Ä‘á»�i má»›i cÃ³ cáº§n cháº¡y rá»‘t Ä‘Ã¡ khÃ´ng -> goi_bua
+
