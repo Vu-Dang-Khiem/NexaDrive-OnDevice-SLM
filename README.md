@@ -80,7 +80,18 @@ ChatGPT viết độc lập với dữ liệu train, người duyệt nhãn) ch�
 
 ## Kết quả
 
-**Test đóng băng, % đúng.** Bản triển khai = v6.1 hạt giống 42, GGUF q4 + ngưỡng 0,80.
+**Gần bằng model 72B, nhưng chạy trên CPU laptop với model 1 GB** (test đóng băng, % đúng):
+
+| Hệ thống | Chạy trên | Dung lượng | Prompt | Độ trễ p50 | Rõ ràng | Ngoài phạm vi | Mơ hồ dài | Câu ngắn | Hành động sai lên xe |
+|---|---|---|---|---|---|---|---|---|---|
+| **Nexa Drive (bản triển khai)** | **CPU laptop** | **1,04 GB** | **33 token** | **0,46 s** | 77,0 | 88,0 | **74,4** | 79,2 | **29** |
+| Qwen2.5-72B + mô tả hàm | GPU A100 80 GB | ~40 GB | ~2.400 token | 1,1–1,8 s | **83,8** | **94,9** | 70,5 | **91,7** | 32 |
+| Qwen2.5-1.5B chưa train + mô tả hàm | GPU | 3,1 GB | ~2.400 token | 0,8 s | 37,8 | 31,6 | 20,9 | 27,5 | 95 |
+
+Độ trễ của hai model so sánh đo trên GPU A100 (vLLM), bản triển khai đo trên CPU laptop (llama.cpp). Dung lượng 72B là bản 4-bit
+AWQ. Hành động sai lên xe = gọi bừa + sai hàm + sai tham số + làm luôn khi lẽ ra phải hỏi lại, trên 230 câu test sạch.
+
+**Chi tiết theo nhóm.** Bản triển khai = v6.1 hạt giống 42, GGUF q4 + ngưỡng 0,80.
 
 | | Rõ ràng (74) | Mơ hồ (39) | Ngoài phạm vi (117) | Mơ hồ dài (129) | Câu ngắn (120) | Hai lượt (60) | Gõ sai (104) |
 |---|---|---|---|---|---|---|---|
