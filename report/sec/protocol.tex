@@ -1,0 +1,46 @@
+\section{Training and Evaluation Protocol}
+\label{sec:protocol}
+
+\subsection{Training}
+\label{sec:training}
+
+The student is Qwen2.5-1.5B-Instruct. We use the plain Hugging Face \code{Trainer} with the loss masked by the token length of
+the prompt, rather than TRL's \code{SFTTrainer}, whose completion-only collator searches for the assistant marker (which
+appears twice in answer-phrasing samples) and silently masks a whole sample when it does not match. Hyperparameters follow
+Octopus~v2: AdamW, learning rate $5\times10^{-5}$, 10 warm-up steps, linear decay, 3 epochs, equal loss weights for the new
+tokens (Octopus~v2 found weighting unnecessary for few tokens), effective batch 16, maximum length 256, bf16. LoRA uses rank 16,
+$\alpha=32$ on \code{q,k,v,o,up,down} projections; because the new tokens must be learned, \code{embed\_tokens} and
+\code{lm\_head} are trained in full. Qwen2.5-1.5B ties these two matrices; saving a merged PEFT model with tied weights
+silently discards the trained output layer, so we untie them before training. With the two full matrices, 480M of 2.26B
+parameters are trainable (21\%). Each configuration is trained with seeds 42 and 7 on a rented A100 40\,GB, L40S or L4
+(v6.1: about 57 minutes and 6,288 steps per seed). A checkpoint is saved per epoch and chosen on 600 stratified validation
+samples: the highest accuracy on clear commands among checkpoints with false refusals $\le5\%$, earlier epoch on ties.
+
+\subsection{Scoring}
+\label{sec:scoring}
+
+All models, including prompted baselines whose JSON output is converted to the functional format, are scored by the same
+code. An output is \emph{correct} if it matches the reference after normalization (``rule C''): arguments equal to their
+schema default are dropped on both sides (\code{get\_odometer()} = \code{get\_odometer(unit="km")}); for ambiguous items only
+the function and the direction are checked (on/off, open/close, up/down, sign of a delta), and a proposal may pick any one of
+several acceptable functions; suggesting the high beam is always wrong. Real behavioral differences (delta 1 vs.\ 2, miles vs.\
+kilometres) are never forgiven. Rule C was fixed before round R2 and old results were re-scored with it; under the earlier
+exact-match rule the same R1 outputs score 4.1 points lower on clear commands.
+
+Errors are classified into seven types: wrong function, wrong argument, false refusal, over-triggering (calling a real
+function on an out-of-scope request), unnecessary clarification, missing clarification, and unparseable output. We call
+over-triggering, wrong function, wrong argument and missing clarification \emph{wrong actions}: the car would do something the
+user did not ask for. We report per-group accuracy and never a single pooled number: a model that refuses everything already
+scores 51\% on the clean test.
+
+\subsection{Statistical protocol}
+\label{sec:stats}
+
+The test sets are small (74 clear commands; one item is 1.35 points), so we use Wilson intervals \citep{wilson1927} and the
+exact two-sided McNemar test \citep{mcnemar1947} on paired outputs. McNemar accounts for the choice of test items but not for
+training randomness: when we retrained round R2 with a second seed on identical data, 33 of 230 items changed outcome and
+McNemar between the two seeds gave $p=0.005$. From then on every configuration was trained with two seeds, results are the
+mean of the two, and a difference is claimed only if the mean difference exceeds the spread between seeds and, for paired
+tests, if it is significant for both seeds in the same direction (one seed: ``tie or slightly better''). The criteria for
+accepting each round, choosing thresholds and compression levels were recorded before the corresponding test run, and we
+did not change them after seeing scores. Two seeds remain few; our conclusions are correspondingly modest.

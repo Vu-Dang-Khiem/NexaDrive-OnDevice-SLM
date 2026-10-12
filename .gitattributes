@@ -1,0 +1,10 @@
+# Giữ NGUYÊN BYTE file dữ liệu (tập test đóng băng có mã băm SHA-256 — không để git đổi LF <-> CRLF)
+*.jsonl -text
+*.csv -text
+*.tsv -text
+*.json -text
+*.txt -text
+# file nhị phân
+*.glb binary
+*.png binary
+*.pdf binary

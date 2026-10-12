@@ -1,0 +1,35 @@
+[project]
+name = "nexa-drive"
+version = "0.1.0"
+description = "Tác tử AI điều khiển xe ô tô song ngữ Việt-Anh, mô hình nhỏ chưng cất tri thức, dùng functional token"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+exclude = ["web", "notebooks", "luu_tru"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# script tái tạo bảng kết quả: giữ NGUYÊN logic đã kiểm ra trùng số cũ (PLAN.md mục W) — chỉ nới quy tắc hình thức
+"eval/bao_cao/*" = ["E402", "E501", "E731", "B023", "B905"]
+# bảng Markdown trong chuỗi (một dòng bảng không ngắt được)
+"eval/bang_tra.py" = ["E501"]
+# script in bảng kết quả (như eval/bao_cao/*)
+"eval/cham_v6.py" = ["E501"]
+# script phân tích ngưỡng / hiệu chỉnh v6.1 đã ra số ghi trong PLAN.md: giữ nguyên logic, chỉ nới quy tắc hình thức
+"eval/nguong_v6.py" = ["E501"]
+"eval/nguong_cam_ket.py" = ["E501", "B023"]
+"eval/rui_ro_do_phu.py" = ["E501"]
+"eval/tao_hieu_chinh_v6.py" = ["E501"]
+"eval/dong_bang_hieu_chinh.py" = ["E501"]
+# script đóng băng tập test_grpo đã chạy ra file + mã băm (PLAN.md GRPO) — giữ nguyên, chỉ nới độ dài dòng
+"eval/dong_bang_test_grpo.py" = ["E501"]
+"eval/cham_grpo.py" = ["E501"]  # in bảng kết quả (như eval/cham_v6.py)

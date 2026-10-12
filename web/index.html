@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Nexa Drive</title>
+  </head>
+  <body>
+    <!-- Giao diện demo (người dùng chọn 2026-10-07, PLAN.md Phase 7): khung + hoạt cảnh lấy từ bản demo người dùng
+         thiết kế; mọi câu trả lời / hành động đến từ backend qua WebSocket (web/src/ws.ts) — không có luật giả ở đây.
+         Giao diện React trước đó vẫn mở được ở /react_cu.html. -->
+    <main class="app">
+      <section class="stage" id="stage" aria-label="Mô phỏng xe">
+        <div class="callouts" id="callouts" aria-live="polite"></div>
+        <section class="status-card" id="statusCard" aria-live="polite" hidden></section>
+        <div class="tl" id="chips" aria-live="polite"></div>
+        <div class="tr">
+          <div class="seg" role="group" aria-label="Thời điểm trong ngày">
+            <button type="button" data-time="day" aria-pressed="false">Ngày</button>
+            <button type="button" data-time="night" aria-pressed="true">Đêm</button>
+          </div>
+          <button type="button" class="view-btn" id="viewBtn" aria-pressed="false">Vào trong xe</button>
+        </div>
+        <div class="bl">Kéo để xoay quanh xe</div>
+        <div class="br">Mẫu xe: <a href="https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CarConcept" target="_blank" rel="noopener">Car Concept, Khronos</a> (CC BY 4.0)</div>
+      </section>
+
+      <section class="modes" aria-label="Trạng thái xe">
+        <div class="seg" role="group" aria-label="Xe đang đỗ hay đang chạy">
+          <button type="button" data-mode="parked" aria-pressed="true">Đỗ xe</button>
+          <button type="button" data-mode="driving" aria-pressed="false">Đang chạy</button>
+        </div>
+        <button type="button" class="lock" id="childLock" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Khoá trẻ em
+        </button>
+        <!-- wake-word: bật thì nghe liên tục, gọi «hey nexa» rồi nói lệnh (nexa.js -> serve/giong_noi.py /wake) -->
+        <button type="button" class="lock" id="heyNexa" aria-pressed="false" title="Bật để gọi «hey nexa» rồi nói lệnh, không cần bấm micro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h2M6 8v8M10 5v14M14 8v8M18 10v4M22 12h0"/></svg>
+          Hey Nexa
+        </button>
+      </section>
+
+      <section class="voice">
+        <div class="bubble said">
+          <span class="who">Bạn</span>
+          <p id="said" class="empty">Bấm micro để nói, hoặc gõ: «mở cốp», «hạ kính ghế phụ một nửa», «nóng quá», «bật đèn khẩn cấp». Bật «Đang chạy» rồi «mở cốp» để thấy luật an toàn.</p>
+        </div>
+        <!-- micro: nexa.js mở khoá khi chạy (bấm để nói, bấm lần nữa để gửi) -> serve/giong_noi.py -->
+        <button type="button" class="mic" id="mic" aria-pressed="false" aria-label="Nói lệnh" disabled>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
+        </button>
+        <div class="bubble reply" aria-live="polite">
+          <span class="who">Trợ lý</span>
+          <p id="reply" class="empty">Câu trả lời sẽ hiện ở đây</p>
+          <div class="answers" id="answers" hidden>
+            <button type="button" class="yes" id="ans1">Có</button>
+            <button type="button" id="ans2">Không</button>
+          </div>
+          <code id="call" hidden></code>
+        </div>
+      </section>
+
+      <form class="chat" id="chat" autocomplete="off">
+        <input id="text" type="text" placeholder="Gõ lệnh, ví dụ: trong xe nóng quá" aria-label="Lệnh cho trợ lý">
+        <button type="submit" id="send">Gửi</button>
+      </form>
+    </main>
+    <script type="module" src="/src/giao_dien/nexa.js"></script>
+  </body>
+</html>

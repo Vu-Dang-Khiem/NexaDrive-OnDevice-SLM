@@ -1,0 +1,13 @@
+﻿táº­p trong HF: ['test_vi_bo_sung', 'test_vi_mo_ho_4', 'test_vi_sach_v2'] Â· q4: ['test_vi_bo_sung', 'test_vi_mo_ho_4', 'test_vi_sach_v2']
+                             | rÃµ rÃ ng | mÆ¡ há»“ | ngoÃ i pv | gá»�i bá»«a | há»�i thá»«a | TC nháº§m | sai lÃªn xe | 28 cÃ¢u | mo_ho_4
+HF bf16 khÃ´ng ngÆ°á»¡ng         |    78.4 |  74.4 |     82.1 |      21 |        8 |       1 |         38 |   57.1 |    78.3
+q4_K_M khÃ´ng ngÆ°á»¡ng          |    77.0 |  74.4 |     82.1 |      21 |        7 |       2 |         39 |   53.6 |    73.6
+HF bf16 + 0,85               |    71.6 |  74.4 |     87.2 |       9 |       15 |       1 |         23 |   57.1 |    78.3
+q4_K_M + 0,80 (KHOÃ�)         |    73.0 |  74.4 |     86.3 |      12 |       13 |       2 |         25 |   53.6 |    73.6
+q4_K_M + 0,85 (Ä‘á»‘i chiáº¿u)    |    70.3 |  74.4 |     88.9 |       8 |       14 |       3 |         21 |   53.6 |    73.6
+sá»‘ cÃ¢u (sáº¡ch, bá»• sung, mo_ho_4): (230, 28, 129) (230, 28, 129)
+McNemar test_vi_sach_v2: 'HF bf16 khÃ´ng ngÆ°á»¡ng' hÆ¡n 5, 'q4_K_M khÃ´ng ngÆ°á»¡ng' hÆ¡n 4, p = 1.000 (ghÃ©p 230)
+McNemar test_vi_mo_ho_4: 'HF bf16 khÃ´ng ngÆ°á»¡ng' hÆ¡n 8, 'q4_K_M khÃ´ng ngÆ°á»¡ng' hÆ¡n 2, p = 0.109 (ghÃ©p 129)
+McNemar test_vi_sach_v2: 'HF bf16 + 0,85' hÆ¡n 4, 'q4_K_M + 0,80 (KHOÃ�)' hÆ¡n 4, p = 1.000 (ghÃ©p 230)
+McNemar test_vi_mo_ho_4: 'HF bf16 + 0,85' hÆ¡n 8, 'q4_K_M + 0,80 (KHOÃ�)' hÆ¡n 2, p = 0.109 (ghÃ©p 129)
+

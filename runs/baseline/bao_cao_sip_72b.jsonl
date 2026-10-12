@@ -1,0 +1,1 @@
+{"ten": "sip_72b", "test_vi_sach_v2": {"so_cau": 230, "doc_khong_duoc": 0}, "test_vi_bo_sung": {"so_cau": 28, "doc_khong_duoc": 1}, "dev_vi_2": {"so_cau": 30, "doc_khong_duoc": 0}, "do_tre": {"so_cau": 40, "p50_ms": 1841.8, "p95_ms": 2809.7, "token_prompt_tb": 2156.4, "token_ra_tb": 38.0}}

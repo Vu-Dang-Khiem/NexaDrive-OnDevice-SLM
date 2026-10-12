@@ -1,0 +1,47 @@
+﻿
+===== hạt giống s42  (v61 vs v5) =====
+(1) CHÍNH — A+B (120):  88.3 vs  75.8 (mới hơn 17, cũ hơn 2, p=0.0007)
+      A ngắn:  90.3 vs  80.6 (mới hơn 9, cũ hơn 2, p=0.0654)
+      B cách gọi:  85.4 vs  68.8 (mới hơn 8, cũ hơn 0, p=0.0078)
+(2) HAI LƯỢT (60): v61 66.7 | v5 + luật 23.3 | v5 không nhớ 23.3
+      v61 vs v5+luật:  66.7 vs  23.3 (mới hơn 27, cũ hơn 1, p=0.0000)
+      doi_chieu      v61  86.7 | v5+luật   6.7 | v5 không nhớ   6.7
+      them_nua       v61  50.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      bo_phan_khac   v61  60.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      lenh_moi       v61  70.0 | v5+luật  70.0 | v5 không nhớ  70.0
+      ngoai_pham_vi  v61  60.0 | v5+luật  60.0 | v5 không nhớ  60.0
+(3) Tính năng mới C (30): v61 83.3 (v5 tham khảo 10.0)
+(4) KHÔNG TỤT trên test cũ:
+      rõ ràng     81.1 vs  78.4 (mới hơn 4, cũ hơn 2, p=0.6875)
+      mơ hồ       74.4 vs  76.9 (mới hơn 3, cũ hơn 4, p=1.0000)
+      ngoài pv    82.9 vs  84.6 (mới hơn 3, cũ hơn 5, p=0.7266)
+      bổ sung     57.1 vs  60.7 (mới hơn 1, cũ hơn 2, p=1.0000)
+      mo_ho_4     79.8 vs  78.3 (mới hơn 8, cũ hơn 6, p=0.7905)
+(5) Nhiễu E (104):  60.6 vs  31.7 (mới hơn 32, cũ hơn 2, p=0.0000)
+
+===== hạt giống s7  (v61 vs v5) =====
+(1) CHÍNH — A+B (120):  87.5 vs  76.7 (mới hơn 17, cũ hơn 4, p=0.0072)
+      A ngắn:  90.3 vs  83.3 (mới hơn 7, cũ hơn 2, p=0.1797)
+      B cách gọi:  83.3 vs  66.7 (mới hơn 10, cũ hơn 2, p=0.0386)
+(2) HAI LƯỢT (60): v61 58.3 | v5 + luật 23.3 | v5 không nhớ 23.3
+      v61 vs v5+luật:  58.3 vs  23.3 (mới hơn 24, cũ hơn 3, p=0.0000)
+      doi_chieu      v61  80.0 | v5+luật   6.7 | v5 không nhớ   6.7
+      them_nua       v61  50.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      bo_phan_khac   v61  46.7 | v5+luật   0.0 | v5 không nhớ   0.0
+      lenh_moi       v61  70.0 | v5+luật  70.0 | v5 không nhớ  70.0
+      ngoai_pham_vi  v61  40.0 | v5+luật  60.0 | v5 không nhớ  60.0
+(3) Tính năng mới C (30): v61 83.3 (v5 tham khảo 6.7)
+(4) KHÔNG TỤT trên test cũ:
+      rõ ràng     75.7 vs  78.4 (mới hơn 2, cũ hơn 4, p=0.6875)
+      mơ hồ       76.9 vs  74.4 (mới hơn 3, cũ hơn 2, p=1.0000)
+      ngoài pv    71.8 vs  82.9 (mới hơn 4, cũ hơn 17, p=0.0072)
+      bổ sung     60.7 vs  57.1 (mới hơn 1, cũ hơn 0, p=1.0000)
+      mo_ho_4     78.3 vs  78.3 (mới hơn 9, cũ hơn 9, p=1.0000)
+(5) Nhiễu E (104):  66.3 vs  31.7 (mới hơn 40, cũ hơn 4, p=0.0000)
+
+===== (4) trung bình 2 hạt giống — ngưỡng: rõ ràng / ngoài pv / mo_ho_4 không thấp hơn v5 quá 3 điểm =====
+  rõ ràng    v61  78.4 | v5  78.4 | chênh  +0.0
+  mơ hồ      v61  75.7 | v5  75.7 | chênh  +0.0
+  ngoài pv   v61  77.3 | v5  83.8 | chênh  -6.4
+  bổ sung    v61  58.9 | v5  58.9 | chênh  +0.0
+  mo_ho_4    v61  79.0 | v5  78.3 | chênh  +0.8

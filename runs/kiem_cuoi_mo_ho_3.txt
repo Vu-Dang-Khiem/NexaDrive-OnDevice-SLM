@@ -1,0 +1,27 @@
+﻿sá»‘ cÃ¢u: 130 | trá»‘ng: []
+  95 [set_volume] TÃ´i Ä‘ang gá»�i cuá»™c Ä‘iá»‡n thoáº¡i quan trá»�ng vá»›i sáº¿p mÃ  á»“n quÃ¡.
+  97 [close_trunk] GiÃ³ lÃ¹a máº¡nh tá»« phÃ­a sau xe vÃ o cá»‘p xe Ä‘ang bá»‹ má»Ÿ
+  115 [set_headlights] Ä�ang Ä‘i vÃ o khu dÃ¢n cÆ° Ä‘Ã¨n pha sáº½ khiáº¿n phÆ°Æ¡ng tiá»‡n Ä‘á»‘i diá»‡n khÃ³ nhÃ¬n Ä‘Æ°á»�ng.
+  118 [lock_doors] Ä�ang mua Ä‘á»“ ven Ä‘Æ°á»�ng thÃ¬ quÃªn máº¥t Ä‘Ã³ng cá»­a xe.
+Ä‘á»™ng tá»« sai báº£o: [('97', ['má»Ÿ']), ('118', ['Ä‘Ã³ng'])]
+cáº·p gáº§n trÃ¹ng (Jaccard â‰¥ 0,25), toÃ n bá»™:
+  0.28 4: HÃ nh lÃ½ xáº¿p háº¿t vÃ o rá»“i mÃ  cÃ¡i náº¯p phÃ­a Ä‘uÃ´i xe váº«n chá»•ng lÃªn, tháº¿ nÃ y sao Ä‘i Ä‘Æ°á»£c.
+       106: Qua cÃ¡i gá»� nhá»� mÃ  náº¯p phÃ­a Ä‘uÃ´i náº£y lÃªn rá»“i kÃªu cáº¡ch cáº¡ch, cháº¯c nÃ³ chÆ°a náº±m sÃ¡t vÃ o thÃ¢n xe.
+  0.27 13: Ä�Æ°á»�ng tá»‘i, cháº³ng tháº¥y xa gÃ¬ cáº£.
+       102: KÃ­nh sau má»�, lÃ¹i cháº³ng tháº¥y gÃ¬.
+  0.30 13: Ä�Æ°á»�ng tá»‘i, cháº³ng tháº¥y xa gÃ¬ cáº£.
+       122: Ä�Æ°á»�ng nÃ y váº¯ng mÃ  phÃ­a trÆ°á»›c chá»‰ sÃ¡ng Ä‘Æ°á»£c má»™t Ä‘oáº¡n ngáº¯n, xa hÆ¡n lÃ  cháº³ng tháº¥y gÃ¬ cáº£.
+  0.27 25: NgÆ°á»�i láº¡ cá»© kÃ©o tay náº¯m kÃ¬a!
+       31: Con cá»© nghá»‹ch tay náº¯m cá»­a hoÃ i.
+  0.25 26: BÃ© vá»«a ngá»§ Ä‘Æ°á»£c mÃ  tiáº¿ng giÃ³ Ã¹ Ã¹ tá»« máº¥y khe phÃ­a trÆ°á»›c cá»© Ã¡t cáº£ tiáº¿ng mÃ¬nh nÃ³i nhá»�.
+       98: Anh thá»£ Ä‘ang nghe xem mÃ¡y cÃ³ tiáº¿ng láº¡ khÃ´ng mÃ  tiáº¿ng giÃ³ tá»« máº¥y khe trong xe cá»© Ã¹ Ã¹ láº¥n háº¿t.
+  0.27 29: KÃ­nh sau Ä‘á»�ng hÆ¡i kÃ­n mÃ­t rá»“i.
+       123: Buá»“n nÃ´n, kÃ­nh bÃªn em kÃ­n mÃ­t!
+  0.26 39: Ba ngÆ°á»�i vá»«a trÃº mÆ°a lÃªn xe lÃ  máº·t trong táº¥m kÃ­nh trÆ°á»›c máº·t phá»§ hÆ¡i, nhÃ¬n váº¡ch Ä‘Æ°á»�ng nhÃ²e háº¿t cáº£.
+       96: Mang ná»“i chÃ¡o nÃ³ng cho bÃ  mÃ  hÆ¡i bá»‘c lÃªn lÃ m máº·t trong kÃ­nh trÆ°á»›c tráº¯ng Ä‘á»¥c, nhÃ¬n xe phÃ­a trÆ°á»›c nhÃ²e quÃ¡.
+  0.27 63: Giá»� nÃ y cháº¯c tá»›i báº£n tin rá»“i.
+       73: Ä�au tháº¿ nÃ y cháº¯c pháº£i tá»›i viá»‡n.
+  0.29 70: Xe Ä‘ang cháº¡y rá»“i mÃ  máº¥y cÃ¡i chá»‘t á»Ÿ cá»­a váº«n cÃ²n nhÃ´ lÃªn tháº¿ kia, em tháº¥y khÃ´ng yÃªn tÃ¢m láº¯m.
+       126: Máº¥y cá»­a bÃªn nÃ y cÃ³ tiáº¿ng chá»‘t rá»“i, riÃªng cá»­a sau bÃªn pháº£i váº«n kÃ©o Ä‘Æ°á»£c tá»« ngoÃ i, Ä‘á»ƒ xe tháº¿ nÃ y khÃ´ng yÃªn tÃ¢m.
+Ä‘Ã£ táº¡o láº¡i 2_cho_gan_nhan.csv
+

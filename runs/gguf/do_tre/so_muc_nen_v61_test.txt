@@ -1,0 +1,54 @@
+﻿
+=== KHÃ”NG ngÆ°á»¡ng â€” % Ä‘Ãºng (701 cÃ¢u)
+                                  f16     q8_0   q4_K_M
+RÃµ rÃ ng (74)                     81.1     81.1     79.7
+MÆ¡ há»“ (39)                       69.2     69.2     64.1
+NgoÃ i pháº¡m vi (117)              82.1     82.1     82.9
+Bá»• sung (28)                     57.1     53.6     50.0
+MÆ¡ há»“ dÃ i (129)                  79.1     78.3     74.4
+CÃ¢u ngáº¯n + cÃ¡ch gá»�i (120)        88.3     85.0     82.5
+Tham sá»‘ má»›i (30)                 83.3     83.3     80.0
+Hai lÆ°á»£t (60)                    66.7     65.0     61.7
+GÃµ sai (104)                     58.7     60.6     55.8
+Sai lÃªn xe (test sáº¡ch)             40       40       41
+
+=== ngÆ°á»¡ng 0,80 â€” % Ä‘Ãºng (701 cÃ¢u)
+                                  f16     q8_0   q4_K_M
+RÃµ rÃ ng (74)                     78.4     79.7     77.0
+MÆ¡ há»“ (39)                       69.2     69.2     64.1
+NgoÃ i pháº¡m vi (117)              85.5     86.3     88.0
+Bá»• sung (28)                     57.1     53.6     50.0
+MÆ¡ há»“ dÃ i (129)                  79.1     78.3     74.4
+CÃ¢u ngáº¯n + cÃ¡ch gá»�i (120)        82.5     78.3     79.2
+Tham sá»‘ má»›i (30)                 80.0     80.0     80.0
+Hai lÆ°á»£t (60)                    65.0     63.3     56.7
+GÃµ sai (104)                     51.9     52.9     47.1
+Sai lÃªn xe (test sáº¡ch)             29       29       29
+
+=== McNemar so vá»›i f16 (chÆ°a nÃ©n), khÃ´ng ngÆ°á»¡ng â€” b: báº£n nÃ©n Ä‘Ãºng / f16 sai, c: ngÆ°á»£c láº¡i
+  q8_0    RÃµ rÃ ng (74)                 hÆ¡n  0 / kÃ©m  0, p = 1.000
+  q8_0    MÆ¡ há»“ (39)                   hÆ¡n  0 / kÃ©m  0, p = 1.000
+  q8_0    NgoÃ i pháº¡m vi (117)          hÆ¡n  0 / kÃ©m  0, p = 1.000
+  q8_0    Bá»• sung (28)                 hÆ¡n  0 / kÃ©m  1, p = 1.000
+  q8_0    MÆ¡ há»“ dÃ i (129)              hÆ¡n  0 / kÃ©m  1, p = 1.000
+  q8_0    CÃ¢u ngáº¯n + cÃ¡ch gá»�i (120)    hÆ¡n  0 / kÃ©m  4, p = 0.125
+  q8_0    Tham sá»‘ má»›i (30)             hÆ¡n  0 / kÃ©m  0, p = 1.000
+  q8_0    Hai lÆ°á»£t (60)                hÆ¡n  0 / kÃ©m  1, p = 1.000
+  q8_0    GÃµ sai (104)                 hÆ¡n  2 / kÃ©m  0, p = 0.500
+  q8_0    output giá»‘ng f16: 680/701
+  q4_K_M  RÃµ rÃ ng (74)                 hÆ¡n  0 / kÃ©m  1, p = 1.000
+  q4_K_M  MÆ¡ há»“ (39)                   hÆ¡n  0 / kÃ©m  2, p = 0.500
+  q4_K_M  NgoÃ i pháº¡m vi (117)          hÆ¡n  4 / kÃ©m  3, p = 1.000
+  q4_K_M  Bá»• sung (28)                 hÆ¡n  1 / kÃ©m  3, p = 0.625
+  q4_K_M  MÆ¡ há»“ dÃ i (129)              hÆ¡n  1 / kÃ©m  7, p = 0.070
+  q4_K_M  CÃ¢u ngáº¯n + cÃ¡ch gá»�i (120)    hÆ¡n  0 / kÃ©m  7, p = 0.016
+  q4_K_M  Tham sá»‘ má»›i (30)             hÆ¡n  0 / kÃ©m  1, p = 1.000
+  q4_K_M  Hai lÆ°á»£t (60)                hÆ¡n  3 / kÃ©m  6, p = 0.508
+  q4_K_M  GÃµ sai (104)                 hÆ¡n  2 / kÃ©m  5, p = 0.453
+  q4_K_M  output giá»‘ng f16: 611/701
+
+=== Ä�á»™ trá»… lÆ°á»£t 1 (Ä‘á»�c prompt + sinh), CPU 8 luá»“ng, cÃ¹ng phiÃªn, 701 cÃ¢u
+  f16     p50  1062 ms Â· p95  2075 ms Â· lá»›n nháº¥t  8162 ms
+  q8_0    p50   856 ms Â· p95  1480 ms Â· lá»›n nháº¥t  4780 ms
+  q4_K_M  p50   463 ms Â· p95   832 ms Â· lá»›n nháº¥t  4644 ms
+

@@ -1,0 +1,37 @@
+﻿Chuyáº¿n Ä‘i 290km cÃ³ cáº§n náº¡p Ä‘iá»‡n dá»�c Ä‘Æ°á»�ng khÃ´ng? 
+   Ä‘Ã¡p Ã¡n: <nexa_5>(trip_km=290.0)<nexa_end><|im_end|> 
+   output: <nexa_5>(tripkm=290.0)<nexa_end>
+Ä�iá»�u hÆ°á»›ng Ä‘áº¿n SÃ¢n váº­n Ä‘á»™ng Má»¹ Ä�Ã¬nh, trÃ¡nh tráº¡m thu phÃ­ 
+   Ä‘Ã¡p Ã¡n: <nexa_21>(destination="SÃ¢n váº­n Ä‘á»™ng Má»¹ Ä�Ã¬nh", avoid="tolls")<nexa_end><|im_end|> 
+   output: <nexa_21>(destination="SÃ¢n váº­n Ä‘á»™ng Má»¹", avoid="tolls")<nexa_end>
+Dáº«n Ä‘Æ°á»�ng Ä‘áº¿n báº¿n xe Miá»�n Ä�Ã´ng, trÃ¡nh cao tá»‘c 
+   Ä‘Ã¡p Ã¡n: <nexa_21>(destination="báº¿n xe Miá»�n Ä�Ã´ng", avoid="highways")<nexa_end><|im_end|> 
+   output: <nexa_21>(destination="báº¿n xe Miá»�n Ä�Ã´ng", avoid="c")<nexa_end>
+Má»Ÿ nháº¡c qua Bluetooth 
+   Ä‘Ã¡p Ã¡n: <nexa_20>(source="bluetooth")<nexa_end><|im_end|> 
+   output: <nexa_20>(query="streaming")<nexa_end>
+Cho sá»©c giÃ³ vá»� má»©c 0. 
+   Ä‘Ã¡p Ã¡n: <nexa_7>(level=0)<nexa_end><|im_end|> 
+   output: <nexa_7>(w=0)<nexa_end>
+HÆ°á»›ng dáº«n tÃ´i Ä‘áº¿n trung tÃ¢m thÆ°Æ¡ng máº¡i Aeon Mall. 
+   Ä‘Ã¡p Ã¡n: <nexa_21>(destination="Aeon Mall")<nexa_end><|im_end|> 
+   output: <nexa_21>(destination="trung shop")<nexa_end>
+Cho tÃ´i xem Ä‘Æ°á»�ng Ä‘i tá»›i SÃ¢n bay Cáº§n ThÆ¡. 
+   Ä‘Ã¡p Ã¡n: <nexa_21>(destination="SÃ¢n bay Cáº§n ThÆ¡")<nexa_end><|im_end|> 
+   output: <nexa_21>(destination="SÃ¢n bay")<nexa_end>
+PhÃ¡t nháº¡c tá»« USB, playlist Chill Out 
+   Ä‘Ã¡p Ã¡n: <nexa_20>(source="usb", query="Chill Out")<nexa_end><|im_end|> 
+   output: <nexa_20>(query="Chill Out")<nexa_end>
+Ä�i 100 km ná»¯a cÃ³ cáº§n náº¡p thÃªm pin khÃ´ng? 
+   Ä‘Ã¡p Ã¡n: <nexa_5>(trip_km=100.0)<nexa_end><|im_end|> 
+   output: <nexa_5>(tripkm=100.0)<nexa_end>
+Báº­t Ä‘Ã i radio lÃªn 
+   Ä‘Ã¡p Ã¡n: <nexa_20>(source="radio")<nexa_end><|im_end|> 
+   output: <nexa_20>()<nexa_end>
+GiÃºp tÃ´i Ä‘áº·t quáº¡t giÃ³ lÃªn má»©c 5 
+   Ä‘Ã¡p Ã¡n: <nexa_7>(level=5)<nexa_end><|im_end|> 
+   output: <nexa_7>(set_value=5)<nexa_end>
+Báº­t Ä‘iá»�u hÃ²a 20 Ä‘á»™ á»Ÿ gháº¿ lÃ¡i 
+   Ä‘Ã¡p Ã¡n: <nexa_6>(state="on", temperature=20, zone="driver")<nexa_end><|im_end|> 
+   output: <nexa_6>(state="on", temperature=20, zone="b")<nexa_end>
+

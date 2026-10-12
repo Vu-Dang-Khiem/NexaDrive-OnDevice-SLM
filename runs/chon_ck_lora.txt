@@ -1,0 +1,11 @@
+﻿LoRA s42 ck1208: rÃµ rÃ ng  96.5 | mÆ¡ há»“  84.3 | tá»« chá»‘i nháº§m  0.0
+LoRA s42 ck2416: rÃµ rÃ ng  97.3 | mÆ¡ há»“  90.2 | tá»« chá»‘i nháº§m  0.2
+LoRA s42 ck3624: rÃµ rÃ ng  98.0 | mÆ¡ há»“  90.2 | tá»« chá»‘i nháº§m  0.0
+  -> CHá»ŒN LoRA s42 checkpoint-3624
+
+LoRA s7 ck1208: rÃµ rÃ ng  96.1 | mÆ¡ há»“  85.3 | tá»« chá»‘i nháº§m  0.7
+LoRA s7 ck2416: rÃµ rÃ ng  98.4 | mÆ¡ há»“  89.2 | tá»« chá»‘i nháº§m  0.5
+LoRA s7 ck3624: rÃµ rÃ ng  98.4 | mÆ¡ há»“  90.2 | tá»« chá»‘i nháº§m  0.0
+  -> CHá»ŒN LoRA s7 checkpoint-2416
+
+

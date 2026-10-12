@@ -1,0 +1,21 @@
+﻿{
+  "train": 19322,
+  "theo_loai": {
+    "call": 14987,
+    "reply": 1769,
+    "ask": 2566
+  },
+  "hoi_lai_cu": 870,
+  "hoi_lai_hc_moi": 1696,
+  "hoi_lai_dai_hon_10_chu": 1753,
+  "sua_loai": {
+    "cu:quat_tat_thanh_giam": 41,
+    "cu:say_kinh_khong_mo": 7,
+    "cu:den_da_bat_yeu": 2,
+    "moi:quat_tat_thanh_giam": 73,
+    "moi:say_kinh_khong_mo": 20,
+    "moi:den_da_bat_yeu": 22,
+    "moi:on_ngoai_am_luong": 13
+  }
+}
+

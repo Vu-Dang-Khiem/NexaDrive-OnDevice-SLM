@@ -1,0 +1,3 @@
+﻿cá»©u 1665/2962 cÃ¢u cÃ¹ng khuÃ´n (ngÆ°á»¡ng 0.45, chá»‰ so cÃ¹ng hÃ m)
+  {'close_trunk': 134, 'control_window': 124, 'find_nearby': 139, 'lock_doors': 129, 'navigate_to': 146, 'operate_sunroof': 117, 'play_media': 129, 'set_ac': 117, 'set_defrost': 104, 'set_fan_speed': 135, 'set_hazard_lights': 127, 'set_headlights': 119, 'set_volume': 145}
+

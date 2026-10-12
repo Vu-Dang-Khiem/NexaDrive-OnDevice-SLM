@@ -1,0 +1,252 @@
+{
+ "ban": 2,
+ "bo": "bo_wake",
+ "nguong": 0.85,
+ "lien": 3,
+ "so_ban_ghi": 40,
+ "bat": 39,
+ "ty_le": 0.975,
+ "dat": true,
+ "chi_tiet": [
+  {
+   "tep": "w01.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w02.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w03.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w04.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w05.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w06.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w07.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 0.0,
+   "bat": false
+  },
+  {
+   "tep": "w08.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w09.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w10.wav",
+   "cau": "Hey Nexa  (nói bình thường, ngồi trước laptop)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w11.wav",
+   "cau": "Hey Nexa  (nói NHANH)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w12.wav",
+   "cau": "Hey Nexa  (nói NHANH)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w13.wav",
+   "cau": "Hey Nexa  (nói NHANH)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w14.wav",
+   "cau": "Hey Nexa  (nói NHANH)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w15.wav",
+   "cau": "Hey Nexa  (nói NHANH)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w16.wav",
+   "cau": "Hey Nexa  (nói NHANH)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w17.wav",
+   "cau": "Hey Nexa  (nói NHỎ)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w18.wav",
+   "cau": "Hey Nexa  (nói NHỎ)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w19.wav",
+   "cau": "Hey Nexa  (nói NHỎ)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w20.wav",
+   "cau": "Hey Nexa  (nói NHỎ)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w21.wav",
+   "cau": "Hey Nexa  (nói NHỎ)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w22.wav",
+   "cau": "Hey Nexa  (nói NHỎ)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w23.wav",
+   "cau": "Hey Nexa  (ngồi XA laptop ~1–1,5 m)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w24.wav",
+   "cau": "Hey Nexa  (ngồi XA laptop ~1–1,5 m)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w25.wav",
+   "cau": "Hey Nexa  (ngồi XA laptop ~1–1,5 m)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w26.wav",
+   "cau": "Hey Nexa  (ngồi XA laptop ~1–1,5 m)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w27.wav",
+   "cau": "Hey Nexa  (ngồi XA laptop ~1–1,5 m)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w28.wav",
+   "cau": "Hey Nexa  (ngồi XA laptop ~1–1,5 m)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w29.wav",
+   "cau": "Hey Nexa ơi",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w30.wav",
+   "cau": "Hey Nexa ơi",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w31.wav",
+   "cau": "Hey Nexa ơi",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w32.wav",
+   "cau": "Hey Nexa ơi",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w33.wav",
+   "cau": "Hey Nexa ơi",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w34.wav",
+   "cau": "Hey Nexa ơi",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w35.wav",
+   "cau": "Hey Nexa mở cốp  (nói LIỀN, không ngừng)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w36.wav",
+   "cau": "Hey Nexa bật điều hoà  (nói LIỀN, không ngừng)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w37.wav",
+   "cau": "Hey Nexa hạ kính ghế phụ  (nói LIỀN, không ngừng)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w38.wav",
+   "cau": "Hey Nexa nóng quá  (nói LIỀN, không ngừng)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w39.wav",
+   "cau": "Hey Nexa tắt nhạc  (nói LIỀN, không ngừng)",
+   "diem_max": 1.0,
+   "bat": true
+  },
+  {
+   "tep": "w40.wav",
+   "cau": "Hey Nexa xăng còn bao nhiêu  (nói LIỀN, không ngừng)",
+   "diem_max": 1.0,
+   "bat": true
+  }
+ ]
+}

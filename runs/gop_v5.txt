@@ -1,0 +1,6 @@
+﻿tá»•ng giá»¯: 1751
+theo hÃ m Ä‘Ã­ch: {'close_trunk': 142, 'control_window': 48, 'find_nearby': 183, 'lock_doors': 190, 'navigate_to': 120, 'operate_sunroof': 95, 'play_media': 168, 'set_ac': 162, 'set_defrost': 148, 'set_fan_speed': 91, 'set_hazard_lights': 75, 'set_headlights': 156, 'set_volume': 173}
+Ä‘á»™ dÃ i: >10 chá»¯: 1705 | trung vá»‹ 15
+2 cÃ¡ch xá»­ lÃ½: 10
+Ä‘Ã£ ghi kiem_tay_50.csv: 52 cÃ¢u
+

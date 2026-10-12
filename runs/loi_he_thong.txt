@@ -1,0 +1,44 @@
+﻿
+== v5 má»›i (1.751)
+  A_on_ngoai_ma_am_luong       13
+       Tháº¿ nÃ y lÃ  láº§n Ä‘áº§u tiÃªn tÃ´i nghe Ä‘Ã i mÃ  cháº³ng hiá»ƒu gÃ¬, tiáº¿ng á»“n cá»§a xe ngoÃ i kia -> ['set_volume']
+       Ã”i trá»�i, sao hÃ´m nay xe cá»™ nhiá»�u quÃ¡, á»“n Ã o quÃ¡ chá»«ng. -> ['set_volume']
+       Giá»� tan táº§m mÃ  xe mÃ¡y cháº¡y áº§m áº§m ngoÃ i kia, chÃ¡n tháº­t. -> ['set_volume']
+  B_quat_level0                73
+       Ã”i giá»�i, tiáº¿ng quáº¡t cháº¡y to quÃ¡, á»“n Ã o quÃ¡, khÃ³ chá»‹u tháº­t. -> ['set_fan_speed']
+       Tiáº¿ng á»“n cá»§a quáº¡t to quÃ¡, khÃ´ng nghe Ä‘Æ°á»£c nháº¡c. -> ['set_fan_speed']
+       Trá»�i Æ¡i, giÃ³ Ä‘iá»�u hoÃ  thá»•i máº¡nh quÃ¡, lÃ m tui muá»‘n ngháº¹t thá»Ÿ luÃ´n. -> ['set_fan_speed']
+  C_say_kinh_khong_mo          20
+       MÆ°a giÃ³ tháº¿ nÃ y, kÃ­nh xe cá»© Æ°á»›t hoÃ i, nhÃ¬n khÃ´ng rÃµ gÃ¬ cáº£. -> ['set_defrost']
+       Náº¯ng gáº¯t quÃ¡, kÃ­nh xe nÃ³ng nhÆ° hÆ¡ lá»­a, cháº£ tháº¥y gÃ¬. -> ['set_defrost']
+       Ã”i, kÃ­nh hÃ´ng Æ°á»›t háº¿t, khÃ´ng tháº¥y Ä‘Æ°á»�ng bÃªn kia. -> ['set_defrost']
+  D_den_da_bat_ma_yeu          22
+       Ä�i ban Ä‘Ãªm tháº¿ nÃ y mÃ  Ä‘Ã¨n pha yáº¿u tháº¿ nÃ y, nguy hiá»ƒm quÃ¡. -> ['set_headlights']
+       Cháº¿t tháº­t, Ä‘Ã¨n pha nhÃ  mÃ¬nh dáº¡o nÃ y yáº¿u quÃ¡, khÃ´ng biáº¿t cÃ³ há»�ng khÃ´ng. -> ['set_headlights']
+       Ä�Ãªm tá»‘i, mÆ°a to, Ä‘Ã¨n xe sÃ¡ng lÃªn má»›i tháº¥y rÃµ Ä‘Æ°á»�ng, mÃ  cÃ¡i Ä‘Ã¨n pha kia yáº¿u quÃ¡. -> ['set_headlights']
+  E_am_luong_khong_huong      173
+       ÃŠ, tao tháº¥y nháº¡c nÃ³ to quÃ¡, mÃ y tháº¥y tháº¿ nÃ o? -> ['set_volume']
+       KhÃ¡ch vá»«a xuá»‘ng, yÃªn tÄ©nh quÃ¡, tiáº¿ng Ä‘á»™ng cÆ¡ nghe á»“n Ã o ghÃª. -> ['set_volume']
+       Ä�ang nghe Ä‘Ã i, sao hÃ´m nay nÃ³ to quÃ¡, lÃ m mÃ¬nh phÃ¢n tÃ¢m. -> ['set_volume']
+
+== há»�i láº¡i train cÅ© (879)
+  A_on_ngoai_ma_am_luong        0
+  B_quat_level0                41
+       Quáº¡t máº¡nh quÃ¡, lÃ m cho láº¡nh. -> ['set_fan_speed']
+       Quáº¡t giÃ³ to quÃ¡, á»“n Ã o -> ['set_fan_speed']
+       Quáº¡t giÃ³ lÃ m á»“n quÃ¡, lÃ m phiá»�n mÃ¬nh -> ['set_fan_speed']
+  C_say_kinh_khong_mo           7
+       GiÃ³ máº¡nh quÃ¡, lÃ m máº¯t cay. -> ['set_defrost']
+       GiÃ³ máº¡nh quÃ¡, nhÆ° bá»‹ phun nÆ°á»›c. -> ['set_defrost']
+       LÃ m sao Ä‘á»ƒ nhÃ¬n rÃµ hÆ¡n -> ['set_defrost']
+  D_den_da_bat_ma_yeu           2
+       Sao Ä‘Ã¨n pha láº¡i má»� nhÆ° váº­y, cáº§n kiá»ƒm tra láº¡i ngay -> ['set_headlights']
+       Ä�Ã¨n pha cá»§a xe mÃ¬nh yáº¿u quÃ¡ -> ['set_headlights']
+  E_am_luong_khong_huong       80
+       QuÃ¡ á»“n Ã o, lÃ m sao mÃ  táº­p trung -> ['set_volume']
+       Trá»�i Æ¡i, sao mÃ  á»“n quÃ¡. -> ['set_volume']
+       QuÃ¡ á»“n, lÃ m sao mÃ  nghÄ© Ä‘Æ°á»£c -> ['set_volume']
+
+quáº¡t giÃ³ v5 theo level: {0: 73, 1: 1, 2: 0, 3: 3, 4: 8, 5: 0, 6: 0, 7: 7}
+quáº¡t giÃ³ train cÅ© theo level: {0: 41, 1: 0, 2: 0, 3: 33, 4: 3, 5: 1, 6: 0, 7: 2}
+

@@ -1,0 +1,55 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# node / web
+web/node_modules/
+web/dist/
+web/.vite/
+*.tsbuildinfo
+
+# dữ liệu & model (sinh lại được / tải lại được, không đưa vào git)
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+# ngoại lệ: tập test / hiệu chỉnh ĐÓNG BĂNG (nhỏ, để người khác chấm lại được)
+!data/processed/final/
+data/processed/final/*
+!data/processed/final/test_*.jsonl
+!data/processed/final/hieu_chinh_v6.jsonl
+models/*
+!models/**/.gitkeep
+*.gguf
+*.safetensors
+*.onnx
+*.tflite
+*.joblib
+eval/report/*
+!eval/report/.gitkeep
+# âm thanh: dữ liệu wake-word (FLEURS / ACAV, vài file > 100 MB) và bản ghi giọng người thật
+data/wake/
+data/stt/
+*.wav
+*.npz
+*.npy
+*.tar.gz
+
+# bí mật
+.env
+.env.*
+!.env.example
+
+# khác
+.DS_Store
+*.log
+.claude/
+*.pptx
+~$*
+Agent hệ thống xe.txt
+# nhật ký làm việc riêng — chỉ giữ local
+PLAN.md

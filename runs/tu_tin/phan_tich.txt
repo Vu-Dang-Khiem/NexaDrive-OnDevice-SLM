@@ -1,0 +1,55 @@
+﻿
+================ val_vi: 3006 cÃ¢u ================
+ro_rang        n=1546 Ä‘Ãºng  97.3%  {'dung': 1505, 'sai_tham_so': 31, 'sai_ham': 8, 'hoi_lai_thua': 2}
+mo_ho          n= 142 Ä‘Ãºng  92.3%  {'dung': 131, 'sai_ham': 9, 'tu_choi_nham': 2}
+ngoai_pham_vi  n=1318 Ä‘Ãºng  99.5%  {'dung': 1311, 'goi_bua': 7}
+
+XÃ¡c suáº¥t token hÃ m á»Ÿ bÆ°á»›c 1 (chá»‰ cÃ¡c cÃ¢u model Gá»ŒI HÃ€M THáº¬T ngay bÆ°á»›c 1):
+  gá»�i bá»«a (Ä‘Ã¡p Ã¡n lÃ  tá»« chá»‘i)  : n=   6 min=0.680 p10=0.680 p25=0.870 median=0.977 p75=0.993
+  Ä‘Ãºng, cÃ¢u rÃµ rÃ ng            : n=1505 min=0.550 p10=0.985 p25=0.990 median=0.993 p75=0.994
+  sai khÃ¡c, cÃ¢u rÃµ rÃ ng        : n=  39 min=0.496 p10=0.794 p25=0.990 median=0.992 p75=0.994
+  cÃ¢u mÆ¡ há»“ mÃ  gá»�i luÃ´n        : -
+
+QuÃ©t ngÆ°á»¡ng (chá»‰ cháº·n khi bÆ°á»›c 1 lÃ  token hÃ m tháº­t vÃ  p < ngÆ°á»¡ng):
+  ngÆ°á»¡ng | gá»�i bá»«a bá»‹ cháº·n | cÃ¢u rÃµ rÃ ng Ä�ÃšNG bá»‹ cháº·n (máº¥t) | cÃ¢u rÃµ rÃ ng SAI bá»‹ cháº·n
+   0.50  |   0/  6          |    0/1505                  |   1/ 39
+   0.60  |   0/  6          |    2/1505                  |   3/ 39
+   0.70  |   1/  6          |    6/1505                  |   3/ 39
+   0.80  |   1/  6          |    8/1505                  |   4/ 39
+   0.90  |   2/  6          |   13/1505                  |   5/ 39
+   0.95  |   3/  6          |   26/1505                  |   5/ 39
+   0.99  |   4/  6          |  375/1505                  |   9/ 39
+
+CÃ¡c cÃ¢u gá»�i bá»«a (p bÆ°á»›c 1, top-3):
+  p=0.680 | Báº¡n cÃ³ thá»ƒ cho tÃ´i biáº¿t tÃ¬nh tráº¡ng Ä‘á»™ng cÆ¡ khÃ´ng? | <nexa_3>:0.68, <nexa_24>:0.28, <nexa_0>:0.00
+  p=0.870 | Chá»‰nh Ä‘á»™ cao cá»§a kÃ­nh cháº¯n giÃ³. | <nexa_15>:0.87, <nexa_8>:0.07, <nexa_24>:0.02
+  p=0.922 | Xe cÃ³ cáº§n báº£o dÆ°á»¡ng khÃ´ng? | <nexa_3>:0.92, <nexa_0>:0.02, <nexa_24>:0.01
+  p=0.977 | HÃ£y chá»‰nh kÃ­nh lÃªn. | <nexa_15>:0.98, <nexa_8>:0.01, <nexa_24>:0.00
+  p=0.993 | Ä‘Ã³ng cá»‘p trÆ°á»›c há»™ | <nexa_12>:0.99, <nexa_11>:0.00, <nexa_15>:0.00
+  p=0.994 | Ä‘Ã³ng cá»‘p trÆ°á»›c lÃªn há»™ tÃ´i | <nexa_12>:0.99, <nexa_11>:0.00, <nexa_15>:0.00
+
+================ dev_vi_2: 30 cÃ¢u ================
+ro_rang        n=  10 Ä‘Ãºng  80.0%  {'dung': 8, 'sai_tham_so': 2}
+ngoai_pham_vi  n=  20 Ä‘Ãºng  85.0%  {'dung': 17, 'goi_bua': 3}
+
+XÃ¡c suáº¥t token hÃ m á»Ÿ bÆ°á»›c 1 (chá»‰ cÃ¡c cÃ¢u model Gá»ŒI HÃ€M THáº¬T ngay bÆ°á»›c 1):
+  gá»�i bá»«a (Ä‘Ã¡p Ã¡n lÃ  tá»« chá»‘i)  : n=   3 min=0.562 p10=0.562 p25=0.562 median=0.810 p75=0.985
+  Ä‘Ãºng, cÃ¢u rÃµ rÃ ng            : n=   8 min=0.925 p10=0.925 p25=0.987 median=0.993 p75=0.994
+  sai khÃ¡c, cÃ¢u rÃµ rÃ ng        : n=   2 min=0.993 p10=0.993 p25=0.993 median=0.993 p75=0.993
+  cÃ¢u mÆ¡ há»“ mÃ  gá»�i luÃ´n        : -
+
+QuÃ©t ngÆ°á»¡ng (chá»‰ cháº·n khi bÆ°á»›c 1 lÃ  token hÃ m tháº­t vÃ  p < ngÆ°á»¡ng):
+  ngÆ°á»¡ng | gá»�i bá»«a bá»‹ cháº·n | cÃ¢u rÃµ rÃ ng Ä�ÃšNG bá»‹ cháº·n (máº¥t) | cÃ¢u rÃµ rÃ ng SAI bá»‹ cháº·n
+   0.50  |   0/  3          |    0/   8                  |   0/  2
+   0.60  |   1/  3          |    0/   8                  |   0/  2
+   0.70  |   1/  3          |    0/   8                  |   0/  2
+   0.80  |   1/  3          |    0/   8                  |   0/  2
+   0.90  |   2/  3          |    0/   8                  |   0/  2
+   0.95  |   2/  3          |    1/   8                  |   0/  2
+   0.99  |   3/  3          |    3/   8                  |   0/  2
+
+CÃ¡c cÃ¢u gá»�i bá»«a (p bÆ°á»›c 1, top-3):
+  p=0.562 | Xe vÃ o bÃ£i háº¹p mÃ  gÆ°Æ¡ng bÃªn pháº£i dá»… quáº¹t cá»™t, chá»‰nh gÆ°Æ¡ng phá»¥ xuá»‘ng th | <nexa_15>:0.56, <nexa_24>:0.30, <nexa_8>:0.02
+  p=0.810 | Ä�Ã¨n cáº£nh bÃ¡o lÃ n cá»© kÃªu liÃªn tá»¥c trÃªn Ä‘oáº¡n Ä‘Æ°á»�ng xáº¥u, táº¯t cáº£nh bÃ¡o lá»‡c | <nexa_18>:0.81, <nexa_24>:0.14, <nexa_21>:0.01
+  p=0.985 | MÃ¬nh chá»Ÿ tráº» con phÃ­a sau nÃªn hÆ¡i lo cá»­a má»Ÿ nháº§m, báº­t khÃ³a tráº» em cá»­a  | <nexa_10>:0.99, <nexa_9>:0.00, <nexa_11>:0.00
+

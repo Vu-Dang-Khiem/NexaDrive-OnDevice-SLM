@@ -1,0 +1,47 @@
+﻿
+===== hạt giống s42  (v6 vs v5) =====
+(1) CHÍNH — câu ngắn + cách gọi (A+B, 120):  89.2 vs  75.8 (mới hơn 17, cũ hơn 1, p=0.0001)
+      v6_A:  91.7 vs  80.6 (mới hơn 8, cũ hơn 0, p=0.0078)
+      v6_B:  85.4 vs  68.8 (mới hơn 9, cũ hơn 1, p=0.0215)
+(2) BỘ NHỚ — hai lượt (D, 60): v6 có lượt trước 60.0 | v5 không nhớ 23.3 | v5 + luật 23.3
+      so chính v6 vs v5+luật:  60.0 vs  23.3 (mới hơn 24, cũ hơn 2, p=0.0000)
+      doi_chieu      v6  80.0 | v5+luật   6.7 | v5 không nhớ   6.7
+      them_nua       v6  30.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      bo_phan_khac   v6  60.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      lenh_moi       v6  70.0 | v5+luật  70.0 | v5 không nhớ  70.0
+      ngoai_pham_vi  v6  50.0 | v5+luật  60.0 | v5 không nhớ  60.0
+(3) Tính năng mới (C, 30): v6 83.3 (v5 chỉ tham khảo: 10.0 )
+(4) KHÔNG TỤT trên test cũ:
+      test_vi_sach_v2:ro_rang           78.4 vs  78.4 (mới hơn 2, cũ hơn 2, p=1.0000)
+      test_vi_sach_v2:mo_ho             87.2 vs  76.9 (mới hơn 4, cũ hơn 0, p=0.1250)
+      test_vi_sach_v2:ngoai_pham_vi     78.6 vs  84.6 (mới hơn 2, cũ hơn 9, p=0.0654)
+      test_vi_bo_sung:all               64.3 vs  60.7 (mới hơn 1, cũ hơn 0, p=1.0000)
+      test_vi_mo_ho_4:all               82.2 vs  78.3 (mới hơn 8, cũ hơn 3, p=0.2266)
+(5) Nhiễu (E, 104):  65.4 vs  31.7 (mới hơn 36, cũ hơn 1, p=0.0000)
+
+===== hạt giống s7  (v6 vs v5) =====
+(1) CHÍNH — câu ngắn + cách gọi (A+B, 120):  88.3 vs  76.7 (mới hơn 17, cũ hơn 3, p=0.0026)
+      v6_A:  91.7 vs  83.3 (mới hơn 8, cũ hơn 2, p=0.1094)
+      v6_B:  83.3 vs  66.7 (mới hơn 9, cũ hơn 1, p=0.0215)
+(2) BỘ NHỚ — hai lượt (D, 60): v6 có lượt trước 61.7 | v5 không nhớ 23.3 | v5 + luật 23.3
+      so chính v6 vs v5+luật:  61.7 vs  23.3 (mới hơn 26, cũ hơn 3, p=0.0000)
+      doi_chieu      v6  86.7 | v5+luật   6.7 | v5 không nhớ   6.7
+      them_nua       v6  40.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      bo_phan_khac   v6  60.0 | v5+luật   0.0 | v5 không nhớ   0.0
+      lenh_moi       v6  70.0 | v5+luật  70.0 | v5 không nhớ  70.0
+      ngoai_pham_vi  v6  40.0 | v5+luật  60.0 | v5 không nhớ  60.0
+(3) Tính năng mới (C, 30): v6 83.3 (v5 chỉ tham khảo: 6.7 )
+(4) KHÔNG TỤT trên test cũ:
+      test_vi_sach_v2:ro_rang           77.0 vs  78.4 (mới hơn 2, cũ hơn 3, p=1.0000)
+      test_vi_sach_v2:mo_ho             79.5 vs  74.4 (mới hơn 2, cũ hơn 0, p=0.5000)
+      test_vi_sach_v2:ngoai_pham_vi     67.5 vs  82.9 (mới hơn 0, cũ hơn 18, p=0.0000)
+      test_vi_bo_sung:all               64.3 vs  57.1 (mới hơn 2, cũ hơn 0, p=0.5000)
+      test_vi_mo_ho_4:all               79.1 vs  78.3 (mới hơn 7, cũ hơn 6, p=1.0000)
+(5) Nhiễu (E, 104):  63.5 vs  31.7 (mới hơn 34, cũ hơn 1, p=0.0000)
+
+===== (4) trung bình 2 hạt giống (ngưỡng: không thấp hơn v5 quá 3 điểm ở rõ ràng / ngoài pv / mo_ho_4) =====
+  test_vi_sach_v2:ro_rang          v6  77.7 | v5  78.4 | chênh  -0.7
+  test_vi_sach_v2:mo_ho            v6  83.3 | v5  75.7 | chênh  +7.7
+  test_vi_sach_v2:ngoai_pham_vi    v6  73.0 | v5  83.8 | chênh -10.7
+  test_vi_bo_sung:all              v6  64.3 | v5  58.9 | chênh  +5.4
+  test_vi_mo_ho_4:all              v6  80.7 | v5  78.3 | chênh  +2.4

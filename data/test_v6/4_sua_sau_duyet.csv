@@ -1,0 +1,8 @@
+id,cot,nhan_moi,ly_do
+8,nhan,set_fan_speed(delta=-1),"người dùng đánh SAI (quạt tương đối); bước không số = 1 mức (người dùng chốt)"
+39,nhan,set_fan_speed(delta=1),"hệ quả quy ước quạt delta (schema thêm SAU khi người dùng duyệt); không số = 1 mức"
+205,nhan_luot_1,set_fan_speed(delta=-1),"người dùng đánh SAI: 'chỉ cần giảm quạt gió 1 mức'"
+205,nhan,set_fan_speed(delta=-1),"người dùng đánh SAI: 'chỉnh quạt gió xuống 1 mức không phải xuống hẳn mức 1'"
+208,nhan_luot_1,set_fan_speed(delta=2),"người dùng đánh SAI: 'tăng thêm 2 mức'"
+208,nhan,set_fan_speed(delta=-2),"người dùng đánh SAI: 'phải trừ lại đi 2 mức'"
+209,nhan,set_fan_speed(delta=2),"hệ quả quy ước quạt delta: 'lên thêm hai nấc nữa'"

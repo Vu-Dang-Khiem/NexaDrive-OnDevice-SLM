@@ -1,0 +1,11 @@
+﻿Full lr2e-5 s42 ck1208: rÃµ rÃ ng  45.7 | mÆ¡ há»“  23.5 | tá»« chá»‘i nháº§m  0.3
+Full lr2e-5 s42 ck2416: rÃµ rÃ ng  93.0 | mÆ¡ há»“  56.9 | tá»« chá»‘i nháº§m  0.2
+Full lr2e-5 s42 ck3624: rÃµ rÃ ng  93.0 | mÆ¡ há»“  59.8 | tá»« chá»‘i nháº§m  0.2
+  -> CHá»ŒN Full lr2e-5 s42 checkpoint-2416
+
+Full lr2e-5 s7 ck1208: rÃµ rÃ ng  53.5 | mÆ¡ há»“  26.5 | tá»« chá»‘i nháº§m  0.5
+Full lr2e-5 s7 ck2416: rÃµ rÃ ng  92.2 | mÆ¡ há»“  72.5 | tá»« chá»‘i nháº§m  0.3
+Full lr2e-5 s7 ck3624: rÃµ rÃ ng  93.4 | mÆ¡ há»“  71.6 | tá»« chá»‘i nháº§m  0.2
+  -> CHá»ŒN Full lr2e-5 s7 checkpoint-3624
+
+

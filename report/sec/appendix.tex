@@ -1,0 +1,298 @@
+\section{Function Inventory}
+\label{app:functions}
+
+Table~\ref{tab:fullfunctions} lists the 24 functions with their arguments (\code{?} optional). Read-only functions (R) are
+never clarified; sensitive functions (S) are never proposed from an implicit request and require confirmation from the wake
+word.
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{@{}rlp{10.4cm}c@{}}
+\toprule
+Token & Function & Arguments & \\
+\midrule
+0 & \code{get\_fuel\_level} & -- & R \\
+1 & \code{get\_battery\_range} & -- & R \\
+2 & \code{get\_tire\_pressure} & \code{wheel?} $\in$ \{front\_left, front\_right, rear\_left, rear\_right\} & R \\
+3 & \code{get\_vehicle\_status} & -- & R \\
+4 & \code{get\_odometer} & \code{unit?} $\in$ \{km, mi\} & R \\
+5 & \code{get\_range\_estimate} & \code{trip\_km?} $\ge 0$ & R \\
+6 & \code{set\_ac} & \code{state} $\in$ \{on, off\}, \code{temperature?} 16--30, \code{zone?} $\in$ \{driver, passenger, rear, all\},
+\code{delta?} $-14$..14, \code{mode?} $\in$ \{cool, heat, auto\} & \\
+7 & \code{set\_fan\_speed} & \code{level?} 0--7 or \code{delta?} $-7$..7 (exactly one) & \\
+8 & \code{set\_defrost} & \code{state} $\in$ \{on, off\}, \code{zone?} $\in$ \{front, rear, both\} & \\
+9 & \code{lock\_doors} & -- & \\
+10 & \code{unlock\_doors} & \code{door?} $\in$ \{driver, passenger, rear\_left, rear\_right, all\} & S \\
+11 & \code{open\_trunk} & -- & S \\
+12 & \code{close\_trunk} & -- & \\
+13 & \code{open\_charge\_port} & -- & S \\
+14 & \code{open\_fuel\_flap} & -- & S \\
+15 & \code{control\_window} & \code{window} $\in$ \{front\_left, front\_right, rear\_left, rear\_right, front, rear, all\},
+\code{position} $\in$ \{up, down\}, \code{amount?} 0--100 (default 100) & \\
+16 & \code{operate\_sunroof} & \code{action} $\in$ \{open, close, tilt\}, \code{intensity?} 0--100 & \\
+17 & \code{set\_headlights} & \code{mode} $\in$ \{off, auto, low\_beam, high\_beam, parking\} & \\
+18 & \code{set\_hazard\_lights} & \code{state} $\in$ \{on, off\} & \\
+19 & \code{set\_volume} & \code{set\_value?} 0--40 or \code{delta?} $-40$..40 (exactly one) & \\
+20 & \code{play\_media} & \code{source?} $\in$ \{radio, bluetooth, usb, streaming\}, \code{query?} & \\
+21 & \code{navigate\_to} & \code{destination}, \code{avoid?} $\in$ \{none, tolls, highways\} & \\
+22 & \code{find\_nearby} & \code{category} $\in$ \{gas\_station, charging\_station, parking, restaurant, hospital, atm, coffee\},
+\code{radius\_km?} 0.5--25 & \\
+23 & \code{get\_weather} & \code{location?}, \code{day?} 0--6 & R \\
+24 & \code{irrelevant\_function} & -- (refuse) & \\
+\bottomrule
+\end{tabular}
+\caption{Function signatures of the final schema (v6). \code{delta}/\code{mode} of \code{set\_ac}, \code{delta} of
+\code{set\_fan\_speed} and the \code{front}/\code{rear} windows were added in round v6, appended at the end of the argument list so
+that older positional calls keep their meaning.}
+\label{tab:fullfunctions}
+\end{table*}
+
+\section{Prompts and Outputs}
+\label{app:prompts}
+
+\paragraph{Call prompt (turn 1).} The system message reads \textit{Bạn là tác tử điều khiển xe ô tô.} (``You are an agent that
+controls a car.'').
+\begin{Verbatim}[fontsize=\small]
+<|im_start|>system
+Bạn là tác tử điều khiển xe ô tô.<|im_end|>
+<|im_start|>user
+Bật điều hòa 22 độ ghế lái<|im_end|>
+<|im_start|>assistant
+\end{Verbatim}
+Training target (in most examples it ends here; 7.1\% additionally continue with a function description after
+\tok{nexa\_end}, which is never used at inference):
+\begin{Verbatim}[fontsize=\small]
+<nexa_6>(state="on", temperature=22,
+  zone="driver")<nexa_end>
+\end{Verbatim}
+Optional continuation: \code{Mô tả hàm: Bật hoặc tắt điều hoà, \ldots} (``function description: turn the AC on or off\ldots'').
+
+\paragraph{Two-turn prompt (v6 on).} The user turn starts with the last executed call; read-only calls are not carried over.
+\begin{Verbatim}[fontsize=\small]
+Lượt trước: <nexa_15>(window="front_right",
+  position="down", amount=100)
+Bên trái phía trước cũng vậy luôn nha.
+\end{Verbatim}
+(``Previous turn: lower front-right window. Do the same for the front left.'') $\rightarrow$
+\begin{Verbatim}[fontsize=\small]
+<nexa_15>(window="front_left",
+  position="down", amount=100)
+\end{Verbatim}
+
+\paragraph{Clarification and refusal.}
+\vi{Trong xe bí quá}{it is stuffy in the car} $\rightarrow$ two proposals separated by a semicolon, rendered as ``Turn on the AC
+or lower the windows?'':
+\begin{Verbatim}[fontsize=\small]
+<nexa_ask><nexa_6>(state="on");
+<nexa_15>(window="all",
+  position="down")<nexa_end>
+\end{Verbatim}
+\vi{Bạn có thể giúp tôi sửa xe được không}{can you fix my car} $\rightarrow$ \tok{nexa\_24}\code{()}\tok{nexa\_end}.
+
+\paragraph{Answer prompt (turn 2).} The call is followed by a \code{tool} turn holding the JSON result; the target is a
+Vietnamese sentence written by the teacher that may only use numbers present in the result.
+
+\paragraph{Schema-in-prompt baseline.} The baseline prompt (2,156 tokens) contains the descriptions and arguments of the 23
+functions, the three allowed JSON actions (\code{call}, \code{clarify}, \code{refuse}), the same data policy as the training data
+(no clarification for read-only functions, no proposal of sensitive functions, only stated arguments) and three examples that
+do not occur in any test set. Outputs are converted to the functional format; invalid JSON or unknown functions are scored as
+unparseable.
+
+\section{Data Rounds in Detail}
+\label{app:rounds}
+
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrp{8.0cm}ccc@{}}
+\toprule
+Config.\ & Train & Change (diagnosis from training statistics or validation) & Clear & Amb. & OOS \\
+\midrule
+R1 & 15,942 & pool of 27k teacher samples, 300 per function, 1:1 refusals & 70.3$^{1}$ & 59.0$^{1}$ & 63.2$^{1}$ \\
+R2 & 16,080 & synonyms (\code{tu\_dong\_nghia}) for 15 functions, 1,667 imperative refusals, jury-filtered clarifications,
+situation guidance for 6 thin functions & 75.0 (4.0) & 65.4 (12.8) & 61.1 (7.7) \\
+R3 & 16,010 & code fixes: fuel range, volume target, window direction, duplicate labels & 76.3 (1.3) & 66.7 (5.1) & 57.2 (5.1) \\
++desc & 16,010 & function description appended to targets (Octopus~v2) & 79.7 (0.0) & 70.5 (2.6) & 68.0 (11.1) \\
++1k & 28,341 & up to 1,000 samples per function & 75.7 (2.7) & 65.4 (2.6) & 69.2 (1.7) \\
+R4-repl. & 15,994 & imperative refusals replaced by 1,651 story-like refusals (rejected) & 75.7 (2.7) & 65.4 (2.6) & 58.6 (19.7) \\
+R4-add & 17,661 & story-like refusals added (rejected) & 75.7 (0.0) & 73.1 (2.6) & 59.4 (0.8) \\
+Contrastive & 17,635 & R4-repl.\ + 1,641 story-like calls & 78.4 (5.4) & 69.2 (10.3) & 74.8 (7.7) \\
+Combined & 29,966 & contrastive + 1k/function + descriptions & 78.3 (2.7) & 62.8 (2.6) & 73.0 (0.9) \\
+v5 (full) & 19,322 & contrastive + 1,696 story-like clarifications; fan convention fixed & 79.1 (1.3) & 76.9 & 75.6 (6.0) \\
+v5 (LoRA) & 19,322 & same data, LoRA & 79.1 (1.3) & 76.9 & 83.3 (2.5) \\
+v6.1 (LoRA) & 33,523 & see \S\ref{sec:v6} & 78.4 (5.4) & 75.7 (2.5) & 77.3 (11.1) \\
+\bottomrule
+\end{tabular}
+\caption{All configurations trained, clean test, mean of two seeds with the spread between seeds in parentheses ($^{1}$one
+seed). Full fine-tuning unless marked. R4 variants were rejected because they refused 4--8 of 10 doable story-like development
+requests.}
+\label{tab:allrounds}
+\end{table*}
+
+Table~\ref{tab:allrounds} lists every configuration. Further details:
+\begin{itemize}
+  \item \textbf{Contamination}: after R1, 43 of the original 296 test items overlapped with generated data (66 after later
+  rounds and seed examples were included); on the overlapping items R1 scored 18 points higher on clear commands than on the
+  rest. Only the clean 230 items are reported. Two of our own seed examples in the schema had been written from memory of test
+  items; an automated test now blocks any overlap between seed examples and test sets.
+  \item \textbf{Judge failures we observed}: Llama demanding optional arguments; Qwen rejecting hard refusals that sound
+  close to real functions (``recirculate air'', ``open the front trunk''), because the judging prompt listed only function
+  \emph{groups}---fixed by giving exact signatures and a calibration gate (hard refusals kept 22/28 $\rightarrow$ 28/28);
+  Qwen accepting nearly every clarification.
+  \item \textbf{Teacher drift during generation}: asked for complaints about the fan, the teacher wrote complaints about heat
+  (only 14\% of fan sentences kept their target function in R2). Situation guidance per function (``what to write'' and ``what
+  belongs to another function'', without example sentences) raised this to 83\% in the next generation.
+  \item \textbf{Near-duplicate filtering at scale}: a word-overlap threshold chosen on 64 sentences discarded 2,962 of 4,700 v5
+  sentences when applied across all functions; re-applying it within each function only (threshold 0.45) recovered 1,665.
+  \item \textbf{Conventions decided during labeling}: a complaint about cold \emph{with} the AC mentioned means turning it off,
+  without it means heating; ``volume to $N$'' sets the value, ``volume up by $N$'' changes it; strong or noisy airflow means fan
+  level 2 rather than off. Each convention was applied to training data by code and to test labels before the corresponding
+  test was frozen.
+\end{itemize}
+
+\section{Per-Seed Results}
+\label{app:seeds}
+
+\begin{table}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+& \multicolumn{2}{c}{Seed 42} & \multicolumn{2}{c}{Seed 7} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+v6.1 vs.\ 72B & v6.1 / 72B & $p$ & v6.1 / 72B & $p$ \\
+\midrule
+Clear (74) & 81.1 / 83.8 & 0.77 & 75.7 / 83.8 & 0.15 \\
+Ambiguous (39) & 74.4 / 56.4 & 0.065 & 76.9 / 56.4 & 0.039 \\
+Out-of-scope (117) & 82.9 / 94.9 & 0.001 & 71.8 / 94.9 & $<$0.001 \\
+Supplement (28) & 57.1 / 39.3 & 0.27 & 60.7 / 39.3 & 0.18 \\
+Ambig-4 (129) & 79.8 / 70.5 & 0.065 & 78.3 / 70.5 & 0.14 \\
+\midrule
+v6.1 vs.\ v5 & v6.1 / v5 & $p$ & v6.1 / v5 & $p$ \\
+\midrule
+Short + paraphr.\ (120) & 88.3 / 75.8 & 0.0007 & 87.5 / 76.7 & 0.007 \\
+Two-turn (60)$^{a}$ & 66.7 / 23.3 & $<$0.001 & 58.3 / 23.3 & $<$0.001 \\
+Clear (74) & 81.1 / 78.4 & 0.69 & 75.7 / 78.4 & 0.69 \\
+Out-of-scope (117) & 82.9 / 84.6 & 0.73 & 71.8 / 82.9 & 0.007 \\
+Ambig-4 (129) & 79.8 / 78.3 & 0.79 & 78.3 / 78.3 & 1.00 \\
+Typos (104) & 60.6 / 31.7 & $<$0.001 & 66.3 / 31.7 & $<$0.001 \\
+\bottomrule
+\end{tabular}}
+\caption{Exact McNemar tests per seed (unquantized, no threshold). $^{a}$v5 with rule-based memory.}
+\label{tab:seeds}
+\end{table}
+
+Table~\ref{tab:seeds} gives the per-seed comparisons behind \S\ref{sec:main} and \S\ref{sec:v6}. With the threshold 0.85, the
+v6.1 vs.\ v5 comparison on out-of-scope was 85.5 vs.\ 88.9 ($p=0.29$) and 78.6 vs.\ 87.2 ($p=0.013$), so the threshold did not
+close the gap. A risk--coverage analysis over all thresholds on the clean test showed the same: at $\le$6\% over-triggering, v5
+executes 70.9\% of clear commands immediately and v6.1 only 18.2\% (mean of seeds), whereas over \emph{all} test sets, including
+short, two-turn and noisy commands, the area under the risk--coverage curve favors v6.1 (19.6 vs.\ 24.7, lower is better).
+
+\section{Runtime Details}
+\label{app:runtime}
+
+\begin{itemize}
+  \item \textbf{Normalization} (\code{serve/chuan\_hoa.py}): collapse whitespace; capitalize the first letter; collapse a
+  repeated final consonant (\textit{cốpp} $\rightarrow$ \textit{cốp}; Vietnamese has no double final consonants) and letters
+  repeated three or more times; lower-case sentences that are at least 80\% capitals. Digits are untouched.
+  \item \textbf{Speech normalization}: spoken numbers to digits, including colloquial two-digit forms (\textit{hai hai} = 22,
+  \textit{hai lăm} = 25) next to a unit; \textit{không} (``zero''/``not'') becomes 0 only after ``level'' or ``number'';
+  hundreds/thousands without a preceding digit are kept as words when not followed by a unit (\textit{bà Triệu} is a street).
+  \item \textbf{Relative conventions}: temperature $\pm2$\,°C, fan $\pm1$, volume $\pm3$ when no number is given; ``high
+  beam'' only when stated; a number directly before ``window(s)'' is a count, not a percentage. When a relative command does not
+  change the value because a limit is reached, the answer says so (``the fan is already off'').
+  \item \textbf{Multi-command connectors}: \textit{xong, xong đó, xong rồi, xong thì, sau đó, tiếp theo, tiếp đó, với cả,
+  rồi thì}, and \textit{, rồi}; each segment must have at least two words; segments are processed in order, calls and state
+  updates are merged into one answer, and processing stops at the first clarification, which also lists the remaining segments.
+  \item \textbf{Social replies}: short greetings, thanks, farewells, compliments and questions about the assistant's name or
+  abilities ($\le$5 words, no control verb) get a fixed friendly reply without calling the model; other refusals get a neutral
+  apology.
+  \item \textbf{Pending call}: after a clarification, ``yes''-type answers execute the stored call, ``no'' cancels it, and any
+  other sentence cancels it and is processed as a new request; with two proposals the driver must say ``the first'' or ``the
+  second''.
+\end{itemize}
+
+\section{Hyperparameters and Compute}
+\label{app:compute}
+
+\begin{table}[t]
+\centering\footnotesize
+\begin{tabular}{@{}lp{4.1cm}@{}}
+\toprule
+Item & Value \\
+\midrule
+Student & Qwen2.5-1.5B-Instruct \\
+Teacher / judges & Qwen2.5-72B-Instruct-AWQ, Llama-3.3-70B-AWQ \\
+Optimizer & AdamW, lr $5\times10^{-5}$, 10 warm-up, linear \\
+Epochs / batch / max len & 3 / 16 (effective) / 256 \\
+LoRA & r 16, $\alpha$ 32, q,k,v,o,up,down + full emb./head \\
+Seeds & 42, 7 \\
+GRPO & $G$ 8, lr $10^{-5}$, $\beta_{\text{KL}}$ 0.04, $T$ 1.0, 2 epochs \\
+Quantization & llama.cpp q4\_K\_M (output layer Q6\_K) \\
+Inference & llama-server, CPU 8 threads, greedy, 64 tokens \\
+Hardware (train) & A100 40/80\,GB, L40S, L4 (Modal) \\
+Hardware (run) & laptop, Intel i5-12500H, CPU only \\
+Total GPU cost & about US\$100 \\
+\bottomrule
+\end{tabular}
+\caption{Hyperparameters and compute.}
+\label{tab:hyper}
+\end{table}
+
+Table~\ref{tab:hyper} summarizes the configuration. Two lessons from the infrastructure: files downloaded from the cloud volume
+were silently corrupted or truncated several times even when the client reported success, so every model file is checked against
+a SHA-256 computed on the server before use; and the base model's tied embeddings had to be untied before LoRA training
+(\S\ref{sec:training}), which we verified with a tiny model before the first real run.
+
+\section{Speech Details}
+\label{app:speech}
+
+\begin{table}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Set & Typed & Parakeet & Ph-small & Ph-medium & Type \\
+\midrule
+A (230, TTS) & 185 & 148 & 151 & 155 & synthetic \\
+B (40) & 30 & 15 & 21 & 18 & selection \\
+B, after fix & 30 & 16 & 22 & 19 & post-hoc \\
+C (30) & 24 & 14 & 21 & 19 & new \\
+D (30) & 18 & -- & 17 & -- & new \\
+\bottomrule
+\end{tabular}}
+\caption{End-to-end correct commands per recognizer and set (v6.1 seed 42, q4, threshold 0.80; set A row after the
+normalization fix). WER of PhoWhisper-small: A 17.9\%, B 20.2\%, C 23.0\%, D 20.9\%.}
+\label{tab:sttall}
+\end{table}
+
+Table~\ref{tab:sttall} gives all speech results. For the noise experiment, each noise segment is drawn at a random offset with a
+fixed seed and scaled so that the ratio between the power of the speech portion (silence trimmed at 35\,dB) and the noise
+matches the target SNR; the mixed audio is stored for listening. STT latency grows slightly with noise (median 1.7 $\rightarrow$
+2.0\,s).
+
+The wake-word detector uses the streaming mel-spectrogram and embedding ONNX models of openWakeWord (about 3\,ms per 80\,ms
+frame) and a scikit-learn MLP trained with \code{partial\_fit} on batches mixing our negatives (30\%), ACAV100M features (35\%)
+and Vietnamese FLEURS training features (35\%). Validation contained 27.5 minutes of held-out negative speech; $k$ and the
+threshold were chosen as the pair with at most one false alarm per hour on it and the highest detection on held-out real calls.
+The first selection rule (a single frame above threshold) could not reach one false alarm per hour on validation at any threshold;
+the $k$-consecutive rule was introduced after seeing validation results but before any test measurement. FLEURS test was used
+for both versions, so a new negative test set would be needed for further versions.
+
+\section{Error Examples}
+\label{app:errors}
+
+\begin{itemize}
+  \item \textbf{Over-triggering}: \vi{Bật xi nhan trái}{turn on the left turn signal} $\rightarrow$ hazard lights ($p=0.99$);
+  \vi{Bật khoá vi sai}{engage the differential lock} $\rightarrow$ unlock the passenger door; \vi{Hạ riêng tiếng bass xuống hai
+  nấc}{lower only the bass by two steps} $\rightarrow$ volume $-2$.
+  \item \textbf{Clarification on chit-chat}: \vi{Nhìn hàng phượng này lại nhớ hồi đi học ghê}{seeing these flame trees reminds
+  me of school} $\rightarrow$ ``open the sunroof?'' ($p=0.96$).
+  \item \textbf{Speech}: \vi{vặn nhỏ loa}{turn the speaker down} heard as \textit{vận nhỏ là}; \vi{Hủy}{cancel} heard as
+  \textit{Quỳ} (a name), which led to an over-trigger; ``26 degrees'' heard as \textit{hay xấu thủ}.
+  \item \textbf{Fixed by data}: \vi{Hạ kính ghế phụ}{lower the passenger window} $\rightarrow$ defrost (R1);
+  \vi{bật pha}{high beam on} $\rightarrow$ refused (v5), correct in v6.1; \vi{giảm nhiệt độ điều hòa}{lower the AC temperature}
+  $\rightarrow$ AC off (v5), \code{delta=-2} in v6.1.
+\end{itemize}

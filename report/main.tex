@@ -1,0 +1,61 @@
+% Nexa Drive — project report in ACL format (preprint mode). Compile with XeLaTeX, e.g.
+%   conda run -n baocao tectonic report/main.tex
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+
+\usepackage{fontspec}
+% Times-like font that covers Vietnamese diacritics (loaded by file name: Tectonic does not search system fonts by name)
+\setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic]
+% Clean monospace with full Vietnamese coverage (Inconsolata, used by the ACL template, lacks Vietnamese letters)
+\setmonofont{SourceCodePro}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold, Scale=0.85]
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyvrb}  % code blocks with a smaller font that do not shrink the following paragraph's line spacing
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit}
+\setlist{nosep,leftmargin=*}
+
+% Vietnamese example with an English gloss: \vi{...}{...}
+\newcommand{\vi}[2]{\textit{``#1''} (\textit{#2})}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\tok}[1]{\texttt{<#1>}}
+\newcommand{\pp}{\,pp}
+
+\title{Nexa Drive: An On-Device Vietnamese In-Car Assistant with\\
+Distilled Small Language Models and Functional Tokens}
+
+\author{Dang-Khiem Vu \\
+  Faculty of Information Technology \\
+  Hung Yen University of \\ Technology and Education \\
+  \texttt{khiemxhbn@gmail.com} \\\And
+  Minh-Tien Nguyen (supervisor) \\
+  Faculty of Information Technology \\
+  Hung Yen University of \\ Technology and Education}
+
+\begin{document}
+\maketitle
+
+\input{sec/abstract}
+\input{sec/intro}
+\input{sec/related}
+\input{sec/system}
+\input{sec/data}
+\input{sec/protocol}
+\input{sec/results}
+\input{sec/speech}
+\input{sec/discussion}
+\input{sec/limitations}
+
+\bibliography{references}
+
+\appendix
+\input{sec/appendix}
+
+\end{document}

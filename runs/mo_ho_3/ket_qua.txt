@@ -1,0 +1,29 @@
+﻿Bá»™ má»›i: 130 cÃ¢u mÆ¡ há»“
+
+[CHÃ�NH] s42: student  51.5% [43.0â€“60.0] | 72B  71.5% [63.3â€“78.6] | student hÆ¡n 14, 72B hÆ¡n 40, p = 0.0005
+        kiá»ƒu sai student: {'dung': 67, 'sai_tham_so': 11, 'sai_ham': 30, 'tu_choi_nham': 14, 'thieu_hoi_lai': 8}
+        kiá»ƒu sai 72B    : {'dung': 93, 'thieu_hoi_lai': 10, 'sai_ham': 17, 'sai_tham_so': 7, 'tu_choi_nham': 3}
+[CHÃ�NH] s7: student  38.5% [30.5â€“47.0] | 72B  71.5% [63.3â€“78.6] | student hÆ¡n 10, 72B hÆ¡n 53, p = 0.0000
+        kiá»ƒu sai student: {'dung': 50, 'sai_ham': 31, 'sai_tham_so': 8, 'thieu_hoi_lai': 3, 'tu_choi_nham': 38}
+        kiá»ƒu sai 72B    : {'dung': 93, 'thieu_hoi_lai': 10, 'sai_ham': 17, 'sai_tham_so': 7, 'tu_choi_nham': 3}
+
+=> Káº¾T LUáº¬N (luáº­t Ä‘Ã£ khoÃ¡): 72B HÆ N student
+
+[PHá»¤, gá»™p 197 cÃ¢u] s42: student 56.3% | 72B 64.0% | student hÆ¡n 31, 72B hÆ¡n 46, p = 0.1100
+[PHá»¤, gá»™p 197 cÃ¢u] s7: student 43.1% | 72B 64.0% | student hÆ¡n 22, 72B hÆ¡n 63, p = 0.0000
+
+Theo hÃ m (mÃ´ táº£, bá»™ má»›i): Ä‘Ãºng / 10 â€” s42 Â· s7 Â· 72B
+  mh3_close_trunk           6 Â·  4 Â·  9  / 10
+  mh3_control_window        3 Â·  2 Â·  5  / 10
+  mh3_find_nearby           5 Â·  4 Â·  8  / 10
+  mh3_lock_doors            6 Â·  4 Â·  7  / 10
+  mh3_navigate_to           8 Â·  7 Â·  7  / 10
+  mh3_operate_sunroof       4 Â·  0 Â·  9  / 10
+  mh3_play_media            6 Â·  4 Â·  6  / 10
+  mh3_set_ac                3 Â·  3 Â·  7  / 10
+  mh3_set_defrost           9 Â·  8 Â· 10  / 10
+  mh3_set_fan_speed         0 Â·  0 Â·  4  / 10
+  mh3_set_hazard_lights     5 Â·  2 Â·  6  / 10
+  mh3_set_headlights        5 Â·  6 Â·  7  / 10
+  mh3_set_volume            7 Â·  6 Â·  8  / 10
+

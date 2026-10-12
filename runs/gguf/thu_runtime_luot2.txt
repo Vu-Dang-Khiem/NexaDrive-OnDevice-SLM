@@ -1,0 +1,36 @@
+﻿== (1) Ká»ŠCH Báº¢N
+> Trong xe láº¡nh quÃ¡
+  ClarifyTurn: Báº¡n cÃ³ muá»‘n tÃ´i báº­t sÆ°á»Ÿi cho áº¥m khÃ´ng?
+> cÃ³
+  AssistantTurn: Ä�Ã£ báº­t sÆ°á»Ÿi 24 Ä‘á»™ cho áº¥m.
+> Háº¡ kÃ­nh bÃªn phá»¥ xuá»‘ng má»™t ná»­a
+  AssistantTurn: Ä�Ã£ háº¡ kÃ­nh bÃªn phá»¥ xuá»‘ng 50% nhÆ° báº¡n yÃªu cáº§u.
+> GiÃ³ lÃ¹a vÃ o xe quÃ¡
+  ClarifyTurn: Ä�ang má»Ÿ: kÃ­nh gháº¿ phá»¥ 50%. Báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+> CÃ²n bao nhiÃªu xÄƒng váº­y
+  AssistantTurn: XÄƒng cÃ²n 62%, Ä‘i Ä‘Æ°á»£c khoáº£ng 260,4 km.
+> Ká»ƒ cho tÃ´i má»™t cÃ¢u chuyá»‡n cÆ°á»�i
+  AssistantTurn: Dáº¡, cÃ¢u chuyá»‡n Ä‘Ã³ hÆ¡i dÃ i quÃ¡, cÃ³ thá»ƒ ká»ƒ láº¡i má»™t chÃºt nÃ o?
+
+== (2) Ä�á»˜ TRá»„ LÆ¯á»¢T 1 (30 cÃ¢u dev Ã— 3, ms)
+  p50 438 Â· p95 652 Â· lá»›n nháº¥t 728 (n=90)
+
+== (3) LÆ¯á»¢T 2 trÃªn 200 máº«u reply cá»§a val (tá»•ng 410)
+  lá»�i gá»�i hÃ m: 101 máº«u Â· Ä‘áº¡t lÆ°á»›i an toÃ n 88 (87.1%) Â· {'rong': 0, 'nexa': 0, 'tieng_anh': 13, 'bia_so': 0, 'dat': 88}
+  tá»« chá»‘i: 99 máº«u Â· cÃ³ dáº¥u hiá»‡u tá»« chá»‘i 99 (100.0%)
+  thá»�i gian lÆ°á»£t 2 (ms): p50 1582 Â· p95 2039
+  máº«u lá»—i:
+   [tieng_anh] Táº¯t Ä‘iá»�u hÃ²a Ä‘i, nhiá»‡t Ä‘á»™ tháº¥p quÃ¡ -> Ä�iá»�u hÃ²a Ä‘Ã£ táº¯t, nhiá»‡t Ä‘á»™ hiá»‡n táº¡i lÃ  24Â°C.
+   [tieng_anh] Nghe nháº¡c trá»±c tuyáº¿n -> Ä�ang phÃ¡t playlist Ä‘á»� xuáº¥t qua dá»‹ch vá»¥ trá»±c tuyáº¿n. Enjoy!
+   [tieng_anh] Báº­t Ä‘iá»�u hÃ²a 22 Ä‘á»™ cho táº¥t cáº£ -> Ä�iá»�u hÃ²a Ä‘Ã£ Ä‘Æ°á»£c báº­t á»Ÿ 22 Ä‘á»™ Celsius cho táº¥t cáº£ cÃ¡c vÃ¹ng.
+   [tieng_anh] Thá»�i tiáº¿t hÃ´m nay á»Ÿ Cáº§n ThÆ¡ cÃ³ nÃ³ng khÃ´ng? -> HÃ´m nay á»Ÿ Cáº§n ThÆ¡ cÃ³ mÆ°a to vá»›i nhiá»‡t Ä‘á»™ khoáº£ng 32.7Â°C vÃ  lÆ°á»£ng mÆ°a lÃ  13.9mm.
+   [tieng_anh] Thá»�i tiáº¿t hÃ´m nay á»Ÿ BÃ¬nh Thuáº­n tháº¿ nÃ o? -> HÃ´m nay á»Ÿ BÃ¬nh Thuáº­n nhiá»�u mÃ¢y vá»›i nhiá»‡t Ä‘á»™ khoáº£ng 33.5Â°C vÃ  khÃ´ng cÃ³ mÆ°a.
+   [tieng_anh] BÃ¡nh sau bÃªn trÃ¡i cÃ³ bÃ¬nh thÆ°á»�ng khÃ´ng? -> BÃ¡nh sau bÃªn trÃ¡i cá»§a báº¡n Ä‘ang cÃ³ Ã¡p suáº¥t lÃ  31.2 psi, cao hÆ¡n má»™t chÃºt so vá»›i má»©c khuyáº¿n nghá»‹ lÃ  32.0 psi.
+   [tieng_anh] Táº¯t Ä‘iá»�u hÃ²a xe láº¡i -> Ä�iá»�u hÃ²a xe Ä‘Ã£ Ä‘Æ°á»£c táº¯t. Nhiá»‡t Ä‘á»™ hiá»‡n táº¡i lÃ  24Â°C vÃ  táº¥t cáº£ cÃ¡c vÃ¹ng Ä‘á»�u Ä‘ang hoáº¡t Ä‘á»™ng.
+   [tieng_anh] Báº­t radio 99.5 -> Ä�Ã£ báº­t radio vá»›i Ä‘Ã i 99.5 cho báº¡n. Enjoy!
+   [tieng_anh] Báº­t nháº¡c cá»§a Adele lÃªn -> Ä�Ã£ báº­t nháº¡c cá»§a Adele cho báº¡n. Enjoy!
+   [tieng_anh] Thá»�i tiáº¿t ngÃ y mai á»Ÿ Huáº¿ cÃ³ mÆ°a khÃ´ng? -> Thá»�i tiáº¿t ngÃ y mai á»Ÿ Huáº¿ sáº½ cÃ³ mÆ°a to, vá»›i nhiá»‡t Ä‘á»™ khoáº£ng 19.1Â°C vÃ  lÆ°á»£ng mÆ°a dá»± kiáº¿n lÃ  11.0mm.
+   [tieng_anh] Má»Ÿ playlist yÃªu thÃ­ch -> Ä�Ã£ má»Ÿ playlist yÃªu thÃ­ch cho báº¡n. Enjoy!
+   [tieng_anh] BÃ¬nh xÄƒng cÃ²n Ä‘á»§ Ä‘á»ƒ Ä‘i bao xa? -> BÃ¬nh xÄƒng hiá»‡n cÃ²n 65% vÃ  cÃ³ thá»ƒ Ä‘i Ä‘Æ°á»£c khoáº£ng 273 km ná»¯a. KhÃ´ng cáº§n pháº£i refuel ngay láº­p tá»©c Ä‘Ã¢u nhÃ©!
+   [tieng_anh] Hai ngÃ y ná»¯a á»Ÿ Ä�Ã  Láº¡t ra sao? -> HÃ´m nay á»Ÿ Ä�Ã  Láº¡t sáº½ cÃ³ mÆ°a nháº¹ vá»›i nhiá»‡t Ä‘á»™ khoáº£ng 29.3Â°C vÃ  lÆ°á»£ng mÆ°a lÃ  13.7mm.
+

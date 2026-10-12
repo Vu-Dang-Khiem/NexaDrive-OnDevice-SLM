@@ -1,0 +1,18 @@
+﻿sá»‘ dÃ²ng: 130
+  6 | Ä�Æ°á»�ng thÃ¬ váº¯ng tanh mÃ  láº¡i khÃ´ng cÃ³ Ä‘Ã¨n Ä‘Æ°á»�ng nhÃ¬n khÃ´ng tháº¥y gÃ¬ cáº£.
+      ask: set_headlights(mode="low_beam") | Suy ra nhu cáº§u nhÃ¬n xa hÆ¡n trÃªn Ä‘Æ°á»�ng váº¯ng khÃ´ng cÃ³ Ä‘Ã¨n.
+ 14 | Ngá»“i trong nÃ y láº¡nh quÃ¡, em ná»•i háº¿t da gÃ  rá»“i.
+      ask: set_ac(state="on") | 
+ 59 | Háº¯t xÃ¬ suá»‘t tá»« lÃºc lÃªn xe, hÆ¡i láº¡nh lÃ m em buá»‘t cáº£ mÅ©i.
+      ask: set_ac(state="on") | 
+ 60 | Ã�o cÃ²n Æ°á»›t mÆ°a mÃ  ngá»“i trong nÃ y láº¡nh tháº¿, rÃ©t run máº¥t.
+      ask: set_ac(state="on") | 
+ 70 | NgoÃ i trá»�i rÃ©t Ä‘Ã£ Ä‘Ã nh, vÃ o xe rá»“i tay váº«n cÃ³ng cháº³ng áº¥m lÃªn Ä‘Æ°á»£c.
+      ask: set_ac(state="on") | Táº¡m hiá»ƒu cáº§n ngá»«ng lÃ m láº¡nh; cÃ¢u chÆ°a cho biáº¿t Ä‘iá»�u hoÃ  cÃ³ Ä‘ang báº­t hay khÃ´ng vÃ  khÃ´ng nÃªu nhiá»‡t Ä‘á»™ mong muá»‘n.
+120 | Ä�Æ°á»�ng váº¯ng mÃ  cÃ¡i biá»ƒn phÃ­a xa náº±m ngoÃ i khoáº£ng sÃ¡ng trÆ°á»›c xe, em chÆ°a Ä‘á»�c Ä‘Æ°á»£c chá»¯ nÃ o.
+      ask: set_headlights(mode="low_beam") | 
+130 | GiÃ³ trá»�i Ä‘á»§ mÃ¡t rá»“i, lÃ m láº¡nh trong xe ná»¯a chá»‰ tá»‘n Ä‘iá»‡n.
+      ask: set_ac(state="off") | 
+cÃ²n high_beam: []
+set_ac off: ['8', '130']
+

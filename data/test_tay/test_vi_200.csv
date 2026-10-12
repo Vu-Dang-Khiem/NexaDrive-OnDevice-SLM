@@ -1,0 +1,297 @@
+﻿cau,nhan,ghi_chu,nhom_phu
+Còn bao nhiêu xăng,get_fuel_level(),rõ ràng,ro_rang
+Xem giúp tôi mức xăng còn lại,get_fuel_level(),rõ ràng,ro_rang
+Xăng sắp hết chưa nhỉ kiểm tra hộ cái,get_fuel_level(),rõ ràng,ro_rang
+Bình xăng còn bao nhiêu phần trăm,get_fuel_level(),rõ ràng,ro_rang
+Pin xe còn bao nhiêu phần trăm,get_battery_range(),rõ ràng,ro_rang
+Kiểm tra pin xe giúp tôi,get_battery_range(),rõ ràng,ro_rang
+Pin còn đi được bao xa nữa,get_battery_range(),rõ ràng,ro_rang
+Xe đang sạc pin đúng không,get_battery_range(),rõ ràng,ro_rang
+Áp suất lốp hiện tại thế nào,get_tire_pressure(),rõ ràng,ro_rang
+Kiểm tra lốp trước bên phải,"get_tire_pressure(wheel=""front_right"")",rõ ràng,ro_rang
+Lốp sau bên trái có non không,"get_tire_pressure(wheel=""rear_left"")",rõ ràng,ro_rang
+Xem áp suất cả bốn lốp,get_tire_pressure(),rõ ràng,ro_rang
+Kiểm tra xem có cửa nào chưa đóng chặt không,get_vehicle_status(),rõ ràng,ro_rang
+Tình trạng xe hiện tại thế nào,get_vehicle_status(),rõ ràng,ro_rang
+Cho tôi xem tổng quan trạng thái xe,get_vehicle_status(),rõ ràng,ro_rang
+Xe đã khóa cửa hết chưa,get_vehicle_status(),rõ ràng,ro_rang
+Xe đi được bao nhiêu cây số rồi,get_odometer(),rõ ràng,ro_rang
+Số công tơ mét hiện tại là bao nhiêu,get_odometer(),rõ ràng,ro_rang
+Xem odo theo dặm giúp tôi,"get_odometer(unit=""mi"")",rõ ràng,ro_rang
+Tổng quãng đường xe đã chạy là bao nhiêu km,"get_odometer(unit=""km"")",rõ ràng,ro_rang
+Còn đi được tầm bao nhiêu km nữa thì hết xăng,get_range_estimate(),rõ ràng,ro_rang
+Đi 200 km nữa có phải đổ xăng dọc đường không,get_range_estimate(trip_km=200),rõ ràng,ro_rang
+Xe còn chạy được bao xa nữa,get_range_estimate(),rõ ràng,ro_rang
+Chạy thêm 50 km nữa có đủ không,get_range_estimate(trip_km=50),rõ ràng,ro_rang
+Bật điều hòa 26 độ ghế lái,"set_ac(state=""on"", temperature=26, zone=""driver"")",rõ ràng,ro_rang
+Bật điều hòa 22 độ hộ cái,"set_ac(state=""on"", temperature=22)",rõ ràng,ro_rang
+Giảm nhiệt độ xuống 20 độ giùm,"set_ac(state=""on"", temperature=20)",rõ ràng,ro_rang
+Tắt điều hòa đi cho đỡ tốn điện,"set_ac(state=""off"")",rõ ràng,ro_rang
+Chỉnh điều hòa ghế phụ 25 độ,"set_ac(state=""on"", temperature=25, zone=""passenger"")",rõ ràng,ro_rang
+Hạ nhiệt độ cabin xuống mát nhất có thể,"set_ac(state=""on"", temperature=16)",rõ ràng,ro_rang
+Bật điều hòa hàng ghế sau 24 độ,"set_ac(state=""on"", temperature=24, zone=""rear"")",rõ ràng,ro_rang
+Bật quạt gió mức to nhất,set_fan_speed(level=7),rõ ràng,ro_rang
+Giảm gió điều hòa xuống mức 1,set_fan_speed(level=1),rõ ràng,ro_rang
+Tắt quạt gió,set_fan_speed(level=0),rõ ràng,ro_rang
+Chỉnh quạt gió lên mức 5,set_fan_speed(level=5),rõ ràng,ro_rang
+Sấy kính chắn gió phía trước,"set_defrost(state=""on"", zone=""front"")",rõ ràng,ro_rang
+Bật sấy kính hậu giùm,"set_defrost(state=""on"", zone=""rear"")",rõ ràng,ro_rang
+Tắt sấy kính đi,"set_defrost(state=""off"")",rõ ràng,ro_rang
+Bật sấy cả kính trước lẫn kính sau,"set_defrost(state=""on"", zone=""both"")",rõ ràng,ro_rang
+Khóa hết cửa lại giúp tôi,lock_doors(),rõ ràng,ro_rang
+Khóa xe lại,lock_doors(),rõ ràng,ro_rang
+Chốt cửa xe hộ cái,lock_doors(),rõ ràng,ro_rang
+Mở khóa tất cả các cửa,unlock_doors(),rõ ràng,ro_rang
+Mở khóa cửa ghế lái thôi,"unlock_doors(door=""driver"")",rõ ràng,ro_rang
+Mở khóa cửa sau bên phải,"unlock_doors(door=""rear_right"")",rõ ràng,ro_rang
+Mở khóa cửa bên phụ,"unlock_doors(door=""passenger"")",rõ ràng,ro_rang
+Mở cốp xe,open_trunk(),rõ ràng,ro_rang
+Mở cốp sau ra,open_trunk(),rõ ràng,ro_rang
+Mở cốp giúp tôi để đồ vào,open_trunk(),rõ ràng,ro_rang
+Đóng cốp xe lại,close_trunk(),rõ ràng,ro_rang
+Đóng cốp sau đi,close_trunk(),rõ ràng,ro_rang
+Cốp đang mở đóng lại giúp cái,close_trunk(),rõ ràng,ro_rang
+Mở nắp cổng sạc,open_charge_port(),rõ ràng,ro_rang
+Mở cửa sạc điện ra,open_charge_port(),rõ ràng,ro_rang
+Sắp cắm sạc rồi mở nắp sạc đi,open_charge_port(),rõ ràng,ro_rang
+Mở nắp bình xăng,open_fuel_flap(),rõ ràng,ro_rang
+Sắp đổ xăng rồi mở nắp bình đi,open_fuel_flap(),rõ ràng,ro_rang
+Mở nắp bình xăng hộ cái,open_fuel_flap(),rõ ràng,ro_rang
+Hạ kính ghế phụ xuống một nửa,"control_window(window=""front_right"", position=""down"", amount=50)",rõ ràng,ro_rang
+Hạ hết bốn kính cửa sổ xuống,"control_window(window=""all"", position=""down"", amount=100)",rõ ràng,ro_rang
+Kéo kính bên tài lên,"control_window(window=""front_left"", position=""up"")",rõ ràng,ro_rang
+Hạ hé kính bên phụ khoảng 20%,"control_window(window=""front_right"", position=""down"", amount=20)",rõ ràng,ro_rang
+Đóng hết cửa sổ lại,"control_window(window=""all"", position=""up"")",rõ ràng,ro_rang
+Kéo hết kính xe lên rồi khóa cửa,"control_window(window=""all"", position=""up""); lock_doors()",rõ ràng - gọi 2 hàm,ro_rang
+Mở cửa sổ trời giúp tôi,"operate_sunroof(action=""open"")",rõ ràng,ro_rang
+Đóng cửa sổ trời lại,"operate_sunroof(action=""close"")",rõ ràng,ro_rang
+Hé cửa sổ trời một chút,"operate_sunroof(action=""tilt"")",rõ ràng,ro_rang
+Mở cửa sổ trời khoảng một nửa,"operate_sunroof(action=""open"", intensity=50)",rõ ràng,ro_rang
+Bật đèn pha chiếu xa,"set_headlights(mode=""high_beam"")",rõ ràng,ro_rang
+Bật đèn chiếu gần lên,"set_headlights(mode=""low_beam"")",rõ ràng,ro_rang
+Chuyển đèn sang chế độ tự động,"set_headlights(mode=""auto"")",rõ ràng,ro_rang
+Tắt đèn xe đi,"set_headlights(mode=""off"")",rõ ràng,ro_rang
+Bật đèn đỗ xe,"set_headlights(mode=""parking"")",rõ ràng,ro_rang
+Bật đèn cảnh báo khẩn cấp,"set_hazard_lights(state=""on"")",rõ ràng,ro_rang
+Tắt đèn cảnh báo đi,"set_hazard_lights(state=""off"")",rõ ràng,ro_rang
+Bật đèn hazard lên,"set_hazard_lights(state=""on"")",rõ ràng,ro_rang
+Tăng âm lượng lên 3 nấc,set_volume(delta=3),rõ ràng,ro_rang
+Tăng âm lượng lên xíu,set_volume(delta=2),rõ ràng,ro_rang
+Giảm âm lượng xuống,set_volume(delta=-2),rõ ràng,ro_rang
+Đặt âm lượng mức 20,set_volume(set_value=20),rõ ràng,ro_rang
+Vặn nhỏ loa xuống mức 5,set_volume(set_value=5),rõ ràng,ro_rang
+Bật nhạc Sơn Tùng M-TP,"play_media(query=""Sơn Tùng M-TP"")",rõ ràng,ro_rang
+Mở kênh VOV Giao thông,"play_media(source=""radio"", query=""VOV Giao thông"")",rõ ràng,ro_rang
+Mở playlist nhạc acoustic thư giãn,"play_media(query=""nhạc acoustic thư giãn"")",rõ ràng,ro_rang
+Phát nhạc qua Bluetooth điện thoại,"play_media(source=""bluetooth"")",rõ ràng,ro_rang
+Bật nhạc từ USB đi,"play_media(source=""usb"")",rõ ràng,ro_rang
+Tra đường tới sân bay Nội Bài tránh trạm thu phí,"navigate_to(destination=""sân bay Nội Bài"", avoid=""tolls"")",rõ ràng,ro_rang
+Chỉ đường về nhà,"navigate_to(destination=""nhà"")",rõ ràng,ro_rang
+Dẫn đường đến công ty,"navigate_to(destination=""công ty"")",rõ ràng,ro_rang
+Tra đường về số 10 đường Nguyễn Huệ quận 1,"navigate_to(destination=""số 10 đường Nguyễn Huệ quận 1"")",rõ ràng,ro_rang
+Chỉ đường tới Vincom Bà Triệu tránh đường cao tốc,"navigate_to(destination=""Vincom Bà Triệu"", avoid=""highways"")",rõ ràng,ro_rang
+Tìm cây xăng gần nhất,"find_nearby(category=""gas_station"")",rõ ràng,ro_rang
+Tìm trạm sạc xe điện gần đây,"find_nearby(category=""charging_station"")",rõ ràng,ro_rang
+Tìm quán cà phê gần đây,"find_nearby(category=""coffee"")",rõ ràng,ro_rang
+Tìm bãi gửi xe ô tô xung quanh đây,"find_nearby(category=""parking"")",rõ ràng,ro_rang
+Tìm bệnh viện gần nhất,"find_nearby(category=""hospital"")",rõ ràng,ro_rang
+Tìm cây ATM trong bán kính 3 km,"find_nearby(category=""atm"", radius_km=3)",rõ ràng,ro_rang
+Tìm quán ăn quanh đây trong vòng 5 km,"find_nearby(category=""restaurant"", radius_km=5)",rõ ràng,ro_rang
+Mai Đà Nẵng có mưa không,"get_weather(location=""Đà Nẵng"", day=1)",rõ ràng,ro_rang
+Thời tiết hôm nay thế nào,get_weather(),rõ ràng,ro_rang
+Ba ngày nữa Hà Nội thời tiết ra sao,"get_weather(location=""Hà Nội"", day=3)",rõ ràng,ro_rang
+Cuối tuần Đà Lạt có nắng không,"get_weather(location=""Đà Lạt"", day=5)",rõ ràng,ro_rang
+Bấm mở cốp giúp cái,open_trunk(),rõ ràng,ro_rang
+Mở khoang hành lý ra,open_trunk(),rõ ràng,ro_rang
+Đóng khoang hành lý lại,close_trunk(),rõ ràng,ro_rang
+Hạ cốp xuống giúp tôi,close_trunk(),rõ ràng,ro_rang
+Khóa cửa xe lại đi,lock_doors(),rõ ràng,ro_rang
+Chốt hết cửa lại nhé,lock_doors(),rõ ràng,ro_rang
+Mở khóa cửa sau bên trái,"unlock_doors(door=""rear_left"")",rõ ràng,ro_rang
+Mở khóa xe giúp tôi,unlock_doors(),rõ ràng,ro_rang
+Mở chỗ cắm sạc ra,open_charge_port(),rõ ràng,ro_rang
+Mở cổng sạc giúp tôi,open_charge_port(),rõ ràng,ro_rang
+Mở nắp xăng ra,open_fuel_flap(),rõ ràng,ro_rang
+Bật mở nắp bình nhiên liệu,open_fuel_flap(),rõ ràng,ro_rang
+Xe chạy tổng cộng bao nhiêu km rồi,get_odometer(),rõ ràng,ro_rang
+Cho xem số km xe đã đi,get_odometer(),rõ ràng,ro_rang
+Nóng quá,"ask: set_ac(state=""on"")",mơ hồ,mo_ho
+Nóng muốn xỉu,"ask: set_ac(state=""on"")",mơ hồ,mo_ho
+Trời oi bức quá đi,"ask: set_ac(state=""on"")",mơ hồ,mo_ho
+Lạnh run cả người rồi,"ask: set_ac(state=""on"")",mơ hồ,mo_ho
+Lạnh quá tay chân buốt hết,"ask: set_ac(state=""on"")",mơ hồ,mo_ho
+Hàng ghế sau kêu nóng nãy giờ,"ask: set_ac(state=""on"", zone=""rear"")",mơ hồ - câu nói rõ hàng ghế sau,mo_ho
+Trong xe bí quá,"ask: set_ac(state=""on""); control_window(window=""all"", position=""down"")",mơ hồ - 2 lựa chọn,mo_ho
+Sao trong xe ngột ngạt thế này,"ask: control_window(window=""all"", position=""down""); set_ac(state=""on"")",mơ hồ - 2 lựa chọn,mo_ho
+Mùi xe khó chịu quá,"ask: control_window(window=""all"", position=""down"")",mơ hồ,mo_ho
+Muốn hít chút không khí trong lành,"ask: control_window(window=""all"", position=""down"")",mơ hồ,mo_ho
+Trời đẹp thế này ngồi bí trong xe phí quá,"ask: operate_sunroof(action=""open"")",mơ hồ,mo_ho
+Muốn ngắm trời một chút,"ask: operate_sunroof(action=""open"")",mơ hồ,mo_ho
+Gió điều hòa yếu như đuổi ruồi,ask: set_fan_speed(level=6),mơ hồ,mo_ho
+Quạt gió ồn quá,ask: set_fan_speed(level=2),mơ hồ,mo_ho
+Kính lái mờ tịt chẳng nhìn thấy gì,"ask: set_defrost(state=""on"", zone=""front"")",mơ hồ - câu nói rõ kính trước,mo_ho
+Kính sau đọng hơi nước hết rồi,"ask: set_defrost(state=""on"", zone=""rear"")",mơ hồ - câu nói rõ kính sau,mo_ho
+Sương bám đầy kính chẳng thấy đường,"ask: set_defrost(state=""on"")",mơ hồ,mo_ho
+Đường tối quá chẳng thấy gì,"ask: set_headlights(mode=""low_beam"")",mơ hồ,mo_ho
+Tối mịt thế này lái sao nổi,"ask: set_headlights(mode=""low_beam"")",mơ hồ,mo_ho
+Trời sẩm tối rồi đấy,"ask: set_headlights(mode=""auto"")",mơ hồ,mo_ho
+Đèn đường ở đây yếu quá,"ask: set_headlights(mode=""low_beam"")",mơ hồ,mo_ho
+Xe chết máy giữa đường rồi,"ask: set_hazard_lights(state=""on"")",mơ hồ,mo_ho
+Phải dừng khẩn cấp ở làn trong thôi,"ask: set_hazard_lights(state=""on"")",mơ hồ,mo_ho
+Ồn quá nhức hết cả đầu,ask: set_volume(),mơ hồ - chưa rõ tăng hay giảm,mo_ho
+Nhạc gì mà bé tí như muỗi kêu,ask: set_volume(),mơ hồ,mo_ho
+Nhạc to quá không nghe thấy gì nữa,ask: set_volume(),mơ hồ,mo_ho
+Đi đường buồn quá chẳng có gì nghe,ask: play_media(),mơ hồ,mo_ho
+Muốn nghe chút tin tức giao thông,"ask: play_media(source=""radio"")",mơ hồ,mo_ho
+Im ắng quá đi mất,ask: play_media(),mơ hồ,mo_ho
+Đói bụng cồn cào rồi,"ask: find_nearby(category=""restaurant"")",mơ hồ,mo_ho
+Khát nước cháy cổ,"ask: find_nearby(category=""coffee"")",mơ hồ,mo_ho
+Buồn ngủ dí cả mắt rồi,"ask: find_nearby(category=""coffee"")",mơ hồ,mo_ho
+Cần rút ít tiền mặt mà chẳng biết chỗ nào,"ask: find_nearby(category=""atm"")",mơ hồ,mo_ho
+Đỗ xe ở đâu quanh đây bây giờ,"ask: find_nearby(category=""parking"")",mơ hồ,mo_ho
+Xe sắp cạn bình rồi thì phải,"ask: get_fuel_level(); find_nearby(category=""gas_station"")",mơ hồ - 2 hàm,mo_ho
+Không biết pin còn đủ chạy về không,get_battery_range(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Hình như xe bị non hơi một bánh,get_tire_pressure(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Xe đi cảm giác cứ bị nhao lái,get_tire_pressure(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Không biết cửa sau đã khóa chưa nhỉ,get_vehicle_status(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Hình như quên chưa đóng cốp,get_vehicle_status(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Chạy về quê chắc phải hơn trăm cây số,get_range_estimate(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Không biết có về tới nơi mà không phải đổ xăng không,get_range_estimate(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Trời âm u thế này sắp mưa to rồi,get_weather(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Mai đi Sa Pa không biết trời có đẹp không,get_weather(),"rõ ràng - hàm chỉ đọc, làm luôn không hỏi lại",ro_rang
+Bụi bay vào cay hết cả mắt,"ask: control_window(window=""all"", position=""up"")",mơ hồ,mo_ho
+Mùi khói xe buýt bên ngoài lọt vào rồi,"ask: control_window(window=""all"", position=""up"")",mơ hồ,mo_ho
+Mưa hắt vào ướt hết tay áo rồi,"ask: control_window(window=""all"", position=""up"")",mơ hồ,mo_ho
+Nắng rọi thẳng vào đầu rát quá,"ask: operate_sunroof(action=""close"")",mơ hồ,mo_ho
+Tiếng mưa rơi trên nóc ồn thế,"ask: operate_sunroof(action=""close"")",mơ hồ,mo_ho
+Không biết đường về nhà thế nào,"ask: navigate_to(destination=""nhà"")",mơ hồ,mo_ho
+Kể cho tôi một câu chuyện cười,irrelevant_function(),ngoài phạm vi,oos_kien_thuc
+Máy lạnh nhà tôi hỏng rồi,irrelevant_function(),ngoài phạm vi - máy lạnh NHÀ không phải xe,oos_thiet_bi_khac
+Tự lái đưa tôi về nhà đi,irrelevant_function(),ngoài phạm vi - xe không tự lái,oos_vuot_kha_nang
+Mở cửa cuốn phòng khách nhà tôi lên,irrelevant_function(),ngoài phạm vi - thiết bị nhà ở,oos_thiet_bi_khac
+Bật bình nóng lạnh ở nhà trước đi,irrelevant_function(),ngoài phạm vi - thiết bị gia dụng,oos_thiet_bi_khac
+Tắt bớt đèn ở hành lang nhà,irrelevant_function(),ngoài phạm vi - thiết bị nhà ở,oos_thiet_bi_khac
+Mở rèm cửa phòng ngủ giúp tôi,irrelevant_function(),ngoài phạm vi - nhà thông minh,oos_thiet_bi_khac
+Kiểm tra xem máy giặt ở nhà đã giặt xong chưa,irrelevant_function(),ngoài phạm vi - thiết bị gia dụng,oos_thiet_bi_khac
+Khóa cửa cổng nhà lại,irrelevant_function(),ngoài phạm vi - an ninh gia đình,oos_thiet_bi_khac
+Bật nồi cơm điện chế độ nấu nhanh,irrelevant_function(),ngoài phạm vi - thiết bị nhà bếp,oos_thiet_bi_khac
+Cho robot hút bụi trong phòng khách chạy đi,irrelevant_function(),ngoài phạm vi - thiết bị gia dụng,oos_thiet_bi_khac
+Kể một câu chuyện ma nghe cho đỡ buồn ngủ,irrelevant_function(),ngoài phạm vi - kể chuyện giải trí,oos_kien_thuc
+Làm một bài thơ lục bát về tình yêu,irrelevant_function(),ngoài phạm vi - sáng tác thơ,oos_kien_thuc
+Hôm nay tâm trạng bạn thế nào,irrelevant_function(),ngoài phạm vi - trò chuyện phiếm,oos_kien_thuc
+Bạn có người yêu chưa,irrelevant_function(),ngoài phạm vi - câu hỏi riêng tư,oos_kien_thuc
+Hát cho tôi nghe một bài bolero đi,irrelevant_function(),ngoài phạm vi - yêu cầu trợ lý hát,oos_kien_thuc
+Bói xem hôm nay tôi xuất hành hướng nào thì may mắn,irrelevant_function(),ngoài phạm vi - tâm linh bói toán,oos_kien_thuc
+Tung đồng xu xem sấp hay ngửa giúp tôi,irrelevant_function(),ngoài phạm vi - trò chơi may rủi,oos_kien_thuc
+Bạn thông minh hơn hay ChatGPT thông minh hơn,irrelevant_function(),ngoài phạm vi - so sánh AI,oos_kien_thuc
+Thủ đô của nước Úc là gì,irrelevant_function(),ngoài phạm vi - kiến thức địa lý,oos_kien_thuc
+Chiến thắng Điện Biên Phủ diễn ra vào năm nào,irrelevant_function(),ngoài phạm vi - kiến thức lịch sử,oos_kien_thuc
+Giải giúp tôi phương trình x bình phương cộng 5x cộng 6 bằng không,irrelevant_function(),ngoài phạm vi - giải toán,oos_kien_thuc
+Dịch câu tôi đang đi công tác sang tiếng Nhật,irrelevant_function(),ngoài phạm vi - dịch thuật ngôn ngữ,oos_kien_thuc
+Tác giả của cuốn tiểu thuyết Chiến tranh và Hòa bình là ai,irrelevant_function(),ngoài phạm vi - kiến thức văn học,oos_kien_thuc
+Tại sao bầu trời lại có màu xanh,irrelevant_function(),ngoài phạm vi - kiến thức khoa học,oos_kien_thuc
+1 dặm bằng bao nhiêu km,irrelevant_function(),ngoài phạm vi - quy đổi đơn vị chung,oos_kien_thuc
+Công thức tính diện tích hình thang là gì,irrelevant_function(),ngoài phạm vi - công thức toán học,oos_kien_thuc
+Đặt giúp tôi 2 vé xem phim rạp CGV tối nay,irrelevant_function(),ngoài phạm vi - đặt vé xem phim,oos_kien_thuc
+Đặt vé máy bay khứ hồi đi Phú Quốc cuối tuần,irrelevant_function(),ngoài phạm vi - đặt vé máy bay,oos_kien_thuc
+Chuyển cho mẹ 5 triệu qua tài khoản Vietcombank,irrelevant_function(),ngoài phạm vi - giao dịch ngân hàng,oos_kien_thuc
+Giá vàng hôm nay bao nhiêu một chỉ,irrelevant_function(),ngoài phạm vi - tra cứu tài chính thị trường,oos_kien_thuc
+Mua giúp tôi 100 cổ phiếu Vinamilk,irrelevant_function(),ngoài phạm vi - giao dịch chứng khoán,oos_kien_thuc
+Đặt phòng khách sạn Mường Thanh Đà Nẵng 2 đêm,irrelevant_function(),ngoài phạm vi - đặt phòng khách sạn,oos_kien_thuc
+Gọi một cốc trà sữa trân châu giao tới văn phòng,irrelevant_function(),ngoài phạm vi - giao đồ ăn,oos_kien_thuc
+Tỷ giá đô la Mỹ hôm nay tăng hay giảm,irrelevant_function(),ngoài phạm vi - tin tức tài chính,oos_kien_thuc
+Tự lái xe bay qua đoạn tắc đường này đi,irrelevant_function(),ngoài phạm vi - xe không bay được,oos_vuot_kha_nang
+Tự động lái xe về gara nhà tôi rồi tự đỗ vào chuồng nhé,irrelevant_function(),ngoài phạm vi - không hỗ trợ tự hành toàn phần,oos_vuot_kha_nang
+Đổi màu sơn xe sang màu đỏ,irrelevant_function(),ngoài phạm vi - không đổi màu vật lý,oos_vuot_kha_nang
+Xe tự động ra tiệm rửa xe đi,irrelevant_function(),ngoài phạm vi - xe không tự đi rửa,oos_vuot_kha_nang
+Phun cánh ra để bay lên,irrelevant_function(),ngoài phạm vi - tính năng viễn tưởng,oos_vuot_kha_nang
+Tự động tháo bánh xe ra thay lốp dự phòng,irrelevant_function(),ngoài phạm vi - phần cứng không làm được,oos_vuot_kha_nang
+Tăng công suất động cơ lên gấp đôi ngay lập tức,irrelevant_function(),ngoài phạm vi - giới hạn kỹ thuật,oos_vuot_kha_nang
+Biến xe thành thuyền để lội qua đoạn ngập,irrelevant_function(),ngoài phạm vi - xe không lội nước,oos_vuot_kha_nang
+Tôi đang bị đau đầu uống thuốc gì thì đỡ,irrelevant_function(),ngoài phạm vi - tư vấn y tế,oos_kien_thuc
+Tập gym bài nào giảm mỡ bụng nhanh nhất,irrelevant_function(),ngoài phạm vi - tư vấn thể thao,oos_kien_thuc
+Cách làm món sườn xào chua ngọt chuẩn vị,irrelevant_function(),ngoài phạm vi - công thức nấu ăn,oos_kien_thuc
+Xóa bớt bộ nhớ trên điện thoại iPhone giúp tôi,irrelevant_function(),ngoài phạm vi - điện thoại cá nhân,oos_kien_thuc
+Lên thực đơn ăn kiêng giảm cân trong 1 tuần,irrelevant_function(),ngoài phạm vi - tư vấn dinh dưỡng,oos_kien_thuc
+Hôm nay mặc áo màu gì hợp mệnh Thổ,irrelevant_function(),ngoài phạm vi - phong thủy thời trang,oos_kien_thuc
+Viết giúp tôi một cái email xin nghỉ ốm gửi sếp,irrelevant_function(),ngoài phạm vi - soạn thảo văn bản,oos_kien_thuc
+Bật sưởi ghế lái lên,irrelevant_function(),ngoài phạm vi - xe mô phỏng không có sưởi ghế,oos_xe_khong_ho_tro
+Chuyển sang lấy gió trong xe,irrelevant_function(),ngoài phạm vi - không có chức năng lấy gió,oos_xe_khong_ho_tro
+Bật cần gạt nước mưa,irrelevant_function(),ngoài phạm vi - không có gạt mưa,oos_xe_khong_ho_tro
+Chuyển sang bài hát tiếp theo,irrelevant_function(),ngoài phạm vi - không điều khiển được bài đang phát,oos_xe_khong_ho_tro
+Hủy lộ trình dẫn đường hiện tại,irrelevant_function(),ngoài phạm vi - không hủy được lộ trình,oos_xe_khong_ho_tro
+Mấy giờ thì tới nơi,irrelevant_function(),ngoài phạm vi - không xem được giờ tới nơi,oos_xe_khong_ho_tro
+Mở camera lùi lên màn hình,irrelevant_function(),ngoài phạm vi - không có camera,oos_xe_khong_ho_tro
+Cài ga tự động ở 80 km trên giờ,irrelevant_function(),ngoài phạm vi - không có cruise control,oos_xe_khong_ho_tro
+Gập gương chiếu hậu lại,irrelevant_function(),ngoài phạm vi - không gập được gương,oos_xe_khong_ho_tro
+Tắt đèn trần trong xe,irrelevant_function(),ngoài phạm vi - không có đèn nội thất,oos_xe_khong_ho_tro
+Bật chế độ lái off-road lên,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Hạ kính chắn gió xuống cho thoáng,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Chỉnh góc gương chiếu hậu bên trái lên cao hơn,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Bật đèn sương mù sau,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Kích hoạt chế độ tự hành cấp độ 3,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Chỉnh chiều cao chùm sáng đèn pha xuống một nấc,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Bật hệ thống hỗ trợ giữ làn đường,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Kích hoạt phanh tay điện tử,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Mở khoang để đồ trung tâm,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Bật chế độ tiết kiệm nhiên liệu Eco,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Chỉnh độ cứng giảm xóc lên,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Bật cảnh báo điểm mù,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Hạ trần xe mui trần xuống,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Bật hệ thống khởi động từ xa,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Chỉnh độ nghiêng vô lăng lên cao hơn,irrelevant_function(),ngoài phạm vi - xe không có chức năng này,oos_xe_khong_ho_tro
+Mở cốp xe máy giúp tôi,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Khóa cửa sổ ở công ty lại,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Bật quạt trong phòng ngủ lên,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Đóng cửa sổ bên xe đối diện giúp anh kia với,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Tắt điều hòa ở văn phòng đi,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Bật đèn trần trong nhà kho lên,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Mở cửa sổ trời trong phòng tắm,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Khóa cốp xe đạp lại giúp tôi,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Chỉnh ghế sofa phòng khách ngả ra sau,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Bật sưởi cho bể cá cảnh,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Đóng cửa garage nhà bên cạnh,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Tắt đèn sương mù ở sân vườn,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Gập gương trang điểm trong phòng lại,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Mở nắp bình nước lọc ở công ty,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Bật quạt sưởi trong nhà tắm,irrelevant_function(),ngoài phạm vi - đối tượng không phải xe này,oos_thiet_bi_khac
+Xe hybrid có cần thay dầu thường xuyên như xe xăng không,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Áp suất lốp xe SUV thường cao hơn sedan bao nhiêu,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Bao nhiêu km thì nên đảo lốp một lần,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Xe này dùng loại ắc quy gì,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Chạy điều hòa liên tục có tốn xăng hơn nhiều không,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Xe số tự động có tốn xăng hơn số sàn không,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Nên bảo dưỡng xe theo km hay theo tháng,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Dung tích bình xăng xe này khoảng bao nhiêu lít,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Xe này chạy được bao nhiêu km cho 1 lít xăng,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Nhiệt độ điều hòa lý tưởng khi lái xe đường dài là bao nhiêu,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Lốp Michelin với Bridgestone loại nào bền hơn,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Xe đời mới có cần chạy rốt-đa không,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Cửa sổ trời có làm xe nóng hơn vào mùa hè không,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Bao lâu thì nên kiểm tra hệ thống phanh,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Xe này có hỗ trợ đổ xăng sinh học E5 không,irrelevant_function(),"ngoài phạm vi - hỏi kiến thức về xe, không phải trạng thái xe",oos_kien_thuc_xe
+Kiểm tra giúp tôi xem phanh còn ăn không,irrelevant_function(),"ngoài phạm vi - yêu cầu bảo dưỡng, sửa chữa",oos_bao_duong
+Đặt lịch bảo dưỡng định kỳ cho xe,irrelevant_function(),"ngoài phạm vi - yêu cầu bảo dưỡng, sửa chữa",oos_bao_duong
+Thay lốp mới cho xe đi,irrelevant_function(),"ngoài phạm vi - yêu cầu bảo dưỡng, sửa chữa",oos_bao_duong
+Kiểm tra hộ tôi ắc quy còn tốt không,irrelevant_function(),"ngoài phạm vi - yêu cầu bảo dưỡng, sửa chữa",oos_bao_duong
+Vệ sinh nội thất xe giúp tôi,irrelevant_function(),"ngoài phạm vi - yêu cầu bảo dưỡng, sửa chữa",oos_bao_duong
+Hẹn báo lịch họp lúc 3 giờ chiều,irrelevant_function(),ngoài phạm vi - có số/đơn vị giống tham số của hàm,oos_so_don_vi
+Tăng âm lượng loa bluetooth điện thoại lên 70%,irrelevant_function(),ngoài phạm vi - có số/đơn vị giống tham số của hàm,oos_so_don_vi
+Đặt hẹn giờ nấu cơm 30 phút nữa,irrelevant_function(),ngoài phạm vi - có số/đơn vị giống tham số của hàm,oos_so_don_vi
+Chỉnh độ sáng đèn phòng khách xuống 40%,irrelevant_function(),ngoài phạm vi - có số/đơn vị giống tham số của hàm,oos_so_don_vi
+Canh giờ đánh thức tôi dậy lúc 5 rưỡi sáng,irrelevant_function(),ngoài phạm vi - có số/đơn vị giống tham số của hàm,oos_so_don_vi
+Kết thúc cuộc gọi hiện tại giúp tôi,irrelevant_function(),"ngoài phạm vi - điện thoại, tin nhắn, lịch",oos_dien_thoai
+Xem lịch hôm nay có cuộc họp nào không,irrelevant_function(),"ngoài phạm vi - điện thoại, tin nhắn, lịch",oos_dien_thoai
+Chuyển tiếp cuộc gọi này sang máy khác,irrelevant_function(),"ngoài phạm vi - điện thoại, tin nhắn, lịch",oos_dien_thoai
+Tìm số điện thoại của anh Minh trong danh bạ,irrelevant_function(),"ngoài phạm vi - điện thoại, tin nhắn, lịch",oos_dien_thoai
+Ghi âm lại cuộc trò chuyện này giúp tôi,irrelevant_function(),"ngoài phạm vi - điện thoại, tin nhắn, lịch",oos_dien_thoai
+Sửa cái này lại đi,irrelevant_function(),"ngoài phạm vi - mơ hồ, không đủ thông tin để đoán",oos_mo_ho_vo_nghia
+Để yên như vậy đi,irrelevant_function(),"ngoài phạm vi - mơ hồ, không đủ thông tin để đoán",oos_mo_ho_vo_nghia
+Đổi qua cái khác thử xem,irrelevant_function(),"ngoài phạm vi - mơ hồ, không đủ thông tin để đoán",oos_mo_ho_vo_nghia
+Bấm nút đó giúp tôi,irrelevant_function(),"ngoài phạm vi - mơ hồ, không đủ thông tin để đoán",oos_mo_ho_vo_nghia
+Làm giống hôm qua ấy,irrelevant_function(),"ngoài phạm vi - mơ hồ, không đủ thông tin để đoán",oos_mo_ho_vo_nghia
+Vượt đèn đỏ nhanh lên kẻo trễ,irrelevant_function(),ngoài phạm vi - vượt khả năng hoặc trái luật,oos_vuot_kha_nang
+Tắt cảm biến va chạm đi cho đỡ ồn,irrelevant_function(),ngoài phạm vi - vượt khả năng hoặc trái luật,oos_vuot_kha_nang
+Đi ngược chiều một đoạn cho gần,irrelevant_function(),ngoài phạm vi - vượt khả năng hoặc trái luật,oos_vuot_kha_nang
+Tự động rẽ vào làn khẩn cấp,irrelevant_function(),ngoài phạm vi - vượt khả năng hoặc trái luật,oos_vuot_kha_nang
+Nhấn còi liên tục cho xe trước tránh ra,irrelevant_function(),ngoài phạm vi - vượt khả năng hoặc trái luật,oos_vuot_kha_nang

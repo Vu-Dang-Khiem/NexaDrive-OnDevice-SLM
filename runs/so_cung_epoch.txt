@@ -1,0 +1,16 @@
+﻿                 |  rÃµ rÃ ng  mÆ¡ há»“39  ngoÃ i pv  gá»�i bá»«a  TC nháº§m  mo_ho_4
+full s42 epoch 2  |     78.4     71.8      78.6       25        2     74.4
+full s7  epoch 2  |     79.7     82.1      72.6       32        1     72.1
+lora s42 epoch 2  |     75.7     71.8      83.8       19        0     76.7
+lora s7  epoch 2  |     78.4     74.4      82.1       21        1     78.3
+full s42 epoch 3  |     78.4     74.4      78.6       25        2     78.3
+full s7  epoch 3  |     79.7     82.1      67.5       38        1     76.0
+lora s42 epoch 3  |     79.7     79.5      84.6       18        0     78.3
+lora s7  epoch 3  |     78.4     74.4      80.3       23        1     76.7
+
+McNemar test sáº¡ch 230, full vs LoRA CÃ™NG epoch, cÃ¹ng háº¡t giá»‘ng:
+  epoch 2 s42: full hÆ¡n  9, LoRA hÆ¡n 13, p = 0.523
+  epoch 2 s7 : full hÆ¡n 10, LoRA hÆ¡n 17, p = 0.248
+  epoch 3 s42: full hÆ¡n  4, LoRA hÆ¡n 14, p = 0.031
+  epoch 3 s7 : full hÆ¡n  9, LoRA hÆ¡n 20, p = 0.061
+

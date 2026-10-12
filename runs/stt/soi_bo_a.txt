@@ -1,0 +1,93 @@
+﻿===== parakeet: 30 cÃ¢u rÃµ rÃ ng chá»¯ gá»‘c Ä‘Ãºng mÃ  qua STT sai
+[tu_choi_nham] wer=0.43
+   Gá»�C: Xem giÃºp tÃ´i má»©c xÄƒng cÃ²n láº¡i
+   STT: Xem tiáº¿p tÃ´i má»©c sang cáº§u láº¡i.
+[tu_choi_nham] wer=0.33
+   Gá»�C: XÄƒng sáº¯p háº¿t chÆ°a nhá»‰ kiá»ƒm tra há»™ cÃ¡i
+   STT: SÄƒng sáº¯p háº¿t chÆ°a nhá»‹ kiá»ƒm tra h cÃ¡i.
+[hoi_lai_thua] wer=0.12
+   Gá»�C: Xe Ä‘i Ä‘Æ°á»£c bao nhiÃªu cÃ¢y sá»‘ rá»“i
+   STT: Sáº½ Ä‘i Ä‘Æ°á»£c bao nhiÃªu cÃ¢y sá»‘ rá»“i.
+[tu_choi_nham] wer=0.27
+   Gá»�C: CÃ²n Ä‘i Ä‘Æ°á»£c táº§m bao nhiÃªu km ná»¯a thÃ¬ háº¿t xÄƒng
+   STT: CÃ²n Ä‘i Ä‘Æ°á»£c táº§m bao nhiÃªu ki lÃ´ mÃ©t ná»¯a thÃ¬ háº¿t xÄƒng.
+[tu_choi_nham] wer=0.00
+   Gá»�C: Cháº¡y thÃªm 50 km ná»¯a cÃ³ Ä‘á»§ khÃ´ng
+   STT: Cháº¡y thÃªm 50 km ná»¯a cÃ³ Ä‘á»§ khÃ´ng?
+[tu_choi_nham] wer=0.29
+   Gá»�C: Báº­t Ä‘iá»�u hÃ²a 26 Ä‘á»™ gháº¿ lÃ¡i
+   STT: Ä�áº·t Ä‘iá»�u 26 Ä‘á»™ gháº¿ lÃ¡i.
+[tu_choi_nham] wer=0.57
+   Gá»�C: Báº­t Ä‘iá»�u hÃ²a 22 Ä‘á»™ há»™ cÃ¡i
+   STT: Máº­t 22 Ä‘á»™ há»“ cÃ¡i.
+[tu_choi_nham] wer=0.12
+   Gá»�C: Táº¯t Ä‘iá»�u hÃ²a Ä‘i cho Ä‘á»¡ tá»‘n Ä‘iá»‡n
+   STT: Táº¯t Ä‘iá»�u Ä‘i cho Ä‘á»¡ tá»‘n Ä‘iá»‡n.
+[tu_choi_nham] wer=0.29
+   Gá»�C: Chá»‰nh Ä‘iá»�u hÃ²a gháº¿ phá»¥ 25 Ä‘á»™
+   STT: Chá»‰nhnh Ä‘iá»�u gháº¿ phá»¥ 25 Ä‘á»™.
+[tu_choi_nham] wer=0.12
+   Gá»�C: Báº­t Ä‘iá»�u hÃ²a hÃ ng gháº¿ sau 24 Ä‘á»™
+   STT: Báº­t Ä‘iá»�u hÃ ng gháº¿ sau 24 Ä‘á»™.
+[hoi_lai_thua] wer=0.12
+   Gá»�C: Báº­t sáº¥y cáº£ kÃ­nh trÆ°á»›c láº«n kÃ­nh sau
+   STT: Báº­t xÃ¢y cáº£ kÃ­nh trÆ°á»›c láº«n kÃ­nh sau.
+[tu_choi_nham] wer=0.50
+   Gá»�C: KhÃ³a háº¿t cá»­a láº¡i giÃºp tÃ´i
+   STT: Kh háº¿t cá»© lÃ  giÃºp tÃ´i.
+[hoi_lai_thua] wer=0.67
+   Gá»�C: KhÃ³a xe láº¡i
+   STT: QuÃ¡ say láº¡i.
+[hoi_lai_thua] wer=0.40
+   Gá»�C: Má»Ÿ khÃ³a cá»­a bÃªn phá»¥
+   STT: M má»Ÿ cá»­a bÃªn phá»¥.
+[tu_choi_nham] wer=0.71
+   Gá»�C: Má»Ÿ cá»‘p giÃºp tÃ´i Ä‘á»ƒ Ä‘á»“ vÃ o
+   STT: MÃ  cá»‘ x giÃºp tÃ´i Ä‘á»ƒá»• vÃ o.
+===== phowhisper-medium: 33 cÃ¢u rÃµ rÃ ng chá»¯ gá»‘c Ä‘Ãºng mÃ  qua STT sai
+[tu_choi_nham] wer=0.14
+   Gá»�C: Xem giÃºp tÃ´i má»©c xÄƒng cÃ²n láº¡i
+   STT: xem giÃºp tÃ´i má»©c sang cÃ²n láº¡i.
+[sai_ham] wer=0.22
+   Gá»�C: XÄƒng sáº¯p háº¿t chÆ°a nhá»‰ kiá»ƒm tra há»™ cÃ¡i
+   STT: xáº±ng sáº¯p háº¿t chÆ°a nhÃ¬ kiá»ƒm tra há»™ cÃ¡i.
+[tu_choi_nham] wer=0.00
+   Gá»�C: Kiá»ƒm tra xem cÃ³ cá»­a nÃ o chÆ°a Ä‘Ã³ng cháº·t khÃ´ng
+   STT: kiá»ƒm tra xem cÃ³ cá»­a nÃ o chÆ°a Ä‘Ã³ng cháº·t khÃ´ng.
+[tu_choi_nham] wer=0.12
+   Gá»�C: Xe Ä‘i Ä‘Æ°á»£c bao nhiÃªu cÃ¢y sá»‘ rá»“i
+   STT: sáº½ Ä‘i Ä‘Æ°á»£c bao nhiÃªu cÃ¢y sá»‘ rá»“i.
+[tu_choi_nham] wer=0.27
+   Gá»�C: CÃ²n Ä‘i Ä‘Æ°á»£c táº§m bao nhiÃªu km ná»¯a thÃ¬ háº¿t xÄƒng
+   STT: cÃ²n Ä‘i Ä‘Æ°á»£c táº§m bao nhiÃªu ki lÃ´ mÃ©t ná»¯a thÃ¬ háº¿t xÄƒng.
+[tu_choi_nham] wer=0.09
+   Gá»�C: Ä�i 200 km ná»¯a cÃ³ pháº£i Ä‘á»• xÄƒng dá»�c Ä‘Æ°á»�ng khÃ´ng
+   STT: Ä‘i 200 km ná»¯a cÃ³ pháº£i Ä‘á»• sang dá»�c Ä‘Æ°á»�ng khÃ´ng.
+[tu_choi_nham] wer=0.00
+   Gá»�C: Cháº¡y thÃªm 50 km ná»¯a cÃ³ Ä‘á»§ khÃ´ng
+   STT: cháº¡y thÃªm 50 km ná»¯a cÃ³ Ä‘á»§ khÃ´ng.
+[tu_choi_nham] wer=0.71
+   Gá»�C: Báº­t Ä‘iá»�u hÃ²a 22 Ä‘á»™ há»™ cÃ¡i
+   STT: báº­t Ä‘iá»‡n thoáº¡i 22 lá»— há»“ chÃ¡y.
+[tu_choi_nham] wer=0.14
+   Gá»�C: Giáº£m nhiá»‡t Ä‘á»™ xuá»‘ng 20 Ä‘á»™ giÃ¹m
+   STT: giáº£m nhiá»‡t Ä‘á»™ xuá»‘ng 20 Ä‘á»™ rÃ¹m.
+[tu_choi_nham] wer=0.14
+   Gá»�C: Chá»‰nh Ä‘iá»�u hÃ²a gháº¿ phá»¥ 25 Ä‘á»™
+   STT: chá»‰nh Ä‘iá»�u hoáº·c gháº¿ phá»¥ 25 Ä‘á»™.
+[tu_choi_nham] wer=0.67
+   Gá»�C: Táº¯t quáº¡t giÃ³
+   STT: cÃ¡c hoáº¡t giÃ³.
+[hoi_lai_thua] wer=0.12
+   Gá»�C: Báº­t sáº¥y cáº£ kÃ­nh trÆ°á»›c láº«n kÃ­nh sau
+   STT: báº­t xáº¥y cáº£ kÃ­nh trÆ°á»›c láº«n kÃ­nh sau.
+[tu_choi_nham] wer=0.33
+   Gá»�C: KhÃ³a háº¿t cá»­a láº¡i giÃºp tÃ´i
+   STT: khoáº£ng háº¿t cá»±a láº¡i giÃºp tÃ´i.
+[tu_choi_nham] wer=0.67
+   Gá»�C: KhÃ³a xe láº¡i
+   STT: khÃ³ xÃ¢y láº¡i.
+[tu_choi_nham] wer=0.14
+   Gá»�C: Má»Ÿ cá»‘p giÃºp tÃ´i Ä‘á»ƒ Ä‘á»“ vÃ o
+   STT: máº­t cá»‘p giÃºp tÃ´i Ä‘á»ƒ Ä‘á»“ vÃ o.
+

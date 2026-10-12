@@ -1,0 +1,30 @@
+﻿(1) McNemar TRá»°C TIáº¾P v6 vs v6.1 â€” HF, khÃ´ng ngÆ°á»¡ng; b = v6.1 Ä‘Ãºng v6 sai, c = ngÆ°á»£c láº¡i
+
+== háº¡t giá»‘ng s42
+  RÃµ rÃ ng (74)                 v6  78.4 | v6.1  81.1 | v6.1 hÆ¡n  3, v6 hÆ¡n  1, p = 0.625
+  MÆ¡ há»“ (39)                   v6  87.2 | v6.1  74.4 | v6.1 hÆ¡n  0, v6 hÆ¡n  5, p = 0.062
+  NgoÃ i pháº¡m vi (117)          v6  78.6 | v6.1  82.9 | v6.1 hÆ¡n  9, v6 hÆ¡n  4, p = 0.267
+  Bá»• sung (28)                 v6  64.3 | v6.1  57.1 | v6.1 hÆ¡n  1, v6 hÆ¡n  3, p = 0.625
+  MÆ¡ há»“ dÃ i (129)              v6  82.2 | v6.1  79.8 | v6.1 hÆ¡n  6, v6 hÆ¡n  9, p = 0.607
+  CÃ¢u ngáº¯n + cÃ¡ch gá»�i (120)    v6  89.2 | v6.1  88.3 | v6.1 hÆ¡n  3, v6 hÆ¡n  4, p = 1.000
+  Tham sá»‘ má»›i (30)             v6  83.3 | v6.1  83.3 | v6.1 hÆ¡n  0, v6 hÆ¡n  0, p = 1.000
+  Hai lÆ°á»£t (60)                v6  60.0 | v6.1  66.7 | v6.1 hÆ¡n  6, v6 hÆ¡n  2, p = 0.289
+  GÃµ sai (104)                 v6  65.4 | v6.1  60.6 | v6.1 hÆ¡n  5, v6 hÆ¡n 10, p = 0.302
+
+== háº¡t giá»‘ng s7
+  RÃµ rÃ ng (74)                 v6  77.0 | v6.1  75.7 | v6.1 hÆ¡n  3, v6 hÆ¡n  4, p = 1.000
+  MÆ¡ há»“ (39)                   v6  79.5 | v6.1  76.9 | v6.1 hÆ¡n  1, v6 hÆ¡n  2, p = 1.000
+  NgoÃ i pháº¡m vi (117)          v6  67.5 | v6.1  71.8 | v6.1 hÆ¡n 10, v6 hÆ¡n  5, p = 0.302
+  Bá»• sung (28)                 v6  64.3 | v6.1  60.7 | v6.1 hÆ¡n  0, v6 hÆ¡n  1, p = 1.000
+  MÆ¡ há»“ dÃ i (129)              v6  79.1 | v6.1  78.3 | v6.1 hÆ¡n  6, v6 hÆ¡n  7, p = 1.000
+  CÃ¢u ngáº¯n + cÃ¡ch gá»�i (120)    v6  88.3 | v6.1  87.5 | v6.1 hÆ¡n  3, v6 hÆ¡n  4, p = 1.000
+  Tham sá»‘ má»›i (30)             v6  83.3 | v6.1  83.3 | v6.1 hÆ¡n  0, v6 hÆ¡n  0, p = 1.000
+  Hai lÆ°á»£t (60)                v6  61.7 | v6.1  58.3 | v6.1 hÆ¡n  1, v6 hÆ¡n  3, p = 0.625
+  GÃµ sai (104)                 v6  63.5 | v6.1  66.3 | v6.1 hÆ¡n  8, v6 hÆ¡n  5, p = 0.581
+
+(2) HÃ nh Ä‘á»™ng sai lÃªn xe, test sáº¡ch 230 cÃ¢u, HF khÃ´ng ngÆ°á»¡ng (gá»�i bá»«a + sai hÃ m + sai tham sá»‘ + thiáº¿u há»�i láº¡i)
+  v61s42  sai lÃªn xe  37  ({'goi_bua': 20, 'sai_ham': 8, 'sai_tham_so': 8, 'thieu_hoi_lai': 1})
+  v61s7   sai lÃªn xe  51  ({'goi_bua': 32, 'sai_ham': 9, 'sai_tham_so': 9, 'thieu_hoi_lai': 1})
+  v6s42   sai lÃªn xe  38  ({'goi_bua': 25, 'sai_ham': 5, 'sai_tham_so': 7, 'thieu_hoi_lai': 1})
+  v6s7    sai lÃªn xe  56  ({'goi_bua': 38, 'sai_ham': 10, 'sai_tham_so': 6, 'thieu_hoi_lai': 2})
+

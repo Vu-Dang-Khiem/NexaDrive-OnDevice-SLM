@@ -1,0 +1,46 @@
+{"cau": "Xem giúp tôi mức xăng còn lại", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_0>()<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "get_fuel_level", "nhom_phu": "ro_rang"}
+{"cau": "Lốp sau bên trái có non không", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_2>(wheel=\"rear_left\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "get_tire_pressure", "nhom_phu": "ro_rang"}
+{"cau": "Số công tơ mét hiện tại là bao nhiêu", "kieu_sai": "sai_ham", "dap_an": "<nexa_4>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "get_odometer", "nhom_phu": "ro_rang"}
+{"cau": "Xem odo theo dặm giúp tôi", "kieu_sai": "sai_ham", "dap_an": "<nexa_4>(unit=\"mi\")<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "get_odometer", "nhom_phu": "ro_rang"}
+{"cau": "Xe còn chạy được bao xa nữa", "kieu_sai": "sai_ham", "dap_an": "<nexa_5>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "get_range_estimate", "nhom_phu": "ro_rang"}
+{"cau": "Bật sấy kính hậu giùm", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_8>(state=\"on\", zone=\"rear\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "set_defrost", "nhom_phu": "ro_rang"}
+{"cau": "Khóa xe lại", "kieu_sai": "sai_ham", "dap_an": "<nexa_9>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "lock_doors", "nhom_phu": "ro_rang"}
+{"cau": "Chốt cửa xe hộ cái", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_9>()<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "lock_doors", "nhom_phu": "ro_rang"}
+{"cau": "Mở cốp xe", "kieu_sai": "sai_ham", "dap_an": "<nexa_11>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "open_trunk", "nhom_phu": "ro_rang"}
+{"cau": "Mở cốp giúp tôi để đồ vào", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_11>()<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "open_trunk", "nhom_phu": "ro_rang"}
+{"cau": "Mở nắp cổng sạc", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_13>()<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "open_charge_port", "nhom_phu": "ro_rang"}
+{"cau": "Mở cửa sạc điện ra", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_13>()<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "open_charge_port", "nhom_phu": "ro_rang"}
+{"cau": "Tắt đèn cảnh báo đi", "kieu_sai": "sai_ham", "dap_an": "<nexa_18>(state=\"off\")<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "set_hazard_lights", "nhom_phu": "ro_rang"}
+{"cau": "Đặt âm lượng mức 20", "kieu_sai": "sai_ham", "dap_an": "<nexa_19>(set_value=20)<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "set_volume", "nhom_phu": "ro_rang"}
+{"cau": "Mở kênh VOV Giao thông", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_20>(source=\"radio\", query=\"VOV Giao thông\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "play_media", "nhom_phu": "ro_rang"}
+{"cau": "Bật nhạc từ USB đi", "kieu_sai": "sai_ham", "dap_an": "<nexa_20>(source=\"usb\")<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "play_media", "nhom_phu": "ro_rang"}
+{"cau": "Chỉ đường tới Vincom Bà Triệu tránh đường cao tốc", "kieu_sai": "sai_ham", "dap_an": "<nexa_21>(destination=\"Vincom Bà Triệu\", avoid=\"highways\")<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "navigate_to", "nhom_phu": "ro_rang"}
+{"cau": "Tìm quán cà phê gần đây", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_22>(category=\"coffee\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "find_nearby", "nhom_phu": "ro_rang"}
+{"cau": "Tìm bãi gửi xe ô tô xung quanh đây", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_22>(category=\"parking\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "find_nearby", "nhom_phu": "ro_rang"}
+{"cau": "Tìm cây ATM trong bán kính 3 km", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_22>(category=\"atm\", radius_km=3.0)<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "find_nearby", "nhom_phu": "ro_rang"}
+{"cau": "Cuối tuần Đà Lạt có nắng không", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_23>(location=\"Đà Lạt\", day=5)<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "get_weather", "nhom_phu": "ro_rang"}
+{"cau": "Nóng quá", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "set_ac", "nhom_phu": "mo_ho"}
+{"cau": "Lạnh run cả người rồi", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "set_ac", "nhom_phu": "mo_ho"}
+{"cau": "Hàng ghế sau kêu nóng nãy giờ", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_ask><nexa_6>(state=\"on\", zone=\"rear\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "set_ac", "nhom_phu": "mo_ho"}
+{"cau": "Đói bụng cồn cào rồi", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "find_nearby", "nhom_phu": "mo_ho"}
+{"cau": "Đỗ xe ở đâu quanh đây bây giờ", "kieu_sai": "tu_choi_nham", "dap_an": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "model_sinh": "<nexa_24>()<nexa_end>", "fn": "find_nearby", "nhom_phu": "mo_ho"}
+{"cau": "Mai đi Sa Pa không biết trời có đẹp không", "kieu_sai": "thieu_hoi_lai", "dap_an": "<nexa_ask><nexa_23>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "get_weather", "nhom_phu": "mo_ho"}
+{"cau": "Bật bình nóng lạnh ở nhà trước đi", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_thiet_bi_khac"}
+{"cau": "Bật nồi cơm điện chế độ nấu nhanh", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_thiet_bi_khac"}
+{"cau": "Tung đồng xu xem sấp hay ngửa giúp tôi", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_kien_thuc"}
+{"cau": "Giải giúp tôi phương trình x bình phương cộng 5x cộng 6 bằng không", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_kien_thuc"}
+{"cau": "Tự động tháo bánh xe ra thay lốp dự phòng", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_vuot_kha_nang"}
+{"cau": "Xóa bớt bộ nhớ trên điện thoại iPhone giúp tôi", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_kien_thuc"}
+{"cau": "Chuyển sang lấy gió trong xe", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_xe_khong_ho_tro"}
+{"cau": "Mở camera lùi lên màn hình", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_xe_khong_ho_tro"}
+{"cau": "Bật hệ thống hỗ trợ giữ làn đường", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_xe_khong_ho_tro"}
+{"cau": "Tắt đèn sương mù ở sân vườn", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_thiet_bi_khac"}
+{"cau": "Xe này chạy được bao nhiêu km cho 1 lít xăng", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_kien_thuc_xe"}
+{"cau": "Kiểm tra giúp tôi xem phanh còn ăn không", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_bao_duong"}
+{"cau": "Thay lốp mới cho xe đi", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_bao_duong"}
+{"cau": "Kiểm tra hộ tôi ắc quy còn tốt không", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_bao_duong"}
+{"cau": "Xem lịch hôm nay có cuộc họp nào không", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_dien_thoai"}
+{"cau": "Đổi qua cái khác thử xem", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_mo_ho_vo_nghia"}
+{"cau": "Bấm nút đó giúp tôi", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_mo_ho_vo_nghia"}
+{"cau": "Làm giống hôm qua ấy", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_mo_ho_vo_nghia"}
+{"cau": "Tự động rẽ vào làn khẩn cấp", "kieu_sai": "goi_bua", "dap_an": "<nexa_24>()<nexa_end>", "model_sinh": "<nexa_12>()<nexa_end>", "fn": "irrelevant_function", "nhom_phu": "oos_vuot_kha_nang"}

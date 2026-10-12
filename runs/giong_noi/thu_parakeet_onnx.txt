@@ -1,0 +1,30 @@
+﻿náº¡p model: 3.0 s
+cau_0.wav               3313 ms / 3.8 s Ã¢m thanh Â· CER 151.4% Â· Lá»†CH NeMo: SÄƒng cÃ²n sÃ¡u mÆ°Æ¡i hai pháº§n trÄƒm, Ä‘i Ä‘Æ°á»£c khoáº£ng hai trÄƒm sÃ¡u mÆ°Æ¡i pháº©y bá»‘n ki lÃ´ mÃ©t.
+   ONNX: SÄƒng cÃ²n sÃ¡u mÆ°Æ¡i hai pháº§n trÄƒm, Ä‘i Ä‘Æ°á»£c khoáº£ng hai trÄƒm sÃ¡u mÆ°Æ¡i pháº©y bá»‘n kiÃ´ mÃ©t.
+cau_1.wav                362 ms / 2.2 s Ã¢m thanh Â· CER 48.5% Â· Lá»†CH NeMo: Ä�Ã£ báº­t Ä‘iá»�u hai mÆ°Æ¡i hai Ä‘á»™ cho gáº¿ lÃ¡i.
+   ONNX: Ä�Ã£ báº­t Ä‘iá»�u hai mÆ°Æ¡i hai Ä‘á»™ cho g ngÆ°á»�i lÃ¡i.
+cau_2.wav               1059 ms / 4.1 s Ã¢m thanh Â· CER 29.0% Â· TRÃ™NG NeMo
+   ONNX: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+cau_3.wav               1540 ms / 2.1 s Ã¢m thanh Â· CER  0.0% Â· TRÃ™NG NeMo
+   ONNX: Báº¡n cÃ³ muá»‘n tÃ´i báº­t sÆ°á»Ÿi cho áº¥m khÃ´ng?
+cau_4.wav               1507 ms / 1.9 s Ã¢m thanh Â· CER  5.3% Â· Lá»†CH NeMo: Xe Ä‘ang cháº¡y, nÃªn tÃ´i khÃ´ng má»Ÿ c cá»‘p Ä‘Æ°á»£c.
+   ONNX: Xe Ä‘ang cháº¡y nÃªn tÃ´i khÃ´ng má»Ÿ cÃ´ Ä‘Æ°á»£c.
+cau_5.wav               2617 ms / 4.2 s Ã¢m thanh Â· CER 32.8% Â· Lá»†CH NeMo: Ä�Ã£ tÃ¬m Ä‘Æ°á»�ng tá»›i sÃ¢n bay Ná»™i BÃ i khoáº£ng báº£y pháº©y ba kiÃ´m, máº¥t chá»«ng mÆ°á»�i hai phÃºt.
+   ONNX: Ä�Ã£ tÃ¬m Ä‘Æ°á»�ng tá»›i sÃ¢n bay Ná»™i BÃ i khoáº£ng báº£y pháº©y ba kim, máº¥t trá»«ng mÆ°á»�i hai phÃºt.
+cau_6.wav               2270 ms / 6.5 s Ã¢m thanh Â· CER  3.4% Â· Lá»†CH NeMo: Xin lá»—i viá»‡c nÃ y, tÃ´i chÆ°a lÃ m Ä‘Æ°á»£c. TÃ´i cÃ³ thá»ƒ giÃºp Ä‘iá»�u cá»­a kÃ­nh Ä‘Ã¨n, Ã¢m lÆ°á»£ng dáº«n Ä‘Æ°á»�ng hoáº·c kiá»ƒm trÃ¡t tÃ¬nh tráº¡ng xe.
+   ONNX: Xin lá»—i viá»‡c nÃ y tÃ´i chÆ°a lÃ m Ä‘Æ°á»£c. TÃ´i cÃ³ thá»ƒ giÃºp Ä‘iá»�u cá»­a kÃ­nh Ä‘Ã¨n Ã¢m lÆ°á»£ng dáº«n Ä‘Æ°á»�ng hoáº·c kiá»ƒm tra tÃ¬nh tráº¡ng xe.
+giong_Adam.wav          2055 ms / 4.2 s Ã¢m thanh Â· CER 32.3% Â· Lá»†CH NeMo: Ä�ang má»Ÿ kÃ­n gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+   ONNX: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­ khÃ´ng?
+giong_Háº£i_Ä�Äƒng.wav      2971 ms / 4.2 s Ã¢m thanh Â· CER 33.9% Â· Lá»†CH NeMo: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cá»§a muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+   ONNX: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ má»¥c tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+giong_Ngá»�c_TrÃ¢n.wav     4205 ms / 4.8 s Ã¢m thanh Â· CER 29.0% Â· Lá»†CH NeMo: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, B báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+   ONNX: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+giong_Quang_SÆ¡n.wav     3514 ms / 5.2 s Ã¢m thanh Â· CER 38.7% Â· Lá»†CH NeMo: Ä�ang má»Ÿ, kÃ­nh dá»… phÃ¹ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, Báº¡n cÃ³ mu tÃ´i nÃ¢ng táº¥t cáº£ ká»‰nh khÃ´ng?
+   ONNX: Ä�ang má»Ÿ kÃ¬nh dá»… phÃ¹ nÄƒm mÆ°Æ¡i pháº§n trÄƒm,áº¡n cÃ³ má»“n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+giong_ThÃ¹y_Dung.wav     2849 ms / 3.8 s Ã¢m thanh Â· CER 37.1% Â· Lá»†CH NeMo: Ä�ang má»Ÿ kÃ­nh káº¿ vá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+   ONNX: Ä�ang má»Ÿ kiáº¿m ká»ƒ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+giong_TrÃºc_Ly.wav       2607 ms / 4.0 s Ã¢m thanh Â· CER 29.0% Â· TRÃ™NG NeMo
+   ONNX: Ä�ang má»Ÿ kÃ­nh gháº¿ phá»¥ nÄƒm mÆ°Æ¡i pháº§n trÄƒm, báº¡n cÃ³ muá»‘n tÃ´i nÃ¢ng táº¥t cáº£ kÃ­nh khÃ´ng?
+
+trÃ¹ng NeMo gá»‘c 3/13 Â· CER tb 36.2% Â· thá»�i gian tb 2375 ms
+

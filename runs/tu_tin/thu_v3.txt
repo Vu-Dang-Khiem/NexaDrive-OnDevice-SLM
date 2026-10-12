@@ -1,0 +1,21 @@
+﻿transformers 4.57.3
+conda : The tokenizer you are loading from 'models/student-full-v3' with an incorrect regex pattern: 
+https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This 
+will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to 
+fix this issue.
+At line:1 char:302
++ ... tch {} } }; conda run -n vdk1 python "C:\Users\FPT\AppData\Local\Temp ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (The tokenizer y...fix this issue.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set 
+`TRANSFORMERS_VERBOSITY=info` for more details.
+tÃ¡ch 'trip_km=290': ['(tr', 'ip', '_km', '=', '2', '9', '0', '.', '0', ')']
+sá»‘ token prompt 1: 41
+   <nexa_5>()<nexa_end> | cáº§n <nexa_5>(trip_km=290.0)<nexa_end><|im_end|>
+   áº¯t()<nexa_end> | cáº§n <nexa_7>(level=0)<nexa_end><|im_end|>
+   <nexa_5>()<nexa_end> | cáº§n <nexa_5>(trip_km=100.0)<nexa_end><|im_end|>
+   <nexa_7>(level=5)<nexa_end> | cáº§n <nexa_7>(level=5)<nexa_end><|im_end|>
+
+

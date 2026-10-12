@@ -1,0 +1,242 @@
+{
+  "cameraPresets": [
+    "overview",
+    "front",
+    "rear",
+    "driver_door",
+    "passenger_door",
+    "dashboard",
+    "center_console",
+    "roof",
+    "charge_port",
+    "fuel_flap",
+    "wheel_fl",
+    "wheel_fr",
+    "wheel_rl",
+    "wheel_rr"
+  ],
+  "hudWidgets": [
+    "fuel_gauge",
+    "battery_gauge",
+    "temp_dial",
+    "fan_bar",
+    "tire_grid",
+    "status_list",
+    "odometer",
+    "range_card",
+    "nav_card",
+    "weather_card",
+    "volume_bar",
+    "media_card",
+    "lights_panel",
+    "none"
+  ],
+  "actions": {
+    "get_fuel_level": {
+      "nexa": "<nexa_0>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "fuel_gauge",
+        "unit": "%"
+      }
+    },
+    "get_battery_range": {
+      "nexa": "<nexa_1>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "battery_gauge",
+        "unit": "%"
+      }
+    },
+    "get_tire_pressure": {
+      "nexa": "<nexa_2>",
+      "camera": "wheel_fl",
+      "animation": null,
+      "hud": {
+        "widget": "tire_grid",
+        "unit": "psi"
+      }
+    },
+    "get_vehicle_status": {
+      "nexa": "<nexa_3>",
+      "camera": "overview",
+      "animation": null,
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "get_odometer": {
+      "nexa": "<nexa_4>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "odometer"
+      }
+    },
+    "get_range_estimate": {
+      "nexa": "<nexa_5>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "range_card",
+        "unit": "km"
+      }
+    },
+    "set_ac": {
+      "nexa": "<nexa_6>",
+      "camera": "center_console",
+      "animation": null,
+      "hud": {
+        "widget": "temp_dial",
+        "unit": "°C"
+      }
+    },
+    "set_fan_speed": {
+      "nexa": "<nexa_7>",
+      "camera": "center_console",
+      "animation": null,
+      "hud": {
+        "widget": "fan_bar"
+      }
+    },
+    "set_defrost": {
+      "nexa": "<nexa_8>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "lock_doors": {
+      "nexa": "<nexa_9>",
+      "camera": "overview",
+      "animation": null,
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "unlock_doors": {
+      "nexa": "<nexa_10>",
+      "camera": "driver_door",
+      "animation": null,
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "open_trunk": {
+      "nexa": "<nexa_11>",
+      "camera": "rear",
+      "animation": "trunk_open",
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "close_trunk": {
+      "nexa": "<nexa_12>",
+      "camera": "rear",
+      "animation": "trunk_close",
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "open_charge_port": {
+      "nexa": "<nexa_13>",
+      "camera": "charge_port",
+      "animation": "charge_port_open",
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "open_fuel_flap": {
+      "nexa": "<nexa_14>",
+      "camera": "fuel_flap",
+      "animation": "fuel_flap_open",
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "control_window": {
+      "nexa": "<nexa_15>",
+      "camera": "driver_door",
+      "animation": "window_move",
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "operate_sunroof": {
+      "nexa": "<nexa_16>",
+      "camera": "roof",
+      "animation": "sunroof_move",
+      "hud": {
+        "widget": "status_list"
+      }
+    },
+    "set_headlights": {
+      "nexa": "<nexa_17>",
+      "camera": "front",
+      "animation": "headlights_toggle",
+      "hud": {
+        "widget": "lights_panel"
+      }
+    },
+    "set_hazard_lights": {
+      "nexa": "<nexa_18>",
+      "camera": "rear",
+      "animation": "hazards_toggle",
+      "hud": {
+        "widget": "lights_panel"
+      }
+    },
+    "set_volume": {
+      "nexa": "<nexa_19>",
+      "camera": "center_console",
+      "animation": null,
+      "hud": {
+        "widget": "volume_bar"
+      }
+    },
+    "play_media": {
+      "nexa": "<nexa_20>",
+      "camera": "center_console",
+      "animation": null,
+      "hud": {
+        "widget": "media_card"
+      }
+    },
+    "navigate_to": {
+      "nexa": "<nexa_21>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "nav_card"
+      }
+    },
+    "find_nearby": {
+      "nexa": "<nexa_22>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "nav_card"
+      }
+    },
+    "get_weather": {
+      "nexa": "<nexa_23>",
+      "camera": "dashboard",
+      "animation": null,
+      "hud": {
+        "widget": "weather_card",
+        "unit": "°C"
+      }
+    },
+    "irrelevant_function": {
+      "nexa": "<nexa_24>",
+      "camera": "overview",
+      "animation": null,
+      "hud": {
+        "widget": "none"
+      }
+    }
+  }
+}

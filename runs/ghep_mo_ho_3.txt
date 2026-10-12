@@ -1,0 +1,16 @@
+﻿Ä‘á»™ng tá»« sai báº£o: []
+cáº·p gáº§n trÃ¹ng (Jaccard â‰¥ 0,25) cÃ³ dÃ­nh cÃ¢u má»›i:
+  0.30 [set_headlights] 13: Ä�Æ°á»�ng tá»‘i, cháº³ng tháº¥y xa gÃ¬ cáº£.
+       [set_headlights] 122: Ä�Æ°á»�ng nÃ y váº¯ng mÃ  phÃ­a trÆ°á»›c chá»‰ sÃ¡ng Ä‘Æ°á»£c má»™t Ä‘oáº¡n ngáº¯n, xa hÆ¡n lÃ  cháº³ng tháº¥y gÃ¬ cáº£.
+  0.42 [lock_doors] 35: Cáº£ nhÃ  xuá»‘ng chá»¥p áº£nh háº¿t rá»“i, tÃºi xÃ¡ch váº«n trÃªn gháº¿ mÃ  ai Ä‘i ngang kÃ©o cá»­a cÅ©ng vÃ o Ä‘Æ°á»£c thÃ¬ lo quÃ¡.
+       [lock_doors] 118: TÃºi xÃ¡ch cÃ²n trÃªn gháº¿ mÃ  xe Ä‘á»ƒ Ä‘Ã¢y ai kÃ©o cá»­a cÅ©ng vÃ o Ä‘Æ°á»£c, em lo máº¥t Ä‘á»“ quÃ¡.
+  0.31 [set_volume] 44: Máº¹ gá»�i Ä‘iá»‡n dáº·n chuyá»‡n Ä‘Ã³n chÃ¡u mÃ  tiáº¿ng bÃ i hÃ¡t trong xe Ã¡t háº¿t lá»�i máº¹, nghe cháº³ng rÃµ gÃ¬.
+       [set_volume] 95: Em Ä‘ang ghi Ã¢m gá»­i cho máº¹ mÃ  tiáº¿ng bÃ i hÃ¡t trong xe Ã¡t háº¿t cáº£ tiáº¿ng em nÃ³i rá»“i.
+  0.40 [close_trunk] 55: Trá»�i mÆ°a rá»“i mÃ  chá»— Ä‘á»ƒ Ä‘á»“ Ä‘áº±ng sau váº«n toang hoÃ¡c tháº¿ kia, Æ°á»›t háº¿t Ä‘á»“ máº¥t.
+       [close_trunk] 97: Láº¥y Ä‘á»“ xong rá»“i mÃ  Ä‘áº±ng sau váº«n toang hoÃ¡c kÃ¬a, mÃ¬nh Ä‘Ã¢u cÃ³ Ä‘á»ƒ tháº¿ mÃ  Ä‘i Ä‘Æ°á»£c.
+  0.29 [lock_doors] 70: Xe Ä‘ang cháº¡y rá»“i mÃ  máº¥y cÃ¡i chá»‘t á»Ÿ cá»­a váº«n cÃ²n nhÃ´ lÃªn tháº¿ kia, em tháº¥y khÃ´ng yÃªn tÃ¢m láº¯m.
+       [lock_doors] 126: Máº¥y cá»­a bÃªn nÃ y cÃ³ tiáº¿ng chá»‘t rá»“i, riÃªng cá»­a sau bÃªn pháº£i váº«n kÃ©o Ä‘Æ°á»£c tá»« ngoÃ i, Ä‘á»ƒ xe tháº¿ nÃ y khÃ´ng yÃªn tÃ¢m.
+  0.43 [set_headlights] 81: Ã�nh sÃ¡ng xe mÃ¬nh chiáº¿u cáº£ vÃ o gÆ°Æ¡ng xe phÃ­a trÆ°á»›c kÃ¬a, tháº¿ nÃ y cháº¯c ngÆ°á»�i ta chÃ³i máº¯t láº¯m.
+       [set_headlights] 115: CÃ³ xe ngÆ°á»£c chiá»�u kÃ¬a, mÃ¬nh chiáº¿u tháº¿ nÃ y chÃ³i máº¯t ngÆ°á»�i ta máº¥t.
+Ä‘á»™ dÃ i: â‰¤8: 49 | 9â€“14: 1 | â‰¥15: 80
+

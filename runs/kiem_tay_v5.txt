@@ -1,0 +1,16 @@
+﻿cá»™t: ['id', 'cau', 'tro_ly_se_hoi_lai_ve', 'dung_hay_sai', 'ghi_chu'] | sá»‘ dÃ²ng: 52
+káº¿t quáº£: {'dung': 47, 'sai': 5}
+Ä‘Ãºng 47/52 = 90.4% (KTC95 79.4â€“95.8), phÃ¢n vÃ¢n tÃ­nh lÃ  KHÃ”NG Ä‘Ãºng
+
+=== sai / phÃ¢n vÃ¢n ===
+  21 [sai] ChÃ , Ä‘Æ°á»�ng váº¯ng quÃ¡, ngá»“i Ä‘Ã¢y nghe nháº¡c cho nÃ³ sÆ°á»›ng, nhÆ°ng mÃ  to quÃ¡, sá»£ áº£nh hÆ°á»Ÿng hÃ ng xÃ³m.
+      -> set_volume() | sá»£ Ã¢m thanh trong xe áº£nh hÆ°á»Ÿng hÃ ng xÃ³m thÃ¬ nÃªn Ä‘Ã³ng cá»­a kÃ­nh Ä‘á»ƒ trÃ¡nh Ã¢m thanh trong xe trÃ n ra ngoÃ i
+  29 [sai] Anh Æ¡i, Ä‘Ã i hÃ´m nay hay ghÃª, nhÆ°ng mÃ  tiáº¿ng á»“n tá»« bÃªn ngoÃ i cÅ©ng to quÃ¡, nghe khÃ´ng rÃµ.
+      -> set_volume() | Ä‘ang nghe Ä‘Ã i trong xe hay mÃ  tiáº¿ng á»“n tá»« bÃªn ngoÃ i lÃ m á»“n nÃªn Ä‘Ã³ng cá»­a kÃ­nh oto
+  36 [sai] Anh Æ¡i, giÃ³ Ä‘iá»�u hoÃ  thá»•i vÃ o chÃ¢n em á»“n quÃ¡, lÃ m em khÃ´ng táº­p trung Ä‘Æ°á»£c.
+      -> set_fan_speed(level=0) | Ä‘ang nháº¯c Ä‘áº¿n giÃ³ Ä‘iá»�u hÃ²a nÃªn gá»�i hÃ m táº¯t Ä‘iá»�u hÃ³a
+  47 [sai] Náº¯ng gáº¯t quÃ¡, kÃ­nh xe nhÆ° cÃ¡i lÃ² sÆ°á»Ÿi, chÃ³i máº¯t quÃ¡.
+      -> set_defrost(state="on") | sáº¥y kÃ­nh chá»‰ dÃ nh cho trá»�i mÆ°a cÃ²n Ä‘Ã¢y lÃ  trá»�i náº¯ng Ä‘ang muá»‘n nÃ³i Ä‘iá»�u hÃ²a
+  49 [sai] Cháº¹p, tá»‘i tháº¿ nÃ y mÃ  Ä‘Ã¨n pha láº¡i khÃ´ng sÃ¡ng báº±ng máº¥y xe khÃ¡c.
+      -> set_headlights(mode="low_beam") | trá»�i tá»‘i, Ä‘Ã¨n khÃ´ng sÃ¡ng báº±ng Ä‘Ã¨n xe khÃ¡c Ã½ muá»‘n nÃ³i lÃ  Ä‘ang báº­t Ä‘Ã¨n rá»“i nhÆ°ng khÃ´ng sÃ¡ng báº±ng cÃ¡c xe khÃ¡c nÃªn muá»‘n báº­t pha
+

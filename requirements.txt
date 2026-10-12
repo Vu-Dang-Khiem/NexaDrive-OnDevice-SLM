@@ -1,0 +1,31 @@
+# ── lõi (luôn cần, chạy local) ──────────────────────────────────────────────
+pyyaml>=6.0
+pydantic>=2.6
+
+# ── backend runtime (Phase 0 trở đi) ────────────────────────────────────────
+fastapi>=0.110
+uvicorn[standard]>=0.29
+websockets>=12.0
+httpx>=0.27                  # connector weather / maps
+
+# ── hạ tầng GPU thuê (Phase 2, 4) ───────────────────────────────────────────
+modal>=1.5                   # chạy job trên GPU cloud: `modal run --detach ...`
+
+# ── suy luận agent lúc serve (Phase 5) ──────────────────────────────────────
+# llama-cpp-python>=0.2.70   # nạp GGUF q4_k_m; cài khi tới Phase 5
+
+# ── sinh dữ liệu (Phase 2) — cài TRONG modal Image, không cần ở local ───────
+# vllm                       # chạy teacher Qwen2.5-72B-Instruct
+# sentence-transformers      # khử trùng lặp câu gần giống
+
+# ── huấn luyện (Phase 4) — cài TRONG modal Image, không cần ở local ────────
+# torch                      # khớp CUDA của máy thuê
+# transformers>=4.41
+# peft>=0.11                 # nhánh LoRA đối chiếu
+# trl>=0.9                   # SFTTrainer
+# datasets>=2.19
+# accelerate>=0.30
+
+# ── dev ─────────────────────────────────────────────────────────────────────
+pytest>=8.0
+ruff>=0.4

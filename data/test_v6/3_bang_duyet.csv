@@ -1,0 +1,211 @@
+﻿id,phan,cau_luot_1,tro_ly_lam_luot_1,cau,tro_ly_se_lam,SAI,sua_thanh,nhan_goc
+1,A,,,Hạ kính ghế phụ,hạ kính ghế phụ,,,"control_window(window=""front_right"", position=""down"")"
+2,A,,,Lốp bao nhiêu bar?,kiểm tra áp suất lốp,,,get_tire_pressure()
+3,A,,,Dẫn tới Sầm Sơn,dẫn đường tới Sầm Sơn,,,"navigate_to(destination=""Sầm Sơn"")"
+4,A,,,Khoá cửa lại,khoá cửa xe,,,lock_doors()
+5,A,,,Mở nhạc lên coi,phát nhạc,,,play_media()
+6,A,,,Hé cửa sổ trời,hé cửa sổ trời,,,"operate_sunroof(action=""tilt"")"
+7,A,,,Bật điều hoà đi,bật điều hoà,,,"set_ac(state=""on"")"
+8,A,,,Giảm quạt gió xuống,chỉnh quạt gió mức 2,sai,giảm quạt gió xuống 2 mức,set_fan_speed(level=2)
+9,A,,,Pin còn bao nhiêu?,kiểm tra pin,,,get_battery_range()
+10,A,,,Nay trời mưa không?,xem thời tiết [day=0],,,get_weather(day=0)
+11,A,,,Xăng còn mấy lít?,kiểm tra mức xăng,,,get_fuel_level()
+12,A,,,Xe có lỗi không?,kiểm tra tình trạng xe,,,get_vehicle_status()
+13,A,,,Mở nắp bình xăng,mở nắp bình xăng,,,open_fuel_flap()
+14,A,,,Mở cốp sau nhé,mở cốp sau,,,open_trunk()
+15,A,,,ODO bao nhiêu rồi?,xem số km xe đã đi,,,get_odometer()
+16,A,,,Bật đèn khẩn cấp,bật đèn khẩn cấp,,,"set_hazard_lights(state=""on"")"
+17,A,,,Chuyển sang đèn cốt,bật đèn chiếu gần,,,"set_headlights(mode=""low_beam"")"
+18,A,,,Tìm ATM gần đây,tìm cây ATM gần đây,,,"find_nearby(category=""atm"")"
+19,A,,,Mở khoá cửa đi,mở khoá cửa xe,,,unlock_doors()
+20,A,,,Mở nắp sạc đi,mở nắp cổng sạc,,,open_charge_port()
+21,A,,,Vặn nhỏ tiếng lại,giảm âm lượng 2 mức,,,set_volume(delta=-2)
+22,A,,,Đóng cốp giùm cái,đóng cốp sau,,,close_trunk()
+23,A,,,Còn đi bao xa?,tính quãng đường còn đi được,,,get_range_estimate()
+24,A,,,Bật sấy kính đi,bật sấy kính,,,"set_defrost(state=""on"")"
+25,A,,,Tắt máy lạnh nha,tắt điều hoà,,,"set_ac(state=""off"")"
+26,A,,,Đọc số ODO đi,xem số km xe đã đi,,,get_odometer()
+27,A,,,Còn chạy mấy cây?,tính quãng đường còn đi được,,,get_range_estimate()
+28,A,,,Bật đài lên nghe,phát nhạc [source=radio],,,"play_media(source=""radio"")"
+29,A,,,Mở nắp xăng giùm,mở nắp bình xăng,,,open_fuel_flap()
+30,A,,,Báo mức pin đi,kiểm tra pin,,,get_battery_range()
+31,A,,,Còn bao nhiêu xăng?,kiểm tra mức xăng,,,get_fuel_level()
+32,A,,,Kiểm tra xe giùm,kiểm tra tình trạng xe,,,get_vehicle_status()
+33,A,,,Bật nắp sạc lên,mở nắp cổng sạc,,,open_charge_port()
+34,A,,,Tắt đèn khẩn cấp,tắt đèn khẩn cấp,,,"set_hazard_lights(state=""off"")"
+35,A,,,Lốp mấy cân rồi?,kiểm tra áp suất lốp,,,get_tire_pressure()
+36,A,,,Quán ăn gần nhất?,tìm nhà hàng gần đây,,,"find_nearby(category=""restaurant"")"
+37,A,,,Cho tiếng to lên,tăng âm lượng 2 mức,,,set_volume(delta=2)
+38,A,,,Ngoài trời mấy độ?,xem thời tiết,,,get_weather()
+39,A,,,Quạt gió mạnh lên,chỉnh quạt gió mức 6,,,set_fan_speed(level=6)
+40,A,,,Đóng cửa sổ trời,đóng cửa sổ trời,,,"operate_sunroof(action=""close"")"
+41,A,,,Kéo kính lên hết,nâng tất cả kính,,,"control_window(window=""all"", position=""up"", amount=100)"
+42,A,,,Chốt hết cửa đi,khoá cửa xe,,,lock_doors()
+43,A,,,Bật cốp lên nào,mở cốp sau,,,open_trunk()
+44,A,,,Đèn pha tự động,chuyển đèn pha sang tự động,,,"set_headlights(mode=""auto"")"
+45,A,,,Tắt sấy kính nhé,tắt sấy kính,,,"set_defrost(state=""off"")"
+46,A,,,Hạ cốp xuống đi,đóng cốp sau,,,close_trunk()
+47,A,,,Nhả khoá cửa ra,mở khoá cửa xe,,,unlock_doors()
+48,A,,,Tìm đường tới Huế,dẫn đường tới Huế,,,"navigate_to(destination=""Huế"")"
+49,A,,,Xe đang bị gì?,kiểm tra tình trạng xe,,,get_vehicle_status()
+50,A,,,Mai có nắng không?,xem thời tiết [day=1],,,get_weather(day=1)
+51,A,,,Pin còn nhiều không?,kiểm tra pin,,,get_battery_range()
+52,A,,,Cho mở nắp sạc,mở nắp cổng sạc,,,open_charge_port()
+53,A,,,Hé kính bên lái,hạ kính ghế lái 20%,,,"control_window(window=""front_left"", position=""down"", amount=20)"
+54,A,,,Đủ tới Huế không?,tính quãng đường còn đi được,,,get_range_estimate()
+55,A,,,Chỉ đường đi Vinh,dẫn đường tới Vinh,,,"navigate_to(destination=""Vinh"")"
+56,A,,,Cho nghe nhạc vàng,phát nhạc [query=nhạc vàng],,,"play_media(query=""nhạc vàng"")"
+57,A,,,Cốp sau mở ra,mở cốp sau,,,open_trunk()
+58,A,,,Bỏ chốt cửa đi,mở khoá cửa xe,,,unlock_doors()
+59,A,,,Bật pha chiếu xa,bật đèn chiếu xa,,,"set_headlights(mode=""high_beam"")"
+60,A,,,Sấy kính trước nhé,bật sấy kính [zone=front],,,"set_defrost(state=""on"", zone=""front"")"
+61,A,,,Âm lượng mức năm,chỉnh âm lượng [set_value=5],,,set_volume(set_value=5)
+62,A,,,Bật đèn tam giác,bật đèn khẩn cấp,,,"set_hazard_lights(state=""on"")"
+63,A,,,Khoá cửa cho chắc,khoá cửa xe,,,lock_doors()
+64,A,,,Xem mức xăng nào,kiểm tra mức xăng,,,get_fuel_level()
+65,A,,,Xe mấy vạn rồi?,xem số km xe đã đi [unit=km],,,"get_odometer(unit=""km"")"
+66,A,,,Bánh nào non hơi?,kiểm tra áp suất lốp,,,get_tire_pressure()
+67,A,,,Trạm sạc đâu nhỉ?,tìm trạm sạc gần đây,,,"find_nearby(category=""charging_station"")"
+68,A,,,Mở cửa sổ trời,mở cửa sổ trời,,,"operate_sunroof(action=""open"")"
+69,A,,,Mở hộ nắp xăng,mở nắp bình xăng,,,open_fuel_flap()
+70,A,,,Cho cốp đóng lại,đóng cốp sau,,,close_trunk()
+71,A,,,Máy lạnh 25 độ,bật điều hoà 25 độ,,,"set_ac(state=""on"", temperature=25)"
+72,A,,,Tắt quạt gió luôn,chỉnh quạt gió mức 0,,,set_fan_speed(level=0)
+73,B,,,Con xe này có trục trặc gì không?,kiểm tra tình trạng xe,,,get_vehicle_status()
+74,B,,,Bật cái nắp chỗ đổ xăng ra giúp anh.,mở nắp bình xăng,,,open_fuel_flap()
+75,B,,,Xe còn mấy phần trăm điện vậy em?,kiểm tra pin,,,get_battery_range()
+76,B,,,Cái cửa trên nóc hé lên chút đi.,hé cửa sổ trời,,,"operate_sunroof(action=""tilt"")"
+77,B,,,Bữa ni trời có mưa chi không?,xem thời tiết [day=0],,,get_weather(day=0)
+78,B,,,Kéo kiếng bên tài xuống nửa chừng giùm chị.,hạ kính ghế lái 50%,,,"control_window(window=""front_left"", position=""down"", amount=50)"
+79,B,,,Hạ nấc gió máy lạnh xuống số hai nha.,chỉnh quạt gió mức 2,,,set_fan_speed(level=2)
+80,B,,,"Xe hỏng rồi, bật đèn nháy đôi lên.",bật đèn khẩn cấp,,,"set_hazard_lights(state=""on"")"
+81,B,,,Bấm chốt mấy cánh cửa lại cho anh.,khoá cửa xe,,,lock_doors()
+82,B,,,Coi bốn cái vỏ xe còn đủ hơi không.,kiểm tra áp suất lốp,,,get_tire_pressure()
+83,B,,,Mở cái nắp chỗ cắm điện cho xe đi.,mở nắp cổng sạc,,,open_charge_port()
+84,B,,,Bật chống mờ kính lái lên hộ tôi.,bật sấy kính [zone=front],,,"set_defrost(state=""on"", zone=""front"")"
+85,B,,,"Dẫn chị ra Tân Sơn Nhất, ga quốc nội.",dẫn đường tới Ga quốc nội sân bay Tân Sơn Nhất,,,"navigate_to(destination=""Ga quốc nội sân bay Tân Sơn Nhất"")"
+86,B,,,Mở cái cửa để đồ đằng sau ra.,mở cốp sau,,,open_trunk()
+87,B,,,Nhả chốt cửa cho bà con xuống xe.,mở khoá cửa xe,,,unlock_doors()
+88,B,,,Tắt cặp đèn chiếu đường phía trước đi.,tắt đèn pha,,,"set_headlights(mode=""off"")"
+89,B,,,Mở cho chú nghe cải lương một chút.,phát nhạc [query=cải lương],,,"play_media(query=""cải lương"")"
+90,B,,,Vặn cái tiếng bé bớt cho tôi nhờ.,giảm âm lượng 2 mức,,,set_volume(delta=-2)
+91,B,,,Khép cái cửa khoang đồ sau xe lại nhé.,đóng cốp sau,,,close_trunk()
+92,B,,,Nhiêu đây xăng chạy nổi tám chục cây nữa không?,tính quãng đường còn đi được [trip_km=80.0],,,get_range_estimate(trip_km=80)
+93,B,,,Kiếm chỗ gửi ô tô quanh đây giúp mình.,tìm bãi đỗ xe gần đây,,,"find_nearby(category=""parking"")"
+94,B,,,Trong bình còn được mấy lít nữa em?,kiểm tra mức xăng,,,get_fuel_level()
+95,B,,,Để máy lạnh hai mươi ba độ giùm anh.,bật điều hoà 23 độ,,,"set_ac(state=""on"", temperature=23)"
+96,B,,,Tổng cộng con xe này lăn bánh được mấy cây rồi?,xem số km xe đã đi [unit=km],,,"get_odometer(unit=""km"")"
+97,B,,,Gần đây có chỗ nào cắm sạc cho ô tô không?,tìm trạm sạc gần đây,,,"find_nearby(category=""charging_station"")"
+98,B,,,Xe còn đủ sức chạy thêm trăm cây không?,tính quãng đường còn đi được [trip_km=100.0],,,get_range_estimate(trip_km=100)
+99,B,,,Bình xăng còn mấy vạch vậy?,kiểm tra mức xăng,,,get_fuel_level()
+100,B,,,Sập cái nắp khoang đồ phía sau lại đi.,đóng cốp sau,,,close_trunk()
+101,B,,,Chỉ đường ra Hồ Gươm cho mình.,dẫn đường tới Hồ Gươm,,,"navigate_to(destination=""Hồ Gươm"")"
+102,B,,,Nhả cái nắp đổ xăng ra cái nào.,mở nắp bình xăng,,,open_fuel_flap()
+103,B,,,Xem giúp xe cộ có bệnh tật gì không.,kiểm tra tình trạng xe,,,get_vehicle_status()
+104,B,,,Nhấc nắp khoang đồ sau xe lên giúp tôi.,mở cốp sau,,,open_trunk()
+105,B,,,Cho đèn trước tự sáng khi trời tối nhé.,chuyển đèn pha sang tự động,,,"set_headlights(mode=""auto"")"
+106,B,,,Cho gió máy lạnh lên hết cỡ luôn.,chỉnh quạt gió mức 7,,,set_fan_speed(level=7)
+107,B,,,Cài chốt cả bốn cánh cho tôi nhé.,khoá cửa xe,,,lock_doors()
+108,B,,,Chỉ dùng điện thì xe đi thêm được mấy cây?,kiểm tra pin,,,get_battery_range()
+109,B,,,Trượt cái ô kính trên trần đóng kín lại.,đóng cửa sổ trời,,,"operate_sunroof(action=""close"")"
+110,B,,,Máy lạnh cho về hai sáu giùm tui.,bật điều hoà 26 độ,,,"set_ac(state=""on"", temperature=26)"
+111,B,,,Báo số cân hơi từng bánh cho bác nghe.,kiểm tra áp suất lốp,,,get_tire_pressure()
+112,B,,,Chiều ni Đà Nẵng có đổ mưa không em?,"xem thời tiết [location=Đà Nẵng, day=0]",,,"get_weather(location=""Đà Nẵng"", day=0)"
+113,B,,,Tắt cái đèn tam giác đỏ đi em.,tắt đèn khẩn cấp,,,"set_hazard_lights(state=""off"")"
+114,B,,,Cho anh nghe VOV giao thông đi.,"phát nhạc [source=radio, query=VOV giao thông]",,,"play_media(source=""radio"", query=""VOV giao thông"")"
+115,B,,,Đồng hồ cây số tổng đang chỉ bao nhiêu vậy?,xem số km xe đã đi [unit=km],,,"get_odometer(unit=""km"")"
+116,B,,,Nhích tiếng loa lên một nấc thôi nha.,tăng âm lượng 1 mức,,,set_volume(delta=1)
+117,B,,,Kính chỗ bác tài kéo lên kín luôn.,nâng kính ghế lái,,,"control_window(window=""front_left"", position=""up"", amount=100)"
+118,B,,,Mở chốt bốn cửa cho khách lên nào.,mở khoá cửa xe [door=all],,,"unlock_doors(door=""all"")"
+119,B,,,Bật nắp che ổ cắm sạc ra hộ mình.,mở nắp cổng sạc,,,open_charge_port()
+120,B,,,Tắt cái hút hơi nước trên kính sau đi.,tắt sấy kính [zone=rear],,,"set_defrost(state=""off"", zone=""rear"")"
+121,C,,,Bớt cho anh hai độ điều hoà nhé.,giảm nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=-2)"
+122,C,,,Hạ hết cả kính bên tài lẫn bên phụ phía trước xuống.,hạ hai kính trước,,,"control_window(window=""front"", position=""down"", amount=100)"
+123,C,,,Hai cái kính hàng ghế sau kéo lên kín giùm tui.,nâng hai kính sau,,,"control_window(window=""rear"", position=""up"", amount=100)"
+124,C,,,Chỉnh máy lạnh ấm hơn tí đi em.,tăng nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=2)"
+125,C,,,"Kéo kín hai kính trước lại, cả bên lái lẫn bên phụ nhé.",nâng hai kính trước,,,"control_window(window=""front"", position=""up"", amount=100)"
+126,C,,,Đưa nhiệt độ trong xe về 22 độ cho mình.,bật điều hoà 22 độ,,,"set_ac(state=""on"", temperature=22)"
+127,C,,,Tăng nhiệt độ máy lạnh thêm ba độ nữa nha.,tăng nhiệt độ điều hoà 3 độ,,,"set_ac(state=""on"", delta=3)"
+128,C,,,"Cho điều hoà mát hơn chút đi, đừng lạnh quá.",giảm nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=-2)"
+129,C,,,Anh muốn để điều hoà ở 26 độ nhé.,bật điều hoà 26 độ,,,"set_ac(state=""on"", temperature=26)"
+130,C,,,Cho cả hai cửa kính đằng sau xuống một nửa thôi.,hạ hai kính sau 50%,,,"control_window(window=""rear"", position=""down"", amount=50)"
+131,C,,,Mở sưởi trong xe lên cho bác.,bật sưởi cho ấm,,,"set_ac(state=""on"", mode=""heat"")"
+132,C,,,"Chuyển điều hoà sang sưởi, để 28 độ giúp mình.",bật sưởi 28 độ cho ấm,,,"set_ac(state=""on"", temperature=28, mode=""heat"")"
+133,C,,,Bật chế độ nóng của điều hoà lên nhé.,bật sưởi cho ấm,,,"set_ac(state=""on"", mode=""heat"")"
+134,C,,,Chuyển điều hoà sang làm lạnh ở 23 độ đi.,bật làm lạnh 23 độ,,,"set_ac(state=""on"", temperature=23, mode=""cool"")"
+135,C,,,Máy lạnh chỉnh đúng 24 độ là được.,bật điều hoà 24 độ,,,"set_ac(state=""on"", temperature=24)"
+136,C,,,"Sưởi ấm khoang xe giúp chị, đặt 27 độ nhé.",bật sưởi 27 độ cho ấm,,,"set_ac(state=""on"", temperature=27, mode=""heat"")"
+137,C,,,Hạ nhiệt độ điều hoà xuống một độ nữa thôi.,giảm nhiệt độ điều hoà 1 độ,,,"set_ac(state=""on"", delta=-1)"
+138,C,,,Hé cả hai kính sau một chút cho thoáng giùm anh.,hạ hai kính sau 20%,,,"control_window(window=""rear"", position=""down"", amount=20)"
+139,C,,,Nhích nhiệt độ máy lạnh lên chút cho đỡ rét.,tăng nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=2)"
+140,C,,,Để điều hoà tự chỉnh nhiệt độ với quạt gió đi.,chuyển điều hoà sang tự động,,,"set_ac(state=""on"", mode=""auto"")"
+141,C,,,"Hai bên kính hàng ghế trước cho xuống ngang nhau, tầm nửa cửa nhé.",hạ hai kính trước 50%,,,"control_window(window=""front"", position=""down"", amount=50)"
+142,C,,,Hạ bớt nhiệt độ máy lạnh cho mát thêm tí nha.,giảm nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=-2)"
+143,C,,,Bật điều hoà chế độ lạnh cho anh.,bật làm lạnh,,,"set_ac(state=""on"", mode=""cool"")"
+144,C,,,Điều hoà đang để bao nhiêu thì tăng lên hai độ giúp tôi.,tăng nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=2)"
+145,C,,,Chỉnh máy lạnh lạnh thêm ba độ so với bây giờ nhé.,giảm nhiệt độ điều hoà 3 độ,,,"set_ac(state=""on"", delta=-3)"
+146,C,,,Máy lạnh bớt lạnh lại chút nha.,tăng nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=2)"
+147,C,,,Nhích điều hoà lên thêm một độ nữa cho chị.,tăng nhiệt độ điều hoà 1 độ,,,"set_ac(state=""on"", delta=1)"
+148,C,,,"Máy lạnh bật chế độ lạnh, lấy 21 độ nhé.",bật làm lạnh 21 độ,,,"set_ac(state=""on"", temperature=21, mode=""cool"")"
+149,C,,,Nâng hai kính hàng sau lên ngang nửa cửa giúp mình.,nâng hai kính sau 50%,,,"control_window(window=""rear"", position=""up"", amount=50)"
+150,C,,,Giảm nhiệt độ trong xe xuống chút nữa đi.,giảm nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=-2)"
+151,D,Cho kính trước bên phải xuống hết đi.,hạ kính ghế phụ,Bên trái phía trước cũng vậy luôn nha.,hạ kính ghế lái,,,"control_window(window=""front_left"", position=""down"", amount=100)"
+152,D,Tăng âm lượng lên hai nấc cho tôi.,tăng âm lượng 2 mức,Thêm một nấc nữa mới nghe rõ.,tăng âm lượng 1 mức,,,set_volume(delta=1)
+153,D,Mở hết cốp sau cho chị cất túi.,mở cốp sau,Dẫn đường tới bệnh viện Bạch Mai cho chị.,dẫn đường tới Bệnh viện Bạch Mai,,,"navigate_to(destination=""Bệnh viện Bạch Mai"")"
+154,D,Đặt điều hoà 23 độ giúp anh.,bật điều hoà 23 độ,Tìm cây xăng gần đây nhất đi.,tìm cây xăng gần đây,,,"find_nearby(category=""gas_station"")"
+155,D,Khoá tất cả cửa xe giúp bác.,khoá cửa xe,"Ấy, mở lại đã.",mở khoá cửa xe [door=all],,,"unlock_doors(door=""all"")"
+156,D,Khép cửa sổ trời kín vào nhé.,đóng cửa sổ trời,Bật cho tôi nghe nhạc Trịnh.,phát nhạc [query=nhạc Trịnh],,,"play_media(query=""nhạc Trịnh"")"
+157,D,Chốt cửa xe lại hộ mình.,khoá cửa xe,Cho mình biết xe còn bao nhiêu phần trăm pin.,kiểm tra pin,,,get_battery_range()
+158,D,Đóng cái cốp đằng sau lại giùm.,đóng cốp sau,"Khoan, mở lên lại, còn cái túi nữa.",mở cốp sau,,,open_trunk()
+159,D,Mở cửa sổ trời ra khoảng một phần ba thôi.,mở cửa sổ trời [intensity=33],Rộng thêm tí nữa đi.,mở cửa sổ trời [intensity=50],,,"operate_sunroof(action=""open"", intensity=50)"
+160,D,Tắt điều hoà cho anh.,tắt điều hoà,"Thôi, bật lại đi em.",bật điều hoà,,,"set_ac(state=""on"")"
+161,D,Bật sấy kính trước lên cho tôi.,bật sấy kính [zone=front],Làm luôn phía sau nhé.,bật sấy kính [zone=rear],,,"set_defrost(state=""on"", zone=""rear"")"
+162,D,Cho sấy kính sau chạy đi em.,bật sấy kính [zone=rear],"Được rồi, tắt đi.",tắt sấy kính [zone=rear],,,"set_defrost(state=""off"", zone=""rear"")"
+163,D,Tắt sấy kính sau giúp chị.,tắt sấy kính [zone=rear],Cả đằng trước cũng tắt nốt đi.,tắt sấy kính [zone=front],,,"set_defrost(state=""off"", zone=""front"")"
+164,D,Giảm âm lượng xuống còn 10 giúp tôi.,chỉnh âm lượng [set_value=10],Hồi nhỏ bố tôi cứ đi xe là bật bài này.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+165,D,Tắt quạt gió điều hoà đi nha.,chỉnh quạt gió mức 0,"Thôi, cho chạy lại mức ba vậy.",chỉnh quạt gió mức 3,,,set_fan_speed(level=3)
+166,D,Hạ tiếng nhạc xuống một nấc đi.,giảm âm lượng 1 mức,"Bé thêm nữa, vẫn át cả tiếng nói.",giảm âm lượng 1 mức,,,set_volume(delta=-1)
+167,D,Hạ kính ghế phụ xuống một phần tư nhé.,hạ kính ghế phụ 25%,"Xuống thêm chút nữa, chưa tới đâu.",hạ kính ghế phụ 10%,,,"control_window(window=""front_right"", position=""down"", amount=10)"
+168,D,Chỉnh điều hoà bên lái xuống 22 độ.,bật điều hoà 22 độ cho ghế lái,Bên ghế phụ để giống thế luôn.,bật điều hoà 22 độ cho ghế phụ,,,"set_ac(state=""on"", temperature=22, zone=""passenger"")"
+169,D,Cho đèn pha về chế độ tự động nhé.,chuyển đèn pha sang tự động,Kiểm tra áp suất cả bốn lốp cho mình.,kiểm tra áp suất lốp,,,get_tire_pressure()
+170,D,Mở sấy kính sau lên giùm tui.,bật sấy kính [zone=rear],Đằng trước làm y chang nha.,bật sấy kính [zone=front],,,"set_defrost(state=""on"", zone=""front"")"
+171,D,Ngắt sấy kính trước đi em.,tắt sấy kính [zone=front],"Phía sau cũng ngắt luôn, khỏi để chạy.",tắt sấy kính [zone=rear],,,"set_defrost(state=""off"", zone=""rear"")"
+172,D,Kéo kín kính bên trái hàng ghế sau giúp bác.,nâng kính sau bên trái,Cái bên phải cùng hàng kéo lên nốt.,nâng kính sau bên phải,,,"control_window(window=""rear_right"", position=""up"", amount=100)"
+173,D,Giảm nhiệt độ điều hoà đi hai độ.,giảm nhiệt độ điều hoà 2 độ,Bớt thêm một độ nữa cho mát hẳn.,giảm nhiệt độ điều hoà 1 độ,,,"set_ac(state=""on"", delta=-1)"
+174,D,Hé kính phía trước bên tài khoảng một gang tay.,hạ kính ghế lái 25%,Cái ngay sau lưng tui cũng hé chừng đó.,hạ kính sau bên trái 25%,,,"control_window(window=""rear_left"", position=""down"", amount=25)"
+175,D,Bật đèn chiếu gần giúp mình.,bật đèn chiếu gần,"À thôi, tắt luôn đi.",tắt đèn pha,,,"set_headlights(mode=""off"")"
+176,D,Sấy cái kính đằng trước cho hết mờ đi.,bật sấy kính [zone=front],Tiện làm nốt đằng sau cho bác.,bật sấy kính [zone=rear],,,"set_defrost(state=""on"", zone=""rear"")"
+177,D,Cho tiếng loa nhỏ đi hai nấc nhé.,giảm âm lượng 2 mức,"Ơ, lại bé quá, tăng về như cũ đi.",tăng âm lượng 2 mức,,,set_volume(delta=2)
+178,D,Tăng nhiệt độ bên ghế phụ thêm hai độ giúp mình.,tăng nhiệt độ điều hoà 2 độ,Bên tài cũng tăng chừng ấy nhé.,tăng nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", zone=""driver"", delta=2)"
+179,D,Mở cửa sổ trời hết ra nào.,mở cửa sổ trời [intensity=100],"Ối, đóng kín lại, bụi quá.",đóng cửa sổ trời,,,"operate_sunroof(action=""close"")"
+180,D,Nâng kính ghế phụ lên kín giúp anh.,nâng kính ghế phụ,Cái phố này hồi xưa toàn quán cóc thôi.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+181,D,Khoá bốn cửa lại nhé em.,khoá cửa xe,Lấy hộ anh chai nước dưới chân ghế với.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+182,D,Bật cốp sau ra cho tôi.,mở cốp sau,"Thôi khỏi, khép lại giúp tôi.",đóng cốp sau,,,close_trunk()
+183,D,Nâng kính sau bên phải lên nửa cửa thôi.,nâng kính sau bên phải 50%,"Lên cao hơn tí nữa, gần kín cũng được.",nâng kính sau bên phải 40%,,,"control_window(window=""rear_right"", position=""up"", amount=40)"
+184,D,Dừng sấy kính sau lại nhé.,tắt sấy kính [zone=rear],"Chạy lại đi, vẫn còn mờ.",bật sấy kính [zone=rear],,,"set_defrost(state=""on"", zone=""rear"")"
+185,D,Cho máy lạnh ấm lên hai độ nữa.,tăng nhiệt độ điều hoà 2 độ,"Lại nóng quá, hạ về mức cũ đi.",giảm nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=-2)"
+186,D,Bật điều hoà chế độ tự động giúp chị.,chuyển điều hoà sang tự động,Giá mà ngày nào cũng được tan làm sớm thế này.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+187,D,Quạt điều hoà cho về mức một thôi.,chỉnh quạt gió mức 1,Nhặt hộ tôi tờ hoá đơn vừa rơi xuống sàn.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+188,D,"Xe bị hỏng, bật đèn khẩn cấp giúp tôi.",bật đèn khẩn cấp,"Tắt đi đã, chưa cần đâu.",tắt đèn khẩn cấp,,,"set_hazard_lights(state=""off"")"
+189,D,Bật điều hoà hàng ghế sau cho bọn nhỏ.,bật điều hoà cho hàng ghế sau,"Cả phía trước nữa, tôi ngồi đây cũng nóng.",bật điều hoà cho ghế lái + bật điều hoà cho ghế phụ,,,"set_ac(state=""on"", zone=""driver""); set_ac(state=""on"", zone=""passenger"")"
+190,D,Mở cốp đằng sau để tôi lấy đồ.,mở cốp sau,Bê hộ tôi thùng nước này xuống với.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+191,D,Tiếng nhạc cho lên mức 15 nhé.,chỉnh âm lượng [set_value=15],Mở nắp bình xăng cho anh đổ xăng.,mở nắp bình xăng,,,open_fuel_flap()
+192,D,Tắt đèn cảnh báo khẩn cấp cho mình.,tắt đèn khẩn cấp,Tìm giúp mình quán cà phê gần đây.,tìm quán cà phê gần đây,,,"find_nearby(category=""coffee"")"
+193,D,Hé cửa sổ trời một khe nhỏ thôi.,hé cửa sổ trời,Trời hôm nay nhìn như hồi mình đi Đà Lạt ấy.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+194,D,Hạ hết kính sau bên trái cho chị.,hạ kính sau bên trái,Phía trước cùng bên cũng hạ như vậy.,hạ kính ghế lái,,,"control_window(window=""front_left"", position=""down"", amount=100)"
+195,D,Để máy lạnh bên tài ở 25 độ.,bật điều hoà 25 độ cho ghế lái,Chỗ người ngồi cạnh cũng chỉnh bằng bên này.,bật điều hoà 25 độ cho ghế phụ,,,"set_ac(state=""on"", temperature=25, zone=""passenger"")"
+196,D,Tăng nhiệt độ điều hoà lên một độ nha.,tăng nhiệt độ điều hoà 1 độ,Ấm thêm tí nữa mới vừa.,tăng nhiệt độ điều hoà 2 độ,,,"set_ac(state=""on"", delta=2)"
+197,D,Kéo kính bên phụ phía trước lên hết đi.,nâng kính ghế phụ,"Ê, hạ lại nửa chừng thôi, còn đưa đồ ra.",hạ kính ghế phụ 50%,,,"control_window(window=""front_right"", position=""down"", amount=50)"
+198,D,Bật sấy kính lái giúp mình với.,bật sấy kính [zone=front],Cậu lấy khăn lau hộ mấy vết tay bên trong nhé.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+199,D,"Bật đèn khẩn cấp lên, xe mình vừa chết máy.",bật đèn khẩn cấp,Ra đẩy xe vào lề hộ tôi với.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+200,D,Cho kính cửa sau bên phải xuống hết.,hạ kính sau bên phải,"Không, kéo lên kín lại giùm, mưa tạt vào rồi.",nâng kính sau bên phải,,,"control_window(window=""rear_right"", position=""up"", amount=100)"
+201,D,Tắt chế độ sấy kính phía trước cho anh.,tắt sấy kính [zone=front],Đọc cho anh tổng số cây xe đã đi.,xem số km xe đã đi [unit=km],,,"get_odometer(unit=""km"")"
+202,D,Chỉnh quạt máy lạnh lên mức bốn nào.,chỉnh quạt gió mức 4,Dẫn tôi tới bến xe Mỹ Đình.,dẫn đường tới Bến xe Mỹ Đình,,,"navigate_to(destination=""Bến xe Mỹ Đình"")"
+203,D,Hai kính cửa sau đóng kín lại nha.,nâng hai kính sau,Mở cho tôi bài Nối vòng tay lớn.,phát nhạc [query=Nối vòng tay lớn],,,"play_media(query=""Nối vòng tay lớn"")"
+204,D,Chuyển đèn sang chiếu gần hộ tôi.,bật đèn chiếu gần,Đi đêm thế này tự dưng nhớ mấy chuyến về quê.,TỪ CHỐI (xe không làm được / không liên quan),,,irrelevant_function()
+205,D,Giảm quạt gió xuống một nấc cho đỡ ồn.,chỉnh quạt gió mức 2,"Nhẹ nữa đi, vẫn ù cả tai.",chỉnh quạt gió mức 1,sai,"lần 1 sai, chỉ cần giảm quạt gió 1 mức thôi, lần 2 cũng sai chỉnh quạt gió xuống 1 mức không phải là xuống hẳn mức 1",set_fan_speed(level=1)
+206,D,Hạ kính trước bên phụ xuống nửa cửa.,hạ kính ghế phụ 50%,Hai cái đằng sau cũng xuống ngang vậy luôn.,hạ hai kính sau 50%,,,"control_window(window=""rear"", position=""down"", amount=50)"
+207,D,Đóng bớt cửa sổ trời vào một đoạn.,đóng cửa sổ trời [intensity=50],"Khép thêm nữa, chừa tí khe là được.",đóng cửa sổ trời [intensity=90],,,"operate_sunroof(action=""close"", intensity=90)"
+208,D,Cho quạt gió mạnh thêm hai nấc đi.,chỉnh quạt gió mức 6,"Mạnh quá rồi, giảm về lúc nãy giùm.",chỉnh quạt gió mức 4,sai ,"lần 1 sai chỉnh quạt gió dựa vào mức hiện tại tăng thêm 2 mức, lần 2 phải trừ lại đi 2 mức",set_fan_speed(level=4)
+209,D,Quạt gió tăng từ mức hai lên mức ba giúp tôi.,chỉnh quạt gió mức 3,"Chưa đủ, lên thêm hai nấc nữa đi.",chỉnh quạt gió mức 5,,,set_fan_speed(level=5)
+210,D,Hạ nhiệt độ máy lạnh hàng sau xuống một độ.,giảm nhiệt độ điều hoà 1 độ,Hàng trước bớt chừng đó luôn nhé.,giảm nhiệt độ điều hoà 1 độ + giảm nhiệt độ điều hoà 1 độ,,,"set_ac(state=""on"", zone=""driver"", delta=-1); set_ac(state=""on"", zone=""passenger"", delta=-1)"

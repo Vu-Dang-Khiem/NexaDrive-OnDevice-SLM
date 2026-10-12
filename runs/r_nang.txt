@@ -1,0 +1,3 @@
+﻿47 | Náº¯ng gáº¯t quÃ¡, kÃ­nh xe nhÆ° cÃ¡i lÃ² sÆ°á»Ÿi, chÃ³i máº¯t quÃ¡. | set_defrost(state="on")
+50 | NghÄ© tá»›i viá»‡c pháº£i ngá»“i trong xe nÃ³ng nhÆ° lÃ² sÆ°á»Ÿi nÃ y mÃ  tÃ´i tháº¥y má»‡t quÃ¡. | set_ac(state="on")
+

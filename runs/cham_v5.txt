@@ -1,0 +1,23 @@
+﻿=== HIá»†U CHá»ˆNH (bá»™ cÃ¢u cÃ³ Ä‘Ã¡p Ã¡n, cháº¡y báº±ng Ä�ÃšNG quy trÃ¬nh tháº­t) ===
+  âœ“ [giá»¯] NÃ³ng nhÆ° cÃ¡i lÃ² trong nÃ y              set_ac               
+  âœ“ [giá»¯] KÃ­nh trÆ°á»›c má»� háº¿t rá»“i, cháº³ng tháº¥y gÃ¬   set_defrost          
+  âœ“ [giá»¯] Tá»‘i thui cháº³ng tháº¥y Ä‘Æ°á»�ng Ä‘Ã¢u          set_headlights       
+  âœ“ [giá»¯] BÃ£i nÃ y váº¯ng hoe, Ä‘á»ƒ xe á»Ÿ Ä‘Ã¢y tháº¥y l   lock_doors           
+  âœ“ [giá»¯] Ngá»“i im láº·ng suá»‘t buá»“n táº» ghÃª          play_media           
+  âœ“ [giá»¯] Xe tá»± dÆ°ng khá»±ng láº¡i giá»¯a lÃ n, pháº£i    set_hazard_lights    
+  âœ— [giá»¯] Tiáº¿ng xe cá»™ bÃªn ngoÃ i á»“n Ã o quÃ¡        control_window       giÃ¡m kháº£o khÃ´ng chá»�n control_window: set_ac | co
+  âœ“ [giá»¯] Bá»¥ng Ä‘Ã³i meo rá»“i                       find_nearby          
+  âœ“ [loáº¡i] BÃ£i nÃ y váº¯ng hoe, Ä‘á»ƒ xe á»Ÿ Ä‘Ã¢y tháº¥y l   set_hazard_lights    giÃ¡m kháº£o khÃ´ng chá»�n set_hazard_lights: lock_doo
+  âœ“ [loáº¡i] Tiáº¿ng xe cá»™ bÃªn ngoÃ i á»“n Ã o quÃ¡        set_volume           giÃ¡m kháº£o khÃ´ng chá»�n set_volume: set_ac | contro
+  âœ“ [loáº¡i] NÃ³ng nhÆ° cÃ¡i lÃ² trong nÃ y              set_headlights       giÃ¡m kháº£o khÃ´ng chá»�n set_headlights: set_ac | se
+  âœ“ [loáº¡i] Bá»¥ng Ä‘Ã³i meo rá»“i                       set_ac               giÃ¡m kháº£o khÃ´ng chá»�n set_ac: find_nearby | find_
+  âœ“ [loáº¡i] RÃ©t cÃ³ng háº¿t tay chÃ¢n rá»“i              operate_sunroof      giÃ¡m kháº£o khÃ´ng chá»�n operate_sunroof: set_ac | s
+  âœ“ [loáº¡i] Báº­t Ä‘iá»�u hoÃ  lÃªn 22 Ä‘á»™                 set_ac               cÃ¢u ra lá»‡nh tháº³ng â€” pháº£i lÃ m luÃ´n, khÃ´ng há»�i láº¡i
+  âœ“ [loáº¡i] KhoÃ¡ háº¿t cá»­a láº¡i cho tÃ´i               lock_doors           cÃ¢u ra lá»‡nh tháº³ng â€” pháº£i lÃ m luÃ´n, khÃ´ng há»�i láº¡i
+  âœ“ [loáº¡i] Chá»‰ cho tÃ´i tráº¡m Ä‘á»• xÄƒng nÃ o quanh Ä‘   find_nearby          cÃ¢u ra lá»‡nh tháº³ng â€” pháº£i lÃ m luÃ´n, khÃ´ng há»�i láº¡i
+giá»¯ Ä‘Ãºng 7/8 | loáº¡i Ä‘Ãºng 8/8 | Cohen's kappa = 0.875
+
+v5_hoi_lai_hc: giá»¯ 798/931  | lÃ½ do loáº¡i: {'giÃ¡m kháº£o khÃ´ng chá»�n set_ac': 25, 'giÃ¡m kháº£o khÃ´ng chá»�n set_fan_speed': 8, 'giÃ¡m kháº£o khÃ´ng chá»�n set_defrost': 2, 'giÃ¡m kháº£o khÃ´ng chá»�n lock_doors': 5, 'giÃ¡m kháº£o khÃ´ng chá»�n close_trunk': 15, 'giÃ¡m kháº£o khÃ´ng chá»�n control_window': 15, 'giÃ¡m kháº£o khÃ´ng chá»�n operate_sunroof': 8, 'giÃ¡m kháº£o khÃ´ng chá»�n set_headlights': 4, 'cÃ¢u nÃ³i vá»� Ä‘Ã¨n/sá»± cá»‘ cá»§a xe khÃ¡c â€” khÃ´ng Ä‘iá»�u khiá»ƒn Ä‘Æ°á»£c': 7, 'giÃ¡m kháº£o khÃ´ng chá»�n set_hazard_lights': 5, 'giÃ¡m kháº£o khÃ´ng chá»�n set_volume': 10, 'giÃ¡m kháº£o khÃ´ng chá»�n play_media': 13, 'giÃ¡m kháº£o khÃ´ng chá»�n get_range_estimate': 3, 'giÃ¡m kháº£o khÃ´ng chá»�n navigate_to': 7, 'giÃ¡m kháº£o khÃ´ng chá»�n get_fuel_level': 4, 'giÃ¡m kháº£o khÃ´ng chá»�n find_nearby': 2}
+
+v5cuu_hoi_lai_hc: giá»¯ 953/1117  | lÃ½ do loáº¡i: {'giÃ¡m kháº£o khÃ´ng chá»�n set_ac': 19, 'giÃ¡m kháº£o khÃ´ng chá»�n set_fan_speed': 21, 'giÃ¡m kháº£o khÃ´ng chá»�n set_defrost': 5, 'giÃ¡m kháº£o khÃ´ng chá»�n lock_doors': 3, 'giÃ¡m kháº£o khÃ´ng chá»�n close_trunk': 13, 'giÃ¡m kháº£o khÃ´ng chá»�n control_window': 14, 'giÃ¡m kháº£o khÃ´ng chá»�n operate_sunroof': 9, 'giÃ¡m kháº£o khÃ´ng chá»�n set_headlights': 7, 'giÃ¡m kháº£o khÃ´ng chá»�n set_hazard_lights': 10, 'cÃ¢u nÃ³i vá»� Ä‘Ã¨n/sá»± cá»‘ cá»§a xe khÃ¡c â€” khÃ´ng Ä‘iá»�u khiá»ƒn Ä‘Æ°á»£c': 14, 'giÃ¡m kháº£o khÃ´ng chá»�n set_volume': 25, 'giÃ¡m kháº£o khÃ´ng chá»�n play_media': 11, 'giÃ¡m kháº£o khÃ´ng chá»�n navigate_to': 7, 'giÃ¡m kháº£o khÃ´ng chá»�n get_fuel_level': 3, 'giÃ¡m kháº£o khÃ´ng chá»�n find_nearby': 3}
+

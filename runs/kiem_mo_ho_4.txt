@@ -1,0 +1,180 @@
+﻿sá»‘ dÃ²ng: 130 | cá»™t: ['id', 'chuc_nang', 'cau', 'ghi_chu']
+id trÃ¹ng: [] | id thiáº¿u: []
+chuc_nang bá»‹ Ä‘á»•i: []
+cÃ¢u trá»‘ng: []
+cÃ³ Ä‘á»™ng tá»« sai báº£o: [('55', ['Ä‘Ã³ng']), ('114', ['Ä‘Ã³ng'])]
+cÃ³ tiáº¿ng Anh: [('30', ['VOV']), ('62', ['piano']), ('81', ['guitar']), ('82', ['Daewoo']), ('84', ['Mall']), ('93', ['Vincom']), ('98', ['FPT']), ('129', ['Laptop', 'Keangnam'])]
+Ä‘á»™ dÃ i: â‰¤8: 2 | 9â€“14: 40 | â‰¥15: 88
+
+cáº·p gáº§n trÃ¹ng trong bá»™ (â‰¥0,3):
+  0.35 8: GiÃ³ thá»•i máº¡nh quÃ¡ cáº£m giÃ¡c ná»•i háº¿t cáº£ da gÃ  rá»“i.
+       14: Ngá»“i trong nÃ y láº¡nh quÃ¡, em ná»•i háº¿t da gÃ  rá»“i.
+  0.32 10: Cáº£ nhÃ  vá»«a lÃªn xe sau khi Ä‘i mÆ°a, kÃ­nh trÆ°á»›c má»� háº¿t hÆ¡i, cháº³ng tháº¥y Ä‘Æ°á»�ng.
+       29: Máº¥y ngÆ°á»�i vá»«a Ä‘i mÆ°a lÃªn xe má»™t cÃ¡i lÃ  kÃ­nh trÆ°á»›c háº¥p hÆ¡i luÃ´n rá»“i.
+  0.30 12: Xáº¿p Ä‘á»“ xong háº¿t rá»“i, cÃ²n má»—i cÃ¡i náº¯p phÃ­a sau váº«n chÆ°a xuá»‘ng.
+       80: NhÃ¬n gÆ°Æ¡ng chá»‰ tháº¥y cÃ¡i náº¯p cá»‘p, khuáº¥t háº¿t phÃ­a sau rá»“i.
+  0.30 17: VÃ o Ä‘Æ°á»�ng nhiá»�u sÆ°Æ¡ng mÃ¹ quÃ¡ Ä‘Ã¨n xe cá»§a mÃ¬nh tháº¥p sá»£ ngÆ°á»�i khÃ¡c Ä‘i tá»« xa mÃ  khÃ´ng tháº¥y xe mÃ¬nh.
+       68: Xe tÃ´i Ä‘ang Ä‘i thÃ¬ ná»• lá»‘p xe, mÃ  trá»�i thÃ¬ tá»‘i Ä‘ang Ä‘á»— xe bÃªn Ä‘Æ°á»�ng sá»£ ngÆ°á»�i khÃ¡c khÃ´ng nhÃ¬n tháº¥y.
+  0.31 40: Em ngá»“i chá»� má»™t mÃ¬nh trong xe nhÃ©, nghÄ© ai bÃªn ngoÃ i cÅ©ng kÃ©o cá»­a Ä‘Æ°á»£c lÃ  tháº¥y báº¥t an.
+       99: Em tÃ­nh ngá»§ má»™t lÃ¡t trong xe, cá»­a mÃ  ai cÅ©ng kÃ©o Ä‘Æ°á»£c thÃ¬ khÃ´ng dÃ¡m chá»£p máº¯t.
+
+gáº§n trÃ¹ng vá»›i mo_ho_3 (â‰¥0,4):
+
+==== TOÃ€N Bá»˜ THEO HÃ€M ====
+
+## close_trunk
+   12 (14) Xáº¿p Ä‘á»“ xong háº¿t rá»“i, cÃ²n má»—i cÃ¡i náº¯p phÃ­a sau váº«n chÆ°a xuá»‘ng.
+   22 (13) MÃ¬nh sáº¯p Ä‘i rá»“i mÃ  mÃ n hÃ¬nh váº«n bÃ¡o cá»‘p chÆ°a kÃ­n nÃ y.
+   25 (15) MÆ°a háº¯t cáº£ vÃ o chá»— hÃ nh lÃ½ rá»“i, Æ°á»›t háº¿t máº¥y thÃ¹ng giáº¥y bÃ¢y giá»�.
+   49 (14) Cá»‘p cá»© phÆ¡i háº¿t Ä‘á»“ ra tháº¿ kia, ai Ä‘i ngang cÅ©ng nhÃ¬n tháº¥y.
+   50 (15) CÃ¡i náº¯p phÃ­a sau cÃ²n dá»±ng lÃªn tháº¿ kia thÃ¬ lÃ¹i vÃ o gara vÆ°á»›ng máº¥t.
+   57 (18) Muá»—i cá»© theo chá»— cá»‘p cÃ²n há»Ÿ bay vÃ o trong, nÃ£y giá»� em bá»‹ Ä‘á»‘t máº¥y ná»‘t rá»“i.
+   61 (19) MÃ¬nh Ä‘á»— sÃ¡t lá»‘i Ä‘i mÃ  náº¯p cá»‘p cá»© chÃ¬a ra, ngÆ°á»�i ta Ä‘i qua dá»… va Ä‘áº§u láº¯m.
+   80 (12) NhÃ¬n gÆ°Æ¡ng chá»‰ tháº¥y cÃ¡i náº¯p cá»‘p, khuáº¥t háº¿t phÃ­a sau rá»“i.
+   83 (14) MÃ¹i rÃ¡c ngoÃ i bÃ£i xe lÃ¹a qua chá»— cá»‘p vÃ o táº­n Ä‘Ã¢y, kinh quÃ¡.
+  117 (15) Ä�á»— dá»‘c tháº¿ nÃ y mÃ  cá»‘p cÃ²n há»Ÿ, máº¥y quáº£ cam lÄƒn ra ngoÃ i máº¥t.
+
+## control_window
+   28 (16) BÃ¡c báº£o vá»‡ Ä‘ang nÃ³i gÃ¬ bÃªn ngoÃ i áº¥y, cÃ¡ch lá»›p kÃ­nh em nghe khÃ´ng rÃµ.
+   37 (11) MÆ°a táº¡t bÃªn gháº¿ phá»¥ Æ°á»›t cáº£ tay Ã¡o em rá»“i.
+   38 (19) Ä�áº¿n quáº§y láº¥y vÃ© rá»“i mÃ  giá»¯a tay em vá»›i cÃ´ bÃ¡n vÃ© váº«n cÃ²n nguyÃªn táº¥m kÃ­nh nÃ y.
+   52 (16) Hai bÃªn Ä‘Æ°á»�ng Ä‘ang thi cÃ´ng, bá»¥i bay qua khe bÃªn cá»­a vÃ o Ä‘áº§y gháº¿ rá»“i.
+   56 (14) Em hÆ¡i say xe, giá»� chá»‰ muá»‘n hÃ­t má»™t hÆ¡i khÃ´ng khÃ­ ngoÃ i trá»�i.
+   69 (18) Con chÃ³ ngoÃ i kia sá»§a ngay cáº¡nh xe, bÃªn em kÃ­nh cÃ²n há»Ÿ nÃªn nghe rÃµ má»“n má»™t.
+   77 (19) Em tranh thá»§ chá»£p máº¯t tÃ­ mÃ  tiáº¿ng cÃ²i cá»© lá»�t qua chá»— kÃ­nh há»Ÿ bÃªn cáº¡nh, á»“n quÃ¡.
+  100 (19) Em chá»¥p mÃ£i mÃ  áº£nh cá»© dÃ­nh bÃ³ng Ä‘iá»‡n thoáº¡i pháº£n trÃªn kÃ­nh, cháº³ng tháº¥y rÃµ cáº£nh bÃªn ngoÃ i.
+  111 (15) BÃ¡c vá»«a hÃºt thuá»‘c xong, trong xe váº«n cÃ²n ná»“ng mÃ¹i, em khÃ³ chá»‹u quÃ¡.
+  126 (18) BÃªn cá»­a cÃ²n há»Ÿ má»™t Ä‘oáº¡n, hÆ¡i nÃ³ng ngoÃ i Ä‘Æ°á»�ng cá»© lÃ¹a vÃ o phÃ­ háº¿t cáº£ hÆ¡i mÃ¡t.
+
+## find_nearby
+    2 (15) Kim xÄƒng sÃ¡t váº¡ch Ä‘á»� rá»“i, khÃ´ng biáº¿t quanh Ä‘Ã¢y cÃ³ chá»— nÃ o Ä‘á»• khÃ´ng.
+   34 (14) Trong vÃ­ cÃ²n má»—i hai chá»¥c nghÃ¬n, lÃ¡t tráº£ tiá»�n máº·t cháº¯c khÃ´ng Ä‘á»§.
+   42 (16) CÃ²n sá»›m táº­n bá»‘n mÆ°Æ¡i phÃºt, giá»� cÃ³ chá»— ngá»“i uá»‘ng cá»‘c cÃ  phÃª thÃ¬ vá»«a.
+   43 (13) Cháº¡y hai vÃ²ng khu nÃ y rá»“i mÃ  váº«n chÆ°a cÃ³ chá»— gá»­i xe.
+   51 (15) Pin xe cÃ²n cÃ³ tÃ¡m pháº§n trÄƒm, tháº¿ nÃ y cháº¯c cháº³ng vá»� ná»•i Ä‘áº¿n nhÃ .
+   54 (13) Tá»« sÃ¡ng Ä‘áº¿n giá»� chÆ°a Äƒn gÃ¬, bá»¥ng rÃ©o chá»‹u háº¿t ná»•i rá»“i.
+  104 (23) Máº¹ Ä‘au bá»¥ng mÃ£i khÃ´ng Ä‘á»¡, cháº¯c pháº£i cÃ³ bÃ¡c sÄ© khÃ¡m má»›i yÃªn tÃ¢m, mÃ  khu nÃ y mÃ¬nh cháº³ng quen chá»— nÃ o.
+  109 (17) Bá»¯a trÆ°a nay pháº£i cÃ³ Ä‘á»“ chay cho máº¹, máº¥y quÃ¡n vá»«a Ä‘i qua toÃ n bÃ¡n thá»‹t.
+  115 (15) BÃ  Ä‘i bá»™ khÃ³ khÄƒn, cÃ³ chá»— gá»­i xe sÃ¡t cá»•ng viá»‡n thÃ¬ tá»‘t quÃ¡.
+  119 (19) Tá»‘i nay chá»— nghá»‰ khÃ´ng cÃ³ chá»— cáº¯m Ä‘iá»‡n cho xe, mÃ  mai cÃ²n cháº¡y máº¥y trÄƒm cÃ¢y ná»¯a.
+
+## lock_doors
+    7 (16) Dá»«ng Ä‘Ã¨n Ä‘á»� mÃ  cÃ³ ngÆ°á»�i cá»© ghÃ© sÃ¡t cá»­a tháº¿ nÃ y, em hÆ¡i sá»£ Ä‘áº¥y.
+   23 (20) Ä�á»— xe á»Ÿ Ä‘Ã¢y rá»“i Ä‘i Äƒn táº­n bÃªn kia, Ä‘á»“ Ä‘áº¡c Ä‘á»ƒ trong xe em cá»© tháº¥y lo lo.
+   35 (12) Má»�i ngÆ°á»�i lÃªn Ä‘á»§ rá»“i Ä‘áº¥y, hÃ¬nh nhÆ° cá»­a váº«n chÆ°a chá»‘t.
+   40 (20) Em ngá»“i chá»� má»™t mÃ¬nh trong xe nhÃ©, nghÄ© ai bÃªn ngoÃ i cÅ©ng kÃ©o cá»­a Ä‘Æ°á»£c lÃ  tháº¥y báº¥t an.
+   55 (23) NÃ£y Ä‘á»ƒ xe bÃ£i Ä‘á»— xe mÃ  máº£i cháº¡y vá»™i xuá»‘ng xáº¿p hÃ ng mua Ä‘á»“ quÃ¡ giá»� khÃ´ng biáº¿t Ä‘Ã£ Ä‘Ã³ng xe chÆ°a.
+   71 (17) NÃ£y xuá»‘ng láº¥y Ä‘á»“ rá»“i lÃªn láº¡i, em khÃ´ng cháº¯c cá»­a Ä‘Ã£ chá»‘t nhÆ° lÃºc trÆ°á»›c chÆ°a.
+   88 (19) Anh tÃ i xáº¿ bÃªn cáº¡nh vá»«a báº£o Ä‘oáº¡n nÃ y hay cÃ³ ngÆ°á»�i giáº­t cá»­a láº¥y tÃºi, nghe mÃ  lo.
+   99 (18) Em tÃ­nh ngá»§ má»™t lÃ¡t trong xe, cá»­a mÃ  ai cÅ©ng kÃ©o Ä‘Æ°á»£c thÃ¬ khÃ´ng dÃ¡m chá»£p máº¯t.
+  106 (19) Máº¥y Ä‘á»©a chÃ¡u á»Ÿ ngoÃ i cá»© cháº¡y ra kÃ©o tay náº¯m cá»­a xe, em ngá»“i trong giáº­t cáº£ mÃ¬nh.
+  128 (15) Em cÃ²n chÆ°a nháº­n khÃ¡ch mÃ  máº¥y ngÆ°á»�i ngoÃ i kia Ä‘Ã£ Ä‘á»‹nh lÃªn xe rá»“i.
+
+## navigate_to
+   19 (16) LÃ¡t pháº£i cÃ³ máº·t á»Ÿ Bá»‡nh viá»‡n Báº¡ch Mai mÃ  em cháº³ng nhá»› Ä‘i lá»‘i nÃ o.
+   78 (21) Báº¡n gá»­i Ä‘á»‹a chá»‰ 25 LÃ½ ThÆ°á»�ng Kiá»‡t rá»“i mÃ  em váº«n chÆ°a hÃ¬nh dung tá»« Ä‘Ã¢y sang Ä‘áº¥y kiá»ƒu gÃ¬.
+   82 (19) Anh vá»«a nháº¯n cuá»™c há»�p chuyá»ƒn sang khÃ¡ch sáº¡n Daewoo rá»“i, mÃ¬nh láº¡i Ä‘ang Ä‘i vá»� phÃ­a cÃ´ng ty.
+   84 (16) HÃ¬nh nhÆ° mÃ¬nh vá»«a Ä‘i quÃ¡ lá»‘i ráº½ vÃ o Aeon Mall Long BiÃªn rá»“i thÃ¬ pháº£i.
+   86 (16) CÃ²n má»™t tiáº¿ng ná»¯a háº¿t giá»� lÃ m thá»§ tá»¥c á»Ÿ Ná»™i BÃ i, em sá»‘t ruá»™t quÃ¡.
+   93 (13) QuÃ¡n á»Ÿ Ä‘Ã¢y nghá»‰ rá»“i, cháº¯c pháº£i sang Vincom BÃ  Triá»‡u Äƒn thÃ´i.
+   95 (15) Bá»‘ vá»«a xuá»‘ng tÃ u á»Ÿ ga HÃ  Ná»™i, Ä‘ang Ä‘á»©ng Ä‘á»£i mÃ¬nh ngoÃ i cá»•ng rá»“i.
+   98 (19) HÃ´m nay buá»•i Ä‘áº§u Ä‘i lÃ m á»Ÿ FPT Cáº§u Giáº¥y, em cÃ²n chÆ°a biáº¿t tÃ²a nhÃ  náº±m chá»— nÃ o.
+  105 (18) Ä�áº±ng nÃ o cÅ©ng Ä‘Æ°á»£c vá»� sá»›m, em muá»‘n ghÃ© Há»“ TÃ¢y ngá»“i má»™t lÃ¡t trÆ°á»›c khi vá»� nhÃ .
+  129 (20) Laptop váº«n Ä‘á»ƒ á»Ÿ vÄƒn phÃ²ng trong tÃ²a Keangnam, khÃ´ng quay láº¡i láº¥y thÃ¬ mai em cháº³ng cÃ³ gÃ¬ lÃ m.
+
+## operate_sunroof
+   11 (12) Æ  mÆ°a rá»“i, nÆ°á»›c rÆ¡i tá»« trÃªn nÃ³c xuá»‘ng Ä‘áº§u em nÃ y.
+   18 (18) Tá»« lÃºc ra Ä‘Æ°á»�ng lá»›n, giÃ³ cá»© Ã¹ Ã¹ qua cÃ¡i khe trÃªn nÃ³c nghe nhá»©c cáº£ Ä‘áº§u.
+   20 (17) Ä�á»— dÆ°á»›i gá»‘c cÃ¢y mÃ  lÃ¡ cá»© rÆ¡i qua cÃ¡i khe trÃªn nÃ³c xuá»‘ng gháº¿ tháº¿ nÃ y.
+   33 (14) KhÃ³i xe táº£i chui qua chá»— há»Ÿ trÃªn nÃ³c xuá»‘ng táº­n Ä‘Ã¢y, hÃ´i quÃ¡.
+   39 (15) Ä�á»— Ä‘Ã¢y hÃ³ng mÃ¡t mÃ  phÃ­a trÃªn Ä‘áº§u thoÃ¡ng thÃªm tÃ­ ná»¯a thÃ¬ thÃ­ch nhá»‰.
+   47 (13) Bá»¥i bá»‹ thá»•i vÃ o xe tá»« bÃªn trÃªn trÃ n vÃ o xe nhiá»�u quÃ¡.
+   65 (19) MÃ¹i Ä‘á»“ Äƒn cá»© quáº©n trong xe, giÃ¡ cÃ³ chÃºt hÆ¡i thoÃ¡t lÃªn phÃ­a nÃ³c thÃ¬ Ä‘á»¡ biáº¿t máº¥y.
+   66 (12) GiÃ³ Ä‘Ãªm lÃ¹a qua khoáº£ng há»Ÿ trÃªn Ä‘áº§u xuá»‘ng gÃ¡y láº¡nh buá»‘t.
+   74 (16) á»ž ngoÃ i tháº¥y bao nhiÃªu sao, vÃ o ngá»“i trong xe láº¡i bá»‹ cÃ¡i tráº§n che háº¿t.
+   89 (17) MÃ¬nh Ä‘i siÃªu thá»‹ cháº¯c lÃ¢u Ä‘áº¥y, trÃªn nÃ³c cÃ²n há»Ÿ tháº¿ kia em khÃ´ng yÃªn tÃ¢m.
+
+## play_media
+    1 (13) Ä�i cáº£ tiáº¿ng rá»“i mÃ  trong xe im áº¯ng quÃ¡, chÃ¡n tháº­t Ä‘áº¥y.
+    5 (17) Tháº±ng bÃ© cá»© khÃ³c mÃ£i, má»�i hÃ´m nghe máº¥y bÃ i thiáº¿u nhi lÃ  nÃ³ chá»‹u ngá»“i yÃªn.
+   27 (13) Tá»± nhiÃªn nhá»› máº¥y bÃ i Má»¹ TÃ¢m há»“i Ä‘i há»�c hay nghe ghÃª.
+   30 (13) Giá»� nÃ y cháº¯c VOV Giao thÃ´ng Ä‘ang nÃ³i chá»— nÃ o táº¯c Ä‘áº¥y nhá»‰.
+   45 (14) HÃ´m nay thi xong rá»“i, pháº£i cÃ³ bÃ i gÃ¬ vui vui nghe má»›i Ä‘Ã£.
+   46 (21) Tráº­n bÃ³ng báº¯t Ä‘áº§u rá»“i mÃ  cÃ²n ngá»“i trÃªn xe, giá»� nghe Ä‘Æ°á»£c bÃ¬nh luáº­n trá»±c tiáº¿p cÅ©ng Ä‘á»¡ sá»‘t ruá»™t.
+   62 (16) HÃ´m nay há»�p hÃ nh cÄƒng cáº£ Ä‘áº§u, giá»� nghe chÃºt piano nháº¹ nhÃ ng cháº¯c dá»… chá»‹u.
+   72 (18) Máº¥y Ä‘á»©a thuá»™c háº¿t bÃ i Ná»‘i vÃ²ng tay lá»›n Ä‘áº¥y, cÃ³ nháº¡c ná»�n lÃ  hÃ¡t chung Ä‘Æ°á»£c luÃ´n.
+  103 (18) Má»�i ngÆ°á»�i cá»© nháº¯c bÃ i má»›i cá»§a SÆ¡n TÃ¹ng mÃ  em chÆ°a nghe láº§n nÃ o, tÃ² mÃ² ghÃª.
+  127 (15) Ä�áº¿n giá»� ká»ƒ chuyá»‡n Ä‘Ãªm khuya rá»“i Ä‘áº¥y, bÃ¬nh thÆ°á»�ng tá»‘i nÃ o em cÅ©ng nghe.
+
+## set_ac
+   14 (11) Ngá»“i trong nÃ y láº¡nh quÃ¡, em ná»•i háº¿t da gÃ  rá»“i.
+   48 (12) Xe phÆ¡i náº¯ng cáº£ trÆ°a, ngá»“i vÃ o nÃ³ng cháº£y cáº£ má»“ hÃ´i.
+   53 (14) Vá»«a Ä‘Ã¡ bÃ³ng xong, ngÆ°á»�i em váº«n háº§m háº­p dÃ¹ ngá»“i nghá»‰ nÃ£y giá»�.
+   59 (14) Háº¯t xÃ¬ suá»‘t tá»« lÃºc lÃªn xe, hÆ¡i láº¡nh lÃ m em buá»‘t cáº£ mÅ©i.
+   60 (13) Ã�o cÃ²n Æ°á»›t mÆ°a mÃ  ngá»“i trong nÃ y láº¡nh tháº¿, rÃ©t run máº¥t.
+   64 (12) Há»™p bÃ¡nh kem báº¯t Ä‘áº§u má»�m ra rá»“i, trong xe nÃ³ng quÃ¡.
+   70 (15) NgoÃ i trá»�i rÃ©t Ä‘Ã£ Ä‘Ã nh, vÃ o xe rá»“i tay váº«n cÃ³ng cháº³ng áº¥m lÃªn Ä‘Æ°á»£c.
+   75 (16) Ä�Ã´ng ngÆ°á»�i má»™t cÃ¡i lÃ  trong xe háº§m háº­p ngay, má»›i ngá»“i tÃ­ Ä‘Ã£ tháº¥y bÃ­.
+  116 (16) BÃªn gháº¿ em nÃ³ng hÆ¡n háº³n bÃªn anh, ngá»“i má»™t lÃºc lÃ  dÃ­nh cáº£ lÆ°ng Ã¡o.
+  130 (13) GiÃ³ trá»�i Ä‘á»§ mÃ¡t rá»“i, lÃ m láº¡nh trong xe ná»¯a chá»‰ tá»‘n Ä‘iá»‡n.
+
+## set_defrost
+   10 (17) Cáº£ nhÃ  vá»«a lÃªn xe sau khi Ä‘i mÆ°a, kÃ­nh trÆ°á»›c má»� háº¿t hÆ¡i, cháº³ng tháº¥y Ä‘Æ°á»�ng.
+   26 (17) NgoÃ¡i láº¡i chá»‰ tháº¥y kÃ­nh sau phá»§ má»™t lá»›p hÆ¡i nÆ°á»›c, cháº³ng tháº¥y xe Ä‘áº±ng sau Ä‘Ã¢u.
+   29 (16) Máº¥y ngÆ°á»�i vá»«a Ä‘i mÆ°a lÃªn xe má»™t cÃ¡i lÃ  kÃ­nh trÆ°á»›c háº¥p hÆ¡i luÃ´n rá»“i.
+   31 (17) Em vá»«a láº¥y khÄƒn lau kÃ­nh trÆ°á»›c xong, chÆ°a Ä‘Æ°á»£c má»™t phÃºt hÆ¡i nÆ°á»›c láº¡i bÃ¡m Ä‘áº§y.
+   44 (15) Ä�á»‹nh lÃ¹i vÃ o chá»— Ä‘á»— mÃ  kÃ­nh sau háº¥p hÆ¡i kÃ­n tháº¿ nÃ y thÃ¬ chá»‹u.
+   79 (14) KÃ­nh trÆ°á»›c Ä‘á»�ng nhiá»�u hÆ¡i nÆ°á»›c quÃ¡ nhÃ¬n ráº¥t khÃ³ Ä‘au háº¿t cáº£ máº¯t.
+  112 (16) KÃ­nh trÆ°á»›c háº¥p hÆ¡i tháº¿ nÃ y, Ä‘Ã¨n Ä‘á»� cÃ²n máº¥y giÃ¢y em cÅ©ng cháº³ng Ä‘á»�c ná»•i.
+  122 (19) Báº¡n em Ä‘ang váº«y á»Ÿ phÃ­a sau mÃ  kÃ­nh sau Ä‘á»�ng hÆ¡i nÆ°á»›c, cháº³ng nháº­n ra ai vá»›i ai.
+  124 (16) Gáº¡t bÃªn ngoÃ i bao nhiÃªu cÅ©ng tháº¿, hÆ¡i nÆ°á»›c náº±m á»Ÿ máº·t trong kÃ­nh trÆ°á»›c cÆ¡.
+  125 (16) Em cÃ²n tÆ°á»Ÿng kÃ­nh Ä‘eo bá»‹ báº©n, hÃ³a ra hÆ¡i nÆ°á»›c bÃ¡m Ä‘áº§y kÃ­nh trÆ°á»›c xe.
+
+## set_fan_speed
+    8 (12) GiÃ³ thá»•i máº¡nh quÃ¡ cáº£m giÃ¡c ná»•i háº¿t cáº£ da gÃ  rá»“i.
+   16 (16) Ngá»“i hÃ ng sau gáº§n nhÆ° cháº³ng tháº¥y tÃ­ giÃ³ nÃ o, phÃ­a trÆ°á»›c thÃ¬ váº«n thá»•i Ä‘á»�u.
+   58 (16) Trong nÃ y mÃ¡t rá»“i mÃ  giÃ³ váº«n thá»•i Ã o Ã o, nÃ³i chuyá»‡n cá»© pháº£i gÃ o lÃªn.
+   63 (15) GiÃ³ tá»« cÃ¡i khe trÆ°á»›c máº·t cá»© thá»•i tÃ³c vÃ o miá»‡ng em, khÃ³ chá»‹u ghÃª.
+   73 (20) CÃ³ hÆ¡i mÃ¡t Ä‘áº¥y nhÆ°ng pháº£i ghÃ© sÃ¡t vÃ o khe má»›i cáº£m tháº¥y, ngá»“i tháº³ng láº¡i lÃ  cháº³ng tháº¥y gÃ¬.
+   76 (14) Tá»� giáº¥y em Ä‘ang xem cá»© bá»‹ luá»“ng giÃ³ trÆ°á»›c máº·t thá»•i bay lÃªn.
+   85 (12) Máº·t Ä‘ang rÃ¡t náº¯ng mÃ  giÃ³ cá»© pháº£ máº¡nh vÃ o, xÃ³t quÃ¡.
+   90 (17) CÃ¡i cá»­a giÃ³ thá»•i Ã¹ Ã¹ vÃ o mic, bÃªn kia cá»© báº£o khÃ´ng nghe Ä‘Æ°á»£c em nÃ³i.
+   92 (15) Má»“ hÃ´i váº«n cháº£y rÃ²ng rÃ²ng mÃ  giÃ³ trÆ°á»›c máº·t cá»© hiu hiu tháº¿ nÃ y.
+  110 (14) Cá»‘c trÃ  Ä‘á»ƒ ngay luá»“ng giÃ³ máº¡nh, chÆ°a ká»‹p uá»‘ng Ä‘Ã£ nguá»™i háº¿t rá»“i.
+
+## set_hazard_lights
+   15 (14) Xe cháº¿t mÃ¡y giá»¯a Ä‘Æ°á»�ng rá»“i, xe phÃ­a sau váº«n lao tá»›i tháº¿ kia.
+   24 (19) Xe mÃ¬nh thá»§ng lá»‘p pháº£i náº±m sÃ¡t lá»� tháº¿ nÃ y, trá»�i láº¡i tá»‘i ná»¯a, sá»£ ngÆ°á»�i ta khÃ´ng tháº¥y.
+   32 (18) Náº¯p ca pÃ´ bá»‘c khÃ³i rá»“i, mÃ¬nh pháº£i dá»«ng ngay á»Ÿ Ä‘Ã¢y thÃ´i, mong xe sau Ä‘á»ƒ Ã½.
+   68 (23) Xe tÃ´i Ä‘ang Ä‘i thÃ¬ ná»• lá»‘p xe, mÃ  trá»�i thÃ¬ tá»‘i Ä‘ang Ä‘á»— xe bÃªn Ä‘Æ°á»�ng sá»£ ngÆ°á»�i khÃ¡c khÃ´ng nhÃ¬n tháº¥y.
+   87 (16) Anh chÃ³ng máº·t quÃ¡, pháº£i táº¥p vÃ o nghá»‰ ngay, xe sau láº¡i Ä‘ang bÃ¡m sÃ¡t ná»¯a.
+   94 (20) CÃ³ cÃ¡i thÃ¹ng rÆ¡i cháº¯n ngang nÃªn xe mÃ¬nh pháº£i Ä‘á»©ng láº¡i giá»¯a lÃ n, phÃ­a sau há»� váº«n chÆ°a biáº¿t.
+   97 (18) Xe cháº¡y bÃ¬nh thÆ°á»�ng láº¡i rá»“i mÃ  hai mÅ©i tÃªn trÃªn báº£ng Ä‘á»“ng há»“ váº«n chá»›p cÃ¹ng nhau.
+  108 (18) Tá»± nhiÃªn Ä‘áº¡p ga mÃ  xe khÃ´ng lÃªn ná»•i, cá»© bÃ² cháº­m giá»¯a Ä‘Æ°á»�ng tháº¿ nÃ y nguy quÃ¡.
+  118 (17) Con nÃ´n háº¿t ra rá»“i, mÃ¬nh pháº£i dá»«ng bÃªn lá»� ngay, chá»— nÃ y láº¡i nhiá»�u xe qua.
+  123 (21) Xe cá»©u há»™ kÃ©o mÃ¬nh Ä‘i cháº­m tháº¿ nÃ y, xe sau cá»© Ã¡p sÃ¡t mÃ  khÃ´ng biáº¿t xe mÃ¬nh bá»‹ há»�ng.
+
+## set_headlights
+    3 (11) Ä�oáº¡n nÃ y tá»‘i quÃ¡, nhÃ¬n cháº³ng rÃµ máº·t Ä‘Æ°á»�ng gÃ¬ cáº£.
+    4 (15) Xe Ä‘á»‘i diá»‡n cá»© nhÃ¡y liÃªn tá»¥c, cháº¯c mÃ¬nh lÃ m ngÆ°á»�i ta chÃ³i máº¯t rá»“i.
+    6 (15) Ä�Æ°á»�ng thÃ¬ váº¯ng tanh mÃ  láº¡i khÃ´ng cÃ³ Ä‘Ã¨n Ä‘Æ°á»�ng nhÃ¬n khÃ´ng tháº¥y gÃ¬ cáº£.
+   17 (22) VÃ o Ä‘Æ°á»�ng nhiá»�u sÆ°Æ¡ng mÃ¹ quÃ¡ Ä‘Ã¨n xe cá»§a mÃ¬nh tháº¥p sá»£ ngÆ°á»�i khÃ¡c Ä‘i tá»« xa mÃ  khÃ´ng tháº¥y xe mÃ¬nh.
+   41 (21) MÆ°a tráº¯ng xÃ³a tháº¿ nÃ y, xe mÃ¬nh cháº³ng cÃ³ tÃ­ Ã¡nh sÃ¡ng nÃ o phÃ­a trÆ°á»›c thÃ¬ ngÆ°á»�i ta khÃ³ tháº¥y láº¯m.
+   67 (14) Ã�nh sÃ¡ng cá»© háº¯t ngÆ°á»£c tá»« mÃ n sÆ°Æ¡ng vÃ o máº¯t, cÃ ng nhÃ¬n cÃ ng lÃ³a.
+   91 (19) Ã�nh sÃ¡ng xe mÃ¬nh chiáº¿u tháº³ng vÃ o gÆ°Æ¡ng xe phÃ­a trÆ°á»›c, bÃ¡c áº¥y cá»© pháº£i láº¥y tay che máº¯t.
+   96 (16) Chiá»�u xuá»‘ng nhanh tháº­t, máº¥y ngÆ°á»�i Ä‘i xe Ä‘áº¡p phÃ­a trÆ°á»›c cá»© láº«n vÃ o bÃ³ng cÃ¢y.
+  120 (19) Ä�Æ°á»�ng váº¯ng mÃ  cÃ¡i biá»ƒn phÃ­a xa náº±m ngoÃ i khoáº£ng sÃ¡ng trÆ°á»›c xe, em chÆ°a Ä‘á»�c Ä‘Æ°á»£c chá»¯ nÃ o.
+  121 (17) Ä�i trong ngÃµ mÃ  Ã¡nh sÃ¡ng xe mÃ¬nh rá»�i táº­n cá»­a sá»• nhÃ  ngÆ°á»�i ta, ngáº¡i quÃ¡.
+
+## set_volume
+    9 (11) BÃ i nÃ y hÃ¡t gÃ¬ mÃ  lÃ­ nhÃ­, nghe cháº³ng rÃµ lá»�i.
+   13 ( 8) Loa to tháº¿ nÃ y, con ngá»§ sao Ä‘Æ°á»£c.
+   21 (14) Máº¹ gá»�i mÃ  tiáº¿ng trong Ä‘iá»‡n thoáº¡i bÃ© quÃ¡, loa xe Ã¡t háº¿t cáº£.
+   36 ( 8) Tiáº¿ng nháº¡c á»“n quÃ¡,tráº» con khÃ´ng ngá»§ Ä‘Æ°á»£c.
+   81 (12) Ä�Ãºng Ä‘oáº¡n guitar em thÃ­ch mÃ  tiáº¿ng lá»‘p xe Ã¡t máº¥t rá»“i.
+  101 (15) Giá»�ng bÃ¡o ráº½ bÃ© quÃ¡, Ä‘áº¿n lÃºc em nghe Ä‘Æ°á»£c thÃ¬ qua máº¥t lá»‘i rá»“i.
+  102 (17) Ä�á»— ngay cáº¡nh lá»›p há»�c mÃ  tiáº¿ng tá»« loa xe vá»�ng ra ngoÃ i rÃµ quÃ¡, ngáº¡i tháº­t.
+  107 (14) Em Ä‘ang ká»ƒ Ä‘áº¿n Ä‘oáº¡n quan trá»�ng mÃ  tiáº¿ng hÃ¡t cá»© Ã¡t cáº£ lá»�i.
+  113 (11) Ä�ang nghe vá»«a tai, sang quáº£ng cÃ¡o cÃ¡i giáº­t cáº£ mÃ¬nh.
+  114 (23) BÃªn ngoÃ i Ä‘ang  cÃ³ ca nháº¡c, Ä‘Ã³ng kÃ­nh xe rá»“i mÃ  váº«n cÃ²n á»“n quÃ¡ tÃ´i khÃ´ng nghe Ä‘Æ°á»£c nháº¡c bÃªn trong xe.
+

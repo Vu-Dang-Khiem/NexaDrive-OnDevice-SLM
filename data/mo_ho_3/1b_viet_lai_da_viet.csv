@@ -1,0 +1,17 @@
+﻿id,chuc_nang,cau,ghi_chu
+5,hạ / nâng kính cửa sổ,"Xe tải phía trước làm bụi bay vào tận chỗ em ngồi rồi này, kính bên em còn hở một đoạn.",Chưa xác định người nói ngồi ghế nào để chọn cửa sổ.
+36,mở / đóng / hé cửa sổ trời,"Gió cứ ù ù trên đầu nghe nhức cả tai, chắc là trên nóc vẫn còn hở đấy.",
+55,đóng cốp sau,"Trời mưa rồi mà chỗ để đồ đằng sau vẫn toang hoác thế kia, ướt hết đồ mất.",
+70,khoá cửa xe,"Xe đang chạy rồi mà mấy cái chốt ở cửa vẫn còn nhô lên thế kia, em thấy không yên tâm lắm.",Cần xác nhận trạng thái cửa vì vị trí chốt có thể khác nhau tùy xe.
+77,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Xe mình hỏng phải đứng ngay giữa đường thế này, sợ người phía sau không để ý rồi tông vào mất.",Cũng có thể cần cứu hộ; nỗi lo xe phía sau không nhận ra gợi nhu cầu cảnh báo.
+81,bật đèn pha / đổi chế độ đèn pha,"Ánh sáng xe mình chiếu cả vào gương xe phía trước kìa, thế này chắc người ta chói mắt lắm.",Gợi nhu cầu đổi sang chế độ ít gây chói hơn; chưa rõ chế độ hiện tại.
+83,bật đèn pha / đổi chế độ đèn pha,"Sương dày thế này mà cứ chiếu xa là trắng xóa cả lên, nhìn còn khó hơn.",Gợi nhu cầu đổi chế độ chiếu sáng; cần xác nhận cách xử lý phù hợp.
+95,chỉnh âm lượng to lên / nhỏ đi,Tôi đang gọi cuộc điện thoại quan trọng với sếp mà ồn quá.,"Có thể muốn bớt âm lượng, im tiếng hoặc tạm dừng bài hát."
+97,đóng cốp sau,Gió lùa mạnh từ phía sau xe vào cốp xe đang bị mở,
+107,bật đèn pha / đổi chế độ đèn pha,"Trời tối rồi mà trước xe mình chẳng sáng tí nào, nhìn đường khó quá.",Có thể đèn chưa hoạt động hoặc chiếu sáng chưa đủ; cần xác nhận trạng thái.
+111,hạ / nâng kính cửa sổ,"Ngoài kia người ta khoan đường nghe nhức hết cả đầu, kính bên em lại đang hở nữa.",Chưa xác định người nói ngồi ghế nào để chọn cửa sổ.
+113,sấy kính trước hoặc kính sau cho hết mờ,"Kính phía trước đọng hơi nước mờ hết rồi, em nhìn mấy xe đằng trước cứ nhòe nhòe.",
+115,bật đèn pha / đổi chế độ đèn pha,Đang đi vào khu dân cư đèn pha sẽ khiến phương tiện đối diện khó nhìn đường.,
+118,khoá cửa xe,Đang mua đồ ven đường mà không nhớ đã khóa xe chưa,
+122,bật đèn pha / đổi chế độ đèn pha,"Đường này vắng mà phía trước chỉ sáng được một đoạn ngắn, xa hơn là chẳng thấy gì cả.",Gợi nhu cầu chiếu xa hơn; cần xác nhận điều kiện và chế độ hiện tại.
+129,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Xe mình đang dừng ở lề vì xẹp lốp mà mấy xe phía sau cứ chạy sát quá, em lo thật đấy.",Cũng có thể cần hỗ trợ sửa lốp; xe đang dừng do sự cố và lo xe phía sau là manh mối cho nhu cầu cảnh báo.

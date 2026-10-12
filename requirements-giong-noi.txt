@@ -1,0 +1,15 @@
+# Env giọng nói `giong_noi` (Python 3.11) — STT / TTS / wake-word, chạy `serve/giong_noi.py` trên cổng 8001.
+# Tách khỏi env chính (requirements.txt) để không lẫn thư viện. Phiên bản = bản đã dùng khi đo trong báo cáo.
+#   conda create -n giong_noi python=3.11 && conda activate giong_noi && pip install -r requirements-giong-noi.txt
+vieneu==3.8.3
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+openwakeword==0.6.0
+onnxruntime==1.30.0
+scikit-learn==1.9.1
+joblib==1.6.0
+numpy==2.4.6
+soundfile==0.14.0
+fastapi==0.142.2
+uvicorn==0.54.0
+websockets==17.2

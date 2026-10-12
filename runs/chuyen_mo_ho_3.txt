@@ -1,0 +1,55 @@
+﻿OK: 130 cÃ¢u -> data\processed\final\test_vi_mo_ho_3.jsonl
+
+{
+  "tong": 130,
+  "theo_nhom": {
+    "ro_rang": 0,
+    "mo_ho": 130,
+    "ngoai_pham_vi": 0
+  },
+  "theo_nhom_phu": {
+    "mh3_close_trunk": 10,
+    "mh3_control_window": 10,
+    "mh3_find_nearby": 10,
+    "mh3_lock_doors": 10,
+    "mh3_navigate_to": 10,
+    "mh3_operate_sunroof": 10,
+    "mh3_play_media": 10,
+    "mh3_set_ac": 10,
+    "mh3_set_defrost": 10,
+    "mh3_set_fan_speed": 10,
+    "mh3_set_hazard_lights": 10,
+    "mh3_set_headlights": 10,
+    "mh3_set_volume": 10
+  },
+  "theo_ham": {
+    "close_trunk": 10,
+    "control_window": 10,
+    "find_nearby": 10,
+    "get_vehicle_status": 1,
+    "lock_doors": 9,
+    "navigate_to": 10,
+    "operate_sunroof": 10,
+    "play_media": 10,
+    "set_ac": 10,
+    "set_defrost": 10,
+    "set_fan_speed": 10,
+    "set_hazard_lights": 10,
+    "set_headlights": 10,
+    "set_volume": 10
+  },
+  "ham_chua_co_cau_test": [
+    "get_fuel_level",
+    "get_battery_range",
+    "get_tire_pressure",
+    "get_odometer",
+    "get_range_estimate",
+    "unlock_doors",
+    "open_trunk",
+    "open_charge_port",
+    "open_fuel_flap",
+    "get_weather",
+    "irrelevant_function"
+  ]
+}
+

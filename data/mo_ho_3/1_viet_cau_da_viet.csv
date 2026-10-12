@@ -1,0 +1,131 @@
+﻿id,chuc_nang,cau,ghi_chu
+1,dẫn đường tới một nơi cụ thể,"Chết, lạc đường tới chùa Dâu rồi!",
+2,mở / đóng / hé cửa sổ trời,"Vừa rời bãi cắm trại thì trời đổ mưa, nước cứ rơi từ khoảng trống trên nóc xuống đầu con rồi.",
+3,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),Gió phả rát cả mặt rồi.,Có thể hiểu là đổi hướng luồng gió; cảm giác gió phả rát cũng gợi nhu cầu quạt yếu đi.
+4,đóng cốp sau,"Hành lý xếp hết vào rồi mà cái nắp phía đuôi xe vẫn chổng lên, thế này sao đi được.",
+5,hạ / nâng kính cửa sổ,Bụi tạt qua khe bên tài kìa.,
+6,hạ / nâng kính cửa sổ,"Đến trạm thu phí rồi mà tấm kính bên tay trái vẫn chắn giữa mình với cô thu tiền, ngại ghê.",
+7,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)",Xe chết máy giữa cầu rồi!,Có thể là báo sự cố để nhờ cứu hộ; vị trí giữa cầu gợi nhu cầu cảnh báo xe khác.
+8,mở / đóng / hé cửa sổ trời,"Cả nhà nằm ngắm sao trong xe mà trên đầu còn nguyên tấm kính, cảm giác cứ bị ngăn cách ấy.",Có thể chỉ là lời nhận xét; tấm kính trên đầu và việc ngắm sao gợi nhu cầu thông khoảng nóc.
+9,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Thủng lốp rồi, xe sau sát quá!",Cũng có thể là nhu cầu hỗ trợ sửa lốp; xe phía sau áp sát là manh mối cần cảnh báo.
+10,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Hai đứa nhỏ chưa ăn trưa mà cứ phải ngồi xe mãi, giá có chỗ ăn nào ngay quanh đây thì tiện.",
+11,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),Gió trong xe thổi bay giấy rồi!,
+12,dẫn đường tới một nơi cụ thể,"Mai bay sớm, giờ phải đến sân bay Nội Bài mà mấy nút giao phía trước mình chẳng quen chút nào.",
+13,bật đèn pha / đổi chế độ đèn pha,"Đường tối, chẳng thấy xa gì cả.",Gợi nhu cầu chiếu xa hơn nhưng chưa đủ thông tin để xác định chế độ phù hợp.
+14,khoá cửa xe,"Mình ngồi chờ ở bãi vắng mà có người cứ lảng vảng sát cửa, sợ họ kéo tay nắm là vào được.",
+15,mở / đóng / hé cửa sổ trời,Lá rơi qua nóc xuống ghế kìa.,
+16,bật đèn pha / đổi chế độ đèn pha,"Xe ngược chiều vừa ló qua khúc cua, vệt sáng xe mình đang rọi tận mặt người ta, ngại quá.",
+17,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Xe mình nằm đường, sương dày quá!",Cũng có thể gợi nhu cầu chiếu sáng; xe đang nằm đường làm nhu cầu cảnh báo nổi bật hơn.
+18,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Thợ sửa xong rồi, xe mình chạy bình thường lại rồi mà cả bốn góc vẫn cứ nháy suốt từ nãy.",
+19,dẫn đường tới một nơi cụ thể,Quên đường tới bến xe Mỹ Đình!,
+20,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Quán ven đường chỉ nhận tiền mặt mà ví mình trống trơn, loanh quanh đây chẳng biết rút tiền ở đâu.",
+21,dẫn đường tới một nơi cụ thể,Hồ Gươm ở hướng nào ấy nhỉ?,Có thể chỉ hỏi phương hướng; cần xác nhận người nói có muốn được chỉ lộ trình tới đó không.
+22,mở / đóng / hé cửa sổ trời,"Đỗ dưới hàng thông mát thế này mà trong xe bí quá, giá có tí khí trời từ phía trên đầu thì thích.",Cảm giác bí cũng có thể gợi nhu cầu thông gió khác; phía trên đầu là manh mối hướng tới khoảng nóc.
+23,bật đèn pha / đổi chế độ đèn pha,"Vào hầm rồi, trước xe tối thui.",
+24,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),"Ngồi ghế sau sau buổi đá bóng mà luồng gió từ phía trước chẳng tới nổi chỗ mình, người vẫn dính dấp.",Có thể bị hiểu là cần làm lạnh hơn hoặc đổi hướng gió; câu nhấn vào luồng gió không tới chỗ ngồi.
+25,khoá cửa xe,Người lạ cứ kéo tay nắm kìa!,Cũng có thể là lời báo động; chưa biết cửa đã được bảo vệ hay chưa nên cần xác nhận.
+26,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),Bé vừa ngủ được mà tiếng gió ù ù từ mấy khe phía trước cứ át cả tiếng mình nói nhỏ.,
+27,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Kim xăng sát đáy rồi, ôi trời.",
+28,bật đèn pha / đổi chế độ đèn pha,"Dãy đèn ven đường vừa hết, tới đoạn đồng không này thì khoảng đường trước đầu xe gần như đen kịt.",Chưa rõ đèn xe đang ở trạng thái nào; cần xác nhận trước khi đề xuất chế độ chiếu sáng.
+29,sấy kính trước hoặc kính sau cho hết mờ,Kính sau đọng hơi kín mít rồi.,
+30,đóng cốp sau,Nắp sau sắp quệt mái gara rồi!,Nắp sau đang dựng cao gợi nhu cầu thu nắp về; cũng có thể người nói muốn dừng di chuyển xe.
+31,khoá cửa xe,Con cứ nghịch tay nắm cửa hoài.,Có thể cần chốt an toàn trẻ em thay vì khóa cửa thông thường; câu chưa phân biệt hai cơ chế.
+32,mở nhạc / đài,"Đi qua quê ngoại tự nhiên nhớ mấy làn điệu quan họ bà hay hát, lâu lắm chẳng được nghe lại.",Có thể chỉ đang kể kỷ niệm; việc nhớ và lâu chưa được nghe gợi nhu cầu nghe lại quan họ.
+33,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Né con bò xong xe mình phải dừng ngay khúc cua, người phía sau chắc chẳng kịp thấy mình đâu.",
+34,"bật / tắt điều hoà, chỉnh nhiệt độ","Ông ngoại đi cùng bảo hai sáu độ mới dễ chịu, mà trong xe đang hai mươi độ, ông cứ co ro.",
+35,khoá cửa xe,"Cả nhà xuống chụp ảnh hết rồi, túi xách vẫn trên ghế mà ai đi ngang kéo cửa cũng vào được thì lo quá.",
+36,mở / đóng / hé cửa sổ trời,"Trên nóc hở, tiếng còi dội quá!",
+37,hạ / nâng kính cửa sổ,Hàng hoa sữa bên đường thơm thế mà ngồi sau lớp kính kín mít này chẳng ngửi thấy gì.,Gợi nhu cầu tiếp xúc không khí bên ngoài nhưng chưa xác định cửa sổ nào.
+38,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Sắp họp rồi, chẳng chỗ đỗ xe!",
+39,sấy kính trước hoặc kính sau cho hết mờ,"Ba người vừa trú mưa lên xe là mặt trong tấm kính trước mặt phủ hơi, nhìn vạch đường nhòe hết cả.",
+40,đóng cốp sau,"Ai đi ngang cũng nhìn thấy mấy túi quà trong khoang hành lý phía sau, bí mật sinh nhật thế là toi.",Có thể người nói muốn che hoặc cất quà; cần xác nhận nắp khoang hành lý có đang để ngỏ không.
+41,chỉnh âm lượng to lên / nhỏ đi,"Ca sĩ hát gì, nghe bé xíu!",
+42,"bật / tắt điều hoà, chỉnh nhiệt độ",Trong xe cứ như cái lò ấy!,Có thể gợi nhu cầu thông gió hoặc hạ kính; chưa đủ manh mối để chọn duy nhất cách làm mát.
+43,"bật / tắt điều hoà, chỉnh nhiệt độ","Rét run rồi, chịu hết nổi!",Chưa rõ cần nhiệt độ cao hơn hay ngừng làm lạnh; nên xác nhận cách xử lý.
+44,chỉnh âm lượng to lên / nhỏ đi,"Mẹ gọi điện dặn chuyện đón cháu mà tiếng bài hát trong xe át hết lời mẹ, nghe chẳng rõ gì.",Cũng có thể muốn tạm dừng bài hát; câu chưa chỉ rõ cách xử lý âm thanh.
+45,mở nhạc / đài,Thèm nghe giọng Quang Lê ghê.,
+46,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),"Đeo kính áp tròng đi chơi mà gió từ khe trước mặt cứ phả liên tục, mắt khô khó chịu thật.",Có thể cần đổi hướng gió thay vì quạt yếu đi; câu nhấn vào tác động của luồng gió.
+47,sấy kính trước hoặc kính sau cho hết mờ,"Vừa chui hầm, kính đã hấp hơi!",Chưa xác định kính trước hay kính sau; cần hỏi rõ vị trí bị mờ.
+48,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),"Mình thích có luồng gió rõ rõ khi ngồi xe, chứ từ mấy khe kia chỉ thấy thoang thoảng thế này.",
+49,dẫn đường tới một nơi cụ thể,"Thiệp cưới ghi nhà hàng Sen Tây Hồ, cả hội chờ ở đó rồi mà mình chưa biết đi lối nào cho tới.",
+50,chỉnh âm lượng to lên / nhỏ đi,Tiếng trống từ loa dội đau đầu!,Có thể muốn bớt âm lượng hoặc bớt tiếng trầm; cần xác nhận cách xử lý.
+51,mở / đóng / hé cửa sổ trời,"Nóc kín bưng, khói thuốc quẩn mãi.",Nóc kín và khói quẩn gợi nhu cầu thoát khí phía trên; cửa sổ hoặc thông gió cũng là cách hiểu hợp lý.
+52,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),"Mái tóc vừa làm để đi đám cưới mà luồng gió trước mặt cứ thổi tung hết lên, chán thật.",Có thể muốn đổi hướng gió thay vì quạt yếu đi; cần xác nhận.
+53,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê",Pin xe còn có ba phần trăm.,Có thể chỉ đang báo mức pin; mức pin rất thấp gợi nhu cầu tới nơi sạc gần nhất.
+54,"bật / tắt điều hoà, chỉnh nhiệt độ","Mấy hộp sô cô la mang biếu để trên ghế mà nóng đến mềm cả rồi, trong xe thế này hỏng quà mất.",Có thể muốn chuyển quà sang chỗ khác; nhiệt độ trong xe gợi nhu cầu làm mát khoang xe.
+55,đóng cốp sau,"Hành lý ướt rồi, nắp sau toang!",
+56,chỉnh âm lượng to lên / nhỏ đi,Tới điệp khúc mà nghe chưa đã!,Có thể muốn âm thanh to hơn hoặc chất âm khác; chưa nói rõ nguyên nhân nghe chưa đã.
+57,dẫn đường tới một nơi cụ thể,"Gói hàng này phải tới số mười hai phố Huế trước trưa, mình lại chỉ rành mấy đường bên Long Biên.",
+58,đóng cốp sau,"Tài xế giục đi mà trên màn hình vẫn đỏ cái hình nắp đuôi xe dựng đứng, chắc lúc nãy còn sót việc gì.",Có thể nắp chưa khép kín hoặc cảm biến báo sai; cần xác nhận trạng thái thực tế.
+59,dẫn đường tới một nơi cụ thể,Lối vào Đại Nội Huế rối thật!,Có thể cần chỉ đúng cổng vào; chưa đủ thông tin để tự chọn một cổng cụ thể.
+60,sấy kính trước hoặc kính sau cho hết mờ,"Sáng nay ngủ dậy trong xe, tấm kính phía sau mờ đục vì hơi thở cả đêm, chẳng thấy sân bãi nữa.",
+61,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Thèm cà phê, ngại đi xa ghê.",
+62,mở nhạc / đài,"Tụi nhỏ đi dã ngoại mà ngồi im thin thít, có mấy bài thiếu nhi quen thuộc chắc cả xe vui hơn.",
+63,mở nhạc / đài,Giờ này chắc tới bản tin rồi.,Có thể muốn nghe bản tin qua đài hoặc hỏi tin tức; chưa xác định kênh phát.
+64,dẫn đường tới một nơi cụ thể,"Lần đầu tự lái sang Bát Tràng, cứ thấy ngã rẽ là mình lại phân vân, chẳng biết bên nào đúng.",Bát Tràng là một khu vực; có thể cần hỏi điểm đến cụ thể trong khu vực đó.
+65,mở / đóng / hé cửa sổ trời,"Trên nóc còn hở, sắp rửa xe!",
+66,chỉnh âm lượng to lên / nhỏ đi,Trước cổng viện mà loa ầm quá.,
+67,mở nhạc / đài,"Một ngày họp hành nhức cả đầu, đoạn đường về mà có vài giai điệu không lời êm êm thì dễ thở hơn.",
+68,mở nhạc / đài,"Đường dài mà im phăng phắc, chán!",Có thể muốn nghe nhạc hoặc trò chuyện; chưa có manh mối để chọn nội dung phát.
+69,dẫn đường tới một nơi cụ thể,"Giờ tan tầm mà phải có mặt ở ga Hà Nội trong nửa tiếng, chẳng biết lối nào đỡ mắc kẹt.",
+70,khoá cửa xe,Lăn bánh rồi mà chốt vẫn nhô!,Dáng chốt nhô không phản ánh trạng thái giống nhau ở mọi xe; cần xác nhận cửa chưa được khóa.
+71,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Nước tràn ngang đường làm xe mình phải dừng gấp, trời lại mưa trắng xóa, sợ người sau không nhận ra.",
+72,khoá cửa xe,"Bạn mượn xe mới trả, mình không biết mấy cửa đã được chốt chắc chưa, đêm nay lại để xe ngoài sân.",Có thể người nói chỉ muốn kiểm tra trạng thái; cần xác nhận trước khi thực hiện.
+73,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê",Đau thế này chắc phải tới viện.,Gợi nhu cầu tới bệnh viện nhưng chưa nêu nơi cụ thể; có thể đề xuất cơ sở gần đây.
+74,mở nhạc / đài,"Tối nay có trận đội tuyển mà mình còn cầm lái, chỉ được nghe bình luận trực tiếp thôi cũng đỡ tiếc.",Chưa nêu trận hoặc kênh cụ thể; chỉ đề xuất phát nếu có nguồn bình luận phù hợp.
+75,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Mẹ ăn chay mà dọc đoạn này toàn biển đồ nướng, tới bữa rồi chẳng biết quanh đây có quán nào hợp.",
+76,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Thùng đồ trên giá nóc vừa xô lệch nên mình phải tấp lại buộc dây, xe tải phía sau vẫn lao tới.",
+77,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Bánh sa lầy, xe choán nửa đường!",Cũng có thể cần cứu hộ; xe choán đường là manh mối cho nhu cầu cảnh báo các xe khác.
+78,"bật / tắt điều hoà, chỉnh nhiệt độ","Mát sẵn rồi, làm lạnh chi nữa.",Có thể muốn ngừng làm lạnh hoặc chỉ bớt lạnh; cần xác nhận lựa chọn.
+79,đóng cốp sau,Nắp đuôi che mất biển số rồi!,
+80,mở / đóng / hé cửa sổ trời,"Đang đỗ dưới tán phượng, em muốn chụp chùm hoa ngay trên đầu mà tấm kính trên nóc cứ phản chiếu.",
+81,bật đèn pha / đổi chế độ đèn pha,Xe mình rọi chói gương người trước!,Gợi nhu cầu đổi sang chế độ ít gây chói hơn; chưa xác định chế độ hiện tại.
+82,mở / đóng / hé cửa sổ trời,"Xe dừng ngay dưới ống xả bếp nhà hàng, khói cứ theo khoảng hở trên đầu tràn vào, cay cả mắt.",
+83,bật đèn pha / đổi chế độ đèn pha,"Rọi xa toàn sương trắng, lóa quá!",Gợi nhu cầu đổi chế độ chiếu sáng do ánh sáng phản chiếu trong sương; cần xác nhận chế độ phù hợp.
+84,khoá cửa xe,"Tranh thủ chợp mắt một lát ở trạm nghỉ, mình chỉ yên tâm khi người ngoài không thể kéo cửa vào lúc đang ngủ.",
+85,bật đèn pha / đổi chế độ đèn pha,"Lúc qua phố thì sáng rõ, tới gầm cầu lại tối om, cứ thay đổi thế này mắt mình theo chẳng kịp.",Có thể gợi nhu cầu chế độ chiếu sáng tự động; cần xác nhận thay vì suy ra một chế độ cụ thể.
+86,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),"Mát rồi, gió dồn dập quá!","Nhiệt độ đã dễ chịu, lời than tập trung vào cường độ gió; vẫn có thể muốn đổi hướng gió."
+87,"bật / tắt điều hoà, chỉnh nhiệt độ","Mười sáu độ, ai chịu cho nổi!",Ngầm chê mức nhiệt quá thấp; cần xác nhận mức nhiệt mong muốn.
+88,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),"Áo con dính nước, để trước khe gió mãi mà luồng thổi yếu quá, tới trường chắc vẫn chưa ráo.",
+89,"bật / tắt điều hoà, chỉnh nhiệt độ","Chở cún đi khám mà nó cứ lè lưỡi thở hồng hộc, khoang xe hầm hập dù mình đã đỗ dưới bóng cây.",Có thể là lo về tình trạng của cún; khoang xe hầm hập là manh mối riêng cho nhu cầu làm mát.
+90,mở nhạc / đài,Nhớ bài Diễm xưa quá chừng.,
+91,đóng cốp sau,"Vừa lấy ô xong, gió cứ lùa từ khoang hành lý lên ghế sau, ai ngồi đấy cũng kêu lạnh.",Cần xác nhận nắp khoang hành lý còn để ngỏ; tránh hiểu thành thay đổi nhiệt độ trong xe.
+92,chỉnh âm lượng to lên / nhỏ đi,"Khách xuống rồi, loa bé thế buồn!",
+93,mở nhạc / đài,"Cả nhóm đang hát sinh nhật cho bé, thiếu phần giai điệu quen thuộc phía sau nên ai cũng chệch nhịp.",Gợi nhu cầu phát bài sinh nhật hoặc bản đệm; chưa rõ phiên bản mong muốn.
+94,dẫn đường tới một nơi cụ thể,"Cầu phía trước đang chắn lối, mình lại phải sang bệnh viện Việt Đức đúng giờ hẹn, giờ vòng đâu đây.",
+95,chỉnh âm lượng to lên / nhỏ đi,Nhạc lọt cả vào đoạn ghi âm!,"Có thể muốn bớt âm lượng, im tiếng hoặc tạm dừng phát; cần xác nhận cách xử lý."
+96,sấy kính trước hoặc kính sau cho hết mờ,"Mang nồi cháo nóng cho bà mà hơi bốc lên làm mặt trong kính trước trắng đục, nhìn xe phía trước nhòe quá.",
+97,đóng cốp sau,Cái nắp đuôi chắn lối người ta!,
+98,chỉnh quạt gió mạnh lên / yếu đi (KHÔNG phải bật điều hoà),Anh thợ đang nghe xem máy có tiếng lạ không mà tiếng gió từ mấy khe trong xe cứ ù ù lấn hết.,
+99,chỉnh âm lượng to lên / nhỏ đi,"Bài sau bỗng ầm, giật cả mình!",
+100,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Còn một tiếng chờ bạn, ngồi mãi trong xe mỏi lưng quá, quanh đây có quán cà phê nào ngồi nghỉ thì hay.",
+101,hạ / nâng kính cửa sổ,"Kính kín, chẳng nghe chú ấy nói.",Gợi nhu cầu nghe người bên ngoài qua cửa sổ; chưa xác định phía nào của xe.
+102,sấy kính trước hoặc kính sau cho hết mờ,"Kính sau mờ, lùi chẳng thấy gì.",Chưa nêu rõ hơi nước hay bụi bẩn gây mờ; cần xác nhận nguyên nhân trước khi xử lý.
+103,hạ / nâng kính cửa sổ,"Con ngồi ghế sau sát bên trái cứ bị gió ngoài đường quất vào tai, chiếc khăn đội đầu cũng sắp bay mất.",Gió ngoài đường và vị trí ngồi gợi cửa sổ sau trái; vẫn cần xác nhận cửa đó đang để hở.
+104,hạ / nâng kính cửa sổ,Mùi sầu riêng ám cả xe rồi!,"Có thể muốn thoáng khí qua cửa sổ, qua nóc hoặc dùng hệ thống thông gió; chưa xác định cửa sổ hay mức độ."
+105,"bật / tắt điều hoà, chỉnh nhiệt độ",Gió có mà toàn hơi nóng!,Có thể chưa làm lạnh hoặc hệ thống gặp lỗi; gió vẫn thổi nên không mặc định là thiếu sức gió.
+106,đóng cốp sau,"Qua cái gờ nhỏ mà nắp phía đuôi nảy lên rồi kêu cạch cạch, chắc nó chưa nằm sát vào thân xe.",Có thể nắp chưa khép hết hoặc chốt bị lỗi; cần xác nhận trạng thái trước khi thực hiện.
+107,bật đèn pha / đổi chế độ đèn pha,"Ai cũng nháy, đầu xe mình tối!",Xe khác nháy có thể mang nhiều ý nghĩa; đầu xe mình tối là manh mối cho nhu cầu chiếu sáng.
+108,"tìm quanh đây: cây xăng, trạm sạc, bãi đỗ, nhà hàng, bệnh viện, cây ATM, quán cà phê","Cái hầm này thấp quá, xe mình có giá nóc không lọt, giờ loanh quanh đây chẳng biết gửi ở đâu.",
+109,khoá cửa xe,"Bãi này xe nào cũng giống nhau, nãy có người nhận nhầm xe mình rồi kéo cửa, giờ nghĩ lại vẫn ngại.",
+110,"bật / tắt điều hoà, chỉnh nhiệt độ","Càng ngồi đông, xe càng hầm hập!",Có thể muốn thông gió thay vì làm lạnh; câu chưa chỉ rõ cách xử lý.
+111,hạ / nâng kính cửa sổ,"Kính hở, tiếng khoan nhức óc thật!",Chưa xác định cửa sổ nào đang để hở.
+112,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)","Khói bốc từ đầu xe nên mình vừa tấp gấp vào lề, đoạn này lại khuất sau hàng cây, lo quá.",Cũng có thể cần cứu hộ; xe vừa dừng gấp ở vị trí khuất gợi nhu cầu cảnh báo xe khác.
+113,sấy kính trước hoặc kính sau cho hết mờ,"Kính trước hấp hơi, máy quay mù!",Có thể bị hiểu là lỗi máy quay; kính trước hấp hơi là manh mối cho nhu cầu làm trong kính.
+114,sấy kính trước hoặc kính sau cho hết mờ,"Cái gạt phía sau chạy mãi vẫn chẳng trong hơn, hóa ra lớp hơi nằm ở mặt kính bên trong xe.",
+115,bật đèn pha / đổi chế độ đèn pha,Ánh xe rọi thẳng lều người ta!,Gợi nhu cầu đổi chế độ chiếu sáng để bớt gây chói; chưa biết chế độ hiện tại.
+116,"bật / tắt điều hoà, chỉnh nhiệt độ","Áo mình còn ướt sau trận mưa, ngồi trong xe lại lạnh thêm nên cứ nổi da gà suốt từ nãy.","Có thể muốn ấm hơn, ngừng làm lạnh hoặc bớt gió; cần xác nhận cách xử lý."
+117,hạ / nâng kính cửa sổ,"Gặp lại bạn cũ ở đèn đỏ, nó đứng sát bên phụ chìa tay mà tấm kính vẫn ngăn giữa hai đứa.",
+118,khoá cửa xe,Khỉ bám tay nắm cửa rồi kìa!,Có thể chỉ là lời báo động; gợi nhu cầu bảo vệ cửa nhưng chưa rõ trạng thái chốt hiện tại.
+119,mở / đóng / hé cửa sổ trời,"Đi ngang cánh đồng, con cứ đòi nghe tiếng diều sáo ngay phía trên mà lớp kính trên nóc cản hết âm thanh.",Cũng có thể nghe qua cửa sổ; vị trí phía trên và lớp kính trên nóc gợi nhu cầu thông khoảng nóc.
+120,sấy kính trước hoặc kính sau cho hết mờ,"Trời nồm, kính trước đổ mồ hôi.",Chưa xác định hơi nước ở mặt trong hay ngoài; có thể cần sấy kính hoặc gạt nước tùy vị trí.
+121,sấy kính trước hoặc kính sau cho hết mờ,"Đang xuống đèo thì trời lạnh hẳn, mặt trong kính trước phủ sương từng mảng, mình chẳng nhìn trọn được khúc cua.",
+122,bật đèn pha / đổi chế độ đèn pha,"Biển rẽ ngoài tầm sáng, chịu rồi!",Có thể cần chiếu xa hơn hoặc hỗ trợ chỉ lối; câu nhấn vào giới hạn vùng được chiếu sáng.
+123,hạ / nâng kính cửa sổ,"Buồn nôn, kính bên em kín mít!",Có thể muốn dừng xe hoặc thoáng khí; chưa xác định vị trí của người nói để chọn cửa sổ.
+124,hạ / nâng kính cửa sổ,"Cả xe đang mát mà ô bên ghế phụ còn trống hoác, hơi lạnh cứ thoát ra ngoài hết, phí ghê.",
+125,mở nhạc / đài,"Vắng giọng đọc truyện, bé chẳng ngủ.",Gợi nhu cầu phát truyện kể; chưa xác định truyện hoặc giọng đọc.
+126,khoá cửa xe,"Mấy cửa bên này có tiếng chốt rồi, riêng cửa sau bên phải vẫn kéo được từ ngoài, để xe thế này không yên tâm.",Có thể cửa đó chưa khóa hoặc cơ cấu chốt gặp lỗi; cần xác nhận trạng thái.
+127,chỉnh âm lượng to lên / nhỏ đi,"Loa nhỏ, ông quên máy trợ thính.",
+128,chỉnh âm lượng to lên / nhỏ đi,"Hình như có còi cứu thương phía sau, tiếng bài hát trong xe to quá nên mình chẳng đoán được nó tới từ đâu.","Có thể muốn bớt âm lượng, im tiếng hoặc tạm dừng phát; cần xác nhận lựa chọn."
+129,"bật / tắt đèn khẩn cấp (nháy cả 4 góc, khi CHÍNH xe mình gặp sự cố hoặc phải dừng gấp)",Đang được kéo mà xe sau dí!,Gợi nhu cầu báo cho xe sau biết xe mình đang di chuyển bất thường; không phải tình huống xe khác gặp sự cố.
+130,đóng cốp sau,"Đỗ sát bụi cây có muỗi, nắp khoang hành lý lại để ngỏ từ lúc lấy đồ, chúng bay vào đầy xe rồi.",

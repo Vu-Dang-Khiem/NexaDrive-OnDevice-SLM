@@ -1,0 +1,111 @@
+﻿giá»¯ 107 | lá»‡ch hÃ m Ä‘Ã­ch 39
+
+=== Lá»†CH (Ä‘Ã­ch -> teacher gÃ¡n) ===
+  [set_ac -> lock_doors] Cá»­a xe há»•ng khoÃ¡, Ä‘á»“ Ä‘áº¡c Ä‘á»ƒ trong nÃ y khÃ´ng an tÃ¢m chÃºt nÃ o.
+  [set_ac -> set_defrost] Trá»�i mÆ°a to quÃ¡, kÃ­nh má»� má»‹t, nhÃ¬n khÃ´ng tháº¥y Ä‘Æ°á»�ng gÃ¬ cáº£.
+  [set_fan_speed -> set_defrost] Cháº¹p, giÃ³ thá»•i máº¡nh quÃ¡, lÃ m Æ¡n, má»‡t quÃ¡, Ä‘Æ°á»�ng nÃ y cÅ©ng táº¯c kinh khá»§ng.
+  [set_fan_speed -> control_window] Cháº¿t tháº­t, giÃ³ máº¡nh quÃ¡, con nhá»� ngá»“i phÃ­a sau cháº¯c khÃ³ chá»‹u láº¯m.
+  [set_fan_speed -> control_window] Sao mÃ  á»“n quÃ¡ váº­y, giÃ³ thá»•i vÃ o tai ngÆ°á»�i ta nghen, Ä‘ang tÃ¬m chá»— Ä‘á»— nÃ¨.
+  [set_defrost -> set_ac] GiÃ³ thá»•i bá»¥i bay tÃ¹m lum, má»Ÿ Ä‘iá»�u hoÃ  cÅ©ng khÃ´ng Ä‘á»¡ Ä‘Æ°á»£c.
+  [set_defrost -> set_ac] Cháº£ hiá»ƒu sao hÃ´m nay mÃ¹i áº©m má»‘c trong xe náº·ng quÃ¡, khÃ³ chá»‹u ghÃª.
+  [set_defrost -> set_headlights] Há»•ng hiá»ƒu sao kÃ­nh xe dÃ­nh nÆ°á»›c, tá»‘i quÃ¡ ngá»“i bÃªn nÃ y nhÃ¬n khÃ´ng tháº¥y chi chi.
+  [lock_doors -> find_nearby] Tháº¿ nÃ y mÃ  vá»� tá»›i nhÃ  cháº¯c muá»™n máº¥t, khÃ´ng biáº¿t khu vá»±c Ä‘Ã³ cÃ³ an toÃ n khÃ´ng ná»¯a.
+  [lock_doors -> set_hazard_lights] Cháº­c, chá»— nÃ y tá»‘i thui, láº¡i cÃ²n tháº¥y ai Ä‘Ã³ lÃ©n lÃ©n nhÃ¬n, sao mÃ  yÃªn tÃ¢m Ä‘Æ°á»£c.
+  [lock_doors -> control_window] CÃ¡i mÃ¹i nÃ y, cháº¯c do bá»¥i ngoÃ i Ä‘Æ°á»�ng, mÃ  cá»­a má»Ÿ há»•ng biáº¿t cÃ³ sao khÃ´ng.
+  [close_trunk -> find_nearby] Má»‡t quÃ¡, sao hÃ´m nay Ä‘Æ°á»�ng láº¡ tháº¿ nÃ y, cháº¯c pháº£i tÃ¬m chá»— dá»«ng xe láº¡i.
+  [close_trunk -> set_headlights] Trá»�i tá»‘i quÃ¡, nhÃ¬n khÃ´ng rÃµ, cháº¯c pháº£i cáº©n tháº­n khi láº¥y Ä‘á»“ á»Ÿ cá»‘p.
+  [close_trunk -> navigate_to] Má»‡t quÃ¡, chá»‰ muá»‘n vá»� nhÃ  nghá»‰ ngÆ¡i, khÃ´ng muá»‘n pháº£i lÃ m gÃ¬ thÃªm.
+  [close_trunk -> set_headlights] Ä�i nháº­u vá»� khuya mÃ  cÃ²n pháº£i lo chuyá»‡n nÃ y, má»‡t má»�i quÃ¡ chá»«ng.
+  [control_window -> set_defrost] Cháº¿t tháº­t, mÆ°a to quÃ¡, kÃ­nh xe má»� háº¿t rá»“i.
+  [control_window -> set_ac] Trá»�i Æ¡i, bá»¥i tá»« bÃªn ngoÃ i cá»© bay vÃ o, lÃ m Æ¡n nhÃ¬n xem.
+  [control_window -> set_ac] ChÃ¡n tháº­t, Ä‘ang nghe nháº¡c hay mÃ  mÃ¹i khÃ³i xe cá»© xá»™c vÃ o mÅ©i hoÃ i.
+  [control_window -> set_ac] KhÃ³i xe bá»‘c lÃªn ná»“ng náº·c, khÃ´ng chá»‹u ná»•i ná»¯a.
+  [operate_sunroof -> set_headlights] Ui chao, mÆ°a tÃ­ ná»¯a rÆ¡i vÃ o, xe cháº¡y cháº­m tháº¿ nÃ y.
+  [operate_sunroof -> set_volume] Ä�ang táº¯c Ä‘Æ°á»�ng tháº¿ nÃ y, chÃ¡n quÃ¡, má»‡t cÃ¡i Ä‘áº§u.
+  [operate_sunroof -> set_headlights] Trá»�i mÆ°a lÃ¢m thÃ¢m, rÃ¡ng ná»¯a lÃ  Æ°á»›t háº¿t cáº£ trá»�i.
+  [operate_sunroof -> set_ac,find_nearby] Trá»�i Ä‘ang oi bá»©c quÃ¡, mÃ  tÃ¬m chá»— Ä‘á»— hoÃ i khÃ´ng tháº¥y.
+  [operate_sunroof -> set_ac] Náº¯ng chÃ³i chang rá»�i vÃ´ Ä‘Ã¢y, tá»‘i náº±m ngá»§ trong xe cháº¯c nÃ³ng láº¯m.
+  [set_headlights -> set_defrost] Tá»‘i om om tháº¿ nÃ y, láº¡i thÃªm mÆ°a, kÃ­nh cÃ²n má»� má»‹t, nguy hiá»ƒm quÃ¡.
+  [set_hazard_lights -> set_headlights] Ä�Æ°á»�ng tá»‘i om, trá»�i mÆ°a, xe mÃ¬nh láº¡i Ä‘ang Ä‘á»©ng á»Ÿ Ä‘oáº¡n Ä‘Æ°á»�ng váº¯ng váº» nÃ y.
+  [set_hazard_lights -> set_ac] NÃ³ng bá»� máº¹, xe láº¡i cháº¿t mÃ¡y, láº¹ qua bÃªn lá»� Ä‘i anh.
+  [set_volume -> navigate_to] Cháº¿t tháº­t, máº¯c káº¹t á»Ÿ Ä‘Ã¢y Ä‘áº¿n bao giá»�, tao muá»‘n vá»� nhÃ .
+  [set_volume -> play_media] ChÃ¡n quÃ¡, sao hÃ´m nay nhiá»�u bá»¥i quÃ¡ váº­y, má»Ÿ nháº¡c lÃªn cho Ä‘á»¡ má»‡t.
+  [set_volume -> control_window] Tháº¿ nÃ y lÃ  sao, giÃ³ thá»•i vÃ o máº·t hoÃ i, chá»‘c ná»¯a pháº£i káº¹tai.
+  [set_volume -> play_media] Má»‡t quÃ¡, cáº£ ngÃ y báº­n rá»™n, giá»� chá»‰ muá»‘n ngá»“i yÃªn vÃ  nghe nháº¡c cho Ä‘á»¡ má»‡t.
+  [set_volume -> play_media] Ngháº¹t thá»Ÿ, káº¹t xe mÃ£i khÃ´ng chá»‹u cháº¡y, chá»‰ muá»‘n tÃ¬m má»™t chÃºt giáº£i trÃ­.
+  [play_media -> set_volume] HÃ´m nay xe Ä‘Ã´ng khÃ¡ch quÃ¡, tiáº¿ng á»“n inh á»�i, khÃ´ng thá»ƒ nÃ o táº­p trung Ä‘Æ°á»£c.
+  [play_media -> set_volume] Ã”i, tiáº¿ng á»“n xe phÃ­a sau to quÃ¡, lÃ m mÃ¬nh phiá»�n quÃ¡.
+  [play_media -> set_volume] Tháº¿ nÃ y cháº¯c pháº£i ghÃ© quÃ¡n cafÃ©, khÃ´ng thá»ƒ nÃ o táº­p trung vá»›i cÃ¡i tiáº¿ngá»“n ngoÃ i kia Ä‘Æ°á»£c.
+  [navigate_to -> lock_doors] Tháº¿ mÃ  cá»­a xe bÃªn tay mÃ¬nh quÃªn chÆ°a khoÃ¡ rá»“i, trá»�i Æ¡i, sao mÃ  cáº©n tháº­n tháº¿ Ä‘Æ°á»£c.
+  [navigate_to -> set_headlights] Trá»�i tá»‘i quÃ¡, Ä‘Æ°á»�ng nÃ y cÅ©ng váº¯ng váº», cháº£ biáº¿t Ä‘i tháº¿ nÃ o ná»¯a.
+  [navigate_to -> find_nearby] ThÃ´i rá»“i, tui má»›i Ä‘á»— xe xong, mÃ  há»•ng nhá»› lá»‘i ra ná»¯a.
+  [find_nearby -> set_volume] Nghe nháº¡c mÃ  cÅ©ng khÃ´ng thá»ƒ nÃ o relax Ä‘Æ°á»£c, káº¹t xe quÃ¡, chÃ¡n tháº­t.
+
+=== bá»‹ loáº¡i á»Ÿ code / teacher ===
+  (ra_lenh) [set_ac] VÃ o nhanh Ä‘i, muá»™n rá»“i, mÃ  sao cÃ¡i xe nÃ³ nÃ³ng nhÆ° lÃ² háº¥p váº­y?
+  (loc_code) [set_defrost] CÃ³ khi nÃ o vÃ¬é›¨é•œèŠ±äº†ï¼Œçœ‹ä¸�æ¸…å‰�é�¢çš„è·¯ï¼Ÿ
+  (qua_ngan) [control_window] NÃ³ng quÃ¡, giÃ³ khÃ´ng thÃ´ng, lÃ m sao bÃ¢y giá»�?
+  (loc_code) [control_window] Ã”i, mÃ¹i hoa outside nÃ y thÆ¡m quÃ¡, mÃ  Ä‘á»ƒ lÃ¢u mÃ¹i hÆ¡i ná»“ng näººè„‰.
+  (loc_code) [operate_sunroof] Con áº¡, nhÃ¬nä¸ŠåŽ»å¤©ç©ºå¥½ç¾Žï¼Œå¤šè®©ç‚¹é˜³å…‰è¿›æ�¥å�§ã€‚
+  (loc_code) [set_headlights] Trá»�i tá»‘i om,å��åœ¨è½¦é‡Œæ„Ÿè§‰æ›´ç´¯äº†ï¼Œè¿˜æ˜¯ä¸“å¿ƒå�¬é¦–è½»æ�¾çš„æ­Œå�§ã€‚
+  (loc_code) [set_headlights] è¿™è·¯ç�¯çœŸæš—ï¼Œçœ¼ç�›éƒ½å¿«çœ‹ä¸�æ¸…è·¯äº†ï¼Œå¥½åœ¨å¹¿æ’­é‡Œæ”¾çš„èŠ‚ç›®è¿˜æŒºæœ‰è¶£çš„ã€‚
+  (loc_code) [set_headlights] ä¸‹äº†ç�­è¿˜å¾—åœ¨è¿™å¡žè½¦ï¼Œå¸Œæœ›è½¦é‡Œçš„ç�¯å…‰èƒ½æŸ”å’Œç‚¹ï¼Œè®©äººèˆ’æœ�ç‚¹ã€‚
+  (qua_ngan) [set_headlights] queries
+  (ra_lenh) [set_hazard_lights] Trá»�i mÆ°a dá»¯ dá»™i quÃ¡, kÃ­nh xe má»� Æ¡i lÃ  má»�, cháº³ng tháº¥y Ä‘Æ°á»�ng mÃ  Ä‘i.
+  (loc_code) [set_hazard_lights] CÃ¡i Ä‘Ã¨n xi nhan láº¡i hÆ°, trong khi xe Ä‘ang pháº£i dá»«ng Ä‘á»™t ngá»™t vÃ¬å‰�æ–¹æœ‰äº‹æ•…ã€‚
+  (ra_lenh) [set_volume] Ä�Æ°á»�ng nÃ y tao chÆ°a bao giá»� Ä‘i, lÃ m sao mÃ  nhá»› Ä‘Æ°á»£c.
+  (loc_code) [set_volume] Nhanh nhanh, muá»™n rá»“i, mÃ  cÃ¡i mÃ¹i thuá»‘c lÃ¡ nÃ yéš¾é—»æ­»äº†.
+  (loc_code) [find_nearby] Háº¹n Ä‘á»“ng nghiá»‡p uá»‘ng cafÃ© Ä‘á»ƒé†’ç¥ž, nhÆ°ng khÃ´ng biáº¿t quÃ¡n nÃ o gáº§n Ä‘Ã¢y.
+  (teacher_xep_ro_rang) [set_fan_speed] Nháº¡c hay dá»¯ mÃ  giÃ³ thá»•i vÃ o máº·t táº­n hÆ°á»Ÿng quÃ¡, chá»«ng nÃ o tá»›i nhÃ  má»‘t nha.
+  (nhan_hong) [set_fan_speed] Nhá»� Æ¡i, em tháº¥y giÃ³ thá»•i tá»« cá»­a sá»• vÃ o cÃ³ Ä‘á»§ láº¡nh khÃ´ng, hay lÃ  pháº£i chá»‰nh láº¡i quáº¡t?
+  (nhan_hong) [close_trunk] Láº¡i quÃªn, giáº¥y tá»� important Ä‘á»ƒ ngoÃ i cá»‘p, cháº¯c pháº£i vá»� nhÃ  láº¥y rá»“i.
+  (nhan_hong) [close_trunk] Cá»‘p xe mÃ¬nh Ä‘á»ƒ Ä‘á»“ lung tung quÃ¡, tá»‘i nay vá»� láº¡i pháº£i dá»�n dáº¹p ná»¯a.
+  (nhan_hong) [control_window] Ui chao, trá»�i mÆ°a to quÃ¡, nÆ°á»›c Ä‘ang rÃ³c rÃ¡ch trÃªn cá»­a kÃ­nh.
+  (nhan_hong) [operate_sunroof] GiÃ³ thá»•i qua cá»­a sá»• trá»�i, mÃ¡t quÃ¡, nhÆ°ng kÃ­nh má»� háº¿t rá»“i.
+  (nhan_hong) [set_headlights] ChÆ°a quen xe, chÆ°a biáº¿t cÃ¡ch Ä‘iá»�u chá»‰nh Ä‘Ã¨n sao cho phÃ¹ há»£p vá»›i thá»�i tiáº¿t nÃ y.
+  (teacher_xep_ro_rang) [set_hazard_lights] Con xe nÃ y há»�ng hÃ³c sao áº¥y, khÃ´ng chá»‹u cháº¡y tiáº¿p, pháº£i dá»«ng láº¡i xem sao.
+  (teacher_xep_ro_rang) [set_hazard_lights] Giá»¯a Ä‘Æ°á»�ng cao tá»‘c mÃ  xe bá»—ng nhiÃªn ná»• lá»‘p, tiáº¿ng á»“n bÃªn ngoÃ i xe tÄƒng lÃªn Ä‘Ã¡ng ká»ƒ.
+  (teacher_xep_ro_rang) [set_hazard_lights] Ä�á»™ng cÆ¡ xe bá»—ng dÆ°ng táº¯t, ngay giá»¯a lÃ n xe, khÃ´ng biáº¿t lÃ m sao Ä‘á»ƒ khá»Ÿi Ä‘á»™ng láº¡i.
+  (teacher_xep_ro_rang) [set_volume] Ä�Ãªm hÃ´m nay cháº¯c pháº£i cháº¡y thÃªm máº¥y tiáº¿ng ná»¯a má»›i Ä‘áº¿n nÆ¡i, chÃ¡n quÃ¡.
+  (teacher_xep_ro_rang) [set_volume] Sáº¯p háº¿t xÄƒng rá»“i, Ä‘Æ°á»�ng xa láº¯m, chÆ°a tháº¥y tráº¡m xÄƒng nÃ o cáº£.
+  (teacher_xep_ro_rang) [play_media] Tiáº¿ng giÃ³ Ã o Ã o, cÃ ng cháº¡y cÃ ng tháº¥y má»‡t, Ä‘Ãªm dÃ i tháº¿ nÃ y biáº¿t bao giá»� má»›i tá»›i.
+  (teacher_xep_ngoai_pham_vi) [play_media] Ä�Ãªm hÃ´m nay sao mÃ  váº¯ng váº» quÃ¡, chá»‰ cÃ³ tiáº¿ng giÃ³.
+  (teacher_xep_ro_rang) [play_media] XÄƒng cÃ²n bao nhiÃªu Ä‘áº¥y, Ä‘Æ°á»�ng cÃ²n xa quÃ¡, pháº£i cáº©n tháº­n.
+  (teacher_xep_ro_rang) [navigate_to] Cháº¯c gÃ¬ hÃ´m nay tá»›i Ä‘Æ°á»£c Ä�Ã  Náºµng, Ä‘Æ°á»�ng dÃ i quÃ¡, khÃ´ng biáº¿t máº¥t bao lÃ¢u.
+  (teacher_xep_ro_rang) [navigate_to] Ä�i vá»� Há»™i An, pháº£i trÃ¡nh tráº¡m thu phÃ­ luÃ´n, hic, tiáº¿t kiá»‡m Ä‘Æ°á»£c tÃ­ tiá»�n xÄƒng.
+  (nhan_hong) [navigate_to] Náº¿u mÃ  cÃ³ há»‡ thá»‘ng há»— trá»£ dáº«n Ä‘Æ°á»�ng, cháº¯c sáº½ Ä‘á»¡ cÄƒng tháº³ng hÆ¡n, khÃ´ng biáº¿t cÃ³ thá»ƒ dÃ¹ng Ä‘Æ°á»£c khÃ´ng?
+  (teacher_xep_ro_rang) [navigate_to] Tháº¿ nÃ y thÃ¬ sao mÃ  vá»� Ä‘Æ°á»£c nhÃ , Ä‘Æ°á»�ng xa quÃ¡, pin xe cÃ²n bao nhiÃªu ná»¯a?
+  (teacher_xep_ro_rang) [navigate_to] Trá»�i Æ¡i, há»•ng biáº¿t Ä‘Æ°á»�ng ra sao Ä‘Ã¢y, tui má»›i dá»�n vá»� Ä‘Ã¢y.
+
+=== 30 cÃ¢u GIá»® & khá»›p Ä‘Ã­ch, ngáº«u nhiÃªn ===
+  [lock_doors] (17 chá»¯) Chá»— nÃ y láº¡ quÃ¡, mÃ¬nh khÃ´ng biáº¿t cÃ³ an toÃ n khÃ´ng, cháº¯c pháº£i cáº©n tháº­n má»›i Ä‘Æ°á»£c.
+  [lock_doors] (19 chá»¯) Má»‡t quÃ¡, chá»‰ mong Ä‘áº¿n nÆ¡i Ä‘á»— xe an toÃ n, khÃ´ng muá»‘n pháº£i lo láº¯ng vá»� an ninh ná»¯a.
+  [close_trunk] (19 chá»¯) Tháº¿ nÃ y thÃ¬ sao Ä‘Ã¢y, tÃ i liá»‡u há»�p quan trá»�ng bá»� quÃªn ngoÃ i cá»‘p, mÃ  cá»‘p chÆ°a Ä‘Ã³ng luÃ´n.
+  [lock_doors] (17 chá»¯) NÃ³ng tháº¿ nÃ y, nhÆ°ng mÃ  cÅ©ng pháº£i cáº©n tháº­n, ai biáº¿t Ä‘Æ°á»£c, chá»— nÃ y nguy hiá»ƒm láº¯m.
+  [set_fan_speed] (18 chá»¯) NÃ y, mÃ¡y láº¡nh cÃ³ váº» cháº¡y á»Ÿ má»©c cao quÃ¡, tiáº¿ng á»“n lÃ m mÃ¬nh khÃ´ng nghe rÃµ nháº¡c.
+  [navigate_to] (17 chá»¯) Má»›i ra khá»�i cÃ´ng ty Ä‘Ã£ bá»‹ káº¹t xe, khÃ´ng biáº¿t bao giá»� má»›i tá»›i bá»‡nh viá»‡n.
+  [set_ac] (11 chá»¯) Láº¡nh cÄƒm cÄƒm, ngÆ°á»�i run báº§n báº­t, pháº£i lÃ m sao Ä‘Ã¢y?
+  [set_defrost] (13 chá»¯) Tuyáº¿t rÆ¡i tráº¯ng xÃ³a, kÃ­nh xe láº¡nh quÃ¡, sÆ°Æ¡ng Ä‘á»�ng kÃ­n má»‹t rá»“i.
+  [set_headlights] (14 chá»¯) Con Ä‘Æ°á»�ng nÃ y tá»‘i quÃ¡, Ä‘Ã¨n xe cá»§a mÃ¬nh cÃ³ Ä‘á»§ sÃ¡ng khÃ´ng nhá»‰?
+  [find_nearby] (16 chá»¯) Ui chao, Ä‘Æ°á»�ng nÃ y toÃ n quÃ¡n Äƒn, khÃ´ng biáº¿t chá»— nÃ o cÃ²n chá»— trá»‘ng Ä‘á»ƒ Ä‘á»—.
+  [set_headlights] (16 chá»¯) Ä�Ã¨n Ä‘Æ°á»�ng tá»‘i quÃ¡, nhÃ¬n khÃ´ng tháº¥y gÃ¬, may mÃ  chÆ°Æ¡ng trÃ¬nh Ä‘Ã i Ä‘ang thÃº vá»‹.
+  [find_nearby] (15 chá»¯) Tháº¿ nÃ y cháº¯c cháº¯n muá»™n há»�p máº¥t, cháº£ tháº¥y quÃ¡n cÃ  phÃª quen Ä‘Ã¢u cáº£.
+  [set_ac] (15 chá»¯) Ä�i meetings tá»« sÃ¡ng tá»›i giá»�, cÃ¡i xe láº¡nh buá»‘t tháº¿ nÃ y mÃ  láº¡i á»‘m.
+  [close_trunk] (15 chá»¯) Tháº¿ nÃ y táº¯c Ä‘Æ°á»�ng mÃ£i, cá»‘p xe Ä‘á»ƒ quÃªn Ä‘á»“ tá»« sÃ¡ng giá»� chÆ°a Ä‘Ã³ng.
+  [set_fan_speed] (17 chá»¯) GiÃ³ thá»•i Ãªm áº£ dá»… chá»‹u quÃ¡, nhÆ°ng cÃ³ váº» yáº¿u quÃ¡ chá»�i, cháº¯c há»•ng Ä‘á»§ mÃ¡t.
+  [set_ac] (12 chá»¯) Láº¡nh quÃ¡, ngá»“i Ä‘Ã¢y mÃ  tháº¥y rÃ©t buá»‘t cáº£ ngÆ°á»�i, pháº£i chi.
+  [set_ac] (15 chá»¯) Trá»�i Æ¡i, nÃ³ng quÃ¡, cÃ¡i Ã¡o vest nÃ y dÃ­nh vÃ o ngÆ°á»�i khÃ´ng thá»ƒ chá»‹u Ä‘Æ°á»£c.
+  [operate_sunroof] (16 chá»¯) Trá»�i Æ¡i, náº¯p trá»�i cá»© má»Ÿ ra tÃ­ cho mÃ¡t, rÆ°á»£u nÃ³ bá»‘c hÆ¡i háº¿t máº¥t.
+  [set_headlights] (14 chá»¯) Tháº¿ nÃ y mÃ  Ä‘i Ä‘Ãªm, khÃ´ng biáº¿t Ä‘Ã¨n pha cÃ³ Ä‘á»§ sÃ¡ng khÃ´ng ná»¯a.
+  [operate_sunroof] (16 chá»¯) Trá»�i mÆ°a ráº£ rÃ­ch, mÃ  há»•ng biáº¿t Ä‘Ã³ng cá»­a sá»• trá»�i chÆ°a, lá»¡Forget water vÃ´ xe.
+  [set_fan_speed] (13 chá»¯) GiÃ³ Ä‘iá»�u hoÃ  thá»•i máº¡nh quÃ¡, lÃ m mÃ¬nh há»•ng nghe gÃ¬ háº¿t trÆ¡n.
+  [control_window] (13 chá»¯) NhÃ¬n bÃªn ngoÃ i trá»�i Ä‘áº¹p ghÃª, muá»‘n hÃ³ng giÃ³ má»™t chÃºt Ä‘Ã¢y nÃ y.
+  [navigate_to] (13 chá»¯) Dáº¡o nÃ y Ä‘Æ°á»�ng Ä‘i cÃ´ng trÃ¬nh toÃ n tráº¡m thu phÃ­, tá»‘n kÃ©m quÃ¡.
+  [lock_doors] (18 chá»¯) Ai Ä‘Ã³ Ä‘ang nhÃ¬n vÃ o xe mÃ¬nh, cáº£m giÃ¡c khÃ´ng yÃªn tÃ¢m tÃ­ nÃ o khi Ä‘á»— á»Ÿ Ä‘Ã¢y.
+  [close_trunk] (16 chá»¯) Sá»£ quÃ¡, Ä‘Æ°á»�ng táº¯c suá»‘t, cá»‘p xe má»Ÿ mÃ  Ä‘á»“ Ä‘áº¡c cÃ³ thá»ƒ rÆ¡i ra máº¥t.
+  [set_fan_speed] (16 chá»¯) Rihanna Æ¡i, giÃ³ yáº¿u quÃ¡, nÃ³ pháº£ vÃ o máº·t tÃ´i, Ä‘ang muá»‘n Ä‘á»— xe Ä‘Ã¢y nÃ y.
+  [set_fan_speed,get_range_estimate] (19 chá»¯) ÃŠ, sao giÃ³ Ä‘iá»�u hoÃ  thá»•i á»“n quÃ¡, muá»‘n ngá»§ mÃ  khÃ´ng Ä‘Æ°á»£c, cÃ²n chÆ°a biáº¿t Ä‘Æ°á»�ng vá»� ná»¯a.
+  [set_headlights,play_media] (17 chá»¯) Trá»�i tá»‘i om, ngá»“i trong xe cÅ©ng tháº¥y má»‡t, nghe bÃ i nháº¡c nháº¹ cho khuÃ¢y khá»�a chÃºt.
+  [find_nearby] (19 chá»¯) Ä�Æ°á»�ng káº¹t cá»©ng, khÃ´ng biáº¿t bao giá»� má»›i tá»›i nhÃ , muá»‘n tÃ¬m chá»— nÃ o gáº§n Ä‘Ã¢y nghá»‰ má»™t lÃ¡t.
+  [play_media] (19 chá»¯) Cháº£ hiá»ƒu sao hÃ´m nay mood nÃ³ cá»© á»§ rÅ©, cáº§n pháº£i cÃ³ thá»© gÃ¬ Ä‘Ã³ vui lÃªn Ä‘Ã¢y.
+

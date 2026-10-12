@@ -1,0 +1,50 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Where the small model stands.} On the commands a car assistant mostly receives, the 1.5B student is statistically
+indistinguishable from the 72B teacher while being 65 times cheaper in prompt length, about eight times faster on the same GPU
+and small enough for a laptop CPU. Its consistent weakness is knowing what it \emph{cannot} do: unsupported features that
+resemble supported ones (``honk'', ``lane-departure warning'', ``left turn signal'' $\rightarrow$ hazard lights at $p=0.99$)
+are mapped to the nearest real function, often with high confidence. Data helps (contrastive refusals, more samples) and a threshold helps against uncertain mistakes, but
+neither removes confidently wrong decisions; this matches the over-triggering reported for functional tokens by
+\citet{jafarzadeh2026fixedkeys}. A hybrid design that forwards uncertain requests to a larger model when a connection is
+available is the natural next step for a product.
+
+\paragraph{Form sensitivity is a distillation artifact.} The student reacts to surface form that carries no meaning:
+lower-casing only the first letter of the 230 clean-test sentences raised false refusals of the v5 model from 3 to 21, and a
+lower-case
+\vi{hỏng xe giữa đường rồi}{my car broke down} was refused while the capitalized version was understood. The teacher writes
+clean, capitalized, formal sentences, and sequence-level distillation transfers only what appears in the data. The same cause
+explains the gap between validation (97--99\%) and the independently generated tests (75--88\%), the lexical lock-in of R1, and
+the need for short and noisy data in v6. Diversity has to be designed into generation (assigned personas, contexts, lengths
+and vocabulary), because asking the teacher to ``write many varied sentences'' does not produce it.
+
+\paragraph{Shortcuts appear wherever a feature is one-sided.} Three times a feature of sentence form ended up on one side of
+the label distribution---imperative mood on calls (R1), stories on refusals (R4), long sentences on refusals rather than
+clarifications (before v5)---and each time the model learned it as a rule. Adding hard examples in contrastive pairs across
+labels was the single most effective data intervention we found. A test set of mostly short commands did not reveal the R4
+shortcut; only a development set containing story-like \emph{doable} requests did.
+
+\paragraph{Measurement discipline changed conclusions.} Several results looked like improvements and were not: R2's gain on
+the ambiguous group was one lucky seed; the ``student beats 72B on ambiguity'' impression came from a 39-item group and
+reversed on 130 items; the threshold's cost on clear commands was 6--10 times larger on test than on validation; 4-bit
+quantization passed on validation and lost five points on implicit requests at test time. Freezing test sets before scoring,
+training two seeds, testing paired outputs and writing criteria down in advance was cheap compared with the cost of drawing
+these wrong conclusions.
+
+\paragraph{When RL helps.} GRPO needs prompts on which the policy sometimes succeeds and sometimes fails, and benefits from a
+reasoning step that offers several paths to sample. A functional-token model trained by distillation offers neither: its
+decision is one token, and most training prompts are already solved. RL on fresh, harder prompts or a preference method on
+explicitly paired outputs \citep{ross2025when2call} would be better matched to this setting; we did not run either.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Nexa Drive shows that a 1.5B model with functional tokens, distilled from an open 72B teacher with about US\$100 of rented GPU
+time, can serve as a Vietnamese in-car assistant on a laptop CPU: it handles clear and implicit requests about as well as the
+prompted teacher, asks instead of guessing when a request is only a complaint, and is wrapped in code that keeps wrong
+decisions away from the car. The project's main lessons are about data and measurement rather than architecture: hard examples
+must be added in contrastive pairs, synthetic validation data hides the weaknesses that matter, and small test sets need
+several seeds and paired tests before a difference is believed. The remaining weaknesses---refusing unsupported features,
+sensitivity to quantization on ambiguous input, background speech, and false wake-ups---are measured and documented, and
+define the next steps: real-user data, a hybrid on-device/cloud design and multi-microphone input.

@@ -1,0 +1,21 @@
+﻿MỐC chữ gốc qua cùng đường: 18/30 đúng (60.0%)
+
+== bo_d_khiem_small-g0
+  cả chuỗi đúng 17/30 (56.7%) · mất so với chữ gốc 4 · được thêm 3 · theo nhóm {'ro_rang': '7/15', 'mo_ho': '5/8', 'ngoai_pham_vi': '5/7'}
+  WER 20.9% · CER 10.3% · STT p50 1710 ms · p95 1813 ms · RTF tb 0.56
+  kiểu sai: {'sai_tham_so': 3, 'hoi_lai_thua': 3, 'sai_ham': 3, 'tu_choi_nham': 2, 'goi_bua': 2}
+
+== bo_d_khiem_small-g1
+  cả chuỗi đúng 16/30 (53.3%) · mất so với chữ gốc 5 · được thêm 3 · theo nhóm {'ro_rang': '6/15', 'mo_ho': '5/8', 'ngoai_pham_vi': '5/7'}
+  WER 20.2% · CER 9.9% · STT p50 1830 ms · p95 1910 ms · RTF tb 0.60
+  kiểu sai: {'hoi_lai_thua': 5, 'sai_tham_so': 3, 'sai_ham': 3, 'goi_bua': 2, 'tu_choi_nham': 1}
+
+== bo_d_khiem_small-g2
+  cả chuỗi đúng 17/30 (56.7%) · mất so với chữ gốc 4 · được thêm 3 · theo nhóm {'ro_rang': '7/15', 'mo_ho': '5/8', 'ngoai_pham_vi': '5/7'}
+  WER 21.4% · CER 10.6% · STT p50 1797 ms · p95 1912 ms · RTF tb 0.59
+  kiểu sai: {'sai_tham_so': 3, 'hoi_lai_thua': 3, 'sai_ham': 3, 'tu_choi_nham': 2, 'goi_bua': 2}
+
+== bo_d_khiem_small-g3
+  cả chuỗi đúng 16/30 (53.3%) · mất so với chữ gốc 5 · được thêm 3 · theo nhóm {'ro_rang': '6/15', 'mo_ho': '5/8', 'ngoai_pham_vi': '5/7'}
+  WER 18.7% · CER 9.4% · STT p50 2234 ms · p95 2472 ms · RTF tb 0.73
+  kiểu sai: {'hoi_lai_thua': 5, 'sai_tham_so': 3, 'sai_ham': 3, 'goi_bua': 2, 'tu_choi_nham': 1}

@@ -1,0 +1,19 @@
+﻿s42  ngáº¯n (â‰¤10 chá»¯)  n= 49 Ä‘Ãºng  65.3% | tá»« chá»‘i nháº§m  1 | sai hÃ m  8 | thiáº¿u há»�i láº¡i  3
+s42  dÃ i (>10 chá»¯)   n= 81 Ä‘Ãºng  43.2% | tá»« chá»‘i nháº§m 13 | sai hÃ m 22 | thiáº¿u há»�i láº¡i  5
+s7   ngáº¯n (â‰¤10 chá»¯)  n= 49 Ä‘Ãºng  55.1% | tá»« chá»‘i nháº§m  5 | sai hÃ m 11 | thiáº¿u há»�i láº¡i  1
+s7   dÃ i (>10 chá»¯)   n= 81 Ä‘Ãºng  28.4% | tá»« chá»‘i nháº§m 33 | sai hÃ m 20 | thiáº¿u há»�i láº¡i  2
+72B  ngáº¯n (â‰¤10 chá»¯)  n= 49 Ä‘Ãºng  61.2% | tá»« chá»‘i nháº§m  3 | sai hÃ m  6 | thiáº¿u há»�i láº¡i  6
+72B  dÃ i (>10 chá»¯)   n= 81 Ä‘Ãºng  77.8% | tá»« chá»‘i nháº§m  0 | sai hÃ m 11 | thiáº¿u há»�i láº¡i  4
+
+quáº¡t giÃ³ â€” hÃ m model chá»�n (s42 / s7):
+   <nexa_ask><nexa_7>(level=0)<nexa_end>  |  <nexa_ask><nexa_7>(level=0)<nexa_end>
+   <nexa_ask><nexa_15>(window="all", position="u  |  <nexa_ask><nexa_15>(window="all", position="d
+   <nexa_ask><nexa_15>(window="rear_right", posi  |  <nexa_ask><nexa_15>(window="rear_right", posi
+   <nexa_ask><nexa_19>()<nexa_end>  |  <nexa_ask><nexa_19>()<nexa_end>
+   <nexa_ask><nexa_8>(state="on")<nexa_end>  |  <nexa_ask><nexa_8>(state="on")<nexa_end>
+   <nexa_ask><nexa_7>(level=3)<nexa_end>  |  <nexa_ask><nexa_7>(level=3)<nexa_end>
+   <nexa_ask><nexa_15>(window="all", position="u  |  <nexa_ask><nexa_7>(level=0)<nexa_end>
+   <nexa_ask><nexa_7>(level=0)<nexa_end>  |  <nexa_ask><nexa_7>(level=0)<nexa_end>
+   <nexa_ask><nexa_7>(level=3)<nexa_end>  |  <nexa_24>()<nexa_end>
+   <nexa_ask><nexa_19>()<nexa_end>  |  <nexa_24>()<nexa_end>
+

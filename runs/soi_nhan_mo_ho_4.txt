@@ -1,0 +1,89 @@
+﻿ 25 [close_trunk] MÆ°a háº¯t cáº£ vÃ o chá»— hÃ nh lÃ½ rá»“i, Æ°á»›t háº¿t máº¥y thÃ¹ng giáº¥y bÃ¢y giá»�.
+      ask: close_trunk(); control_window(window="all", position="up")  | ChÆ°a rÃµ nÆ°á»›c vÃ o qua cá»‘p hay cá»­a sá»•; Æ°u tiÃªn Ä‘Ã³ng cá»‘p vÃ¬ nháº¯c tá»›i chá»— hÃ nh lÃ½.
+ 56 [control_window] Em hÆ¡i say xe, giá»� chá»‰ muá»‘n hÃ­t má»™t hÆ¡i khÃ´ng khÃ­ ngoÃ i trá»�i.
+      ask: control_window(window="all", position="down"); operate_sunroof(action="open")  | KhÃ´ng rÃµ cá»­a nÃ o nÃªn dÃ¹ng window="all" theo quy Æ°á»›c.
+111 [control_window] BÃ¡c vá»«a hÃºt thuá»‘c xong, trong xe váº«n cÃ²n ná»“ng mÃ¹i, em khÃ³ chá»‹u quÃ¡.
+      ask: control_window(window="all", position="down"); operate_sunroof(action="open")  | 
+ 51 [find_nearby] Pin xe cÃ²n cÃ³ tÃ¡m pháº§n trÄƒm, tháº¿ nÃ y cháº¯c cháº³ng vá»� ná»•i Ä‘áº¿n nhÃ .
+      ask: find_nearby(category="charging_station"); get_battery_range()  | Æ¯u tiÃªn tÃ¬m tráº¡m sáº¡c; cÅ©ng cÃ³ thá»ƒ kiá»ƒm tra quÃ£ng Ä‘Æ°á»�ng cháº¡y Ä‘iá»‡n cÃ²n láº¡i. ChÆ°a biáº¿t khoáº£ng cÃ¡ch vá»� nhÃ .
+119 [find_nearby] Tá»‘i nay chá»— nghá»‰ khÃ´ng cÃ³ chá»— cáº¯m Ä‘iá»‡n cho xe, mÃ  mai cÃ²n cháº¡y máº¥y trÄƒm cÃ¢y ná»¯a.
+      ask: find_nearby(category="charging_station"); get_battery_range()  | Æ¯u tiÃªn tÃ¬m tráº¡m sáº¡c; cÅ©ng cÃ³ thá»ƒ kiá»ƒm tra quÃ£ng Ä‘Æ°á»�ng cháº¡y Ä‘iá»‡n cÃ²n láº¡i. KhÃ´ng quy Ä‘á»•i máº¥y trÄƒm cÃ¢y thÃ nh sá»‘ cá»¥ thá»ƒ.
+ 55 [lock_doors] NÃ£y Ä‘á»ƒ xe bÃ£i Ä‘á»— xe mÃ  máº£i cháº¡y vá»™i xuá»‘ng xáº¿p hÃ ng mua Ä‘á»“ quÃ¡ giá»� khÃ´ng biáº¿t Ä‘Ã£ khÃ³a xe chÆ°a.
+      ask: get_vehicle_status(); lock_doors()  | Æ¯u tiÃªn kiá»ƒm tra tráº¡ng thÃ¡i khoÃ¡; phÆ°Æ¡ng Ã¡n khÃ¡c lÃ  Ä‘á»� xuáº¥t khoÃ¡ xe Ä‘á»ƒ yÃªn tÃ¢m.
+ 71 [lock_doors] NÃ£y xuá»‘ng láº¥y Ä‘á»“ rá»“i lÃªn láº¡i, em khÃ´ng cháº¯c cá»­a Ä‘Ã£ chá»‘t nhÆ° lÃºc trÆ°á»›c chÆ°a.
+      ask: get_vehicle_status(); lock_doors()  | Æ¯u tiÃªn kiá»ƒm tra tráº¡ng thÃ¡i cá»­a; cÃ³ thá»ƒ Ä‘á»� xuáº¥t khoÃ¡ náº¿u chá»‘t á»Ÿ Ä‘Ã¢y nghÄ©a lÃ  khoÃ¡ cá»­a.
+ 14 [set_ac] Ngá»“i trong nÃ y láº¡nh quÃ¡, em ná»•i háº¿t da gÃ  rá»“i.
+      ask: set_ac(state="off")  | 
+ 48 [set_ac] Xe phÆ¡i náº¯ng cáº£ trÆ°a, ngá»“i vÃ o nÃ³ng cháº£y cáº£ má»“ hÃ´i.
+      ask: set_ac(state="on"); control_window(window="all", position="down")  | 
+ 59 [set_ac] Háº¯t xÃ¬ suá»‘t tá»« lÃºc lÃªn xe, hÆ¡i láº¡nh lÃ m em buá»‘t cáº£ mÅ©i.
+      ask: set_ac(state="off")  | 
+ 60 [set_ac] Ã�o cÃ²n Æ°á»›t mÆ°a mÃ  ngá»“i trong nÃ y láº¡nh tháº¿, rÃ©t run máº¥t.
+      ask: set_ac(state="off")  | 
+ 70 [set_ac] NgoÃ i trá»�i rÃ©t Ä‘Ã£ Ä‘Ã nh, vÃ o xe rá»“i tay váº«n cÃ³ng cháº³ng áº¥m lÃªn Ä‘Æ°á»£c.
+      ask: set_ac(state="off")  | Táº¡m hiá»ƒu cáº§n ngá»«ng lÃ m láº¡nh; cÃ¢u chÆ°a cho biáº¿t Ä‘iá»�u hoÃ  cÃ³ Ä‘ang báº­t hay khÃ´ng vÃ  khÃ´ng nÃªu nhiá»‡t Ä‘á»™ mong muá»‘n.
+ 75 [set_ac] Ä�Ã´ng ngÆ°á»�i má»™t cÃ¡i lÃ  trong xe háº§m háº­p ngay, má»›i ngá»“i tÃ­ Ä‘Ã£ tháº¥y bÃ­.
+      ask: set_ac(state="on"); control_window(window="all", position="down")  | 
+130 [set_ac] GiÃ³ trá»�i Ä‘á»§ mÃ¡t rá»“i, lÃ m láº¡nh trong xe ná»¯a chá»‰ tá»‘n Ä‘iá»‡n.
+      ask: set_ac(state="off")  | 
+  8 [set_fan_speed] GiÃ³ thá»•i máº¡nh quÃ¡ cáº£m giÃ¡c ná»•i háº¿t cáº£ da gÃ  rá»“i.
+      ask: set_fan_speed(level=2); set_ac(state="off")  | Æ¯u tiÃªn giáº£m giÃ³; cÃ³ thá»ƒ Ä‘á»� xuáº¥t táº¯t Ä‘iá»�u hoÃ  náº¿u ngÆ°á»�i nÃ³i Ä‘ang láº¡nh.
+ 16 [set_fan_speed] Ngá»“i hÃ ng sau gáº§n nhÆ° cháº³ng tháº¥y tÃ­ giÃ³ nÃ o, phÃ­a trÆ°á»›c thÃ¬ váº«n thá»•i Ä‘á»�u.
+      ask: set_fan_speed(level=6)  | Quáº¡t giÃ³ khÃ´ng cÃ³ tham sá»‘ vÃ¹ng; Ä‘á»� xuáº¥t tÄƒng giÃ³ nhÆ°ng chÆ°a cháº¯c kháº¯c phá»¥c riÃªng hÃ ng sau.
+ 58 [set_fan_speed] Trong nÃ y mÃ¡t rá»“i mÃ  giÃ³ váº«n thá»•i Ã o Ã o, nÃ³i chuyá»‡n cá»© pháº£i gÃ o lÃªn.
+      ask: set_fan_speed(level=2)  | 
+ 63 [set_fan_speed] GiÃ³ tá»« cÃ¡i khe trÆ°á»›c máº·t cá»© thá»•i tÃ³c vÃ o miá»‡ng em, khÃ³ chá»‹u ghÃª.
+      ask: set_fan_speed(level=2)  | Hiá»ƒu khe trÆ°á»›c máº·t lÃ  cá»­a giÃ³ Ä‘iá»�u hoÃ .
+ 73 [set_fan_speed] CÃ³ hÆ¡i mÃ¡t Ä‘áº¥y nhÆ°ng pháº£i ghÃ© sÃ¡t vÃ o khe má»›i cáº£m tháº¥y, ngá»“i tháº³ng láº¡i lÃ  cháº³ng tháº¥y gÃ¬.
+      ask: set_fan_speed(level=6)  | 
+ 76 [set_fan_speed] Tá»� giáº¥y em Ä‘ang xem cá»© bá»‹ luá»“ng giÃ³ trÆ°á»›c máº·t thá»•i bay lÃªn.
+      ask: set_fan_speed(level=2)  | Hiá»ƒu luá»“ng giÃ³ trÆ°á»›c máº·t lÃ  giÃ³ Ä‘iá»�u hoÃ .
+ 85 [set_fan_speed] Máº·t Ä‘ang rÃ¡t náº¯ng mÃ  giÃ³ cá»© pháº£ máº¡nh vÃ o, xÃ³t quÃ¡.
+      ask: set_fan_speed(level=2)  | 
+ 90 [set_fan_speed] CÃ¡i cá»­a giÃ³ thá»•i Ã¹ Ã¹ vÃ o mic, bÃªn kia cá»© báº£o khÃ´ng nghe Ä‘Æ°á»£c em nÃ³i.
+      ask: set_fan_speed(level=2)  | 
+ 92 [set_fan_speed] Má»“ hÃ´i váº«n cháº£y rÃ²ng rÃ²ng mÃ  giÃ³ trÆ°á»›c máº·t cá»© hiu hiu tháº¿ nÃ y.
+      ask: set_fan_speed(level=6)  | 
+110 [set_fan_speed] Cá»‘c trÃ  Ä‘á»ƒ ngay luá»“ng giÃ³ máº¡nh, chÆ°a ká»‹p uá»‘ng Ä‘Ã£ nguá»™i háº¿t rá»“i.
+      ask: set_fan_speed(level=2)  | 
+  3 [set_headlights] Ä�oáº¡n nÃ y tá»‘i quÃ¡, nhÃ¬n cháº³ng rÃµ máº·t Ä‘Æ°á»�ng gÃ¬ cáº£.
+      ask: set_headlights(mode="low_beam")  | 
+  4 [set_headlights] Xe Ä‘á»‘i diá»‡n cá»© nhÃ¡y liÃªn tá»¥c, cháº¯c mÃ¬nh lÃ m ngÆ°á»�i ta chÃ³i máº¯t rá»“i.
+      ask: set_headlights(mode="low_beam")  | 
+  6 [set_headlights] Ä�Æ°á»�ng thÃ¬ váº¯ng tanh mÃ  láº¡i khÃ´ng cÃ³ Ä‘Ã¨n Ä‘Æ°á»�ng nhÃ¬n khÃ´ng tháº¥y gÃ¬ cáº£.
+      ask: set_headlights(mode="high_beam")  | Suy ra nhu cáº§u nhÃ¬n xa hÆ¡n trÃªn Ä‘Æ°á»�ng váº¯ng khÃ´ng cÃ³ Ä‘Ã¨n.
+ 17 [set_headlights] VÃ o Ä‘Æ°á»�ng nhiá»�u sÆ°Æ¡ng mÃ¹ quÃ¡ Ä‘Ã¨n xe cá»§a mÃ¬nh tháº¥p sá»£ ngÆ°á»�i khÃ¡c Ä‘i tá»« xa mÃ  khÃ´ng tháº¥y xe mÃ¬nh.
+      ask: set_headlights(mode="low_beam")  | Báº£ng tra khÃ´ng cÃ³ Ä‘Ã¨n sÆ°Æ¡ng mÃ¹; chá»�n Ä‘Ã¨n chiáº¿u gáº§n cho tÃ¬nh huá»‘ng khÃ³ nhÃ¬n, khÃ´ng suy ra báº­t chiáº¿u xa.
+ 41 [set_headlights] MÆ°a tráº¯ng xÃ³a tháº¿ nÃ y, xe mÃ¬nh cháº³ng cÃ³ tÃ­ Ã¡nh sÃ¡ng nÃ o phÃ­a trÆ°á»›c thÃ¬ ngÆ°á»�i ta khÃ³ tháº¥y láº¯m.
+      ask: set_headlights(mode="low_beam")  | 
+ 67 [set_headlights] Ã�nh sÃ¡ng cá»© háº¯t ngÆ°á»£c tá»« mÃ n sÆ°Æ¡ng vÃ o máº¯t, cÃ ng nhÃ¬n cÃ ng lÃ³a.
+      ask: set_headlights(mode="low_beam")  | 
+ 91 [set_headlights] Ã�nh sÃ¡ng xe mÃ¬nh chiáº¿u tháº³ng vÃ o gÆ°Æ¡ng xe phÃ­a trÆ°á»›c, bÃ¡c áº¥y cá»© pháº£i láº¥y tay che máº¯t.
+      ask: set_headlights(mode="low_beam")  | 
+ 96 [set_headlights] Chiá»�u xuá»‘ng nhanh tháº­t, máº¥y ngÆ°á»�i Ä‘i xe Ä‘áº¡p phÃ­a trÆ°á»›c cá»© láº«n vÃ o bÃ³ng cÃ¢y.
+      ask: set_headlights(mode="low_beam")  | 
+120 [set_headlights] Ä�Æ°á»�ng váº¯ng mÃ  cÃ¡i biá»ƒn phÃ­a xa náº±m ngoÃ i khoáº£ng sÃ¡ng trÆ°á»›c xe, em chÆ°a Ä‘á»�c Ä‘Æ°á»£c chá»¯ nÃ o.
+      ask: set_headlights(mode="high_beam")  | 
+121 [set_headlights] Ä�i trong ngÃµ mÃ  Ã¡nh sÃ¡ng xe mÃ¬nh rá»�i táº­n cá»­a sá»• nhÃ  ngÆ°á»�i ta, ngáº¡i quÃ¡.
+      ask: set_headlights(mode="low_beam")  | 
+  9 [set_volume] BÃ i nÃ y hÃ¡t gÃ¬ mÃ  lÃ­ nhÃ­, nghe cháº³ng rÃµ lá»�i.
+      ask: set_volume()  | Ä�á»� xuáº¥t tÄƒng Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+ 13 [set_volume] Loa to tháº¿ nÃ y, con ngá»§ sao Ä‘Æ°á»£c.
+      ask: set_volume()  | Ä�á»� xuáº¥t giáº£m Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+ 21 [set_volume] Máº¹ gá»�i mÃ  tiáº¿ng trong Ä‘iá»‡n thoáº¡i bÃ© quÃ¡, loa xe Ã¡t háº¿t cáº£.
+      ask: set_volume()  | Ä�á»� xuáº¥t giáº£m Ã¢m lÆ°á»£ng loa xe; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+ 36 [set_volume] Tiáº¿ng nháº¡c á»“n quÃ¡,tráº» con khÃ´ng ngá»§ Ä‘Æ°á»£c.
+      ask: set_volume()  | Ä�á»� xuáº¥t giáº£m Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+ 81 [set_volume] Ä�Ãºng Ä‘oáº¡n guitar em thÃ­ch mÃ  tiáº¿ng lá»‘p xe Ã¡t máº¥t rá»“i.
+      ask: set_volume()  | Ä�á»� xuáº¥t tÄƒng Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+101 [set_volume] Giá»�ng bÃ¡o ráº½ bÃ© quÃ¡, Ä‘áº¿n lÃºc em nghe Ä‘Æ°á»£c thÃ¬ qua máº¥t lá»‘i rá»“i.
+      ask: set_volume()  | Ä�á»� xuáº¥t tÄƒng Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ. Báº£ng tra khÃ´ng cÃ³ tham sá»‘ chá»‰nh riÃªng giá»�ng dáº«n Ä‘Æ°á»�ng.
+102 [set_volume] Ä�á»— ngay cáº¡nh lá»›p há»�c mÃ  tiáº¿ng tá»« loa xe vá»�ng ra ngoÃ i rÃµ quÃ¡, ngáº¡i tháº­t.
+      ask: set_volume()  | Ä�á»� xuáº¥t giáº£m Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+107 [set_volume] Em Ä‘ang ká»ƒ Ä‘áº¿n Ä‘oáº¡n quan trá»�ng mÃ  tiáº¿ng hÃ¡t cá»© Ã¡t cáº£ lá»�i.
+      ask: set_volume()  | Ä�á»� xuáº¥t giáº£m Ã¢m lÆ°á»£ng; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+113 [set_volume] Ä�ang nghe vá»«a tai, sang quáº£ng cÃ¡o cÃ¡i giáº­t cáº£ mÃ¬nh.
+      ask: set_volume()  | Suy ra quáº£ng cÃ¡o cÃ³ Ã¢m lÆ°á»£ng quÃ¡ lá»›n nÃªn Ä‘á»� xuáº¥t giáº£m; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ.
+114 [set_volume] BÃªn ngoÃ i Ä‘ang  cÃ³ ca nháº¡c, Ä‘Ã³ng kÃ­nh xe rá»“i mÃ  váº«n cÃ²n á»“n quÃ¡ tÃ´i khÃ´ng nghe Ä‘Æ°á»£c nháº¡c bÃªn trong xe.
+      ask: set_volume()  | Ä�á»� xuáº¥t tÄƒng Ã¢m lÆ°á»£ng nháº¡c trong xe; chÆ°a cÃ³ má»©c cá»¥ thá»ƒ nÃªn khÃ´ng tá»± thÃªm delta hoáº·c set_value.
+

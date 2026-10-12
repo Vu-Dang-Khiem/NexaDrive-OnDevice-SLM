@@ -1,0 +1,201 @@
+﻿id,luot_1,cau,nhan_luot_1,nhan,ghi_chu
+1,,Chiều nay Bắc Ninh có mưa không?,,"get_weather(location=""Bắc Ninh"", day=0)",
+2,Hé cửa sổ trời ra chút đi.,Nhạc bé thế này thì ngồi sau chịu rồi.,"operate_sunroof(action=""tilt"")",ask: set_volume(),Lượt 2 đổi chủ đề sang nhạc. Đề xuất tăng âm lượng nhưng không nêu số mức; bảng không có quy ước delta mặc định nên chưa điền delta.
+3,,Đường vắng thế mà chỉ nhìn được một đoạn ngay đầu xe nhỉ.,,"ask: set_headlights(mode=""high_beam"")",Đường vắng và chỉ nhìn được gần đầu xe gợi ý chuyển sang chiếu xa; cần xác nhận.
+4,,"Ngồi xe cả buổi ê hết lưng rồi, bật mát xa ghế lái hộ tôi.",,irrelevant_function(),
+5,,Nghe kiểu này chắc người ngoài đường cũng thuộc lời luôn quá.,,ask: set_volume(),"Hiểu là nói bóng gió nhạc quá to, đề xuất giảm âm lượng. Không có số mức hay quy ước delta mặc định nên chưa điền delta."
+6,,Pin còn mấy phần trăm vậy?,,get_battery_range(),
+7,Chuyển đèn sang chiếu gần nhé.,Trong xe lạnh muốn nổi da gà rồi nè.,"set_headlights(mode=""low_beam"")","ask: set_ac(state=""on"", delta=2)",Lượt 2 đổi chủ đề. Hiểu là điều hoà đang quá lạnh; đề xuất tăng nhiệt độ theo quy ước +2.
+8,,"Đang lái không cầm điện thoại được, chuyển khoản cho mẹ hai triệu giúp tôi.",,irrelevant_function(),
+9,,Hôm qua thằng cu nhà tôi tự nấu cơm mà khê cả nồi.,,irrelevant_function(),
+10,Bật sấy kính trước lên.,Cả phía sau nữa nhé.,"set_defrost(state=""on"", zone=""front"")","set_defrost(state=""on"", zone=""rear"")",Bật thêm sấy kính sau; kính trước đã bật ở lượt 1.
+11,Tắt sấy kính sau giùm mình.,"À thôi, bật lại đi.","set_defrost(state=""off"", zone=""rear"")","set_defrost(state=""on"", zone=""rear"")",
+12,Kéo kính bên ghế phụ lên hết đi.,"Từ sáng chạy miết chưa đổ xăng, chẳng biết còn được bao nhiêu.","control_window(window=""front_right"", position=""up"", amount=100)",ask: get_fuel_level(),"Lượt 2 là lời băn khoăn về xăng, không phải yêu cầu hỏi thẳng; cần xác nhận việc kiểm tra."
+13,Cho máy lạnh về 25 độ nha.,Hẹn ở Bệnh viện Bạch Mai mà tôi cứ lạc vào mấy ngõ này mãi.,"set_ac(state=""on"", temperature=25)","ask: navigate_to(destination=""Bệnh viện Bạch Mai"")",
+14,,"Mẹ đang gọi mà tiếng nhạc át hết, tôi áp sát điện thoại vào tai vẫn chẳng nghe rõ.",,ask: set_volume(),Đề xuất giảm âm lượng nhạc. Không nêu số mức và bảng không có quy ước delta mặc định nên chưa điền delta.
+15,Chỉnh quạt điều hoà lên mức 4.,Thêm một nấc nữa đi.,set_fan_speed(level=4),set_fan_speed(delta=1),"Theo yêu cầu quạt tăng tương đối dùng delta=1. Bảng đính kèm chỉ có level bắt buộc, chưa khai báo delta; nếu giữ nguyên bảng thì tương đương level=5 theo lượt 1."
+16,Mở cốp sau hộ anh cái.,"Khoan, đóng lại đã.",open_trunk(),close_trunk(),
+17,,Đóng kín cửa sổ trời giùm mình.,,"operate_sunroof(action=""close"")",
+18,,Xe có báo lỗi gì không đấy?,,get_vehicle_status(),
+19,,Để đèn pha chế độ tự động nhé.,,"set_headlights(mode=""auto"")",
+20,,Bữa ni mới thứ ba mà cứ tưởng sắp cuối tuần rồi.,,irrelevant_function(),
+21,,Gập hai gương chiếu hậu vào hộ tôi.,,irrelevant_function(),
+22,,Ngồi trước cửa gió mà tóc cứ bay phần phật ấy nhỉ.,,ask: set_fan_speed(level=2),"Than gió quá mạnh. Chọn mức 2 làm đề xuất vì bảng bắt buộc level; đây là mức giả định cần xác nhận, không phải số được nói trong câu."
+23,,"Em đeo kính áp tròng, ngồi đây bị gió điều hoà thổi mạnh vào mặt nên khô hết cả mắt.",,ask: set_fan_speed(level=2),"Than gió mạnh làm khô mắt. Chọn mức 2 làm đề xuất vì bảng bắt buộc level; đây là mức giả định cần xác nhận, không phải số được nói trong câu."
+24,,Cây ổi nhà ngoại năm nay sai quả ghê.,,irrelevant_function(),
+25,,Tiếng đài nhỏ quá nghe chẳng rõ họ đang nói chi.,,ask: set_volume(),Đề xuất tăng âm lượng đài. Không có số mức hay quy ước delta mặc định nên chưa điền delta.
+26,,"Xe chết máy ngay giữa đường rồi, xe sau cứ lao tới thế này sợ quá.",,"ask: set_hazard_lights(state=""on"")",
+27,,Lùi ghế lái ra sau một chút.,,irrelevant_function(),
+28,,Quạt gió xuống nấc 2 giùm em.,,set_fan_speed(level=2),
+29,,Chỉ đường tới chợ Đông Ba với.,,"navigate_to(destination=""chợ Đông Ba"")",
+30,Mở VOV Giao thông cho tôi nghe.,Kính trước đọng hơi mờ hết cả đường rồi.,"play_media(source=""radio"", query=""VOV Giao thông"")","ask: set_defrost(state=""on"", zone=""front"")",Lượt 2 đổi chủ đề sang kính trước bị đọng hơi.
+31,,Đặt giúp mình hai suất cơm gà giao về nhà nhé.,,irrelevant_function(),
+32,,Đà Lạt giờ bao nhiêu độ?,,"get_weather(location=""Đà Lạt"", day=0)",
+33,,"Xe phơi nắng từ trưa, giờ ngồi vào nóng hầm hập, lưng áo tôi ướt hết rồi.",,"ask: set_ac(state=""on""); control_window(window=""all"", position=""down"")",Hai phương án thay thế cần xác nhận: bật điều hoà hoặc hạ kính thoát khí nóng. Không rõ kính nào nên đề xuất all để đủ tham số bắt buộc.
+34,,Chắc ngồi xe mình phải mang thêm cái chăn quá.,,"ask: set_ac(state=""on"", delta=2)",Hiểu lời nói bóng gió là trong xe quá lạnh; đề xuất tăng nhiệt độ theo quy ước +2.
+35,,Tắt quạt điều hoà đi.,,set_fan_speed(level=0),
+36,,"Xe thủng lốp nằm ngay khúc cua, trời lại tối, người ta tới gần mới thấy thì nguy quá.",,"ask: set_hazard_lights(state=""on"")",Hiểu là xe mình thủng lốp và đang nằm ở khúc cua; cần hỏi xác nhận bật đèn cảnh báo.
+37,,Xem hộ áp suất bốn lốp nào.,,get_tire_pressure(),
+38,Hạ kính bên tài xuống một nửa nha.,Tối qua đội mình thua đúng phút cuối mới cay chứ.,"control_window(window=""front_left"", position=""down"", amount=50)",irrelevant_function(),
+39,,Bật sưởi vô lăng lên cho ấm tay.,,irrelevant_function(),
+40,,Tôi chạy vòng vòng nãy giờ mà vẫn không tìm ra đường vào Bến xe Miền Đông mới.,,"ask: navigate_to(destination=""Bến xe Miền Đông mới"")",
+41,,Trong bình còn mấy lít xăng?,,get_fuel_level(),"Đúng chức năng kiểm tra xăng, nhưng bảng chỉ cam kết trả phần trăm và quãng đường, không có tham số đơn vị lít."
+42,Khoá hết cửa xe cho anh.,Nhắc anh tám giờ tối uống thuốc nhé.,lock_doors(),irrelevant_function(),
+43,Cho sấy kính trước chạy đi.,Dạo này quán bún đầu ngõ bán ít thịt hẳn.,"set_defrost(state=""on"", zone=""front"")",irrelevant_function(),
+44,,Bật cốp lên nào.,,open_trunk(),
+45,,Sấy kính sau cho hết hơi nước đi.,,"set_defrost(state=""on"", zone=""rear"")",
+46,Khoá cửa lại nhé.,"Ấy, mở khoá lại cho mọi người xuống đã.",lock_doors(),"unlock_doors(door=""all"")",
+47,,ODO lên bao nhiêu rồi?,,get_odometer(),
+48,,Cửa xe khoá hết lại cho chắc.,,lock_doors(),
+49,,Mở nắp bình xăng để anh đổ nào.,,open_fuel_flap(),
+50,,"Cả dãy phố đều cấm đỗ, tôi còn phải xuống lấy hàng mà chưa biết gửi xe ở đâu gần đây.",,"ask: find_nearby(category=""parking"")",
+51,,"Con vừa chợp mắt ở ghế sau, tắt cái đèn trần cho nó ngủ với.",,irrelevant_function(),
+52,Nhấc cốp sau lên cho em lấy túi.,"Lấy được rồi, hạ xuống luôn đi anh.",open_trunk(),close_trunk(),
+53,,Chỗ cắm sạc ấy mở nắp ra đi.,,open_charge_port(),
+54,,"Tôi ngồi chờ một mình mà cứ có người lạ lại gần kéo tay nắm cửa, thấy bất an quá.",,ask: lock_doors(),
+55,,Nhắn cho vợ anh là tối nay anh về muộn.,,irrelevant_function(),
+56,,Quạt chạy yếu xìu chẳng thấy tí gió nào tới hàng ghế sau.,,ask: set_fan_speed(level=6),"Than quạt yếu. Chọn mức 6 làm đề xuất vì bảng bắt buộc level; đây là mức giả định cần xác nhận, không phải số được nói trong câu. Hàm không có tham số vùng ghế sau."
+57,,Lốp trước bên trái đang bao nhiêu bar?,,"get_tire_pressure(wheel=""front_left"")","Hỏi đúng chức năng và bánh trước trái. Bảng chỉ trả PSI, không có tham số đổi sang bar; không tự thêm unit."
+58,,Kính sau thế kia chắc lấy ngón tay viết chữ được luôn ấy.,,"ask: set_defrost(state=""on"", zone=""rear"")",Hiểu là kính sau đọng hơi nước nên có thể viết bằng ngón tay. Nếu là bụi bẩn thì sấy kính không giải quyết được; cần xác nhận.
+59,Đặt điều hoà 23 độ cho chị.,Thôi để 26 đi.,"set_ac(state=""on"", temperature=23)","set_ac(state=""on"", temperature=26)",
+60,,Con bạch tuộc có mấy tim nhỉ giải thích nghe coi.,,irrelevant_function(),
+61,Hạ hết kính phía sau bên phải xuống.,"Bên trái cũng vậy, cho đều.","control_window(window=""rear_right"", position=""down"", amount=100)","control_window(window=""rear_left"", position=""down"", amount=100)",Kế thừa kính phía sau và mức hạ hết ở lượt 1; đổi từ bên phải sang bên trái.
+62,,"Chú bảo vệ đang đứng sát bên tài hỏi gì đó, cách lớp kính kín nên tôi nghe không ra.",,"ask: control_window(window=""front_left"", position=""down"")",
+63,,Bật sưởi ấm trong xe lên đi.,,"set_ac(state=""on"", mode=""heat"")",
+64,,Bật đèn cảnh báo nguy hiểm ngay.,,"set_hazard_lights(state=""on"")",
+65,,"Đậu dưới gốc cây mà cửa sổ trời mở thế này, lá với sâu rơi hết xuống ghế mất.",,"ask: operate_sunroof(action=""close"")",
+66,,Hé kính sau bên trái một tí thôi.,,"control_window(window=""rear_left"", position=""down"")","Câu yêu cầu hé kính nhưng không nêu phần trăm nên không tự thêm amount. Bảng mặc định amount=100 sẽ hạ hết kính, chưa diễn đạt được hé một tí; cần làm rõ mức mở trước khi thực thi."
+67,,Trời đầy sao mà ngắm qua tấm kính trên đầu cứ phản chiếu bóng mình nhỉ.,,"ask: operate_sunroof(action=""open"")",
+68,,Kiểm tra hộ cửa cuốn ở nhà đóng chưa.,,irrelevant_function(),
+69,Ngừng sấy kính trước nhé.,Ví hết sạch tiền mặt mà quanh đây chẳng thấy cây ATM nào.,"set_defrost(state=""off"", zone=""front"")","ask: find_nearby(category=""atm"")",
+70,,Chuẩn bị đi rồi mà cái cốp vẫn chổng lên kìa.,,ask: close_trunk(),
+71,,Cho tiếng nhạc lớn thêm chút nghe.,,set_volume(),Ra lệnh tăng âm lượng nhưng không nêu số mức. Bảng không có quy ước delta mặc định nên chưa điền delta; lời gọi hiện chưa thể hiện chiều tăng.
+72,,Ngắt máy lạnh đi em.,,"set_ac(state=""off"")",
+73,Khoá toàn bộ cửa xe lại.,Riêng bên ghế phụ thì mở khoá ra cho chị.,lock_doors(),"unlock_doors(door=""passenger"")",
+74,,"Đồ xếp xong hết rồi, cả nhà cũng lên đủ mà cốp còn mở nên tôi chưa đi được.",,ask: close_trunk(),
+75,,Khoá cửa bên ghế phụ giúp chị.,,lock_doors(),"Chọn hàm khoá cửa có sẵn. Hàm này khoá toàn bộ cửa, không hỗ trợ khoá riêng ghế phụ; không tự thêm tham số door."
+76,,Xe còn đủ chạy 80 cây nữa không?,,get_range_estimate(trip_km=80),
+77,,Gạt mưa nhanh hơn một nấc đi.,,irrelevant_function(),
+78,,Đổi vé máy bay của tôi sang sáng mai được không?,,irrelevant_function(),
+79,,Gió trên nóc thốc xuống cứ ù cả tai ấy nhỉ.,,"ask: operate_sunroof(action=""close"")","Hiểu gió thốc từ cửa sổ trời đang mở, đề xuất đóng cửa sổ trời."
+80,,Đá sang đèn chiếu xa cho anh.,,"set_headlights(mode=""high_beam"")",
+81,,"Máy nóng quá phải dừng sát lề rồi, tôi lo xe khác không biết mình đang gặp sự cố.",,"ask: set_hazard_lights(state=""on"")",
+82,,"Mấy xe ngược chiều cứ nháy đèn liên tục, chắc đèn mình rọi xa quá làm người ta chói mắt.",,"ask: set_headlights(mode=""low_beam"")",
+83,Tắt đèn pha giúp mình nha.,Mua hộ tôi hai vé xem phim suất chín giờ tối nay.,"set_headlights(mode=""off"")",irrelevant_function(),
+84,,"Chỗ này chật quá mà tôi không thấy đầu xe bên phải, bật camera 360 lên với.",,irrelevant_function(),
+85,,Đọc mấy email mới nhận cho tôi nghe.,,irrelevant_function(),
+86,,Tính hộ ba người chia 850 nghìn thì mỗi người bao nhiêu.,,irrelevant_function(),
+87,,Chợp mắt trong xe mà bên ngoài ai kéo cửa cũng vào được thì hơi căng nhỉ.,,ask: lock_doors(),
+88,,Mưa tạt qua cửa sổ bên phải ướt hết cánh tay em rồi.,,"ask: control_window(window=""front_right"", position=""up""); control_window(window=""rear_right"", position=""up"")","Chưa rõ cửa sổ trước hay sau bên phải. Hai lời gọi là hai phương án thay thế để hỏi xác nhận vị trí, không phải đóng cả hai; ưu tiên trước phải."
+89,,Hẹn lịch cắt tóc cho anh chiều thứ bảy này đi.,,irrelevant_function(),
+90,,Làm tí nhạc Trịnh nghe nào.,,"play_media(query=""nhạc Trịnh"")",
+91,,"Túi xách nằm ngay ghế phụ mà cửa chưa khoá, tôi cứ nơm nớp bị giật mất.",,ask: lock_doors(),
+92,,Dịch câu tôi bị lạc sang tiếng Hàn giúp em.,,irrelevant_function(),
+93,,"Chân tôi đạp côn mỏi nhừ rồi, tự đỗ xe vào ô trống kia cho tôi đi.",,irrelevant_function(),
+94,,Đoạn quảng cáo này to đột ngột làm tôi giật hết cả mình.,,ask: set_volume(),Đề xuất giảm âm lượng. Không nêu số mức và bảng không có quy ước delta mặc định nên chưa điền delta.
+95,,Mùi sầu riêng kín cả xe làm em buồn nôn quá.,,"ask: control_window(window=""all"", position=""down""); operate_sunroof(action=""open"")",Hai phương án thay thế cần xác nhận: hạ kính hoặc mở cửa sổ trời để thoát mùi. Không rõ kính nào nên đề xuất all để đủ tham số bắt buộc.
+96,Vặn nhỏ tiếng đài xuống cho bác.,Bác đói cồn cào rồi mà dọc đường chẳng thấy quán ăn nào.,set_volume(),"ask: find_nearby(category=""restaurant"")",Lượt 1 ra lệnh giảm âm lượng nhưng không có số mức hay quy ước delta mặc định nên chưa điền delta. Lượt 2 đổi chủ đề sang tìm quán ăn.
+97,,Để xe ngoài sân cả đêm mà cửa chưa khoá thì hơi liều nhỉ.,,ask: lock_doors(),
+98,,Mưa ngấm ướt áo mà trong xe lạnh thế này em run cầm cập rồi.,,"ask: set_ac(state=""on"", delta=2)","Hiểu là trong xe quá lạnh; đề xuất tăng nhiệt độ theo quy ước +2, không tự đặt nhiệt độ tuyệt đối."
+99,Tăng âm lượng lên mức 12.,Hơi quá rồi đấy xuống 9 thôi.,set_volume(set_value=12),set_volume(set_value=9),
+100,,Đi đường ven biển thế này thiếu mỗi ít nhạc chill nữa thôi nhỉ.,,"ask: play_media(query=""nhạc chill"")","Lời gợi ý gián tiếp muốn nghe nhạc chill, cần hỏi xác nhận trước khi phát."
+101,,"Xe đang chờ cứu hộ thế này, người ta lại tưởng mình đỗ chơi nhỉ.",,"ask: set_hazard_lights(state=""on"")",
+102,,Cài ga tự động ở 80 cây một giờ nhé.,,irrelevant_function(),
+103,,Cốp cứ mở thế kia thì bụi công trường tha hồ chui vào nhỉ.,,ask: close_trunk(),
+104,Cửa phía sau khoá cả hai bên nhé.,"Mai định lên Tam Đảo, chỉ sợ trên đấy mưa thì mất công.",lock_doors(),"ask: get_weather(location=""Tam Đảo"", day=1)","Lượt 1 yêu cầu khoá hai cửa sau nhưng bảng chỉ có hàm khoá toàn bộ cửa, không hỗ trợ chọn cửa. Lượt 2 đổi chủ đề, gián tiếp muốn biết thời tiết Tam Đảo ngày mai."
+105,,Ghi vào danh sách đi chợ là mua thêm trứng với sữa.,,irrelevant_function(),
+106,Tắt đèn khẩn cấp đi.,"Chưa đi được đâu, cho nháy lại đã.","set_hazard_lights(state=""off"")","set_hazard_lights(state=""on"")",
+107,,Chuyển xe sang chế độ lái thể thao.,,irrelevant_function(),
+108,,Nhìn qua lớp hơi trên kính cứ như đeo kính cận sai số ấy.,,"ask: set_defrost(state=""on"")","Hiểu là hơi nước bám kính xe. Không nói rõ kính nào nên bỏ zone, dùng mặc định front của bảng; cần xác nhận."
+109,,"Đường xóc mà ngồi sau nảy tưng tưng, chỉnh giảm xóc mềm hơn cho cô.",,irrelevant_function(),
+110,,Tôi chẳng yên tâm xuống mua đồ khi cửa xe vẫn chưa khoá.,,ask: lock_doors(),
+111,,"Ngồi trên xe muốn làm nốt báo cáo mà máy tính mất mạng, bật điểm phát Wi-Fi của xe lên nhé.",,irrelevant_function(),
+112,,"Kính trước trong veo từ nãy rồi mà sấy vẫn chạy, hơi nóng phả lên mặt khó chịu ghê.",,"ask: set_defrost(state=""off"", zone=""front"")",
+113,,Cốp sau mở ra để chất vali nhé.,,open_trunk(),
+114,,Xăng còn được nửa bình không em?,,get_fuel_level(),
+115,,"Mọi người vừa lên xe với áo mưa ướt, hơi nước bám kín kính trước làm tôi chẳng thấy lối ra.",,"ask: set_defrost(state=""on"", zone=""front"")",
+116,,Hạ cốp xuống cho kín đi.,,close_trunk(),
+117,,Kiểm tra xem xe đang có vấn đề gì.,,get_vehicle_status(),
+118,,Ngồi xe im re suốt buổi chỉ nghe tiếng lốp mà chán ghê.,,ask: play_media(),
+119,,Đậu đây mà đèn mình rọi thẳng vào phòng ngủ nhà người ta thì kỳ ghê.,,"ask: set_headlights(mode=""off""); set_headlights(mode=""parking"")",Xe đang đậu và đèn chiếu vào nhà người khác. Hai phương án thay thế: tắt đèn chiếu sáng hoặc chuyển sang đèn đỗ xe nếu vẫn cần báo vị trí.
+120,,Mới gặp hồi Tết mà nay con bé đã cao hơn mẹ rồi.,,irrelevant_function(),
+121,,Huỷ buổi tập gym tối nay cho mình nhé.,,irrelevant_function(),
+122,,Pin đỏ lòm rồi mà em chẳng biết gần đây có chỗ nào sạc cả.,,"ask: find_nearby(category=""charging_station"")","Đã biết pin yếu; nhu cầu chính là tìm nơi sạc gần đây, không phải kiểm tra pin."
+123,,Đêm qua con mèo hất đổ lọ hoa làm cả nhà tỉnh giấc.,,irrelevant_function(),
+124,,Giờ có quán cà phê gần đây để ngồi chờ thì tiện quá.,,"ask: find_nearby(category=""coffee"")",
+125,,Vào hầm tối om mà đèn xe mình chưa sáng nên tôi chẳng thấy vạch đường.,,"ask: set_headlights(mode=""low_beam"")",
+126,,"Hàng ghế sau nóng quá, con bé đỏ bừng cả mặt rồi.",,"ask: set_ac(state=""on"", zone=""rear"")","Chỉ rõ hàng ghế sau nên dùng zone=""rear"". Chưa biết điều hoà đang bật hay tắt, không tự thêm nhiệt độ hoặc delta."
+127,Cho cửa sổ trời hé một khe thôi.,Mở hết ra luôn cũng được.,"operate_sunroof(action=""tilt"")","operate_sunroof(action=""open"", intensity=100)",
+128,,Kính hậu phủ hơi nước trắng xoá làm tôi không thấy chiếc xe máy phía sau đâu nữa.,,"ask: set_defrost(state=""on"", zone=""rear"")","Hiểu kính hậu là kính sau xe bị đọng hơi nước, không phải gương chiếu hậu bên ngoài."
+129,,Bệnh viện nào gần đây nhất vậy?,,"find_nearby(category=""hospital"")",
+130,,Kéo hết kính bốn bên lên nào.,,"control_window(window=""all"", position=""up"", amount=100)",
+131,,Bật cái nắp đổ xăng ra với.,,open_fuel_flap(),
+132,,Chụp cảnh qua kính bên này toàn dính bóng điện thoại thôi nhỉ.,,"ask: control_window(window=""all"", position=""down"")","Hiểu là muốn hạ kính để chụp không bị phản chiếu. Bên này không xác định được cửa cụ thể; dùng all để đủ tham số bắt buộc và hỏi xác nhận, cần làm rõ cửa trước khi thực thi."
+133,,Chỉnh vô lăng lên cao thêm chút.,,irrelevant_function(),
+134,,Kéo phanh tay điện tử lên cho tôi.,,irrelevant_function(),
+135,,"Lần đầu tới chùa Bái Đính, giá có người rành đường đi cùng thì tốt.",,"ask: navigate_to(destination=""chùa Bái Đính"")",
+136,,Kéo rèm che nắng kính sau lên hộ bác.,,irrelevant_function(),
+137,Bật chế độ chiếu xa nhé.,"Có xe tới rồi, chuyển về chiếu gần.","set_headlights(mode=""high_beam"")","set_headlights(mode=""low_beam"")",
+138,,Mặt trong kính cứ mờ trở lại làm tôi phải lau liên tục mỏi cả tay.,,"ask: set_defrost(state=""on"")","Hiểu là kính xe bị đọng hơi phía trong. Không rõ vùng kính nên bỏ zone, dùng mặc định front của bảng; cần xác nhận."
+139,,Cái phim hôm qua kết thúc cụt ngủn xem tức ghê.,,irrelevant_function(),
+140,,Hồi nhỏ cứ nghe tiếng trống múa lân là tôi chạy ra đầu ngõ.,,irrelevant_function(),
+141,,Trượt cửa sổ trời mở hết cỡ nhé.,,"operate_sunroof(action=""open"", intensity=100)",
+142,,Xong rồi đóng cốp giùm em nghen.,,close_trunk(),
+143,,Bật cảnh báo lệch làn lên.,,irrelevant_function(),
+144,Bật điều hoà cho mát nào.,Hạ thêm hai độ so với hiện tại nhé.,"set_ac(state=""on"")","set_ac(state=""on"", delta=-2)",
+145,,"Thiệp cưới ghi nhà hàng Sen Tây Hồ, sắp đến giờ ăn rồi mà tôi chưa biết đi lối nào.",,"ask: navigate_to(destination=""nhà hàng Sen Tây Hồ"")",
+146,,Mưa hắt vào cái cốp đang mở làm ướt hết mấy thùng giấy rồi.,,ask: close_trunk(),
+147,,Giờ xe còn chạy được tối đa bao xa?,,get_range_estimate(),
+148,,Mẻ bánh đầu tay mà được thế này là ngon lắm rồi đó.,,irrelevant_function(),
+149,,Kính bên hông mở thế này khác gì ngồi cạnh cái loa đám cưới đâu.,,"ask: control_window(window=""all"", position=""up"")",Hiểu là tiếng đám cưới lọt qua kính bên hông đang mở. Không rõ cửa nào nên đề xuất all để đủ tham số bắt buộc; cần xác nhận phạm vi đóng kính.
+150,,Nắp cổng sạc bật ra cho anh cắm dây.,,open_charge_port(),
+151,Mở khoang hành lý phía sau ra nhé.,Nhìn bánh trước bên phải có vẻ non hơi hơn mấy bánh kia ấy.,open_trunk(),"ask: get_tire_pressure(wheel=""front_right"")","Lượt 2 đổi chủ đề sang bánh trước phải có vẻ non hơi; đề xuất kiểm tra áp suất, không tự kết luận lốp non."
+152,,"Khói trong hầm cứ lùa qua cửa sổ trời xuống, ngộp quá trời.",,"ask: operate_sunroof(action=""close"")",
+153,,"Đèn chiếu xa gặp sương phản sáng trắng cả trước mặt, tôi nhìn đường khó quá.",,"ask: set_headlights(mode=""low_beam"")",
+154,,Xe sửa xong chạy ngon rồi mà đèn vẫn nháy như đang nằm đường nhỉ.,,"ask: set_hazard_lights(state=""off"")",Hiểu đèn vẫn nháy như đang nằm đường là đèn khẩn cấp còn bật sau khi xe sửa xong.
+155,,Cho nghe bài Nối vòng tay lớn đi.,,"play_media(query=""Nối vòng tay lớn"")",
+156,,Âm lượng về mức 5 thôi nhé.,,set_volume(set_value=5),
+157,,Quạt điều hoà gào vù vù nghe nhức hết cả đầu.,,ask: set_fan_speed(level=2),"Than quạt ồn và mạnh. Chọn mức 2 làm đề xuất vì bảng bắt buộc level; đây là mức giả định cần xác nhận, không phải số được nói trong câu."
+158,,"Xe phía trước đứng chắn lối mà tài xế chưa thấy mình, bấm còi một tiếng hộ tôi.",,irrelevant_function(),
+159,,Cho hai bên xi nhan chớp cảnh báo đi.,,"set_hazard_lights(state=""on"")",
+160,,Bảng đồng hồ cứ báo cốp đang mở kèm tiếng bíp nghe sốt ruột quá.,,ask: close_trunk(),Đề xuất đóng cốp theo cảnh báo đang mở; cần xác nhận vì cũng có thể cốp chưa chốt hoặc cảm biến báo sai.
+161,,Tự dưng thèm nghe giọng hát Cẩm Ly ghê.,,"ask: play_media(query=""Cẩm Ly"")",
+162,,Cứ nghe mãi mấy bài buồn trên xe làm tâm trạng tôi tụt hết cả xuống.,,"ask: play_media(query=""nhạc vui"")","Than các bài buồn làm tụt tâm trạng; đề xuất đổi sang nhạc vui. query là nội dung đề xuất cần xác nhận, không phải thể loại được yêu cầu rõ ràng."
+163,Điều hoà để 24 độ cho vừa nhé.,Thằng em tôi mới đỗ đại học mà cả nhà mừng như trúng số.,"set_ac(state=""on"", temperature=24)",irrelevant_function(),
+164,Đóng khoang hành lý lại nào.,"Ơ còn cái ba lô chưa cất, mở lại với.",close_trunk(),open_trunk(),
+165,,Cho robot ở nhà hút bụi phòng khách đi.,,irrelevant_function(),
+166,Quạt máy lạnh cho lên số 6.,"Thổi mạnh quá, bớt xuống hai nấc.",set_fan_speed(level=6),set_fan_speed(delta=-2),"Theo yêu cầu quạt giảm tương đối dùng delta=-2. Bảng đính kèm chỉ có level bắt buộc, chưa khai báo delta; nếu giữ nguyên bảng thì tương đương level=4 theo lượt 1."
+167,Kính bên tài kéo xuống hết cho tôi.,"Đưa thẻ xong rồi, kéo lên kín luôn.","control_window(window=""front_left"", position=""down"", amount=100)","control_window(window=""front_left"", position=""up"", amount=100)",
+168,Khép cửa sổ trời lại giúp chị nha.,Xem đơn hàng đôi giày của chị giao tới đâu rồi.,"operate_sunroof(action=""close"")",irrelevant_function(),
+169,,"Nắng xiên vào mắt tôi chói quá, hạ tấm chắn nắng bên lái xuống.",,irrelevant_function(),
+170,,"Sáng nay lên xe sớm chưa kịp nghe tin tức, giờ chắc đang có bản tin trên VOV1 rồi.",,"ask: play_media(source=""radio"", query=""VOV1"")",
+171,,"Cái thùng dài quá nhét mãi không vừa, gập hàng ghế thứ ba xuống hộ anh.",,irrelevant_function(),
+172,,Mở khoá cửa sau bên trái cho bà lên.,,"unlock_doors(door=""rear_left"")",
+173,Cốp đóng lại được rồi đấy.,Mẹ đứng bên ghế phụ kéo tay nắm mãi mà chưa vào được kìa.,close_trunk(),"ask: unlock_doors(door=""passenger"")","Lượt 1 được hiểu là cho phép đóng cốp ngay. Lượt 2 đổi chủ đề, gợi ý cửa ghế phụ còn khoá nên cần hỏi xác nhận mở khoá."
+174,,Đôi giày này nhìn đẹp mà mang đi bộ đau chân ghê.,,irrelevant_function(),
+175,,Khử sương cả kính trước lẫn kính sau đi.,,"set_defrost(state=""on"", zone=""both"")",
+176,Bật đài VOV1 cho bác nghe với.,"Nhầm rồi, chuyển sang VOV2 cơ.","play_media(source=""radio"", query=""VOV1"")","play_media(source=""radio"", query=""VOV2"")",
+177,,"Đang mặc áo len mà xe vẫn để sưởi, tôi ngồi một lát đã nóng ran cả lưng.",,"ask: set_ac(state=""off""); set_ac(state=""on"", delta=-2)",Đang bật sưởi và người ngồi thấy quá nóng. Hai phương án thay thế cần xác nhận: tắt điều hoà/sưởi hoặc giảm nhiệt độ theo quy ước -2.
+178,Bật đèn khẩn cấp cho xe sau biết nhé.,"Nghe bảo tối nay Huế có bão, tôi lo quá.","set_hazard_lights(state=""on"")","ask: get_weather(location=""Huế"", day=0)",
+179,,"Nãy ngồi còn dễ chịu, giờ lại muốn cởi bớt áo rồi đây.",,"ask: set_ac(state=""on"", delta=-2)",Hiểu là trong xe nóng lên so với lúc trước; đề xuất giảm nhiệt độ theo quy ước -2.
+180,,"Kẹt xe lâu quá hai đứa nhỏ bắt đầu quấy rồi, kể chuyện Thỏ và Rùa cho tụi nó nghe đi.",,irrelevant_function(),
+181,,Sếp vừa báo dời hạn nộp sang tuần sau nghe nhẹ cả người.,,irrelevant_function(),
+182,Mở hết cửa sổ trời cho thoáng đi.,"Thôi khép kín lại, sắp qua chỗ rửa xe rồi.","operate_sunroof(action=""open"", intensity=100)","operate_sunroof(action=""close"")",
+183,,Nhả khoá tất cả cửa cho mọi người xuống.,,"unlock_doors(door=""all"")",
+184,,Đoạn ghi-ta hay thế mà nghe cứ như từ nhà bên vọng sang.,,ask: set_volume(),Hiểu là tiếng nhạc quá nhỏ nên đề xuất tăng âm lượng. Không nêu số mức và bảng không có quy ước delta mặc định nên chưa điền delta.
+185,,Phải dí sát mặt vào mới biết quạt đang chạy đấy.,,ask: set_fan_speed(level=6),"Than quạt quá yếu. Chọn mức 6 làm đề xuất vì bảng bắt buộc level; đây là mức giả định cần xác nhận, không phải số được nói trong câu."
+186,Cho quạt gió chạy mức 3 thôi.,Bật bình nóng lạnh ở nhà cho tôi tắm luôn khi về nhé.,set_fan_speed(level=3),irrelevant_function(),
+187,Mở cốp để bác lấy cây dù nào.,Hôm ni cháu ngoại gọi được tiếng ông rồi vui chi lạ.,open_trunk(),irrelevant_function(),
+188,,Quyển truyện này đọc lần hai mới hiểu vì sao nhân vật đó bỏ đi.,,irrelevant_function(),
+189,,Em đang xếp lại mấy tờ hoá đơn trên đùi mà gió điều hoà thổi bay lung tung hết.,,ask: set_fan_speed(level=2),"Than gió điều hoà thổi mạnh làm bay giấy. Chọn mức 2 làm đề xuất vì bảng bắt buộc level; đây là mức giả định cần xác nhận, không phải số được nói trong câu."
+190,Giảm quạt điều hoà về nấc 1 nhé.,Còn hơn trăm cây mới về tới nhà mà tôi cứ lo xe không đủ xăng.,set_fan_speed(level=1),ask: get_range_estimate(),Lượt 2 đổi chủ đề sang khả năng đi hết chặng về nhà. Hơn trăm cây không phải số km chính xác nên không tự điền trip_km=100; cần làm rõ quãng đường để kết luận có đủ hay không.
+191,,Từ lúc mua xe tới giờ đi bao nhiêu cây rồi?,,"get_odometer(unit=""km"")","Hiểu câu hỏi là tổng quãng đường trên ODO; cây là km. Nếu xe mua cũ thì quãng đường từ lúc mua cần số ODO lúc mua, bảng không cung cấp riêng dữ liệu đó."
+192,Cho đèn pha tự bật tắt theo trời sáng tối đi.,"Thôi, để chiếu gần cố định cho tôi.","set_headlights(mode=""auto"")","set_headlights(mode=""low_beam"")",
+193,,Hiện tốc độ lên kính lái cho tôi.,,irrelevant_function(),
+194,,"Vừa có xe quẹt ngang hông mình, lưu lại đoạn camera hành trình lúc nãy giúp tôi.",,irrelevant_function(),
+195,,Muỗi theo cái cửa sổ trời đang mở bay vào đốt chân em quá chừng.,,"ask: operate_sunroof(action=""close"")",
+196,,Chỉ chạy điện thì còn đi được mấy cây?,,get_battery_range(),
+197,,Bà nội tám mươi rồi mà nhớ số điện thoại giỏi hơn cả tôi.,,irrelevant_function(),
+198,,Bật khoá trẻ em để ghế sau không mở từ trong được.,,irrelevant_function(),Khoá trẻ em ngăn mở cửa từ bên trong khác với khoá cửa thông thường; bảng không có chức năng khoá trẻ em.
+199,,Lấy đường đi sân bay Nội Bài cho anh.,,"navigate_to(destination=""sân bay Nội Bài"")",
+200,,Kiếm cây xăng gần nhất còn mở cửa đi.,,"find_nearby(category=""gas_station"")","Tìm cây xăng gần nhất thuộc find_nearby. Bảng không có tham số lọc đang mở cửa; không tự thêm open_now, cần kiểm tra giờ mở cửa từ kết quả nếu có."

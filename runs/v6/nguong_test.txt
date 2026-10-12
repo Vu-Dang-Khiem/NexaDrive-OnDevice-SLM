@@ -1,0 +1,35 @@
+﻿
+===== hạt giống s42 — CÓ NGƯỠNG (v6.1 0.85 / v5 0.85) =====
+  (1) A+B   79.2 vs  64.2 (mới hơn 19, cũ hơn 1, p=0.0000)
+  ( ) A     83.3 vs  70.8 (mới hơn 10, cũ hơn 1, p=0.0117)
+  ( ) B     72.9 vs  54.2 (mới hơn 9, cũ hơn 0, p=0.0039)
+  (3) C     80.0 vs   6.7 (mới hơn 22, cũ hơn 0, p=0.0000)
+  (2) hai lượt: v6.1 vs v5+luật  60.0 vs  20.0 (mới hơn 25, cũ hơn 1, p=0.0000) | v5 không nhớ 20.0
+  (4) không tụt:
+      rõ ràng     78.4 vs  70.3 (mới hơn 6, cũ hơn 0, p=0.0312)
+      mơ hồ       71.8 vs  79.5 (mới hơn 3, cũ hơn 6, p=0.5078)
+      ngoài pv    85.5 vs  88.9 (mới hơn 2, cũ hơn 6, p=0.2891)
+      bổ sung     57.1 vs  60.7 (mới hơn 1, cũ hơn 2, p=1.0000)
+      mo_ho_4     79.1 vs  78.3 (mới hơn 8, cũ hơn 7, p=1.0000)
+  (5) nhiễu  51.9 vs  24.0 (mới hơn 30, cũ hơn 1, p=0.0000)
+
+===== hạt giống s7 — CÓ NGƯỠNG (v6.1 0.85 / v5 0.85) =====
+  (1) A+B   77.5 vs  65.8 (mới hơn 19, cũ hơn 5, p=0.0066)
+  ( ) A     81.9 vs  77.8 (mới hơn 6, cũ hơn 3, p=0.5078)
+  ( ) B     70.8 vs  47.9 (mới hơn 13, cũ hơn 2, p=0.0074)
+  (3) C     83.3 vs   6.7 (mới hơn 23, cũ hơn 0, p=0.0000)
+  (2) hai lượt: v6.1 vs v5+luật  46.7 vs  20.0 (mới hơn 19, cũ hơn 3, p=0.0009) | v5 không nhớ 20.0
+  (4) không tụt:
+      rõ ràng     71.6 vs  71.6 (mới hơn 4, cũ hơn 4, p=1.0000)
+      mơ hồ       76.9 vs  74.4 (mới hơn 3, cũ hơn 2, p=1.0000)
+      ngoài pv    78.6 vs  87.2 (mới hơn 2, cũ hơn 12, p=0.0129)
+      bổ sung     60.7 vs  60.7 (mới hơn 1, cũ hơn 1, p=1.0000)
+      mo_ho_4     79.1 vs  78.3 (mới hơn 9, cũ hơn 8, p=1.0000)
+  (5) nhiễu  54.8 vs  24.0 (mới hơn 33, cũ hơn 1, p=0.0000)
+
+===== (4) CÓ NGƯỠNG, trung bình 2 hạt giống — ngưỡng: rõ ràng / ngoài pv / mo_ho_4 không thấp hơn v5 quá 3 =====
+  rõ ràng    v6.1  75.0 | v5  70.9 | chênh  +4.1
+  mơ hồ      v6.1  74.3 | v5  77.0 | chênh  -2.6
+  ngoài pv   v6.1  82.0 | v5  88.1 | chênh  -6.0
+  bổ sung    v6.1  58.9 | v5  60.7 | chênh  -1.8
+  mo_ho_4    v6.1  79.1 | v5  78.3 | chênh  +0.8

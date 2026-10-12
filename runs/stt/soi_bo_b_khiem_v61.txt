@@ -1,0 +1,160 @@
+﻿b00 [ro_rang] GỐC: Vặn nhỏ loa xuống mức 5  -> chữ gốc: dung
+     parakeet  hoi_lai_thua  | Vận nhỏ xuống mức 5
+     phowhispe hoi_lai_thua  | Vận nhỏ là xuống mức lặn
+     phowhispe hoi_lai_thua  | Vận nhỏ và xuống mức lắm
+b01 [ro_rang] GỐC: Bật điều hòa 26 độ ghế lái  -> chữ gốc: dung
+     parakeet  tu_choi_nham  | Bật điều hay gió đủ ghí lái
+     phowhispe tu_choi_nham  | Bật điều hoà hay xấu thủ ghi lái
+     phowhispe sai_tham_so   | Bật điều hòa hai cháu độ ghế lái
+b02 [ro_rang] GỐC: Giảm nhiệt độ xuống 20 độ giùm  -> chữ gốc: dung
+     parakeet  dung          | Giảm nhiệt độ xuống 20 độ dùng
+     phowhispe dung          | Giảm nhiệt độ xuống 20 độ dùng
+     phowhispe sai_tham_so   | Giảm nhiệt độ xuống 20 độ nồm
+b03 [ro_rang] GỐC: Chạy thêm 50 km nữa có đủ không  -> chữ gốc: dung
+     parakeet  sai_tham_so   | Chạy thêm năm mới kim l nữa có đủ không
+     phowhispe dung          | Chạy thêm 50 km lớn có đủ không
+     phowhispe dung          | Chạy thêm 50 km nữa có đủ không
+b04 [ro_rang] GỐC: Hạ hé kính bên phụ khoảng 20%  -> chữ gốc: dung
+     parakeet  hoi_lai_thua  | Hại hé kính b biết phụ và 1200
+     phowhispe tu_choi_nham  | Hạ hiếu kín bếp phụ khoảng 2000
+     phowhispe tu_choi_nham  | Hạ hé kính bết phụ khoảng 2000
+b05 [ro_rang] GỐC: Đi 200 km nữa có phải đổ xăng dọc đường không  -> chữ gốc: dung
+     parakeet  dung          | Đi 200 km nữa có phảiổ xăng dọc đường không
+     phowhispe dung          | Đi 200 km nữa có phải đố săng dọc đường không
+     phowhispe dung          | Đi 200 km nữa có phải đổ xăng dọc đường không
+b06 [ro_rang] GỐC: Tra đường về số 10 đường Nguyễn Huệ quận 1  -> chữ gốc: dung
+     parakeet  sai_tham_so   | Chaường vềú mườiường Nguyễn Huệ cậnộnù
+     phowhispe sai_tham_so   | Cha đường về số 10 đường nguyễn huệ quận một
+     phowhispe sai_tham_so   | Tra đường về số 10 đường nguyễn huệ quận một
+b07 [ro_rang] GỐC: Chỉnh điều hòa ghế phụ 25 độ  -> chữ gốc: dung
+     parakeet  tu_choi_nham  | Chỉnh điều ghi phụ hai lắm độ
+     phowhispe sai_tham_so   | Chỉ điều hòa ghế phụ 7 đội
+     phowhispe sai_tham_so   | Chỉnh điều hòa ghế phụ hai găm độ
+b08 [ro_rang] GỐC: Giảm gió điều hòa xuống mức 1  -> chữ gốc: dung
+     parakeet  sai_ham       | Gimó đi điều hoa xuống mức 1
+     phowhispe dung          | Giảm gió điều hoa xuống mức 1
+     phowhispe dung          | Giảm gió điều hoa xuống mức 1
+b09 [ro_rang] GỐC: Bật điều hòa 22 độ hộ cái  -> chữ gốc: dung
+     parakeet  sai_tham_so   | Bật điều 4 độ hộ cái
+     phowhispe sai_tham_so   | Bật điều hòa 4 độ vụ cái
+     phowhispe sai_tham_so   | Bật điều hòa 4 độ hộ cái
+b10 [ro_rang] GỐC: Kiểm tra xem có cửa nào chưa đóng chặt không  -> chữ gốc: hoi_lai_thua
+     parakeet  hoi_lai_thua  | Kiểm tra xem có cửa nào chưa đọc chặt không
+     phowhispe hoi_lai_thua  | Kiểm tra xem có cửa nào chưa đống chặt không
+     phowhispe tu_choi_nham  | Kiểm tra xem có cửa nào chưa nấu chặt không
+b11 [ro_rang] GỐC: Bật nhạc Sơn Tùng M-TP  -> chữ gốc: dung
+     parakeet  sai_tham_so   | Bật nhạc Sơn Tùng
+     phowhispe sai_tham_so   | Bật nhạc sơn tùng mtp
+     phowhispe sai_tham_so   | Bật nhạc sơn tùng mtp
+b12 [ro_rang] GỐC: Hạ kính ghế phụ xuống một nửa  -> chữ gốc: dung
+     parakeet  sai_tham_so   | Hạ kinhế vụ xuống một nửa
+     phowhispe sai_tham_so   | Hạ kinh ghế phụ xúm một lứa
+     phowhispe sai_tham_so   | Hạ kinh ghế phụ xuống 1 lứa
+b13 [ro_rang] GỐC: Trời âm u thế này sắp mưa to rồi  -> chữ gốc: hoi_lai_thua
+     parakeet  hoi_lai_thua  | Trời âm u thế này rất mưa to rồi
+     phowhispe hoi_lai_thua  | Trời âm u thế này sắp mưa to rồi
+     phowhispe hoi_lai_thua  | Trời âm u thế này sắp mưa to rồi
+b14 [ro_rang] GỐC: Chỉ đường tới Vincom Bà Triệu tránh đường cao tốc  -> chữ gốc: dung
+     parakeet  sai_tham_so   | Chỉ đường tới Vinom bà 1000000 tránh đường các tốc
+     phowhispe sai_tham_so   | Chỉ đường tới vincom bà 1000000 tránh đường cao tốc
+     phowhispe sai_tham_so   | Chỉ đường tới vincom bà 1000000 tránh đường cao tốc
+b15 [ro_rang] GỐC: Không biết có về tới nơi mà không phải đổ xăng không  -> chữ gốc: hoi_lai_thua
+     parakeet  hoi_lai_thua  | Không biết có vé tới nơi mà không phải đủ sẵ công
+     phowhispe hoi_lai_thua  | Không biết có vé tới nơi mà không phải đủ sáng không
+     phowhispe hoi_lai_thua  | Không biết có về tới nơi mà không phải đủ xăng không
+b16 [ro_rang] GỐC: Xem odo theo dặm giúp tôi  -> chữ gốc: dung
+     parakeet  tu_choi_nham  | Xem Oo theo dặ giúp tôi
+     phowhispe hoi_lai_thua  | Xem ô đô theo dạng giúp tôi
+     phowhispe tu_choi_nham  | Xem ô đô theo dặm giúp tôi
+b17 [ro_rang] GỐC: Dẫn đường đến công ty  -> chữ gốc: dung
+     parakeet  dung          | D dẫn đường đến công ty
+     phowhispe dung          | Dẫn đường đến công ty
+     phowhispe dung          | Dẫn đường đến công ty
+b18 [ro_rang] GỐC: Không biết pin còn đủ chạy về không  -> chữ gốc: hoi_lai_thua
+     parakeet  sai_ham       | Không biếtin có đủ chạy về 0
+     phowhispe hoi_lai_thua  | Không biết pin có đủ chạy và không
+     phowhispe hoi_lai_thua  | Không biết pin có đủ chạy về 0
+b19 [ro_rang] GỐC: Ba ngày nữa Hà Nội thời tiết ra sao  -> chữ gốc: dung
+     parakeet  dung          | Ba ngày nữa Hà Nội thời tiết ra sao
+     phowhispe dung          | Ba ngày nữa hà nội thời tiết ra sao
+     phowhispe dung          | Ba ngày nữa hà nội thời tiết ra sao
+b20 [mo_ho] GỐC: Đói bụng cồn cào rồi  -> chữ gốc: dung
+     parakeet  dung          | Đi bụng cồn cào rồi
+     phowhispe dung          | Nói bụng cồn cào rồi
+     phowhispe dung          | Đói bụng cồn cào rồi
+b21 [mo_ho] GỐC: Kính sau đọng hơi nước hết rồi  -> chữ gốc: sai_tham_so
+     parakeet  sai_tham_so   | Kính sau đọng hơi l nước hết rồi
+     phowhispe sai_tham_so   | Kính sau đọng hơi lướt hết rồi
+     phowhispe sai_tham_so   | Kính rau đậu hơi nước hết rồi
+b22 [mo_ho] GỐC: Không biết đường về nhà thế nào  -> chữ gốc: dung
+     parakeet  dung          | Không biết đường về nhà thế nào
+     phowhispe dung          | Không biết đường về nhà thế nào
+     phowhispe dung          | Không biết đường về nhà thế nào
+b23 [mo_ho] GỐC: Nắng rọi thẳng vào đầu rát quá  -> chữ gốc: sai_tham_so
+     parakeet  sai_tham_so   | Nắng giỏi thẳng vào đầu gian quá
+     phowhispe sai_tham_so   | Nắng rọi thẳng vào đầu da quá
+     phowhispe sai_tham_so   | Nắng dội thẳng vào đầu dao quá
+b24 [mo_ho] GỐC: Gió điều hòa yếu như đuổi ruồi  -> chữ gốc: sai_tham_so
+     parakeet  sai_tham_so   | Gió điều yếu như đu ruồi
+     phowhispe dung          | Gió điều hoà yếu như đổi ruồi
+     phowhispe dung          | Gió điều hòa yếu như đuối rối
+b25 [mo_ho] GỐC: Mùi xe khó chịu quá  -> chữ gốc: sai_ham
+     parakeet  sai_ham       | Mùi xe khó chịu quá
+     phowhispe sai_ham       | Mùi xe khó chịu quá
+     phowhispe sai_ham       | Mùi xe khó chịu quá
+b26 [mo_ho] GỐC: Kính lái mờ tịt chẳng nhìn thấy gì  -> chữ gốc: dung
+     parakeet  sai_ham       | K tãiờ thịt chẳng nhìn thế gì
+     phowhispe dung          | Kính lái mờ tịt chẳng nhìn thế gì
+     phowhispe dung          | Kính nái mờ thì chẳng nhìn thấy gì
+b27 [mo_ho] GỐC: Mưa hắt vào ướt hết tay áo rồi  -> chữ gốc: sai_ham
+     parakeet  sai_ham       | Mưa hát vào ướtét téo áoủi
+     phowhispe dung          | Mưa hắt vào ướt hết tà áo rồi
+     phowhispe sai_ham       | Mưa hắt vào ướt hết tay áo rồi
+b28 [mo_ho] GỐC: Trời đẹp thế này ngồi bí trong xe phí quá  -> chữ gốc: dung
+     parakeet  dung          | Trời đẹp thế này ngồi bí trong xe phí quá
+     phowhispe dung          | Trời đẹp thế này ngồi bĩ trong xe ví quá
+     phowhispe dung          | Trời đẹp thế này ngồi bí trong xe bí quá
+b29 [mo_ho] GỐC: Im ắng quá đi mất  -> chữ gốc: sai_ham
+     parakeet  sai_ham       | Im ắng quá đi mất
+     phowhispe sai_ham       | Ím ắng quá đi mất
+     phowhispe sai_ham       | Im ắng qua đi mất
+b30 [ngoai_pham_vi] GỐC: Chỉnh độ nghiêng vô lăng lên cao hơn  -> chữ gốc: dung
+     parakeet  dung          | Trình độ nghiêng vô n năng lên cao hơn
+     phowhispe dung          | Trình độ nghiêng vô lăng lên cao hơn
+     phowhispe dung          | Trình độ nghiêng vô lăng lên cao hơn
+b31 [ngoai_pham_vi] GỐC: Hủy lộ trình dẫn đường hiện tại  -> chữ gốc: dung
+     parakeet  goi_bua       | Quy lộ trình dẫn đường hiện tại
+     phowhispe goi_bua       | Quỳ lộ trình dẫn được hiện tại
+     phowhispe goi_bua       | Ú ý lộ trình dẫn đường hiện tại
+b32 [ngoai_pham_vi] GỐC: Mở cửa sổ trời trong phòng tắm  -> chữ gốc: dung
+     parakeet  dung          | M mở cửa sổài trong phòng tắm
+     phowhispe dung          | Mở cửa sổ chai trong phòng tắm
+     phowhispe dung          | Mở cửa số chờ trong phòng tắm
+b33 [ngoai_pham_vi] GỐC: Bật bình nóng lạnh ở nhà trước đi  -> chữ gốc: dung
+     parakeet  dung          | Bật mình nóng nạnh ở nhà trước đi
+     phowhispe dung          | Bật bình nóng lạnh ở nhà trước đi
+     phowhispe dung          | Bận mình nóng lạnh ở nhà trước đi
+b34 [ngoai_pham_vi] GỐC: Chỉnh ghế sofa phòng khách ngả ra sau  -> chữ gốc: dung
+     parakeet  dung          | Chính ghế soô pha phong cách ngả ra sau
+     phowhispe dung          | Chỉnh ghế số pha phòng khách ngả ra sau
+     phowhispe dung          | Chỉnh ghế sô pha phong cách ngả ra sau
+b35 [ngoai_pham_vi] GỐC: Mở cửa cuốn phòng khách nhà tôi lên  -> chữ gốc: dung
+     parakeet  dung          | M mở cửa cuốn ph phòng khách nhàúin
+     phowhispe dung          | Mở cửa cuốn phòng khách nhà tôi lên
+     phowhispe dung          | Mở cửa cuốn phòng khách nhà tôi lên
+b36 [ngoai_pham_vi] GỐC: Tập gym bài nào giảm mỡ bụng nhanh nhất  -> chữ gốc: dung
+     parakeet  dung          | Tập ghim bài nào giảm mỡ vụ nhanh nhất
+     phowhispe dung          | Tập gym bài nào giảm mỡ bụng nhanh nhất
+     phowhispe dung          | Tập ghim bài nào giảm mỡ bụng nhanh nhất
+b37 [ngoai_pham_vi] GỐC: Xe đời mới có cần chạy rốt-đa không  -> chữ gốc: dung
+     parakeet  goi_bua       | X này mới có cần chạy Ro đã không
+     phowhispe dung          | Xe đời mới có cần chạy rút ra không
+     phowhispe goi_bua       | Xe này mới có cần chạy rốt đá không
+b38 [ngoai_pham_vi] GỐC: Gọi một cốc trà sữa trân châu giao tới văn phòng  -> chữ gốc: dung
+     parakeet  dung          | Gọi một cốc trán sữa tr chân trâu giaoao tới văn phòng
+     phowhispe dung          | Gọi một cốc trà sữa trân châu giao tới văn phòng
+     phowhispe dung          | Gọi một cốc trà sữa trân châu giao tới văn phòng
+b39 [ngoai_pham_vi] GỐC: Đặt giúp tôi 2 vé xem phim rạp CGV tối nay  -> chữ gốc: dung
+     parakeet  dung          | Đặt giúp tôi hai vé xem phim dm tôiay
+     phowhispe dung          | Đặt giúp tôi hai vé xe phim giảm cgv tối nay
+     phowhispe dung          | Đặt giúp tôi hai vé xem phim rạp cgb tối nay

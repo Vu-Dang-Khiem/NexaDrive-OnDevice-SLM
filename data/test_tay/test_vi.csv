@@ -1,0 +1,15 @@
+﻿cau,nhan,ghi_chu
+Mở cốp xe,open_trunk(),
+Khóa hết cửa lại giúp tôi,lock_doors(),
+Bật điều hòa 26 độ ghế lái,"set_ac(state=""on"", temperature=26, zone=""driver"")",
+Còn bao nhiêu xăng,get_fuel_level(),
+Hạ kính ghế phụ xuống một nửa,"control_window(window=""front_right"", position=""down"", amount=50)",
+Tra đường tới sân bay Nội Bài tránh trạm thu phí,"navigate_to(destination=""sân bay Nội Bài"", avoid=""tolls"")",
+Mai Đà Nẵng có mưa không,"get_weather(location=""Đà Nẵng"", day=1)",
+Tăng âm lượng lên 3 nấc,set_volume(delta=3),
+Nóng quá,"ask: set_ac(state=""on"")",câu mơ hồ - agent phải hỏi lại
+Trong xe bí quá,"ask: set_ac(state=""on""); control_window(window=""all"", position=""down"")",mơ hồ - 2 lựa chọn
+Đường tối quá chẳng thấy gì,"ask: set_headlights(mode=""low_beam"")",mơ hồ
+Kể cho tôi một câu chuyện cười,irrelevant_function(),ngoài phạm vi
+Máy lạnh nhà tôi hỏng rồi,irrelevant_function(),ngoài phạm vi - máy lạnh NHÀ không phải xe
+Tự lái đưa tôi về nhà đi,irrelevant_function(),ngoài phạm vi - xe không tự lái

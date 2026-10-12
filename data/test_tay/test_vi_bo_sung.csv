@@ -1,0 +1,29 @@
+cau,nhan,ghi_chu,nhom_phu
+"Để cái laptop ở ghế sau mà chạy vào tiệm có năm phút, chắc không sao đâu nhỉ",ask: lock_doors(),người 2 viết,mo_ho
+"Con bé ngồi sau cứ nghịch tay nắm cửa suốt, sợ nó giật ra lúc xe đang chạy",ask: lock_doors(),người 2 viết,mo_ho
+Mấy ông đứng ở góc kia cứ nhìn vào xe mình nãy giờ,ask: lock_doors(),người 2 viết,mo_ho
+Xuống xe rồi mà chả nhớ lúc nãy đã bấm chìa chưa,ask: lock_doors(),người 2 viết,mo_ho
+"Ơ cái đèn báo trên màn hình sáng nãy giờ, hình như đằng sau chưa sập xuống",ask: close_trunk(),người 2 viết,mo_ho
+"Xếp xong vali rồi mà hai tay đang bưng đồ, chả với tới được",ask: close_trunk(),người 2 viết,mo_ho
+"Nghe lạch cạch đằng sau, chắc lúc chất đồ xong quên ấn xuống",ask: close_trunk(),người 2 viết,mo_ho
+Sắp lên cao tốc mà phía sau vẫn há hốc thế kia,ask: close_trunk(),người 2 viết,mo_ho
+"Chết rồi, xe tự nhiên tắt máy giữa đường, mấy xe đằng sau đang lao tới kìa","ask: set_hazard_lights(state=""on"")",người 2 viết,mo_ho
+"Nổ lốp rồi, phải tấp đỡ vào đây mà chỗ này là khúc cua khuất quá","ask: set_hazard_lights(state=""on"")",người 2 viết,mo_ho
+"Xe giật giật mấy cái rồi đứng im luôn, đang ở ngay làn giữa","ask: set_hazard_lights(state=""on"")",người 2 viết,mo_ho
+"Phía trước tắc cứng, mình phải phanh gấp, sợ xe sau không để ý","ask: set_hazard_lights(state=""on"")",người 2 viết; phanh gấp trên cao tốc,mo_ho
+"Lần đầu về quê vợ, chỉ nhớ lờ mờ là gần chợ huyện","ask: navigate_to(destination=""chợ huyện"")",người 2 viết,mo_ho
+Chín giờ phải có mặt ở sân bay mà giờ chả biết đi lối nào cho nhanh,"ask: navigate_to(destination=""sân bay"")",người 2 viết,mo_ho
+Bạn gửi cái địa chỉ khách sạn mà đọc chả hiểu nó nằm ở đâu,"ask: navigate_to(destination=""khách sạn"")",người 2 viết,mo_ho
+Đi vòng vòng nãy giờ vẫn chưa thấy cái bệnh viện đâu,"ask: navigate_to(destination=""bệnh viện""); find_nearby(category=""hospital"")",người 2 viết; 2 lựa chọn,mo_ho
+"Đêm nay trăng tròn, ngả ghế ra nhìn lên thì thích phải biết","ask: operate_sunroof(action=""open"")",người 2 viết,mo_ho
+"Mưa lộp độp trên nóc, nghe như có nước rỉ xuống đầu","ask: operate_sunroof(action=""close"")",người 2 viết,mo_ho
+"Trần xe thấp, ngồi lâu thấy bí bách, muốn thấy trời một tí","ask: operate_sunroof(action=""open"")",người 2 viết,mo_ho
+"Nắng chiếu thẳng xuống đỉnh đầu, rát cả da","ask: operate_sunroof(action=""close"")",người 2 viết,mo_ho
+"Gió phả thẳng vào mắt, khô rát hết cả",ask: set_fan_speed(level=2),người 2 viết; giảm quạt — chỉ chấm hướng,mo_ho
+"Máy lạnh chạy rồi mà hơi mát yếu xìu, ngồi ghế sau chả thấy gì",ask: set_fan_speed(level=6),người 2 viết; tăng quạt — chỉ chấm hướng,mo_ho
+Cái quạt kêu vù vù át cả tiếng nói chuyện điện thoại,ask: set_fan_speed(level=2),người 2 viết; giảm quạt — chỉ chấm hướng,mo_ho
+Tóc bay tứ tung vì mấy cái cửa gió phía trước,ask: set_fan_speed(level=2),người 2 viết; giảm quạt — chỉ chấm hướng,mo_ho
+Có anh bảo vệ đang gõ gõ vào kính phía tôi,"ask: control_window(window=""front_left"", position=""down"")",người 2 viết,mo_ho
+"Đến trạm rồi, chị nhân viên đang chìa tay ra lấy vé kìa","ask: control_window(window=""front_left"", position=""down"")",người 2 viết,mo_ho
+Mưa tạt vào ướt hết cả vai áo rồi,"ask: control_window(window=""all"", position=""up"")",người 2 viết,mo_ho
+"Con bé say xe, nó bảo buồn nôn muốn thò mặt ra ngoài","ask: control_window(window=""all"", position=""down"")",người 2 viết; không chấm window; an toàn lo ở runtime,mo_ho

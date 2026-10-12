@@ -1,0 +1,61 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Function calling and tool use.}
+LLMs learn to call tools from self-generated demonstrations \citep{schick2023toolformer}, from API documentation
+\citep{patil2024gorilla} or from large synthetic corpora over thousands of APIs \citep{qin2024toolllm}. APIGen
+\citep{liu2024apigen} and ToolACE \citep{liu2024toolace} show that synthetic function-calling data needs layered
+verification---format checks, execution checks and model-based semantic checks---and that samples failing a check should be
+discarded. BFCL \citep{patil2025bfcl} is the de facto benchmark and measures, among others, irrelevance detection. These
+works place the available functions in the prompt; our model instead memorizes a fixed set of functions as tokens. When2Call
+\citep{ross2025when2call} studies when a model should call, ask a follow-up question or decline, and finds open models weak at
+this decision. Our clarify action targets a related but different case: the user does not issue a command at all but
+describes a situation.
+
+\paragraph{Small and on-device agents.}
+Octopus~v2 \citep{chen2024octopus} introduced functional tokens and reported 99.5\% accuracy for a 2B model on Android
+functions, evaluated on queries produced by the same generator as the training data. TinyAgent \citep{erdogan2024tinyagent}
+runs a 1.1B model on a laptop with 4-bit quantization and a tool retriever. Hammer \citep{lin2024hammer} targets on-device
+function calling and improves irrelevance detection with dedicated data. For cars, \citet{sowti2025optimizing} deploy a
+quantized Phi-3 model with functional tokens on a vehicle head unit, and \citet{jafarzadeh2026fixedkeys} compare
+functional tokens with schema-in-prompt on 79 functions derived from Android Automotive: accuracy on known functions is
+similar, functional tokens are 26--98$\times$ faster, but over-trigger on 17.4\% of out-of-scope queries versus 1.6--4.3\%.
+CAR-bench \citep{kirmayr2026carbench} and VehicleWorld \citep{yang2025vehicleworld} provide English in-car agent
+environments with tools in the prompt.
+
+\paragraph{Distillation and data quality.}
+We use sequence-level knowledge distillation \citep{hinton2015distilling,kim2016sequence}: the student is trained on outputs
+of a larger teacher. To judge generated data we follow reference-guided judging \citep{zheng2023judging}, a jury of models from
+different families \citep{verga2024juries} and agreement measured with Cohen's $\kappa$ rather than raw agreement
+\citep{thakur2025judging}. For diversity we vary personas \citep{ge2024persona} and situational context
+\citep{xu2024wizardlm} at each generation call and reject near-duplicates \citep{wang2023selfinstruct}.
+
+\paragraph{Abstention and confidence.}
+Thresholding the maximum softmax probability is a standard baseline for detecting errors and out-of-distribution inputs
+\citep{hendrycks2017baseline}, and selective classification trades coverage for risk \citep{geifman2017selective}; intent
+classifiers face the same out-of-scope problem \citep{larson2019clinc}. Conformal methods give distribution-free guarantees
+when calibration data match deployment \citep{angelopoulos2021conformal}. Function-calling papers mostly address
+over-triggering with data; with functional tokens the decision is a single token, so its probability is directly available.
+
+\paragraph{Reinforcement learning for tool use.}
+GRPO \citep{shao2024deepseekmath} optimizes a policy with group-normalized, rule-based rewards; DAPO \citep{yu2025dapo} filters
+groups without reward variance during training. ToolRL \citep{qian2025toolrl} and Tool-N1 \citep{zhang2025tooln1} apply GRPO to
+tool calling with an explicit reasoning step before the call. LoRA \citep{hu2022lora} appears sufficient for RL fine-tuning
+\citep{schulman2025lora}.
+
+\paragraph{Guardrails and in-car safety.}
+NeMo Guardrails \citep{rebedea2023nemo} enforces human-written rules outside the model. $\tau$-bench \citep{yao2024taubench}
+requires agents to obtain explicit confirmation before state-changing actions, and ToolSandbox \citep{lu2024toolsandbox}
+tests whether agents ask for missing information instead of guessing. For cars, \citet{afroze2026intent} find that LLM
+authorization decisions are not reliable enough to be the only safety mechanism and recommend an independent enforcement
+layer; \citet{bouchekir2026policies} compile natural-language policies into executable checks run before each tool call;
+DriveSafe \citep{kumar2026drivesafe} provides a risk taxonomy for driving assistants. Voice interfaces can also be attacked
+with commands the driver does not hear \citep{zhang2017dolphin}.
+
+\paragraph{Spoken function calling.}
+SLURP \citep{bastianelli2020slurp} benchmarks spoken language understanding for home assistants. SFC-Bench
+\citep{peng2026sfc} measures function calling from speech: on its easiest level, Qwen3-32B drops from 81.7\% with text to
+64.6\% with transcribed speech, and the authors identify misrecognized names and numbers as the main bottleneck.
+VoiceAgentBench \citep{jain2025voiceagentbench} finds cascaded ASR+LLM pipelines ahead of open speech LLMs, with larger drops
+for Indic languages. Both use synthesized speech. For Vietnamese, PhoWhisper \citep{le2024phowhisper} fine-tunes Whisper
+\citep{radford2023whisper}; we found no Vietnamese benchmark for spoken function calling.

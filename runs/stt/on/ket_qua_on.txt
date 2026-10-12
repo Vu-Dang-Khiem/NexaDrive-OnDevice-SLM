@@ -1,0 +1,66 @@
+﻿MỐC chữ gốc qua cùng đường: 42/60 đúng (70.0%)
+
+== sach
+  cả chuỗi đúng 38/60 (63.3%) · mất so với chữ gốc 10 · được thêm 6 · theo nhóm {'ro_rang': '18/35', 'mo_ho': '10/13', 'ngoai_pham_vi': '10/12'}
+  WER 22.0% · CER 11.2% · STT p50 1707 ms · p95 1788 ms · RTF tb 0.53
+  kiểu sai: {'tu_choi_nham': 6, 'sai_tham_so': 6, 'hoi_lai_thua': 5, 'sai_ham': 3, 'goi_bua': 2}
+
+== tcar_20db
+  cả chuỗi đúng 37/60 (61.7%) · mất so với chữ gốc 10 · được thêm 5 · theo nhóm {'ro_rang': '17/35', 'mo_ho': '10/13', 'ngoai_pham_vi': '10/12'}
+  WER 21.7% · CER 11.0% · STT p50 1820 ms · p95 2563 ms · RTF tb 0.58
+  kiểu sai: {'sai_tham_so': 7, 'tu_choi_nham': 6, 'hoi_lai_thua': 5, 'sai_ham': 3, 'goi_bua': 2}
+
+== tcar_10db
+  cả chuỗi đúng 35/60 (58.3%) · mất so với chữ gốc 13 · được thêm 6 · theo nhóm {'ro_rang': '16/35', 'mo_ho': '9/13', 'ngoai_pham_vi': '10/12'}
+  WER 22.4% · CER 11.1% · STT p50 1830 ms · p95 3218 ms · RTF tb 0.62
+  kiểu sai: {'tu_choi_nham': 8, 'sai_tham_so': 7, 'hoi_lai_thua': 5, 'sai_ham': 3, 'goi_bua': 2}
+
+== tcar_5db
+  cả chuỗi đúng 36/60 (60.0%) · mất so với chữ gốc 11 · được thêm 5 · theo nhóm {'ro_rang': '17/35', 'mo_ho': '10/13', 'ngoai_pham_vi': '9/12'}
+  WER 21.6% · CER 11.0% · STT p50 1834 ms · p95 2011 ms · RTF tb 0.57
+  kiểu sai: {'sai_tham_so': 7, 'tu_choi_nham': 6, 'hoi_lai_thua': 5, 'goi_bua': 3, 'sai_ham': 3}
+
+== tcar_0db
+  cả chuỗi đúng 36/60 (60.0%) · mất so với chữ gốc 11 · được thêm 5 · theo nhóm {'ro_rang': '18/35', 'mo_ho': '9/13', 'ngoai_pham_vi': '9/12'}
+  WER 22.9% · CER 11.8% · STT p50 1833 ms · p95 2908 ms · RTF tb 0.61
+  kiểu sai: {'sai_tham_so': 7, 'tu_choi_nham': 6, 'hoi_lai_thua': 5, 'goi_bua': 3, 'sai_ham': 3}
+
+== tram_20db
+  cả chuỗi đúng 36/60 (60.0%) · mất so với chữ gốc 11 · được thêm 5 · theo nhóm {'ro_rang': '17/35', 'mo_ho': '10/13', 'ngoai_pham_vi': '9/12'}
+  WER 22.4% · CER 11.7% · STT p50 1799 ms · p95 1891 ms · RTF tb 0.56
+  kiểu sai: {'sai_tham_so': 8, 'tu_choi_nham': 5, 'hoi_lai_thua': 5, 'goi_bua': 3, 'sai_ham': 3}
+
+== tram_10db
+  cả chuỗi đúng 37/60 (61.7%) · mất so với chữ gốc 10 · được thêm 5 · theo nhóm {'ro_rang': '18/35', 'mo_ho': '10/13', 'ngoai_pham_vi': '9/12'}
+  WER 21.4% · CER 11.0% · STT p50 1818 ms · p95 2039 ms · RTF tb 0.58
+  kiểu sai: {'tu_choi_nham': 6, 'sai_tham_so': 6, 'hoi_lai_thua': 5, 'goi_bua': 3, 'sai_ham': 3}
+
+== tram_5db
+  cả chuỗi đúng 37/60 (61.7%) · mất so với chữ gốc 10 · được thêm 5 · theo nhóm {'ro_rang': '18/35', 'mo_ho': '10/13', 'ngoai_pham_vi': '9/12'}
+  WER 21.2% · CER 10.7% · STT p50 2025 ms · p95 2186 ms · RTF tb 0.63
+  kiểu sai: {'sai_tham_so': 7, 'tu_choi_nham': 5, 'hoi_lai_thua': 5, 'goi_bua': 3, 'sai_ham': 3}
+
+== tram_0db
+  cả chuỗi đúng 33/60 (55.0%) · mất so với chữ gốc 13 · được thêm 4 · theo nhóm {'ro_rang': '16/35', 'mo_ho': '8/13', 'ngoai_pham_vi': '9/12'}
+  WER 22.6% · CER 11.3% · STT p50 2019 ms · p95 2100 ms · RTF tb 0.63
+  kiểu sai: {'sai_tham_so': 9, 'tu_choi_nham': 6, 'hoi_lai_thua': 5, 'sai_ham': 4, 'goi_bua': 3}
+
+== nguoi_20db
+  cả chuỗi đúng 34/60 (56.7%) · mất so với chữ gốc 13 · được thêm 5 · theo nhóm {'ro_rang': '15/35', 'mo_ho': '9/13', 'ngoai_pham_vi': '10/12'}
+  WER 24.6% · CER 13.1% · STT p50 2021 ms · p95 2102 ms · RTF tb 0.63
+  kiểu sai: {'tu_choi_nham': 7, 'sai_tham_so': 7, 'hoi_lai_thua': 6, 'sai_ham': 4, 'goi_bua': 2}
+
+== nguoi_10db
+  cả chuỗi đúng 27/60 (45.0%) · mất so với chữ gốc 17 · được thêm 2 · theo nhóm {'ro_rang': '11/35', 'mo_ho': '6/13', 'ngoai_pham_vi': '10/12'}
+  WER 49.7% · CER 33.5% · STT p50 2039 ms · p95 2119 ms · RTF tb 0.64
+  kiểu sai: {'tu_choi_nham': 12, 'sai_ham': 8, 'hoi_lai_thua': 6, 'sai_tham_so': 5, 'goi_bua': 2}
+
+== nguoi_5db
+  cả chuỗi đúng 16/60 (26.7%) · mất so với chữ gốc 28 · được thêm 2 · theo nhóm {'ro_rang': '1/35', 'mo_ho': '4/13', 'ngoai_pham_vi': '11/12'}
+  WER 106.5% · CER 85.8% · STT p50 2082 ms · p95 2252 ms · RTF tb 0.65
+  kiểu sai: {'tu_choi_nham': 24, 'hoi_lai_thua': 9, 'sai_tham_so': 6, 'sai_ham': 4, 'goi_bua': 1}
+
+== nguoi_0db
+  cả chuỗi đúng 13/60 (21.7%) · mất so với chữ gốc 32 · được thêm 3 · theo nhóm {'ro_rang': '1/35', 'mo_ho': '1/13', 'ngoai_pham_vi': '11/12'}
+  WER 135.0% · CER 114.0% · STT p50 2102 ms · p95 2344 ms · RTF tb 0.66
+  kiểu sai: {'tu_choi_nham': 34, 'hoi_lai_thua': 6, 'sai_ham': 5, 'goi_bua': 1, 'sai_tham_so': 1}

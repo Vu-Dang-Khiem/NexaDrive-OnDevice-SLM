@@ -1,0 +1,23 @@
+﻿                                     | q4 khÃ´ng ngÆ°á»¡ng | q4 + 0,80 (TRIá»‚N KHAI)
+test sáº¡ch â€” rÃµ rÃ ng (74)             |            79.7 |       77.0
+test sáº¡ch â€” mÆ¡ há»“ (39)               |            64.1 |       64.1
+test sáº¡ch â€” ngoÃ i pv (117)           |            82.9 |       88.0
+28 cÃ¢u bá»• sung                       |            50.0 |       50.0
+mo_ho_4 (129)                        |            74.4 |       74.4
+v6 A+B cÃ¢u ngáº¯n / cÃ¡ch gá»�i (120)     |            82.5 |       79.2
+v6 C tÃ­nh nÄƒng má»›i (30)              |            80.0 |       80.0
+v6 D hai lÆ°á»£t (60)                   |            61.7 |       56.7
+v6 E nhiá»…u (104)                     |            55.8 |       47.1
+test sáº¡ch 230, q4 khÃ´ng ngÆ°á»¡ng: gá»�i bá»«a 19 Â· há»�i thá»«a 7 Â· tá»« chá»‘i nháº§m 0 Â· sai lÃªn xe 41
+test sáº¡ch 230, q4 + 0,80: gá»�i bá»«a 10 Â· há»�i thá»«a 12 Â· tá»« chá»‘i nháº§m 0 Â· sai lÃªn xe 29
+
+Kiá»ƒm q4 (khÃ´ng ngÆ°á»¡ng) vs HF s42 cÃ¹ng cÃ¢u â€” McNemar:
+  test_vi_sach_v2    HF  80.9 | q4  78.7 | HF hÆ¡n 8, q4 hÆ¡n 3, p = 0.227
+  test_vi_bo_sung    HF  57.1 | q4  50.0 | HF hÆ¡n 3, q4 hÆ¡n 1, p = 0.625
+  test_vi_mo_ho_4    HF  79.8 | q4  74.4 | HF hÆ¡n 8, q4 hÆ¡n 1, p = 0.039
+  test_v6_mot_luot   HF  87.3 | q4  82.0 | HF hÆ¡n 8, q4 hÆ¡n 0, p = 0.008
+  test_v6_hai_luot   HF  66.7 | q4  61.7 | HF hÆ¡n 6, q4 hÆ¡n 3, p = 0.508
+  test_v6_nhieu      HF  60.6 | q4  55.8 | HF hÆ¡n 7, q4 hÆ¡n 2, p = 0.180
+
+Ä�á»™ trá»… lÆ°á»£t 1 (q4, CPU 8 luá»“ng, 701 cÃ¢u, cháº¡y riÃªng): p50 520 ms Â· p95 961 ms Â· lá»›n nháº¥t 3786 ms
+

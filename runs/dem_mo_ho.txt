@@ -1,0 +1,7 @@
+﻿data/processed/final/test_vi_sach_v2.jsonl 39 cÃ¢u mÆ¡ há»“
+   {'set_ac': 6, 'control_window': 6, 'find_nearby': 6, 'operate_sunroof': 4, 'set_headlights': 4, 'set_defrost': 3, 'set_volume': 3, 'play_media': 3, 'set_fan_speed': 2, 'set_hazard_lights': 2, 'get_fuel_level': 1, 'navigate_to': 1}
+data/processed/final/test_vi_bo_sung.jsonl 28 cÃ¢u mÆ¡ há»“
+   {'lock_doors': 4, 'close_trunk': 4, 'set_hazard_lights': 4, 'navigate_to': 4, 'operate_sunroof': 4, 'set_fan_speed': 4, 'control_window': 4, 'find_nearby': 1}
+data/processed/final_v4_doi_chung/train_vi.jsonl 879 cÃ¢u mÆ¡ há»“
+   {'lock_doors': 81, 'set_ac': 81, 'set_headlights': 80, 'set_fan_speed': 80, 'set_volume': 80, 'navigate_to': 80, 'set_defrost': 80, 'operate_sunroof': 73, 'play_media': 70, 'find_nearby': 65, 'control_window': 44, 'close_trunk': 40, 'set_hazard_lights': 32}
+

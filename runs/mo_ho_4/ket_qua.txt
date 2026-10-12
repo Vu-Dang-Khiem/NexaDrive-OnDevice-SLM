@@ -1,0 +1,41 @@
+﻿Bá»™ mo_ho_4: 129 cÃ¢u mÆ¡ há»“
+
+  v5_s42     74.4% [66.3â€“81.2]  lá»—i: {'sai_ham': 22, 'sai_tham_so': 4, 'tu_choi_nham': 6, 'thieu_hoi_lai': 1}
+  v5_s7      72.1% [63.8â€“79.1]  lá»—i: {'sai_ham': 25, 'sai_tham_so': 5, 'tu_choi_nham': 6}
+  v4dc_s42   51.2% [42.6â€“59.6]  lá»—i: {'sai_ham': 34, 'tu_choi_nham': 18, 'sai_tham_so': 6, 'thieu_hoi_lai': 5}
+  v4dc_s7    45.0% [36.6â€“53.6]  lá»—i: {'sai_ham': 32, 'tu_choi_nham': 32, 'sai_tham_so': 6, 'thieu_hoi_lai': 1}
+  72B        70.5% [62.2â€“77.7]  lá»—i: {'sai_ham': 14, 'sai_tham_so': 8, 'thieu_hoi_lai': 10, 'tu_choi_nham': 6}
+
+[CHÃ�NH] v5 vs Ä‘á»‘i chá»©ng (cÃ¹ng háº¡t giá»‘ng):
+  s42                          v5_s42 hÆ¡n 34, v4dc_s42 hÆ¡n 4, p = 0.0000
+  s7                           v5_s7 hÆ¡n 41, v4dc_s7 hÆ¡n 6, p = 0.0000
+  => Káº¾T LUáº¬N (luáº­t Ä‘Ã£ khoÃ¡): v5 Tá»�T HÆ N báº£n Ä‘á»‘i chá»©ng á»Ÿ cÃ¢u mÆ¡ há»“
+
+[KÃˆM] so vá»›i 72B:
+  v5_s42 vs 72B                v5_s42 hÆ¡n 21, 72B hÆ¡n 16, p = 0.5114
+  v5_s7 vs 72B                 v5_s7 hÆ¡n 21, 72B hÆ¡n 19, p = 0.8746
+  v4dc_s42 vs 72B              v4dc_s42 hÆ¡n 10, 72B hÆ¡n 35, p = 0.0002
+  v4dc_s7 vs 72B               v4dc_s7 hÆ¡n 10, 72B hÆ¡n 43, p = 0.0000
+
+[KÃˆM] cÃ¢u ngáº¯n â‰¤10 chá»¯ / dÃ i >10 chá»¯:
+  v5_s42    ngáº¯n (2) 100.0 | dÃ i (127)  74.0 | tá»« chá»‘i nháº§m cÃ¢u dÃ i 6
+  v5_s7     ngáº¯n (2) 100.0 | dÃ i (127)  71.7 | tá»« chá»‘i nháº§m cÃ¢u dÃ i 6
+  v4dc_s42  ngáº¯n (2) 100.0 | dÃ i (127)  50.4 | tá»« chá»‘i nháº§m cÃ¢u dÃ i 18
+  v4dc_s7   ngáº¯n (2) 100.0 | dÃ i (127)  44.1 | tá»« chá»‘i nháº§m cÃ¢u dÃ i 32
+  72B       ngáº¯n (2) 100.0 | dÃ i (127)  70.1 | tá»« chá»‘i nháº§m cÃ¢u dÃ i 6
+
+[KÃˆM] theo hÃ m (Ä‘Ãºng / sá»‘ cÃ¢u): v5 s42 Â· v5 s7 Â· Ä‘c s42 Â· Ä‘c s7 Â· 72B
+  mh4_close_trunk          10 Â· 10 Â·  9 Â·  9 Â·  9  / 10
+  mh4_control_window        3 Â·  5 Â·  4 Â·  1 Â·  6  / 10
+  mh4_find_nearby           8 Â·  9 Â·  4 Â·  4 Â·  6  / 10
+  mh4_lock_doors            9 Â·  9 Â·  7 Â·  4 Â·  7  / 10
+  mh4_navigate_to           4 Â·  4 Â·  2 Â·  3 Â·  6  / 10
+  mh4_operate_sunroof       6 Â·  8 Â·  2 Â·  0 Â·  6  / 10
+  mh4_play_media            8 Â·  7 Â·  3 Â·  2 Â·  3  / 10
+  mh4_set_ac                9 Â·  8 Â·  8 Â·  7 Â· 10  / 10
+  mh4_set_defrost          10 Â·  9 Â·  9 Â· 10 Â· 10  / 10
+  mh4_set_fan_speed         5 Â·  2 Â·  0 Â·  0 Â·  3  / 10
+  mh4_set_hazard_lights     8 Â·  9 Â·  7 Â·  5 Â·  9  / 10
+  mh4_set_headlights        8 Â·  4 Â·  5 Â·  5 Â·  6  / 9
+  mh4_set_volume            8 Â·  9 Â·  6 Â·  8 Â· 10  / 10
+

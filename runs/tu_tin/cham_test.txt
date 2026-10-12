@@ -1,0 +1,39 @@
+﻿
+######## s42 ########
+--- test_vi_sach_v2: 230 cÃ¢u
+  khÃ´ng ngÆ°á»¡ng  | ro_rang  75.7% (56/74) | mo_ho  74.4% (29/39) | ngoai_pham_vi  70.9% (83/117)
+                  lá»—i: {'sai_ham': 10, 'hoi_lai_thua': 9, 'sai_tham_so': 8, 'thieu_hoi_lai': 1, 'goi_bua': 34}
+  ngÆ°á»¡ng 0.9    | ro_rang  71.6% (53/74) | mo_ho  74.4% (29/39) | ngoai_pham_vi  78.6% (92/117)
+                  lá»—i: {'hoi_lai_thua': 16, 'sai_ham': 6, 'tu_choi_nham': 1, 'sai_tham_so': 7, 'thieu_hoi_lai': 1, 'goi_bua': 19, 'hoi_lai_khi_phai_tu_choi': 6}
+  Ä‘á»•i: {('ro_rang', 'sai_ham', 'hoi_lai_thua'): 4, ('ro_rang', 'dung', 'hoi_lai_thua'): 2, ('ro_rang', 'sai_tham_so', 'hoi_lai_thua'): 1, ('ro_rang', 'dung', 'tu_choi_nham'): 1, ('ngoai_pham_vi', 'goi_bua', 'dung'): 9, ('ngoai_pham_vi', 'goi_bua', 'hoi_lai_khi_phai_tu_choi'): 6}
+  McNemar (toÃ n táº­p): sai->Ä‘Ãºng 9, Ä‘Ãºng->sai 3, p = 0.146
+--- test_vi_bo_sung: 28 cÃ¢u
+  khÃ´ng ngÆ°á»¡ng  | mo_ho  53.6% (15/28)
+                  lá»—i: {'sai_ham': 11, 'sai_tham_so': 2}
+  ngÆ°á»¡ng 0.9    | mo_ho  53.6% (15/28)
+                  lá»—i: {'sai_ham': 11, 'sai_tham_so': 2}
+  Ä‘á»•i: {}
+  McNemar (toÃ n táº­p): sai->Ä‘Ãºng 0, Ä‘Ãºng->sai 0, p = 1.000
+
+######## s7 ########
+--- test_vi_sach_v2: 230 cÃ¢u
+  khÃ´ng ngÆ°á»¡ng  | ro_rang  81.1% (60/74) | mo_ho  64.1% (25/39) | ngoai_pham_vi  78.6% (92/117)
+                  lá»—i: {'sai_ham': 13, 'tu_choi_nham': 3, 'sai_tham_so': 5, 'hoi_lai_thua': 6, 'thieu_hoi_lai': 1, 'goi_bua': 25}
+  ngÆ°á»¡ng 0.9    | ro_rang  75.7% (56/74) | mo_ho  64.1% (25/39) | ngoai_pham_vi  86.3% (101/117)
+                  lá»—i: {'hoi_lai_thua': 13, 'tu_choi_nham': 3, 'sai_tham_so': 5, 'sai_ham': 10, 'thieu_hoi_lai': 1, 'goi_bua': 9, 'hoi_lai_khi_phai_tu_choi': 7}
+  Ä‘á»•i: {('ro_rang', 'sai_ham', 'hoi_lai_thua'): 3, ('ro_rang', 'dung', 'hoi_lai_thua'): 4, ('ngoai_pham_vi', 'goi_bua', 'dung'): 9, ('ngoai_pham_vi', 'goi_bua', 'hoi_lai_khi_phai_tu_choi'): 7}
+  McNemar (toÃ n táº­p): sai->Ä‘Ãºng 9, Ä‘Ãºng->sai 4, p = 0.267
+--- test_vi_bo_sung: 28 cÃ¢u
+  khÃ´ng ngÆ°á»¡ng  | mo_ho  35.7% (10/28)
+                  lá»—i: {'tu_choi_nham': 6, 'sai_ham': 9, 'sai_tham_so': 3}
+  ngÆ°á»¡ng 0.9    | mo_ho  35.7% (10/28)
+                  lá»—i: {'tu_choi_nham': 6, 'sai_ham': 9, 'sai_tham_so': 3}
+  Ä‘á»•i: {}
+  McNemar (toÃ n táº­p): sai->Ä‘Ãºng 0, Ä‘Ãºng->sai 0, p = 1.000
+
+######## TRUNG BÃŒNH 2 Háº T GIá»�NG ########
+  test_vi_sach_v2  khÃ´ng ngÆ°á»¡ng  | ro_rang  78.4 (chÃªnh 5.4) | mo_ho  69.2 (chÃªnh 10.3) | ngoai_pham_vi  74.8 (chÃªnh 7.7)
+  test_vi_sach_v2  ngÆ°á»¡ng 0.9    | ro_rang  73.6 (chÃªnh 4.1) | mo_ho  69.2 (chÃªnh 10.3) | ngoai_pham_vi  82.5 (chÃªnh 7.7)
+  test_vi_bo_sung  khÃ´ng ngÆ°á»¡ng  | mo_ho  44.6 (chÃªnh 17.9)
+  test_vi_bo_sung  ngÆ°á»¡ng 0.9    | mo_ho  44.6 (chÃªnh 17.9)
+

@@ -1,0 +1,239 @@
+{
+  "so_cau_da_cham": 253,
+  "thieu_du_doan": 0,
+  "theo_nhom": {
+    "mo_ho": {
+      "so_cau": 40,
+      "dung_%": 45.0
+    },
+    "ngoai_pham_vi": {
+      "so_cau": 126,
+      "dung_%": 61.1
+    },
+    "ro_rang": {
+      "so_cau": 87,
+      "dung_%": 65.5
+    }
+  },
+  "theo_nhom_phu": {
+    "mo_ho": {
+      "so_cau": 40,
+      "dung_%": 45.0
+    },
+    "oos_bao_duong": {
+      "so_cau": 5,
+      "dung_%": 60.0
+    },
+    "oos_dien_thoai": {
+      "so_cau": 5,
+      "dung_%": 100.0
+    },
+    "oos_kien_thuc": {
+      "so_cau": 30,
+      "dung_%": 86.7
+    },
+    "oos_kien_thuc_xe": {
+      "so_cau": 15,
+      "dung_%": 40.0
+    },
+    "oos_mo_ho_vo_nghia": {
+      "so_cau": 5,
+      "dung_%": 40.0
+    },
+    "oos_so_don_vi": {
+      "so_cau": 5,
+      "dung_%": 60.0
+    },
+    "oos_thiet_bi_khac": {
+      "so_cau": 23,
+      "dung_%": 65.2
+    },
+    "oos_vuot_kha_nang": {
+      "so_cau": 13,
+      "dung_%": 76.9
+    },
+    "oos_xe_khong_ho_tro": {
+      "so_cau": 25,
+      "dung_%": 28.0
+    },
+    "ro_rang": {
+      "so_cau": 87,
+      "dung_%": 65.5
+    }
+  },
+  "theo_ham": {
+    "close_trunk": {
+      "so_cau": 3,
+      "dung_%": 100.0
+    },
+    "control_window": {
+      "so_cau": 11,
+      "dung_%": 9.1
+    },
+    "find_nearby": {
+      "so_cau": 8,
+      "dung_%": 75.0
+    },
+    "get_battery_range": {
+      "so_cau": 3,
+      "dung_%": 33.3
+    },
+    "get_fuel_level": {
+      "so_cau": 3,
+      "dung_%": 33.3
+    },
+    "get_odometer": {
+      "so_cau": 5,
+      "dung_%": 60.0
+    },
+    "get_range_estimate": {
+      "so_cau": 5,
+      "dung_%": 60.0
+    },
+    "get_tire_pressure": {
+      "so_cau": 4,
+      "dung_%": 50.0
+    },
+    "get_vehicle_status": {
+      "so_cau": 5,
+      "dung_%": 40.0
+    },
+    "get_weather": {
+      "so_cau": 5,
+      "dung_%": 40.0
+    },
+    "irrelevant_function": {
+      "so_cau": 126,
+      "dung_%": 61.1
+    },
+    "lock_doors": {
+      "so_cau": 4,
+      "dung_%": 100.0
+    },
+    "navigate_to": {
+      "so_cau": 6,
+      "dung_%": 66.7
+    },
+    "open_charge_port": {
+      "so_cau": 3,
+      "dung_%": 100.0
+    },
+    "open_fuel_flap": {
+      "so_cau": 4,
+      "dung_%": 100.0
+    },
+    "open_trunk": {
+      "so_cau": 4,
+      "dung_%": 100.0
+    },
+    "operate_sunroof": {
+      "so_cau": 5,
+      "dung_%": 0.0
+    },
+    "play_media": {
+      "so_cau": 8,
+      "dung_%": 62.5
+    },
+    "set_ac": {
+      "so_cau": 13,
+      "dung_%": 84.6
+    },
+    "set_defrost": {
+      "so_cau": 6,
+      "dung_%": 83.3
+    },
+    "set_fan_speed": {
+      "so_cau": 5,
+      "dung_%": 40.0
+    },
+    "set_hazard_lights": {
+      "so_cau": 3,
+      "dung_%": 0.0
+    },
+    "set_headlights": {
+      "so_cau": 7,
+      "dung_%": 71.4
+    },
+    "set_volume": {
+      "so_cau": 5,
+      "dung_%": 60.0
+    },
+    "unlock_doors": {
+      "so_cau": 2,
+      "dung_%": 50.0
+    }
+  },
+  "loi_theo_kieu": {
+    "dung": 152,
+    "goi_bua": 49,
+    "sai_ham": 20,
+    "sai_tham_so": 19,
+    "hoi_lai_thua": 11,
+    "thieu_hoi_lai": 2
+  },
+  "ty_le_loi_%": {
+    "tu_choi_nham": 0.0,
+    "goi_bua": 19.4,
+    "hoi_lai_thua": 4.3,
+    "thieu_hoi_lai": 0.8,
+    "khong_parse": 0.0,
+    "bia_so": 0.0
+  },
+  "tham_so": {
+    "precision_%": 63.2,
+    "recall_%": 63.8,
+    "f1_%": 63.5
+  },
+  "hay_nham_nhat": [
+    {
+      "dap_an": "control_window",
+      "model_chon": "set_defrost",
+      "so_lan": 5
+    },
+    {
+      "dap_an": "set_fan_speed",
+      "model_chon": "set_ac",
+      "so_lan": 2
+    },
+    {
+      "dap_an": "control_window",
+      "model_chon": "set_ac",
+      "so_lan": 2
+    },
+    {
+      "dap_an": "get_battery_range",
+      "model_chon": "get_vehicle_status",
+      "so_lan": 1
+    },
+    {
+      "dap_an": "get_vehicle_status",
+      "model_chon": "get_tire_pressure",
+      "so_lan": 1
+    },
+    {
+      "dap_an": "set_hazard_lights",
+      "model_chon": "set_headlights",
+      "so_lan": 1
+    },
+    {
+      "dap_an": "set_ac",
+      "model_chon": "set_ac",
+      "so_lan": 1
+    },
+    {
+      "dap_an": "operate_sunroof",
+      "model_chon": "set_ac",
+      "so_lan": 1
+    },
+    {
+      "dap_an": "set_hazard_lights",
+      "model_chon": "set_ac",
+      "so_lan": 1
+    },
+    {
+      "dap_an": "play_media",
+      "model_chon": "operate_sunroof",
+      "so_lan": 1
+    }
+  ]
+}

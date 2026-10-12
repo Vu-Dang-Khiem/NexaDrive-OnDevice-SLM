@@ -1,0 +1,129 @@
+{
+  "so_mau_train": 19322,
+  "so_mau_val": 3416,
+  "so_buoc": 3624,
+  "loss_cuoi": 0.2269,
+  "lich_su": [
+    {
+      "loss": 0.1309,
+      "grad_norm": 4.486298084259033,
+      "learning_rate": 2.2827891532927506e-06,
+      "epoch": 2.8642384105960264,
+      "step": 3460
+    },
+    {
+      "loss": 0.0851,
+      "grad_norm": 3.219480514526367,
+      "learning_rate": 2.006087437742114e-06,
+      "epoch": 2.880794701986755,
+      "step": 3480
+    },
+    {
+      "loss": 0.0892,
+      "grad_norm": 0.1610817313194275,
+      "learning_rate": 1.729385722191478e-06,
+      "epoch": 2.8973509933774837,
+      "step": 3500
+    },
+    {
+      "loss": 0.1307,
+      "grad_norm": 3.2481861114501953,
+      "learning_rate": 1.452684006640841e-06,
+      "epoch": 2.9139072847682117,
+      "step": 3520
+    },
+    {
+      "loss": 0.1325,
+      "grad_norm": 7.220712184906006,
+      "learning_rate": 1.1759822910902049e-06,
+      "epoch": 2.9304635761589406,
+      "step": 3540
+    },
+    {
+      "loss": 0.1081,
+      "grad_norm": 3.7800676822662354,
+      "learning_rate": 8.992805755395683e-07,
+      "epoch": 2.9470198675496686,
+      "step": 3560
+    },
+    {
+      "loss": 0.1151,
+      "grad_norm": 4.3523688316345215,
+      "learning_rate": 6.22578859988932e-07,
+      "epoch": 2.9635761589403975,
+      "step": 3580
+    },
+    {
+      "loss": 0.0672,
+      "grad_norm": 4.11298131942749,
+      "learning_rate": 3.4587714443829554e-07,
+      "epoch": 2.980132450331126,
+      "step": 3600
+    },
+    {
+      "loss": 0.0965,
+      "grad_norm": 3.0508241653442383,
+      "learning_rate": 6.91754288876591e-08,
+      "epoch": 2.9966887417218544,
+      "step": 3620
+    },
+    {
+      "eval_loss": 0.1381562203168869,
+      "eval_runtime": 26.905,
+      "eval_samples_per_second": 126.965,
+      "eval_steps_per_second": 15.871,
+      "epoch": 3.0,
+      "step": 3624
+    }
+  ],
+  "checkpoint": [
+    "/vol/models/student-lora-v5-s7/checkpoint-1208",
+    "/vol/models/student-lora-v5-s7/checkpoint-2416",
+    "/vol/models/student-lora-v5-s7/checkpoint-3624"
+  ],
+  "nhanh": "lora",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "modules_to_save": [
+      "embed_tokens",
+      "lm_head"
+    ]
+  },
+  "tham_so": {
+    "tong": 2256098816,
+    "duoc_train": 479760384,
+    "ty_le_phan_tram": 21.265
+  },
+  "token_moi": {
+    "so_token_kiem": 27,
+    "so_token_da_doi": 27,
+    "lech_lon_nhat": 0.005341
+  },
+  "model_da_gop": "/vol/models/student-lora-v5-s7-gop",
+  "gop_checkpoint": [
+    {
+      "checkpoint": "/vol/models/student-lora-v5-s7/checkpoint-1208",
+      "gop": "/vol/models/student-lora-v5-s7/checkpoint-1208-gop",
+      "lech_dau_ra_token_moi": 0.016432
+    },
+    {
+      "checkpoint": "/vol/models/student-lora-v5-s7/checkpoint-2416",
+      "gop": "/vol/models/student-lora-v5-s7/checkpoint-2416-gop",
+      "lech_dau_ra_token_moi": 0.017136
+    },
+    {
+      "checkpoint": "/vol/models/student-lora-v5-s7/checkpoint-3624",
+      "gop": "/vol/models/student-lora-v5-s7/checkpoint-3624-gop",
+      "lech_dau_ra_token_moi": 0.017136
+    }
+  ]
+}

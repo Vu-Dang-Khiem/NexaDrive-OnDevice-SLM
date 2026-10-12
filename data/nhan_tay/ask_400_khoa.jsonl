@@ -1,0 +1,400 @@
+{"stt": 1, "cau": "Quá ồn ào, làm sao mà tập trung được", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 2, "cau": "Chỗ đỗ xe này trông không an toàn tí nào", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 3, "cau": "Nếu có ai đó mở cửa xe thì sao", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 4, "cau": "Trời tối nhanh quá", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"auto\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 5, "cau": "Chỗ này vắng vẻ quá, không an tâm.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 6, "cau": "Chỉ thấy mờ mờ ảo ảo", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 7, "cau": "Cần chút gió tự nhiên vào đây", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 8, "cau": "Xe sắp hết xăng rồi, tìm trạm xnga gần đây.", "nhan_goc": "<nexa_ask><nexa_0>();<nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 9, "cau": "Trời ơi, sao mà nóng thế này.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 10, "cau": "Nóng quá, người cứ bứt rứt không chịu nổi", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 11, "cau": "Sao đường này toàn trạm thu phí thế?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 12, "cau": "]|[ồn quá, muốn yên tĩnh", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 13, "cau": "Chân mỏi rồi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 14, "cau": "Cần chút không khí trong lành", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\");<nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 15, "cau": "Trời hôm nay thật đẹp, muốn ngắm nhìn", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 16, "cau": "Lạnh quá, hơi nước bám đầy kính xe", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 17, "cau": "Muốn tận hưởng không khí bên ngoài", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\");<nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 18, "cau": "Kính xe đọng hơi, nhìn không rõ", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 19, "cau": "Kính mờ, nhìn đường khó", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 20, "cau": "Sao mà cốp xe mở hoài thế?", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 21, "cau": "Hơi oi bức, cần chút gió", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 22, "cau": "Trời se lạnh, muốn hít thở chút không khí ngoài trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 23, "cau": "Cốp xe mở hoài, gió lùa vào hết cả.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 24, "cau": "Sao mà tiếng nhạc nó chói tai quá vậy", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 25, "cau": "Nắng gay gắt quá", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 26, "cau": "Đồ đã vào hết, có thể đi được rồi", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 27, "cau": "Nhạc to quá, không thể tập trung", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 28, "cau": "Trời ơi, cốp xe còn mở thế này", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 29, "cau": "Muốn tận hưởng không khí thiên nhiên", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 30, "cau": "Nóng quá, muốn hít thở không khí ngoài kia", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 31, "cau": "Khát nước quá, mệt quá", "nhan_goc": "<nexa_ask><nexa_22>(category=\"coffee\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 32, "cau": "Chỗ này đông đúc quá, không an toàn", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 33, "cau": "Cốp xe mở, gió lùa vào làm lạnh", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 34, "cau": "Sao lại thấy mùi lạ thế này", "nhan_goc": "<nexa_3>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 35, "cau": "Trời hôm nay thật là trong", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 36, "cau": "Trời lạnh quá, mình muốn ấm áp hơn", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 37, "cau": "Sắp tối rồi, phải cẩn thận", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"auto\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 38, "cau": "Đi đêm, kính mờ mịt", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 39, "cau": "Cốp xe mở toang, thấy không an toàn", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 40, "cau": "Lạnh quá, rét run luôn", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 41, "cau": "Tầm nhìn bị hạn chế quá", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 42, "cau": "Trời ơi, gió thổi vào mặt như hết hơi vậy", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"up\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 43, "cau": "Trời hôm nay thật mát, muốn hít thở chút gió trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 44, "cau": "Sao mà ồn quá vậy", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 45, "cau": "Đèn hậu của xe phía trước sáng quá, chói mắt.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 46, "cau": "Tối quá, không thấy gì.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 47, "cau": "Mệt quá, cần uống nước", "nhan_goc": "<nexa_ask><nexa_22>(category=\"coffee\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 48, "cau": "Cửa xe mình chưa khoá", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 49, "cau": "Cao tốc này dài quá, chán lắm", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 50, "cau": "Cái đèn xe phía sau cứ chớp chớp, trông lạ quá.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"off\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 51, "cau": "Trời sao mà ẩm ướt thế này, cảm thấy khó chịu quá.", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 52, "cau": "Cái khu này sao thấy vắng quá vậy?", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 53, "cau": "Chân mỏi quá, cần nghỉ ngơi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 54, "cau": "Sao mà khó thở thế này", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 55, "cau": "Chân nhức mỏi, cần nghỉ ngơi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 56, "cau": "Đi xa mà không có gì nghe chán quá", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 57, "cau": "Chỗ này vắng quá, không biết có đúng không?", "nhan_goc": "<nexa_ask><nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 58, "cau": "Cái khu này vắng vẻ quá, không an tâm.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 59, "cau": "Trời tối, cốp xe mở khiến đèn trong xe sáng quá.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 60, "cau": "Sao thấy oi bức quá, cần chút gió mát", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 61, "cau": "Thế là xong, đồ đạc đã chất xong hết.", "nhan_goc": "<nexa_ask><nexa_12>();<nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 62, "cau": "Nghe nói khu này hay bị trộm", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 63, "cau": "Chân tay run, cần dừng lại", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 64, "cau": "Thích ngắm cảnh bên ngoài", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 65, "cau": "Hơi nước đọng trên kính", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 66, "cau": "Bài hát này bị lẫn tiếng ồn", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 67, "cau": "Cái cao tốc này đông quá.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 68, "cau": "Nóng quá, cần dừng lại tìm chỗ mát", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\");<nexa_22>(category=\"coffee\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 69, "cau": "Thế này mà hít thở chút gió trời thì sướng biết bao", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 70, "cau": "Cần gì đó để thư giãn sau một ngày dài", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 71, "cau": "Cốp xe còn mở, cẩn thận nhé", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 72, "cau": "Chỉ có một mình, không biết đi đâu", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 73, "cau": "Muốn ngắm cảnh đẹp bên ngoài", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 74, "cau": "Đi đường nào để tránh kẹt xe?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 75, "cau": "Sao mà thấy stuffy quá?", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 76, "cau": "Đường này sao nhiều đèn tín hiệu quá vậy?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 77, "cau": "Thế này thì không thể nghe bài hát yêu thích được", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 78, "cau": "Cái đường này vắng quá, không biết có đúng không?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 79, "cau": "Trời hôm nay thật đẹp, muốn ngắm cảnh", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 80, "cau": "Mệt quá, cần chút gió", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 81, "cau": "Trời hôm nay đẹp quá, muốn ngắm sao trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 82, "cau": "Thấy gió thổi nhẹ nhẹ, dễ chịu ghê.", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 83, "cau": "Nóng quá, mình cần chút gió để làm mát", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 84, "cau": "Phía trước đầy xe, không biết phải làm sao.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 85, "cau": "Mình cần một chút âm nhạc", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 86, "cau": "Thích cảm giác gió thổi qua tóc", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 87, "cau": "Sao xe cứ bít bùng thế này?", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 88, "cau": "Đi trong mưa, kính mờ không nhìn rõ", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 89, "cau": "Tất cả mọi thứ đều đóng kín", "nhan_goc": "<nexa_ask><nexa_9>();<nexa_12>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 90, "cau": "Mệt quá, cần tìm chỗ nghỉ ngơi.", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 91, "cau": "Ôi, hôm nay nóng quá", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 92, "cau": "Trời hôm nay đẹp, muốn hít thở chút gió trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 93, "cau": "Mỗi lần thở ra, kính mờ mịt", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 94, "cau": "Nhạc ở đây to quá", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 95, "cau": "Quạt gió đang chạy quá mạnh, làm mình cảm thấy lạnh", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 96, "cau": "Hôm nay mọi người đang nghe bài gì?", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 97, "cau": "Muốn hít thở không khí trong lành.", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 98, "cau": "Chắc phải đi đường vòng.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 99, "cau": "Tôi không thể tập trung khi nhạc lớn như thế này", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 100, "cau": "Mình thấy cửa xe chưa khoá", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 101, "cau": "Cái tiếng ồn nó cứ vang lên liên tục", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 102, "cau": "Xe này có khả năng nghe đài không nhỉ", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 103, "cau": "Muốn tận hưởng gió tự nhiên một chút.", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 104, "cau": "Trời ẩm ướt, không khí nặng nề", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 105, "cau": "Đi đường dài, cần gì đó để giải trí", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 106, "cau": "Nếu có ai đó muốn làm gì xe mình thì sao?", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 107, "cau": "Nhạc to quá, không thể ngủ được", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 108, "cau": "Cứ nhìn vào kính là thấy mờ hết.", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 109, "cau": "]|[tối quá, không nhìn rõ gì cả", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 110, "cau": "Lái xe mà không có nhạc thì chán", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 111, "cau": "Nóng quá, tôi sắp ra mồ hôi đẫm rồi", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 112, "cau": "Mình thấy cửa xe mình chưa khoá", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 113, "cau": "Trời ẩm quá, kính xe mờ mịt", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 114, "cau": "Muốn tận hưởng chút gió mát", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\");<nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 115, "cau": "Mệt quá, cần tìm chỗ nghỉ ngơi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 116, "cau": "Cốp xe mở hoài, lạnh quá", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 117, "cau": "Muốn hòa mình vào không gian bên ngoài", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\");<nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 118, "cau": "Tôi không nghe rõ lời bài hát", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 119, "cau": "Làm gì có đường đi thẳng tới đó?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 120, "cau": "Hơi ẩm làm kính mờ mịt", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 121, "cau": "Lạnh quá, mình muốn uống cốc nước cam", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 122, "cau": "Cần chút gió để thư giãn", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 123, "cau": "Chắc có xe gặp sự cố, đèn cảnh báo sáng rực.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 124, "cau": "Nóng quá, tớ cần hơi mát để yên tâm.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 125, "cau": "Làm sao đi qua đoạn đường này?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"đoạn đường này\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 126, "cau": "Trạm thu phí này làm mình mất thời gian quá", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 127, "cau": "Sao chỗ này toàn đường vắng?", "nhan_goc": "<nexa_ask><nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 128, "cau": "Trời hôm nay đẹp quá", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 129, "cau": "Trời ơi, phía trước có tai nạn gì mà đèn nháy warning tùm lum vậy!", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 130, "cau": "Cái này chắc phải khoá lại rồi", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 131, "cau": "Đau tai quá, không chịu nổi", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 132, "cau": "Trời tối thế này, cần cẩn thận", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 133, "cau": "Cốp xe mở hoài, mưa tạt vào hết cả.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 134, "cau": "Hình như có xe bị hỏng ở phía trước, đèn cảnh báo sáng quá.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 135, "cau": "Kính mờ, nhìn như qua lớp sương", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 136, "cau": "Trời quang đãng quá", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 137, "cau": "Muốn ngắm sao", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 138, "cau": "Ôi, sao mà ồn thế này", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 139, "cau": "Đau lưng, muốn dừng xe", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 140, "cau": "Chắc phải đi đường khác.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 141, "cau": "Trời thật là nóng", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 142, "cau": "Cốp xe mở, nhìn không gọn gàng", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 143, "cau": "Tối om om, không biết đường đi", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 144, "cau": "Đi đường dài, muốn có gì đó để xua tan cảm giác này.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 145, "cau": "Nóng quá, tôi thấy mệt mỏi và bực bội.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 146, "cau": "Chỉ cần một chút ánh sáng là đủ rồi.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 147, "cau": "Trời oi bức quá, tôi muốn hóng gió", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 148, "cau": "Cửa xe này đóng kỹ lại mới an tâm", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 149, "cau": "Mệt quá, cần nghỉ ngơi.", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 150, "cau": "Cần tìm chỗ yên tĩnh", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 151, "cau": "Có thể tấp vào lề được không?", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 152, "cau": "Ôi, không nghe được gì cả, nhạc to quá", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 153, "cau": "Tôi cần không gian yên tĩnh", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 154, "cau": "Gió mát quá, thật là sảng khoái", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 155, "cau": "Càng chạy kính càng mờ", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 156, "cau": "Phía trước sao đầy xe thế, không biết phải làm sao.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 157, "cau": "Nếu có gió thổi vào thì sẽ sảng khoái hơn", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 158, "cau": "Em đang cảm thấy không an tâm, chỗ này vắng vẻ quá", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 159, "cau": "Muốn ngắm nhìn bầu trời đêm", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 160, "cau": "Cốp xe mở toang, đồ đạc lung tung", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 161, "cau": "Cửa xe mà mở như này, không an toàn.", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 162, "cau": "Muốn tìm bài hát mới", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 163, "cau": "Đi đêm này, muốn có gì đó để thư giãn.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 164, "cau": "Muốn ngắm nhìn cảnh đẹp", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 165, "cau": "Trời hôm nay dễ chịu quá", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 166, "cau": "Chuyến đi kết thúc, cốp xe vẫn mở wide quá.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 167, "cau": "Đường tối om, lái xe nguy hiểm quá", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 168, "cau": "Nóng quá, không chịu nổi.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 169, "cau": "Gió này yếu quá, không giúp tôi tỉnh táo", "nhan_goc": "<nexa_ask><nexa_7>(level=4)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 170, "cau": "Trời ơi, nóng quá, không thể chịu được nữa.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 171, "cau": "Cái chìa khóa này sao mà rắc rối thế", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 172, "cau": "Thích nghe một bài hát nào đó vào lúc này quá.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 173, "cau": "Quá tối, không thấy gì cả.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 174, "cau": "Tối quá, không thấy gì cả.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 175, "cau": "Trời hôm nay thật đẹp, muốn ngắm", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 176, "cau": "Trời lạnh thế này, mình cần một ly nước nóng", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 177, "cau": "Cốp xe mở, gió lùa vào khiến mùi khó chịu.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 178, "cau": "Mình đang cảm thấy mệt, cần một chút gió để thư giãn", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 179, "cau": "Thật là dễ chịu khi có gió thổi vào", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 180, "cau": "Mình thấy không an tâm nếu không khoá cửa", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 181, "cau": "Cửa xe mở như này, ai cũng có thể mở được.", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 182, "cau": "Quá ồn ào, làm sao mà nghĩ được", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 183, "cau": "Mình cảm thấy có mùi gì lạ", "nhan_goc": "<nexa_3>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 184, "cau": "Cửa xe mà mở như này, ai nhìn vào cũng thấy.", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 185, "cau": "Sao mà gió không thổi vào mặt được?", "nhan_goc": "<nexa_ask><nexa_15>(window=\"front_left\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 186, "cau": "Máy lạnh chạy hoài, cốp xe mở nên hơi lạnh thất thoát hết.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 187, "cau": "Trời hôm nay đẹp, muốn ngắm sao trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 188, "cau": "Mình thích nghe nhạc trữ tình", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 189, "cau": "Sao hôm nay xe smells nặng quá?", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 190, "cau": "Ngồi trong xe mà như đang trong lò nướng.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 191, "cau": "Trời ơi, sao lại ồn thế này", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 192, "cau": "Phía sau sao nhiều xe thế, không an toàn.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 193, "cau": "Đói quá, cần ăn ngay", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 194, "cau": "Xe phía sau cứ chớp đèn, có chuyện gì vậy?", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 195, "cau": "Tôi không thể nghe thấy tiếng gì cả", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 196, "cau": "Phía trước xe mờ mịt", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 197, "cau": "Trời lạnh, tay mình lạnh lẽo quá.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 198, "cau": "Lạnh quá, mình muốn ngồi dưới ánh nắng", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 199, "cau": "Đây là mùa hè à?", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 200, "cau": "Chỉ cần một bài hát yêu thích là đủ rồi.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 201, "cau": "Trời mưa mà cốp chưa đóng, ướt hết mất", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 202, "cau": "Sao lại phải dừng lại ở đây, chán quá.", "nhan_goc": "<nexa_ask><nexa_22>(category=\"coffee\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 203, "cau": "Nhạc to quá, không thể nghỉ ngơi", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 204, "cau": "Tối om, sợ lắm", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 205, "cau": "Trời tối quá, khó nhìn rõ đường", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 206, "cau": "Trời lạnh, mình muốn về nhà ngay", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"nhà\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 207, "cau": "Đâu rồi, cái lối rẽ kia?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 208, "cau": "Thích cảm giác không gian rộng mở", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 209, "cau": "Tối nay thật yên tĩnh, muốn hít thở chút gió trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 210, "cau": "Bụi bay vào quá, windows có vấn đề à?", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"up\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 211, "cau": "Cái xe này lúc nào cũng kín mít thế này", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 212, "cau": "Trời ơi, đèn cảnh báo sáng rực, chắc có xe gặp sự cố.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 213, "cau": "Nóng quá, mồ hôi tuôn như mưa", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 214, "cau": "Đúng là lúc trời tối mới thấy rõ đèn hậu của xe khác.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 215, "cau": "Cần chút gió để sảng khoái", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 216, "cau": "Trong xe ồn ào quá", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 217, "cau": "Khó khăn quá, không biết đường về", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"nhà\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 218, "cau": "Ơ, sao lại im lặng thế này", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 219, "cau": "Trời hôm nay thật đẹp, muốn ngắm sao", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 220, "cau": "Tớ mệt mỏi, cần chút gió để tập trung.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 221, "cau": "Chắc xe phía trước gặp sự cố, phải cẩn thận.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 222, "cau": "Mình thấy lo lo, khu này buổi tối vắng vẻ quá.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 223, "cau": "Mưa lớn, kính mờ mịt", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 224, "cau": "Hình như có xe bị tai nạn, đèn cảnh báo sáng quá.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 225, "cau": "Xong rồi, mọi thứ đã vào xe", "nhan_goc": "<nexa_ask><nexa_9>();<nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 226, "cau": "Chắc đang có bài hát mới hot", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 227, "cau": "Ôi, cốp xe còn mở đấy, cẩn thận nhé", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 228, "cau": "Nóng quá, tớ cần chút gió để mát mẻ.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 229, "cau": "Chỉ có tiếng ồn mà không có nhạc", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 230, "cau": "Mở cửa sổ tí cho thoáng không?", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 231, "cau": "Cốp xe mở toang, đồ đạc chắc bị rơi hết ra ngoài.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 232, "cau": "]|nhiều cao tốc quá, không biết chọn lối nào", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 233, "cau": "Trời đẹp quá, muốn ngắm thêm chút nữa", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 234, "cau": "Nếu cửa sổ trời mở ra thì sẽ thoáng hơn", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 235, "cau": "Tiếng ồn quá, làm sao mà nghĩ được", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 236, "cau": "Nóng quá, muốn hít thở chút không khí bên ngoài", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 237, "cau": "Điếc tai với tiếng ồn bên ngoài.", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 238, "cau": "Trời hôm nay thật đẹp, muốn tận hưởng chút gió trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 239, "cau": "Đau lưng quá, cần tìm nơi dừng", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 240, "cau": "Nắng nóng thế này, chỉ muốn uống nước lạnh", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 241, "cau": "Trời ơi, đèn pha xe phía sau chói quá, không nhìn rõ đường rồi.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 242, "cau": "Chán quá, im lặng chán ghê", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 243, "cau": "Trời ơi, xe này có phát nhạc được không nhỉ?", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 244, "cau": "]|lạc đường rồi, mọi người ơi", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 245, "cau": "Mình thấy hơi bất an ở đây", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 246, "cau": "Mình cảm thấy ù tai", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 247, "cau": "Nóng quá, tớ cần chút gió để thoải mái.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 248, "cau": "Nếu quạt gió yếu hơn một chút thì tốt", "nhan_goc": "<nexa_ask><nexa_7>(level=5)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 249, "cau": "Quá ồn ào, làm sao mà tập trung vào công việc", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 250, "cau": "Mình cần một chút không khí tươi", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\");<nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 251, "cau": "Đi đêm này, muốn nghe nhạc để tỉnh táo.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 252, "cau": "Gió thổi vào mặt cũng chả thấy sảng khoái", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"up\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 253, "cau": "Sao gió không lùa vào được?", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 254, "cau": "Kính mờ quá, nhìn đường khó", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 255, "cau": "Xe phía trước lại phanh gấp, đèn hậu sáng lên.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 256, "cau": "Thích ngắm sao trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 257, "cau": "Nếu có trộm thì sao?", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 258, "cau": "Đói bụng quá, không chịu nổi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 259, "cau": "Trời hôm nay trong quá", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 260, "cau": "Quạt gió mạnh hơn tí đi, tôi thấy hơi ngạt.", "nhan_goc": "<nexa_ask><nexa_7>(level=4)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 261, "cau": "Nóng quá, khó chịu quá", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 262, "cau": "Chỗ đỗ xe này không yên tâm tí nào", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 263, "cau": "Kính mờ hết, chả biết đường đâu nữa.", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 264, "cau": "Cái đường này toàn cao tốc.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 265, "cau": "Cốp xe mở toang, nhìn khó chịu quá", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 266, "cau": "Cốp sau vẫn còn chỗ hở nữa kìa.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 267, "cau": "Các ngã tư này sao khó nhớ quá vậy?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 268, "cau": "Cốp xe chưa đóng, sợ mưa vào ướt hết", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 269, "cau": "Đang ngồi im, cần một bài hát", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 270, "cau": "Mình muốn tránh gió lạnh", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 271, "cau": "Nên khoá cửa xe lại không nhỉ?", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 272, "cau": "Lý do gì mà phải trả tiền cao tốc vậy?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 273, "cau": "Cái xe này lúc nào cũng phải khoá kỹ", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 274, "cau": "Ôi, làm ơn, tai em đau quá", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 275, "cau": "Cốp xe mở, đồ đạc lung tung quá", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 276, "cau": "Kính xe mờ quá, lái xe khó quá", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 277, "cau": "Treo đầu –and nhạc nào cho đỡ ngột ngạt", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 278, "cau": "Hơi oi bức, cần gió.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 279, "cau": "Cái ngã tư này lạ quá.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 280, "cau": "Mấy thằng bạn bỏ đồ lung tung, cốp xe lúc nào cũng mở.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 281, "cau": "Trời hôm nay đẹp quá, muốn ngắm", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 282, "cau": "Cốp xe chưa đóng, tiếng gió rít vào quá", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 283, "cau": "Trời ơi, sao mà mưa nhiều thế", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 284, "cau": "Trời hôm nay trong quá, nhìn thấy tận bầu trời", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 285, "cau": "Làm sao đi qua đường cao tốc này?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 286, "cau": "Đói quá, không chịu nổi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 287, "cau": "Kính mờ quá, chả thấy gì", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 288, "cau": "Trời tối quá, mình không nhìn rõ đường", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 289, "cau": "Muốn ngắm nhìn bầu trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 290, "cau": "Cửa xe mà không khoá chắc chắn là nguy hiểm.", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 291, "cau": "Trời tối quá, không nhìn rõ đường", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 292, "cau": "Nắng gắt quá, muốn có chút gió.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 293, "cau": "Chắc phải đi lòng vòng mất.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 294, "cau": "Lúc nào mình cũng phải nhớ khoá cửa xe", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 295, "cau": "Gió mát tí nữa đi, tớ cảm thấy khó chịu.", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 296, "cau": "Buồn quá, cần một bài hát vui", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 297, "cau": "Chỗ này có nhiều trạm thu phí.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 298, "cau": "Muốn hít thở không khí tự nhiên", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 299, "cau": "Muốn hít thở không khí trong lành", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 300, "cau": "Nếu có luồng gió nhẹ nhàng là tốt quá", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 301, "cau": "Nóng quá, tớ cần chút gió để dễ chịu.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 302, "cau": "Trời hôm nay nắng kinh khủng", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 303, "cau": "Trời ơi, nhìn xem có ai đang rình xe mình không?", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 304, "cau": "Đường tối om, không thấy gì cả", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 305, "cau": "Tay lái không vững, cảm thấy mệt", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 306, "cau": "Chân tay mỏi, cần nghỉ ngơi", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 307, "cau": "Chán quá, chỉ muốn mở cửa sổ cho mát", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 308, "cau": "Ghế sau lạnh, kính mờ", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 309, "cau": "Trời ơi, sao mà oi bức thế này", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 310, "cau": "Xe sắp hết xăng rồi, tìm trạm xăng gần đây được không?", "nhan_goc": "<nexa_ask><nexa_0>();<nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 311, "cau": "Cần gì đó để thư giãn sau một ngày mệt mỏi", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 312, "cau": "Mình thấy có mùi khói trong xe", "nhan_goc": "<nexa_3>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 313, "cau": "Quạt gió làm ồn quá, làm phiền mình", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 314, "cau": "Trời hôm nay trong veo", "nhan_goc": "<nexa_23>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 315, "cau": "Hôm nay trời thật là oi bức", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 316, "cau": "Chỗ này có vẻ khó tìm.", "nhan_goc": "<nexa_ask><nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 317, "cau": "Đi đường dài, cần có gì đó để bớt chán.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 318, "cau": "Quạt gió này ồn quá, tớ không tập trung được.", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 319, "cau": "Muốn tận hưởng không khí trong lành", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 320, "cau": "Đường tối quá, nhìn không rõ", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 321, "cau": "Mỗi lần thở ra, kính mờ hết", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 322, "cau": "Nóng quá, muốn có chút gió tự nhiên.", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 323, "cau": "Đường này toàn cao tốc, làm sao đi?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 324, "cau": "Nắng gắt quá, mình cần một chút gió", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 325, "cau": "Đây có phải là bài hát mà tôi đang nghe không?", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 326, "cau": "Chỗ này có trạm thu phí không?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 327, "cau": "Đói quá, bụng kêu rột rực", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 328, "cau": "Sao tối quá vậy", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 329, "cau": "Các biển báo này sao phức tạp quá vậy?", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 330, "cau": "Chỉ muốn nghe rõ hơn chút nữa", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 331, "cau": "Em đang cảm thấy không an tâm, chỗ này vắng quá", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 332, "cau": "Tai em như muốn rụng ra, làm sao đây", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 333, "cau": "Nếu có trộm thì cửa xe phải khoá kỹ", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 334, "cau": "Chắc là loa bị hỏng", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 335, "cau": "Đèn pha của xe mình yếu quá", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 336, "cau": "Tớ mệt mỏi, cần chút gió để thư giãn.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 337, "cau": "Bụng cồn cào, cần tìm nơi ăn", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 338, "cau": "Đèn đường yếu quá, không nhìn thấy gì", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 339, "cau": "Cốp xe chưa đóng, gió lùa vào làm lạnh", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 340, "cau": "Chắc có xe gặp sự cố, đèn cảnh báo sáng quá.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 341, "cau": "Thích ngắm sao trên bầu trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 342, "cau": "Chỗ này toàn chỗ tối om", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 343, "cau": "Nhiên, mở quạt lên đi, tôi thấy khó chịu quá.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 344, "cau": "Sao chỗ này toàn trạm thu phí thế?", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 345, "cau": "Nếu có gió thổi vào thì sẽ thoải mái hơn", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 346, "cau": "Đói quá, bụng đã rên rỉ rồi.", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 347, "cau": "Lạnh quá, tay chân mình lạnh toát", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 348, "cau": "Sao lại thấy ồn ào thế này", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 349, "cau": "Thích cảm giác gió thổi qua xe", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 350, "cau": "Mình thấy không an tâm nếu không khoá cửa xe", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 351, "cau": "Nhiệt độ thấp quá, kính mờ", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 352, "cau": "Đi đường dài, muốn có gì đó để thư giãn.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 353, "cau": "Hơi nước bám kín gương chiếu hậu", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 354, "cau": "Quá tối, không nhìn rõ đường.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 355, "cau": "Bụi bay vào mặt khó chịu quá.", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"up\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 356, "cau": "Cửa xe mình mở vậy, nếu có ai đó đến gần thì sao?", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 357, "cau": "Tối om, không thấy gì", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 358, "cau": "Xe sắp hết xăng rồi, có trạm xăng nào gần đây không?", "nhan_goc": "<nexa_ask><nexa_0>();<nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 359, "cau": "Muốn tận hưởng không khí tự nhiên", "nhan_goc": "<nexa_ask><nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 360, "cau": "Nếu không khoá cửa xe, có khi nào mất đồ không?", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 361, "cau": "Điều hoà có vấn đề gì vậy, kính mờ thế này?", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 362, "cau": "Cái đèn cảnh báo đâu rồi?", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 363, "cau": "Chân mỏi quá, cần đỗ xe nghỉ ngơi.", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 364, "cau": "Trời lạnh quá, rét run", "nhan_goc": "<nexa_ask><nexa_6>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 365, "cau": "Phía trước có xe gặp sự cố, đèn cảnh báo nháy liên tục.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 366, "cau": "Có khi nào ai đó sẽ mở cửa xe mình không?", "nhan_goc": "<nexa_ask><nexa_9>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 367, "cau": "Có vẻ mình chưa từng đi qua đây.", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 368, "cau": "Trời tối quá, không biết còn bao lâu nữa", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 369, "cau": "Nắng chiếu vào mặt, mình cảm thấy khó chịu", "nhan_goc": "<nexa_ask><nexa_16>(action=\"tilt\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 370, "cau": "Nóng quá, cần chút gió mát", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 371, "cau": "Sao lại thấy tĩnh lặng thế này", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 372, "cau": "Cốp xe mở hoài, nhìn không lịch sự", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 373, "cau": "Trời đẹp quá, muốn ngắm thêm", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 374, "cau": "Trời ẩm ướt, kính xe mờ mịt", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 375, "cau": "Hơi thở mờ đi kính xe rồi", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 376, "cau": "Mệt quá, cần dừng lại", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 377, "cau": "Đi mãi mà không thấy địa chỉ mình cần", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 378, "cau": "Muốn hít thở không khí ngoài trời", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\");<nexa_15>(window=\"all\", position=\"down\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 379, "cau": "Nếu quạt gió mạnh hơn một chút thì tốt", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 380, "cau": "Xe phía sau cứ chớp đèn, không hiểu họ muốn gì.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 381, "cau": "Chán quá, muốn nghe nhạc.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 382, "cau": "Chắc là đã đóng cốp rồi.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 383, "cau": "Xe sắp hết xăng rồi, tìm trạm xăng gần đây.", "nhan_goc": "<nexa_ask><nexa_0>();<nexa_22>(category=\"gas_station\")<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 384, "cau": "Đi đường dài, có gì để thư giãn không?", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 385, "cau": "Cốp xe vẫn mở hở kìa.", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 386, "cau": "Mình thấy có mùi gì chua chua", "nhan_goc": "<nexa_3>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 387, "cau": "Chỗ đỗ xe này có an toàn không vậy?", "nhan_goc": "<nexa_ask><nexa_22>(category=\"parking\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 388, "cau": "Sắp đi rồi mà cốp xe vẫn chưa đóng", "nhan_goc": "<nexa_ask><nexa_12>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 389, "cau": "Đói quá, cần ăn gì đó", "nhan_goc": "<nexa_ask><nexa_22>(category=\"restaurant\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 390, "cau": "Chán quá, muốn nghe gì đó.", "nhan_goc": "<nexa_ask><nexa_20>()<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 391, "cau": "Quạt gió đang làm phiền mình, ồn quá", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 392, "cau": "Nếu cửa sổ trời mở ra thì gió sẽ thổi vào thoải mái", "nhan_goc": "<nexa_ask><nexa_16>(action=\"open\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 393, "cau": "Gió thổi vào mặt yếu ớt quá, không sảng khoái chút nào", "nhan_goc": "<nexa_ask><nexa_7>(level=4)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 394, "cau": "Gió này mạnh quá, làm tôi cảm thấy khó chịu", "nhan_goc": "<nexa_ask><nexa_7>(level=0)<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 395, "cau": "Mệt quá, tớ cần chút gió để thư giãn.", "nhan_goc": "<nexa_ask><nexa_7>(level=3)<nexa_end>", "nguon": "v1_ask_sach"}
+{"stt": 396, "cau": "Mệt quá, mắt cứ muốn nhắm lại.", "nhan_goc": "<nexa_ask><nexa_17>(mode=\"low_beam\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 397, "cau": "Chỗ này khó tìm quá, không biết có đúng đường không", "nhan_goc": "<nexa_ask><nexa_21>(destination=\"\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 398, "cau": "Xe phía sau cứ chớp đèn, không biết có vấn đề gì không.", "nhan_goc": "<nexa_ask><nexa_18>(state=\"on\")<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 399, "cau": "Thế này thì không thể tập trung lái xe được", "nhan_goc": "<nexa_ask><nexa_19>()<nexa_end>", "nguon": "v2_ask_train_vi"}
+{"stt": 400, "cau": "Kính xe mờ mịt, nhìn không rõ", "nhan_goc": "<nexa_ask><nexa_8>(state=\"on\")<nexa_end>", "nguon": "v1_ask_sach"}

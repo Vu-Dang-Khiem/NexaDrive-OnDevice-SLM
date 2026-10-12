@@ -1,0 +1,17 @@
+﻿file: 2_da_gan_nhan_130_cau.csv | sá»‘ dÃ²ng: 130 | cá»™t: ['id', 'cau', 'nhan', 'ghi_chu']
+id thiáº¿u: []
+cÃ¢u bá»‹ Ä‘á»•i so vá»›i file Ä‘Æ°a Ä‘i: []
+
+thá»‘ng kÃª: {'ask': 130, '1_cach': 120, '2_cach': 10}
+
+== Lá»–I CÃš PHÃ�P / SCHEMA: 0
+
+== KHÃ”NG cÃ³ ask (ra lá»‡nh): 0
+
+== NGOÃ€I PHáº M VI: 0
+
+== ask nhÆ°ng KHÃ”NG chá»©a hÃ m Ä‘Ã­ch: 0
+
+== nhÃ£n ask theo hÃ m Ä‘áº§u tiÃªn:
+  {'play_media': 10, 'find_nearby': 10, 'set_headlights': 10, 'set_fan_speed': 10, 'set_volume': 10, 'set_defrost': 10, 'operate_sunroof': 10, 'close_trunk': 10, 'set_ac': 10, 'set_hazard_lights': 10, 'navigate_to': 10, 'control_window': 10, 'lock_doors': 8, 'get_vehicle_status': 2}
+

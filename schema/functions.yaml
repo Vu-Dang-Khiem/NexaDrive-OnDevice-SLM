@@ -1,0 +1,576 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# functions.yaml — NGUỒN CHÂN LÝ DUY NHẤT của Nexa Drive.
+#
+# Mọi thứ khác suy ra từ file này (xem schema/loader.py):
+#   • map functional token   <nexa_i> <-> tên hàm
+#   • prompt cho teacher sinh data (Phase 2)
+#   • Prompt A / Prompt B lúc train và lúc chạy (bọc ChatML vì student là Instruct)
+#   • JSON Schema để validate tham số lúc runtime
+#   • web/src/sceneActions.json cho scene 3D
+#
+# Giải thích các trường của mỗi hàm:
+#   index        int   -> thành <nexa_{index}>. PHẢI liên tục từ 0 và KHÔNG ĐỔI về sau.
+#   name         str   -> tên hàm dùng trong chuỗi lời gọi
+#   category     str   -> chỉ để nhóm (tài liệu / cân bằng khi sinh data)
+#   description  str   -> CHỈ đưa cho teacher lúc sinh data; KHÔNG xuất hiện lúc infer
+#   params       list  -> có thứ tự; mỗi mục: name,type,required,[enum],[min],[max],[default],desc
+#                          type thuộc {string, int, number, bool}
+#   returns      map   -> hình dạng kết quả handler phải trả (mô phỏng)
+#   ui_action    map   -> camera (preset), animation (clip | null), hud {widget, ...}
+#   examples     list  -> vài câu mẫu (tiếng Việt — giai đoạn VI làm trước), dùng để mồi
+#                         teacher ở Phase 2 và làm test nhanh
+#   implicit_examples list (tuỳ chọn) -> câu NGẦM HIỂU (than thở / mô tả tình huống, không
+#                         ra lệnh thẳng) mà trợ lý nên HỎI LẠI có muốn dùng hàm này không.
+#                         Hàm nào có trường này mới được sinh nhóm câu <nexa_ask>.
+#                         Cố ý KHÔNG đặt cho hàm nhạy cảm (mở khoá, mở cốp, nắp sạc/xăng).
+#   nhay_cam     bool (tuỳ chọn) -> hàm mở lối vào xe. Runtime KHÔNG BAO GIỜ tự đề xuất hàm
+#                         này từ câu than thở (người lạ nói vọng vào cũng kích hoạt được).
+#   an_toan      list (tuỳ chọn) -> luật an toàn lúc CHẠY THẬT (serve/an_toan.py), xét theo thứ tự,
+#                         luật khớp đầu tiên thắng. Mỗi luật:
+#                           khi         dang_chay | khoa_tre_em | wake_word, hoặc danh sách
+#                                       (vd [khoa_tre_em, wake_word]) — TẤT CẢ cùng đúng mới áp
+#                           neu_tham_so (tuỳ chọn) chỉ áp khi tham số khớp, vd {window: [rear_left]}
+#                           xu_ly       tu_choi (không làm) | hoi_lai (xác nhận rồi mới làm)
+#                                       | gioi_han (hạ `tham_so` xuống `toi_da` rồi làm)
+#                           ly_do       câu giải thích đọc cho người lái
+#                         Không đụng dữ liệu train: model KHÔNG lo an toàn, code lo.
+#
+# camera preset và animation clip id là hợp đồng với scene 3D —
+# phải khớp với web/src/components/CameraRig và tên clip trong file GLB.
+# ─────────────────────────────────────────────────────────────────────────────
+
+meta:
+  nexa_end_token: "<nexa_end>"
+  # Đặt TRƯỚC lời gọi khi câu mơ hồ: model chỉ ĐỀ XUẤT, runtime hỏi lại user rồi mới làm.
+  #   "Ôi nóng quá" -> <nexa_ask><nexa_6>(state="on")<nexa_end>
+  nexa_ask_token: "<nexa_ask>"
+  functional_token_format: "<nexa_{index}>"
+
+  # Câu system dùng chung cho cả 2 lượt.
+  system_prompt: "Bạn là tác tử điều khiển xe ô tô."
+
+  # ── Prompt A — LƯỢT 1: sinh lời gọi hàm ──────────────────────────────────
+  # Bọc theo chat template gốc của Qwen (ChatML) vì student là bản Instruct.
+  # Target khi train: "<nexa_i>(args)<nexa_end><|im_end|>"
+  call_prompt: |
+    <|im_start|>system
+    {system}<|im_end|>
+    <|im_start|>user
+    {query}<|im_end|>
+    <|im_start|>assistant
+
+  # ── Prompt B — LƯỢT 2: sinh câu trả lời tự nhiên từ kết quả hàm ──────────
+  # Target khi train: câu trả lời do teacher viết + "<|im_end|>"
+  reply_prompt: |
+    <|im_start|>system
+    {system}<|im_end|>
+    <|im_start|>user
+    {query}<|im_end|>
+    <|im_start|>assistant
+    {call}<|im_end|>
+    <|im_start|>tool
+    {result}<|im_end|>
+    <|im_start|>assistant
+
+camera_presets:
+  - overview
+  - front
+  - rear
+  - driver_door
+  - passenger_door
+  - dashboard
+  - center_console
+  - roof
+  - charge_port
+  - fuel_flap
+  - wheel_fl
+  - wheel_fr
+  - wheel_rl
+  - wheel_rr
+
+hud_widgets:
+  - fuel_gauge
+  - battery_gauge
+  - temp_dial
+  - fan_bar
+  - tire_grid
+  - status_list
+  - odometer
+  - range_card
+  - nav_card
+  - weather_card
+  - volume_bar
+  - media_card
+  - lights_panel
+  - none
+
+functions:
+
+  # ── Trạng thái / truy vấn ─────────────────────────────────────────────────
+  - index: 0
+    name: get_fuel_level
+    category: status
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: >-
+      Báo lượng xăng còn lại theo phần trăm dung tích bình, quãng đường ước tính
+      đi được, và cho biết đã xuống dưới ngưỡng cần đổ xăng hay chưa.
+    params: []
+    returns: {fuel_percent: int, range_km: number, needs_refuel: bool, threshold_percent: int}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: fuel_gauge, unit: "%"}}
+    tu_dong_nghia: ["xăng", "nhiên liệu", "bình xăng"]
+    examples:
+      - "Còn bao nhiêu xăng, đã đến mức phải đổ chưa?"
+      - "Kiểm tra tình trạng nhiên liệu"
+      - "Bình xăng còn được mấy phần rồi?"
+      - "Xăng còn nhiều không em?"
+
+  - index: 1
+    name: get_battery_range
+    category: status
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: >-
+      Báo mức pin cao áp theo phần trăm và quãng đường chạy điện ước tính còn lại.
+    params: []
+    returns: {battery_percent: int, range_km: number, charging: bool}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: battery_gauge, unit: "%"}}
+    examples:
+      - "Pin cao áp đang ở mức mấy phần trăm vậy?"
+      - "Với lượng pin này chạy thêm được mấy cây số?"
+
+  - index: 2
+    name: get_tire_pressure
+    category: status
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: >-
+      Báo áp suất lốp theo đơn vị PSI. Nếu chỉ định một bánh thì chỉ báo bánh đó,
+      không thì báo cả bốn bánh và cảnh báo bánh nào ngoài ngưỡng an toàn.
+    params:
+      - {name: wheel, type: string, required: false, enum: [front_left, front_right, rear_left, rear_right], desc: "Bánh cụ thể cần kiểm tra; bỏ trống để xem cả 4 bánh."}
+    returns: {pressures_psi: object, low: array, recommended_psi: number}
+    ui_action: {camera: wheel_fl, animation: null, hud: {widget: tire_grid, unit: psi}}
+    examples:
+      - "Kiểm tra áp suất lốp"
+      - "Lốp trước bên phải có non không?"
+
+  - index: 3
+    name: get_vehicle_status
+    category: status
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: >-
+      Trả về tổng quan trạng thái xe: khoá/mở cửa, cốp, cửa sổ, đèn, điều hoà,
+      phần trăm xăng và pin.
+    params: []
+    returns: {doors_locked: bool, doors_open: array, trunk_open: bool, windows: object, lights: string, climate_on: bool, fuel_percent: int, battery_percent: int}
+    ui_action: {camera: overview, animation: null, hud: {widget: status_list}}
+    examples:
+      - "Tổng quan xe lúc này ra sao, có gì bất thường không?"
+      - "Cho tôi xem tổng quan tình trạng xe"
+
+  - index: 4
+    name: get_odometer
+    category: status
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: Báo tổng quãng đường xe đã đi.
+    params:
+      - {name: unit, type: string, required: false, enum: [km, mi], default: km, desc: "Đơn vị khoảng cách."}
+    returns: {odometer: number, unit: string}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: odometer}}
+    examples:
+      - "Xe đã đi được bao nhiêu km?"
+      - "Đồng hồ tổng quãng đường đang chỉ bao nhiêu?"
+
+  - index: 5
+    name: get_range_estimate
+    category: status
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: >-
+      Tổng quãng đường còn đi được (gộp xăng và/hoặc pin), kèm trả lời có/không
+      cho việc chuyến đi với quãng đường cho trước có tới nơi mà không cần tiếp
+      nhiên liệu hay không.
+    params:
+      - {name: trip_km, type: number, required: false, min: 0, desc: "Quãng đường chuyến đi dự định, để đối chiếu với tầm hoạt động còn lại."}
+    returns: {total_range_km: number, reachable: bool, margin_km: number}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: range_card, unit: km}}
+    examples:
+      - "Chuyến 350 cây nữa thì có cần dừng tiếp nhiên liệu không?"
+      - "Xe còn đi được bao xa nữa?"
+
+  # ── Điều hoà ──────────────────────────────────────────────────────────────
+  - index: 6
+    name: set_ac
+    category: climate
+    description: >-
+      Bật hoặc tắt điều hoà, có thể đặt nhiệt độ mục tiêu cho một vùng, hoặc tăng/giảm nhiệt độ
+      so với hiện tại, và chọn chế độ sưởi ấm / làm lạnh. Nhiệt độ tính theo độ C, trong khoảng
+      16–30. Chỉ dùng một trong hai tham số temperature / delta.
+    params:
+      - {name: state, type: string, required: true, enum: ["on", "off"], desc: "Bật hay tắt điều hoà."}
+      - {name: temperature, type: int, required: false, min: 16, max: 30, desc: "Nhiệt độ mục tiêu, độ C."}
+      - {name: zone, type: string, required: false, enum: [driver, passenger, rear, all], default: all, desc: "Vùng điều hoà cần áp dụng."}
+      # đặt CUỐI: tham số theo vị trí ánh xạ theo thứ tự khai báo, giữ nguyên nghĩa các lời gọi cũ
+      - {name: delta, type: int, required: false, min: -14, max: 14, desc: "Mức tăng/giảm so với nhiệt độ hiện tại, độ C; số âm là giảm (mát hơn). Không nói số thì dùng ±2."}
+      - {name: mode, type: string, required: false, enum: [cool, heat, auto], desc: "Chế độ: cool = làm lạnh, heat = sưởi ấm, auto = tự động. Chỉ ghi khi người dùng nói rõ (sưởi / làm lạnh / tự động) hoặc than lạnh."}
+    returns: {ac_on: bool, temperature: int, zone: string, mode: string}
+    ui_action: {camera: center_console, animation: null, hud: {widget: temp_dial, unit: "°C"}}
+    tu_dong_nghia: ["điều hoà", "điều hòa", "máy lạnh", "A/C"]
+    examples:
+      - "Bật điều hòa 22 độ ghế lái"
+      - "Bật máy lạnh lên"
+      - "Chỉnh điều hoà 24 độ cho cả xe"
+      - "Mở A/C giúp tôi"
+      - "Giảm nhiệt độ điều hoà xuống chút"
+      - "Tăng điều hoà thêm 3 độ"
+      - "Bật sưởi 27 độ"
+    implicit_examples:
+      - "Ôi trong xe nóng quá"
+      - "Buốt hết cả người vì lạnh"
+
+  - index: 7
+    name: set_fan_speed
+    category: climate
+    description: >-
+      Đặt tốc độ quạt gió điều hoà theo thang 0–7 (0 là tắt), hoặc tăng/giảm so với mức hiện tại.
+      Chỉ dùng một trong hai tham số level / delta.
+    params:
+      - {name: level, type: int, required: false, min: 0, max: 7, desc: "Mức quạt gió tuyệt đối, 0 (tắt) đến 7 (mạnh nhất)."}
+      # v6 (người dùng duyệt test 2026-10-06): "giảm quạt xuống một nấc" không ghi được bằng mức tuyệt đối
+      - {name: delta, type: int, required: false, min: -7, max: 7, desc: "Mức thay đổi so với hiện tại; số âm là giảm. Không nói số thì dùng ±1."}
+    returns: {fan_level: int}
+    ui_action: {camera: center_console, animation: null, hud: {widget: fan_bar}}
+    tu_dong_nghia: ["quạt gió", "quạt", "sức gió", "tốc độ gió"]
+    examples:
+      - "Tăng quạt gió lên mức 5"
+      - "Bật quạt gió mạnh nhất"
+      - "Cho sức gió về mức 2 thôi"
+      - "Giảm quạt gió một nấc"
+      - "Chỉnh tốc độ quạt xuống 1"
+    implicit_examples:
+      - "Gió yếu quá chả thấy mát gì"
+      - "Quạt thổi ù ù ồn quá"
+
+  - index: 8
+    name: set_defrost
+    category: climate
+    description: Bật hoặc tắt sấy kính cho vùng chỉ định.
+    params:
+      - {name: state, type: string, required: true, enum: ["on", "off"]}
+      - {name: zone, type: string, required: false, enum: [front, rear, both], default: front, desc: "Sấy kính trước, sau, hay cả hai."}
+    returns: {defrost_on: bool, zone: string}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: status_list}}
+    tu_dong_nghia: ["sấy kính", "sưởi kính", "khử sương kính", "làm tan hơi nước"]
+    examples:
+      - "Bật sấy kính sau"
+      - "Kính mờ quá, bật sấy kính trước đi"
+      - "Cho sưởi kính hậu lên"
+      - "Khử sương kính trước giúp tôi"
+    implicit_examples:
+      - "Mờ hết cả kính, chả nhìn thấy đường"
+      - "Nhìn gương chiếu hậu toàn hơi nước"
+
+  # ── Cửa / khoang ─────────────────────────────────────────────────────────
+  - index: 9
+    name: lock_doors
+    category: access
+    description: >-
+      Khoá toàn bộ cửa xe — khi rời xe, hoặc khi thấy chỗ đỗ/khu vực xung quanh không an toàn.
+    params: []
+    returns: {doors_locked: bool}
+    ui_action: {camera: overview, animation: null, hud: {widget: status_list}}
+    tu_dong_nghia: ["khoá cửa", "khoá xe", "chốt cửa", "cài khoá"]
+    examples:
+      - "Khóa hết cửa lại"
+      - "Khoá xe giúp tôi"
+      - "Cài khoá tất cả cửa đi"
+      - "Chốt cửa lại hộ cái"
+    implicit_examples:
+      - "Đỗ chỗ này trông vắng vẻ quá"
+      - "Khu này nghe nói hay bị mất đồ trong xe"
+
+  - index: 10
+    name: unlock_doors
+    category: access
+    description: Mở khoá toàn bộ cửa, hoặc chỉ một cửa nếu được chỉ định.
+    params:
+      - {name: door, type: string, required: false, enum: [driver, passenger, rear_left, rear_right, all], default: all, desc: "Cửa cần mở khoá."}
+    returns: {doors_locked: bool, unlocked: array}
+    nhay_cam: true
+    an_toan:
+      - {khi: dang_chay, xu_ly: hoi_lai, ly_do: "Xe đang chạy."}
+      - {khi: wake_word, xu_ly: hoi_lai, ly_do: "Lệnh mở khoá cần xác nhận."}
+    ui_action: {camera: driver_door, animation: null, hud: {widget: status_list}}
+    tu_dong_nghia: ["mở khoá cửa", "mở khoá xe", "nhả khoá", "mở chốt"]
+    examples:
+      - "Mở khóa cửa"
+      - "Chỉ mở khoá cửa ghế lái thôi"
+      - "Nhả khoá xe ra"
+      - "Mở chốt cửa sau bên phải"
+
+  - index: 11
+    name: open_trunk
+    category: access
+    description: Mở cốp sau xe.
+    params: []
+    returns: {trunk_open: bool}
+    nhay_cam: true
+    an_toan:
+      - {khi: dang_chay, xu_ly: tu_choi, ly_do: "Xe đang chạy nên mình không mở cốp được."}
+      - {khi: wake_word, xu_ly: hoi_lai, ly_do: "Lệnh mở cốp cần xác nhận."}
+    ui_action: {camera: rear, animation: trunk_open, hud: {widget: status_list}}
+    tu_dong_nghia: ["cốp", "cốp sau", "cốp xe", "khoang hành lý"]
+    examples:
+      - "Bật cốp giúp tôi cất vali"
+      - "Mở cốp sau giúp tôi"
+      - "Cho tôi mở khoang để hành lý phía sau"
+      - "Bật cốp lên để tôi để đồ"
+
+  - index: 12
+    name: close_trunk
+    category: access
+    description: Đóng cốp sau xe (loại cốp điện).
+    params: []
+    returns: {trunk_open: bool}
+    ui_action: {camera: rear, animation: trunk_close, hud: {widget: status_list}}
+    tu_dong_nghia: ["cốp", "cốp sau", "cốp xe", "khoang hành lý"]
+    examples:
+      - "Đóng cốp lại"
+      - "Hạ cốp phía sau xuống đi"
+      - "Hạ khoang hành lý xuống"
+      - "Sập cốp xe giúp cái"
+    implicit_examples:
+      - "Chất xong hết đồ rồi đấy"
+      - "Sắp chạy rồi mà đằng sau vẫn còn hở"
+
+  - index: 13
+    name: open_charge_port
+    category: access
+    description: Mở nắp cổng sạc điện.
+    params: []
+    returns: {charge_port_open: bool}
+    nhay_cam: true
+    an_toan:
+      - {khi: dang_chay, xu_ly: tu_choi, ly_do: "Xe đang chạy nên mình không mở nắp sạc được."}
+      - {khi: wake_word, xu_ly: hoi_lai, ly_do: "Lệnh mở nắp sạc cần xác nhận."}
+    ui_action: {camera: charge_port, animation: charge_port_open, hud: {widget: status_list}}
+    tu_dong_nghia: ["nắp sạc", "cổng sạc", "ổ sạc", "chỗ cắm sạc", "cửa sạc"]
+    examples:
+      - "Mở nắp sạc"
+      - "Mở cổng sạc điện"
+      - "Bật cửa sạc lên để cắm điện"
+      - "Mở chỗ cắm sạc giúp tôi"
+
+  - index: 14
+    name: open_fuel_flap
+    category: access
+    description: Mở nắp bình xăng.
+    params: []
+    returns: {fuel_flap_open: bool}
+    nhay_cam: true
+    an_toan:
+      - {khi: dang_chay, xu_ly: tu_choi, ly_do: "Xe đang chạy nên mình không mở nắp bình xăng được."}
+      - {khi: wake_word, xu_ly: hoi_lai, ly_do: "Lệnh mở nắp bình xăng cần xác nhận."}
+    ui_action: {camera: fuel_flap, animation: fuel_flap_open, hud: {widget: status_list}}
+    tu_dong_nghia: ["nắp bình xăng", "nắp xăng", "nắp nhiên liệu", "chỗ đổ xăng"]
+    examples:
+      - "Bật nắp bình xăng lên cho nhân viên bơm"
+      - "Chuẩn bị đổ xăng, mở chỗ đổ xăng ra giúp"
+      - "Bật nắp nhiên liệu giúp cái"
+      - "Mở chỗ đổ xăng ra"
+
+  # ── Cửa sổ / cửa sổ trời ─────────────────────────────────────────────────
+  - index: 15
+    name: control_window
+    category: opening
+    description: >-
+      Hạ hoặc nâng cửa sổ, có thể chỉ định mức di chuyển theo phần trăm
+      (mặc định là mở/đóng hoàn toàn).
+    params:
+      # front / rear = CẢ HAI kính trước / sau (v6, người dùng gặp "hạ 2 kính ghế sau" -> model chỉ hạ một bên)
+      - {name: window, type: string, required: true, enum: [front_left, front_right, rear_left, rear_right, front, rear, all], desc: "front_left = ghế lái, front_right = ghế phụ, front / rear = cả hai kính trước / sau, all = tất cả."}
+      - {name: position, type: string, required: true, enum: [up, down]}
+      - {name: amount, type: int, required: false, min: 0, max: 100, default: 100, desc: "Phần trăm hành trình cần di chuyển."}
+    returns: {window: string, position: string, opening_percent: int}
+    # Khoá trẻ em như nút khoá kính xe thật (người dùng chốt 2026-10-07): chặn hàng ghế sau, KHÔNG chặn tài xế.
+    # Bấm mic = tài xế -> làm luôn; "hey nexa" = ai cũng nói được (có thể là trẻ) -> xác nhận. Không giới hạn % khi xe chạy.
+    an_toan:
+      - {khi: [khoa_tre_em, wake_word], neu_tham_so: {window: [rear_left, rear_right, rear, all], position: [down]},
+         xu_ly: hoi_lai, ly_do: "Khoá trẻ em đang bật nên lệnh hạ kính sau cần xác nhận."}
+    ui_action: {camera: driver_door, animation: window_move, hud: {widget: status_list}}
+    tu_dong_nghia: ["cửa sổ", "kính", "cửa kính", "kính xe", "kính cửa"]
+    examples:
+      - "Hạ cửa sổ ghế phụ xuống một nửa"
+      - "Nâng kính phía ghế lái lên hết"
+      - "Đóng hết cửa kính lại"
+      - "Hạ kính xe xuống cho thoáng"
+      - "Hạ hai kính sau xuống"
+    implicit_examples:
+      - "Trong xe hầm hơi quá chừng"
+      - "Có mùi gì khó chịu thế nhỉ"
+
+  - index: 16
+    name: operate_sunroof
+    category: opening
+    description: Mở, đóng hoặc hé cửa sổ trời, có thể chỉ định mức độ theo phần trăm.
+    params:
+      - {name: action, type: string, required: true, enum: [open, close, tilt]}
+      - {name: intensity, type: int, required: false, min: 0, max: 100, desc: "Mức mở/hé tính theo phần trăm."}
+    returns: {sunroof_state: string, intensity_percent: int}
+    an_toan:
+      - {khi: [khoa_tre_em, wake_word], neu_tham_so: {action: [open, tilt]}, xu_ly: hoi_lai,
+         ly_do: "Khoá trẻ em đang bật nên lệnh mở cửa sổ trời cần xác nhận."}
+    ui_action: {camera: roof, animation: sunroof_move, hud: {widget: status_list}}
+    tu_dong_nghia: ["cửa sổ trời", "nóc xe", "cửa nóc", "cửa trời", "sunroof"]
+    examples:
+      - "Hé cửa sổ trời"
+      - "Mở cửa nóc một nửa"
+      - "Đóng cửa trời lại đi"
+      - "Mở nóc xe ra cho thoáng"
+    implicit_examples:
+      - "Trời đêm nay nhiều sao đẹp ghê"
+      - "Muốn hít chút không khí trời quá"
+
+  # ── Đèn ──────────────────────────────────────────────────────────────────
+  - index: 17
+    name: set_headlights
+    category: lights
+    description: Đặt chế độ đèn pha.
+    params:
+      - {name: mode, type: string, required: true, enum: ["off", auto, low_beam, high_beam, parking]}
+    returns: {headlights: string}
+    ui_action: {camera: front, animation: headlights_toggle, hud: {widget: lights_panel}}
+    tu_dong_nghia: ["đèn pha", "đèn cốt", "đèn chiếu gần", "đèn chiếu xa", "đèn trước"]
+    examples:
+      - "Bật đèn pha"
+      - "Để đèn trước ở chế độ auto"
+      - "Cho đèn chiếu gần thôi, đừng chói người ta"
+      - "Bật đèn cốt lên"
+    implicit_examples:
+      - "Đường tối om chẳng thấy gì"
+      - "Trời bắt đầu sập tối rồi"
+
+  - index: 18
+    name: set_hazard_lights
+    category: lights
+    # Mô tả cũ chỉ "đèn cảnh báo nguy hiểm" -> teacher gán "chỗ đỗ này không an toàn" vào hàm
+    # này (khớp chữ "nguy hiểm"/"an toàn"). Phải nói rõ KHI NÀO dùng.
+    description: >-
+      Bật hoặc tắt đèn cảnh báo nguy hiểm (hai bên xi nhan nháy cùng lúc). Dùng khi xe dừng
+      đột ngột, hỏng hóc hoặc gặp sự cố trên đường để cảnh báo xe khác — không phải để chống
+      trộm hay khi thấy chỗ đỗ không an toàn.
+    params:
+      - {name: state, type: string, required: true, enum: ["on", "off"]}
+    returns: {hazards_on: bool}
+    ui_action: {camera: rear, animation: hazards_toggle, hud: {widget: lights_panel}}
+    tu_dong_nghia: ["đèn khẩn cấp", "đèn cảnh báo", "đèn ưu tiên", "xi nhan đôi", "đèn đôi"]
+    examples:
+      - "Bật đèn khẩn cấp"
+      - "Thôi, tắt xi nhan đôi được rồi"
+      - "Bật xi nhan đôi lên"
+      - "Cho đèn ưu tiên chớp đi, xe đang hỏng"
+    implicit_examples:
+      - "Xe tự nhiên khựng lại phải tấp vào lề"
+      - "Đang phải dừng ở làn khẩn cấp đây"
+
+  # ── Giải trí ─────────────────────────────────────────────────────────────
+  - index: 19
+    name: set_volume
+    category: media
+    description: >-
+      Đặt âm lượng về một giá trị tuyệt đối (0–40) hoặc tăng/giảm theo mức chênh.
+      Chỉ dùng một trong hai tham số set_value / delta.
+    params:
+      - {name: set_value, type: int, required: false, min: 0, max: 40, desc: "Mức âm lượng tuyệt đối cần đặt."}
+      - {name: delta, type: int, required: false, min: -40, max: 40, desc: "Mức thay đổi tương đối; số âm là giảm."}
+    returns: {volume: int}
+    ui_action: {camera: center_console, animation: null, hud: {widget: volume_bar}}
+    tu_dong_nghia: ["âm lượng", "tiếng", "loa", "âm thanh", "volume"]
+    examples:
+      - "Cho âm lượng to thêm 3 mức"
+      - "Đặt âm lượng mức 15"
+      - "Vặn nhỏ tiếng xuống"
+      - "Loa to quá, giảm bớt đi"
+    implicit_examples:
+      - "Nhạc to nhức hết cả đầu"
+      - "Chẳng nghe rõ ca sĩ hát gì cả"
+
+  - index: 20
+    name: play_media
+    category: media
+    description: Phát nhạc/đài từ nguồn chỉ định, có thể kèm từ khoá tìm kiếm.
+    params:
+      - {name: source, type: string, required: false, enum: [radio, bluetooth, usb, streaming], default: streaming}
+      - {name: query, type: string, required: false, desc: "Bài hát, ca sĩ, đài hoặc playlist cần phát."}
+    returns: {playing: bool, source: string, now_playing: string}
+    ui_action: {camera: center_console, animation: null, hud: {widget: media_card}}
+    examples:
+      - "Mở nhạc của Sơn Tùng"
+      - "Bật radio lên"
+    implicit_examples:
+      - "Lái đường dài buồn ngủ quá"
+      - "Trong xe im lặng chán ghê"
+
+  # ── Dẫn đường / thông tin ngoài ──────────────────────────────────────────
+  - index: 21
+    name: navigate_to
+    category: navigation
+    description: >-
+      Bắt đầu dẫn đường tới điểm đến; trả về khoảng cách và thời gian dự kiến.
+      Có thể yêu cầu tránh trạm thu phí hoặc cao tốc.
+    params:
+      - {name: destination, type: string, required: true, desc: "Địa chỉ, tên địa điểm hoặc mốc quen thuộc."}
+      - {name: avoid, type: string, required: false, enum: [none, tolls, highways], default: none}
+    returns: {destination: string, distance_km: number, eta_min: number, route_summary: string}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: nav_card}}
+    examples:
+      - "Tra map cho tôi đến sân bay Nội Bài"
+      - "Dẫn đường tới bệnh viện gần nhất, tránh trạm thu phí"
+    implicit_examples:
+      - "Lạc mất đường rồi chẳng biết lối nào"
+      - "Chỗ này lạ hoắc, chưa tới bao giờ"
+
+  - index: 22
+    name: find_nearby
+    category: navigation
+    description: Tìm địa điểm theo nhóm quanh vị trí hiện tại.
+    params:
+      - {name: category, type: string, required: true, enum: [gas_station, charging_station, parking, restaurant, hospital, atm, coffee]}
+      - {name: radius_km, type: number, required: false, min: 0.5, max: 25, default: 5}
+    returns: {category: string, results: array}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: nav_card}}
+    examples:
+      - "Tìm cây xăng gần đây"
+      - "Có trạm sạc nào trong bán kính 10km không?"
+    implicit_examples:
+      - "Đói bụng quá rồi"
+      - "Mắt díp lại, cần chút cà phê"
+
+  - index: 23
+    name: get_weather
+    category: info
+    chi_doc: true    # chỉ đọc thông tin, không đổi trạng thái xe
+    description: >-
+      Thời tiết tại một địa điểm (mặc định là vị trí hiện tại của xe) cho ngày
+      cách hôm nay bao nhiêu ngày (0 là hôm nay).
+    params:
+      - {name: location, type: string, required: false, desc: "Thành phố hoặc địa điểm; bỏ trống để lấy vị trí hiện tại."}
+      - {name: day, type: int, required: false, min: 0, max: 6, default: 0, desc: "Số ngày tính từ hôm nay."}
+    returns: {location: string, date: string, description: string, temp_c: number, precipitation_mm: number}
+    ui_action: {camera: dashboard, animation: null, hud: {widget: weather_card, unit: "°C"}}
+    examples:
+      - "Hôm nay ngoài trời có nắng gắt không?"
+      - "Ngày mốt ở Huế trời ra sao?"
+
+  # ── Ngoài phạm vi ────────────────────────────────────────────────────────
+  - index: 24
+    name: irrelevant_function
+    category: fallback
+    description: >-
+      Được gọi khi câu của người dùng không liên quan tới bất kỳ chức năng nào
+      của xe (tán gẫu, hỏi kiến thức chung, hoặc yêu cầu xe không hỗ trợ như tự
+      lái). Lượt 2 vẫn trả lời tự nhiên: từ chối lịch sự và nói rõ phạm vi hỗ trợ.
+    params: []
+    returns: {handled: bool}
+    ui_action: {camera: overview, animation: null, hud: {widget: none}}
+    examples:
+      - "Giải giúp tôi bài toán phương trình bậc hai"
+      - "Đặt vé máy bay đi Đà Lạt cho tôi"
+      - "Thủ đô nước Pháp là gì?"

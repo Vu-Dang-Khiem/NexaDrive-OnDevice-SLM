@@ -1,0 +1,42 @@
+﻿40 cÃ¢u (12 cÃ¢u rÃµ rÃ ng cÃ³ chá»¯ sá»‘ trong test) -> data\stt\bo_b\danh_sach.jsonl
+b00 [ro_rang] Váº·n nhá»� loa xuá»‘ng má»©c 5
+b01 [ro_rang] Báº­t Ä‘iá»�u hÃ²a 26 Ä‘á»™ gháº¿ lÃ¡i
+b02 [ro_rang] Giáº£m nhiá»‡t Ä‘á»™ xuá»‘ng 20 Ä‘á»™ giÃ¹m
+b03 [ro_rang] Cháº¡y thÃªm 50 km ná»¯a cÃ³ Ä‘á»§ khÃ´ng
+b04 [ro_rang] Háº¡ hÃ© kÃ­nh bÃªn phá»¥ khoáº£ng 20%
+b05 [ro_rang] Ä�i 200 km ná»¯a cÃ³ pháº£i Ä‘á»• xÄƒng dá»�c Ä‘Æ°á»�ng khÃ´ng
+b06 [ro_rang] Tra Ä‘Æ°á»�ng vá»� sá»‘ 10 Ä‘Æ°á»�ng Nguyá»…n Huá»‡ quáº­n 1
+b07 [ro_rang] Chá»‰nh Ä‘iá»�u hÃ²a gháº¿ phá»¥ 25 Ä‘á»™
+b08 [ro_rang] Giáº£m giÃ³ Ä‘iá»�u hÃ²a xuá»‘ng má»©c 1
+b09 [ro_rang] Báº­t Ä‘iá»�u hÃ²a 22 Ä‘á»™ há»™ cÃ¡i
+b10 [ro_rang] Kiá»ƒm tra xem cÃ³ cá»­a nÃ o chÆ°a Ä‘Ã³ng cháº·t khÃ´ng
+b11 [ro_rang] Báº­t nháº¡c SÆ¡n TÃ¹ng M-TP
+b12 [ro_rang] Háº¡ kÃ­nh gháº¿ phá»¥ xuá»‘ng má»™t ná»­a
+b13 [ro_rang] Trá»�i Ã¢m u tháº¿ nÃ y sáº¯p mÆ°a to rá»“i
+b14 [ro_rang] Chá»‰ Ä‘Æ°á»�ng tá»›i Vincom BÃ  Triá»‡u trÃ¡nh Ä‘Æ°á»�ng cao tá»‘c
+b15 [ro_rang] KhÃ´ng biáº¿t cÃ³ vá»� tá»›i nÆ¡i mÃ  khÃ´ng pháº£i Ä‘á»• xÄƒng khÃ´ng
+b16 [ro_rang] Xem odo theo dáº·m giÃºp tÃ´i
+b17 [ro_rang] Dáº«n Ä‘Æ°á»�ng Ä‘áº¿n cÃ´ng ty
+b18 [ro_rang] KhÃ´ng biáº¿t pin cÃ²n Ä‘á»§ cháº¡y vá»� khÃ´ng
+b19 [ro_rang] Ba ngÃ y ná»¯a HÃ  Ná»™i thá»�i tiáº¿t ra sao
+b20 [mo_ho] Ä�Ã³i bá»¥ng cá»“n cÃ o rá»“i
+b21 [mo_ho] KÃ­nh sau Ä‘á»�ng hÆ¡i nÆ°á»›c háº¿t rá»“i
+b22 [mo_ho] KhÃ´ng biáº¿t Ä‘Æ°á»�ng vá»� nhÃ  tháº¿ nÃ o
+b23 [mo_ho] Náº¯ng rá»�i tháº³ng vÃ o Ä‘áº§u rÃ¡t quÃ¡
+b24 [mo_ho] GiÃ³ Ä‘iá»�u hÃ²a yáº¿u nhÆ° Ä‘uá»•i ruá»“i
+b25 [mo_ho] MÃ¹i xe khÃ³ chá»‹u quÃ¡
+b26 [mo_ho] KÃ­nh lÃ¡i má»� tá»‹t cháº³ng nhÃ¬n tháº¥y gÃ¬
+b27 [mo_ho] MÆ°a háº¯t vÃ o Æ°á»›t háº¿t tay Ã¡o rá»“i
+b28 [mo_ho] Trá»�i Ä‘áº¹p tháº¿ nÃ y ngá»“i bÃ­ trong xe phÃ­ quÃ¡
+b29 [mo_ho] Im áº¯ng quÃ¡ Ä‘i máº¥t
+b30 [ngoai_pham_vi] Chá»‰nh Ä‘á»™ nghiÃªng vÃ´ lÄƒng lÃªn cao hÆ¡n
+b31 [ngoai_pham_vi] Há»§y lá»™ trÃ¬nh dáº«n Ä‘Æ°á»�ng hiá»‡n táº¡i
+b32 [ngoai_pham_vi] Má»Ÿ cá»­a sá»• trá»�i trong phÃ²ng táº¯m
+b33 [ngoai_pham_vi] Báº­t bÃ¬nh nÃ³ng láº¡nh á»Ÿ nhÃ  trÆ°á»›c Ä‘i
+b34 [ngoai_pham_vi] Chá»‰nh gháº¿ sofa phÃ²ng khÃ¡ch ngáº£ ra sau
+b35 [ngoai_pham_vi] Má»Ÿ cá»­a cuá»‘n phÃ²ng khÃ¡ch nhÃ  tÃ´i lÃªn
+b36 [ngoai_pham_vi] Táº­p gym bÃ i nÃ o giáº£m má»¡ bá»¥ng nhanh nháº¥t
+b37 [ngoai_pham_vi] Xe Ä‘á»�i má»›i cÃ³ cáº§n cháº¡y rá»‘t-Ä‘a khÃ´ng
+b38 [ngoai_pham_vi] Gá»�i má»™t cá»‘c trÃ  sá»¯a trÃ¢n chÃ¢u giao tá»›i vÄƒn phÃ²ng
+b39 [ngoai_pham_vi] Ä�áº·t giÃºp tÃ´i 2 vÃ© xem phim ráº¡p CGV tá»‘i nay
+

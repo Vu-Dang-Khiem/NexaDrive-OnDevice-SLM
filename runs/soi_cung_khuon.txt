@@ -1,0 +1,50 @@
+﻿400 cÃ¢u 'cÃ¹ng khuÃ´n' ngáº«u nhiÃªn â€” Ä‘á»™ giá»‘ng CAO NHáº¤T vá»›i cÃ¢u Ä‘Ã£ giá»¯ (cÃ¹ng hÃ m): {'<0.35': 154, '0.35-0.5': 209, '0.5-0.7': 35, '>=0.7': 2}
+
+ 0.45
+   bá»‹ loáº¡i: ChÃ¡n tháº­t, Ä‘á»— xe á»Ÿ Ä‘Ã¢y mÃ  khÃ´ng biáº¿t cÃ³ an toÃ n khÃ´ng, cháº¯c pháº£i cáº©n tháº­n.
+   giá»‘ng  : Ä�á»— xe á»Ÿ Ä‘Ã¢y mÃ , chá»«ng nÃ o vá»� cháº¯c tui pháº£i cáº©n tháº­n.
+
+ 0.30
+   bá»‹ loáº¡i: CÃ¡i náº¯ng nÃ y chui qua khe cá»­a sá»• trá»�i, ngá»“i trong xe mÃ  váº«n cáº£m tháº¥y nÃ³ng bá»©c.
+   giá»‘ng  : Ã�nh náº¯ng chÃ³i chang tháº¿ nÃ y, ngá»“i trong xe nÃ³ng bá»©c, cháº£ tháº¥y thoáº£i mÃ¡i tÃ­ nÃ o.
+
+ 0.40
+   bá»‹ loáº¡i: Chá»‹ Æ¡i, mÃ¬nh vá»«a mua cÃ¡i tÃºi xÃ¡ch má»›i, sá»£ Ä‘á»ƒ cá»‘p xe mÃ  quÃªn Ä‘Ã³ng láº¡i, máº¥t Ä‘á»“ thÃ¬ má»‡t.
+   giá»‘ng  : Cháº¹p, vá»«a mua Ã­t Ä‘á»“, sá»£ quÃªn khÃ´ng Ä‘Ã³ng cá»‘p, Ä‘á»ƒ lÃ¢u láº¡i máº¥t.
+
+ 0.60
+   bá»‹ loáº¡i: LÃ¡i xe trong trá»�i mÆ°a, kÃ­nh xe cá»© Ä‘á»�ng nÆ°á»›c, táº§m nhÃ¬n kÃ©m quÃ¡.
+   giá»‘ng  : LÃ¡i xe Ä‘Ãªm dÃ i, kÃ­nh xe Ä‘á»�ng nÆ°á»›c, táº§m nhÃ¬n kÃ©m quÃ¡.
+
+ 0.35
+   bá»‹ loáº¡i: Trá»�i tá»‘i quÃ¡, Ä‘Æ°á»�ng nÃ y thiáº¿u Ã¡nh sÃ¡ng, lÃ m sao mÃ  nhÃ¬n rÃµ Ä‘Æ°á»£c.
+   giá»‘ng  : NhÃ¬n tháº¥y Ã¡nh sÃ¡ng má»� nháº¡t cá»§a Ä‘Ã¨n Ä‘Æ°á»�ng, sao mÃ  má»‡t quÃ¡.
+
+ 0.40
+   bá»‹ loáº¡i: Khá»• quÃ¡, kÃ­nh sau bá»‹ má»� hoÃ i, nhÃ¬n ra phÃ­a sau khÃ³ quÃ¡.
+   giá»‘ng  : KÃ­nh xe bá»‹ má»�, nhÃ¬n gÃ¬ cÅ©ng má»� má»�, khÃ³ chá»‹u quÃ¡.
+
+ 0.41
+   bá»‹ loáº¡i: Trá»�i mÆ°a táº§m tÃ£, kÃ­nh xe cá»© má»� má»� lÃ m sao nhÃ¬n Ä‘Æ°á»�ng Ä‘Æ°á»£c ná»¯a.
+   giá»‘ng  : Thá»�i tiáº¿t hÃ´m nay mÆ°a táº§m tÃ£, kÃ­nh xe cá»© má»� má»� tháº¿ nÃ y nhÃ¬n Ä‘Æ°á»�ng khÃ³ quÃ¡.
+
+ 0.35
+   bá»‹ loáº¡i: Cá»‘p xe mÃ¬nh chÆ°a Ä‘Ã³ng ká»¹, sao mÃ  táº­p trung lÃ¡i Ä‘Æ°á»£c.
+   giá»‘ng  : Tá»‘i rá»“i, Ä‘á»©ng Ä‘Ã¢y lÃ¢u sá»£ bá»‹ trá»™m, mÃ  cá»‘p xe mÃ¬nh chÆ°a Ä‘Ã³ng ká»¹.
+
+ 0.33
+   bá»‹ loáº¡i: Tá»‘i nay Ä‘á»— á»Ÿ Ä‘Ã¢y cháº¯c cháº¯n pháº£i cáº©n tháº­n, khu vá»±c nÃ y tá»‘i tÄƒm quÃ¡.
+   giá»‘ng  : Ä�á»— xe á»Ÿ Ä‘Ã¢y mÃ , chá»«ng nÃ o vá»� cháº¯c tui pháº£i cáº©n tháº­n.
+
+ 0.28
+   bá»‹ loáº¡i: DÃ¬ Æ¡i, sao Ä‘Æ°á»�ng Ä‘i tá»›i trÆ°á»�ng Ä‘áº¡i há»�c hÃ´m nay xa váº§y, em sá»£ xe háº¿t xÄƒng máº¥t.
+   giá»‘ng  : Ä�i má»�i quÃ¡, Ä‘Æ°á»�ng Ä‘i Huáº¿ sao mÃ  xa váº§y, sáº¯p háº¿t xÄƒng rÃ¹i.
+
+ 0.47
+   bá»‹ loáº¡i: Trá»�i nÃ³ng quÃ¡, ngÆ°á»�i em nhÆ° Ä‘ang háº¥p trong lÃ² váº­y.
+   giá»‘ng  : NÃ³ng quÃ¡, mÃ¬nh tháº¥y nhÆ° Ä‘ang ngá»“i trong lÃ² nÆ°á»›ng váº­y.
+
+ 0.50
+   bá»‹ loáº¡i: Ä�á»— xe xong mÃ  cá»‘p chÆ°a Ä‘Ã³ng, sá»£ rÆ¡i Ä‘á»“ ra ngoÃ i.
+   giá»‘ng  : Cá»‘p xe chÆ°a Ä‘Ã³ng ká»¹, sá»£ Ä‘á»“ rÆ¡i ra ngoÃ i khi cháº¡y tá»‘c Ä‘á»™ cao.
+

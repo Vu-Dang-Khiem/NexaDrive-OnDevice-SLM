@@ -1,0 +1,101 @@
+﻿stt,cau,loai_cau,ham_1,ham_2,ghi_chu
+147,"Trời oi bức quá, tôi muốn hóng gió",tinh_huong,control_window,set_ac,
+153,Tôi cần không gian yên tĩnh,tinh_huong,set_volume,control_window,
+106,Nếu có ai đó muốn làm gì xe mình thì sao?,tinh_huong,lock_doors,,
+338,"Đèn đường yếu quá, không nhìn thấy gì",tinh_huong,set_headlights,,
+259,Trời hôm nay trong quá,tinh_huong,operate_sunroof,,
+310,"Xe sắp hết xăng rồi, tìm trạm xăng gần đây được không?",ra_lenh,find_nearby,,
+10,"Nóng quá, người cứ bứt rứt không chịu nổi",tinh_huong,set_ac,,
+383,"Xe sắp hết xăng rồi, tìm trạm xăng gần đây.",ra_lenh,find_nearby,,
+98,Chắc phải đi đường vòng.,tinh_huong,navigate_to,,
+148,Cửa xe này đóng kỹ lại mới an tâm,tinh_huong,lock_doors,,
+347,"Lạnh quá, tay chân mình lạnh toát",tinh_huong,set_ac,,
+139,"Đau lưng, muốn dừng xe",tinh_huong,find_nearby,,
+151,Có thể tấp vào lề được không?,ra_lenh,khong_co,,xe không tự lái/tấp vào lề
+335,Đèn pha của xe mình yếu quá,tinh_huong,set_headlights,,mode=high_beam
+365,"Phía trước có xe gặp sự cố, đèn cảnh báo nháy liên tục.",tinh_huong,khong_co,,"đèn/sự cố của xe khác, không điều khiển được"
+48,Cửa xe mình chưa khoá,tinh_huong,lock_doors,,
+311,Cần gì đó để thư giãn sau một ngày mệt mỏi,tinh_huong,play_media,,
+92,"Trời hôm nay đẹp, muốn hít thở chút gió trời",tinh_huong,control_window,operate_sunroof,
+117,Muốn hòa mình vào không gian bên ngoài,tinh_huong,control_window,operate_sunroof,
+81,"Trời hôm nay đẹp quá, muốn ngắm sao trời",tinh_huong,operate_sunroof,,
+256,Thích ngắm sao trời,tinh_huong,operate_sunroof,,
+58,"Cái khu này vắng vẻ quá, không an tâm.",tinh_huong,lock_doors,,
+43,"Trời hôm nay thật mát, muốn hít thở chút gió trời",tinh_huong,control_window,operate_sunroof,
+166,"Chuyến đi kết thúc, cốp xe vẫn mở wide quá.",tinh_huong,close_trunk,,
+109,"]|[tối quá, không nhìn rõ gì cả",tinh_huong,set_headlights,,ký tự rác đầu câu
+78,"Cái đường này vắng quá, không biết có đúng không?",tinh_huong,navigate_to,,
+8,"Xe sắp hết xăng rồi, tìm trạm xnga gần đây.",ra_lenh,find_nearby,,gõ sai 'xnga'; category=gas_station
+51,"Trời sao mà ẩm ướt thế này, cảm thấy khó chịu quá.",tinh_huong,set_ac,,
+138,"Ôi, sao mà ồn thế này",tinh_huong,set_volume,control_window,không rõ ồn trong hay ngoài xe
+96,Hôm nay mọi người đang nghe bài gì?,tinh_huong,play_media,,hỏi xu hướng nhạc
+38,"Đi đêm, kính mờ mịt",tinh_huong,set_defrost,,
+205,"Trời tối quá, khó nhìn rõ đường",tinh_huong,set_headlights,,
+79,"Trời hôm nay thật đẹp, muốn ngắm cảnh",tinh_huong,operate_sunroof,control_window,
+345,Nếu có gió thổi vào thì sẽ thoải mái hơn,tinh_huong,control_window,operate_sunroof,
+178,"Mình đang cảm thấy mệt, cần một chút gió để thư giãn",tinh_huong,control_window,set_fan_speed,
+183,Mình cảm thấy có mùi gì lạ,tinh_huong,control_window,,
+152,"Ôi, không nghe được gì cả, nhạc to quá",tinh_huong,set_volume,,
+144,"Đi đường dài, muốn có gì đó để xua tan cảm giác này.",tinh_huong,play_media,,
+132,"Trời tối thế này, cần cẩn thận",tinh_huong,set_headlights,,
+281,"Trời hôm nay đẹp quá, muốn ngắm",tinh_huong,operate_sunroof,control_window,
+284,"Trời hôm nay trong quá, nhìn thấy tận bầu trời",tinh_huong,operate_sunroof,,
+57,"Chỗ này vắng quá, không biết có đúng không?",tinh_huong,navigate_to,,lo đi sai đường
+165,Trời hôm nay dễ chịu quá,tinh_huong,operate_sunroof,control_window,
+11,Sao đường này toàn trạm thu phí thế?,tinh_huong,navigate_to,,"avoid=tolls, chưa có điểm đến"
+279,Cái ngã tư này lạ quá.,tinh_huong,navigate_to,,
+312,Mình thấy có mùi khói trong xe,tinh_huong,control_window,,"an toàn: có khói có thể nguy hiểm, nên cảnh báo dừng xe"
+222,"Mình thấy lo lo, khu này buổi tối vắng vẻ quá.",tinh_huong,lock_doors,,
+122,Cần chút gió để thư giãn,tinh_huong,control_window,set_fan_speed,
+112,Mình thấy cửa xe mình chưa khoá,tinh_huong,lock_doors,,
+307,"Chán quá, chỉ muốn mở cửa sổ cho mát",tinh_huong,control_window,,
+104,"Trời ẩm ướt, không khí nặng nề",tinh_huong,set_ac,,
+249,"Quá ồn ào, làm sao mà tập trung vào công việc",tinh_huong,set_volume,control_window,không rõ nguồn ồn
+358,"Xe sắp hết xăng rồi, có trạm xăng nào gần đây không?",ra_lenh,find_nearby,,
+283,"Trời ơi, sao mà mưa nhiều thế",tinh_huong,get_weather,,không có hàm gạt mưa; có thể khong_co
+6,Chỉ thấy mờ mờ ảo ảo,tinh_huong,set_defrost,set_headlights,không rõ mờ do hơi nước hay do tối
+346,"Đói quá, bụng đã rên rỉ rồi.",tinh_huong,find_nearby,,
+128,Trời hôm nay đẹp quá,tinh_huong,operate_sunroof,,
+201,"Trời mưa mà cốp chưa đóng, ướt hết mất",tinh_huong,close_trunk,,
+257,Nếu có trộm thì sao?,tinh_huong,lock_doors,,
+185,Sao mà gió không thổi vào mặt được?,tinh_huong,set_fan_speed,,
+100,Mình thấy cửa xe chưa khoá,tinh_huong,lock_doors,,
+129,"Trời ơi, phía trước có tai nạn gì mà đèn nháy warning tùm lum vậy!",tinh_huong,khong_co,,"đèn/sự cố của xe khác, không điều khiển được"
+264,Cái đường này toàn cao tốc.,tinh_huong,navigate_to,,avoid=highways
+17,Muốn tận hưởng không khí bên ngoài,tinh_huong,control_window,operate_sunroof,
+361,"Điều hoà có vấn đề gì vậy, kính mờ thế này?",tinh_huong,set_defrost,,
+140,Chắc phải đi đường khác.,tinh_huong,navigate_to,,
+83,"Nóng quá, mình cần chút gió để làm mát",tinh_huong,set_ac,control_window,
+240,"Nắng nóng thế này, chỉ muốn uống nước lạnh",tinh_huong,find_nearby,set_ac,
+118,Tôi không nghe rõ lời bài hát,tinh_huong,set_volume,,
+120,Hơi ẩm làm kính mờ mịt,tinh_huong,set_defrost,,
+218,"Ơ, sao lại im lặng thế này",tinh_huong,play_media,,
+21,"Hơi oi bức, cần chút gió",tinh_huong,set_ac,control_window,
+199,Đây là mùa hè à?,tinh_huong,set_ac,,ngụ ý trời nóng
+325,Đây có phải là bài hát mà tôi đang nghe không?,khong_ro,,,câu khó hiểu
+351,"Nhiệt độ thấp quá, kính mờ",tinh_huong,set_defrost,,
+18,"Kính xe đọng hơi, nhìn không rõ",tinh_huong,set_defrost,,
+389,"Đói quá, cần ăn gì đó",tinh_huong,find_nearby,,
+9,"Trời ơi, sao mà nóng thế này.",tinh_huong,set_ac,,
+15,"Trời hôm nay thật đẹp, muốn ngắm nhìn",tinh_huong,operate_sunroof,control_window,
+23,"Cốp xe mở hoài, gió lùa vào hết cả.",tinh_huong,close_trunk,,
+280,"Mấy thằng bạn bỏ đồ lung tung, cốp xe lúc nào cũng mở.",tinh_huong,close_trunk,,
+52,Cái khu này sao thấy vắng quá vậy?,tinh_huong,lock_doors,,lo an toàn vì vắng
+381,"Chán quá, muốn nghe nhạc.",tinh_huong,play_media,,
+261,"Nóng quá, khó chịu quá",tinh_huong,set_ac,,
+390,"Chán quá, muốn nghe gì đó.",tinh_huong,play_media,,
+231,"Cốp xe mở toang, đồ đạc chắc bị rơi hết ra ngoài.",tinh_huong,close_trunk,,
+211,Cái xe này lúc nào cũng kín mít thế này,tinh_huong,control_window,set_ac,
+386,Mình thấy có mùi gì chua chua,tinh_huong,control_window,,
+270,Mình muốn tránh gió lạnh,tinh_huong,control_window,set_fan_speed,
+318,"Quạt gió này ồn quá, tớ không tập trung được.",tinh_huong,set_fan_speed,,
+271,Nên khoá cửa xe lại không nhỉ?,tinh_huong,lock_doors,,"câu hỏi xin ý kiến, không phải lệnh"
+193,"Đói quá, cần ăn ngay",tinh_huong,find_nearby,,
+34,Sao lại thấy mùi lạ thế này,tinh_huong,control_window,,
+177,"Cốp xe mở, gió lùa vào khiến mùi khó chịu.",tinh_huong,close_trunk,,
+372,"Cốp xe mở hoài, nhìn không lịch sự",tinh_huong,close_trunk,,
+306,"Chân tay mỏi, cần nghỉ ngơi",tinh_huong,find_nearby,,
+123,"Chắc có xe gặp sự cố, đèn cảnh báo sáng rực.",tinh_huong,khong_co,,"đèn/sự cố của xe khác, không điều khiển được"
+267,Các ngã tư này sao khó nhớ quá vậy?,tinh_huong,navigate_to,,
+260,"Quạt gió mạnh hơn tí đi, tôi thấy hơi ngạt.",ra_lenh,set_fan_speed,,
+243,"Trời ơi, xe này có phát nhạc được không nhỉ?",tinh_huong,play_media,,"hỏi khả năng, yêu cầu gián tiếp"

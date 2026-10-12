@@ -1,0 +1,484 @@
+{
+  "khoa_tu_vung": [
+    {
+      "ham": "close_trunk",
+      "so_cau": 263,
+      "tu_khoa": "đóng",
+      "do_phu": 99.6,
+      "ham_khac_cung_dung": [
+        [
+          "irrelevant_function",
+          66
+        ],
+        [
+          "operate_sunroof",
+          64
+        ],
+        [
+          "control_window",
+          33
+        ]
+      ],
+      "tu_phu_cao_khac": [
+        "cốp"
+      ]
+    },
+    {
+      "ham": "open_charge_port",
+      "so_cau": 264,
+      "tu_khoa": "sạc",
+      "do_phu": 100.0,
+      "ham_khac_cung_dung": [
+        [
+          "find_nearby",
+          45
+        ],
+        [
+          "get_range_estimate",
+          5
+        ],
+        [
+          "irrelevant_function",
+          3
+        ]
+      ],
+      "tu_phu_cao_khac": [
+        "mở"
+      ]
+    },
+    {
+      "ham": "open_fuel_flap",
+      "so_cau": 265,
+      "tu_khoa": "mở",
+      "do_phu": 98.9,
+      "ham_khac_cung_dung": [
+        [
+          "irrelevant_function",
+          279
+        ],
+        [
+          "open_trunk",
+          266
+        ],
+        [
+          "open_charge_port",
+          253
+        ]
+      ],
+      "tu_phu_cao_khac": []
+    },
+    {
+      "ham": "open_trunk",
+      "so_cau": 266,
+      "tu_khoa": "mở",
+      "do_phu": 100.0,
+      "ham_khac_cung_dung": [
+        [
+          "irrelevant_function",
+          279
+        ],
+        [
+          "open_fuel_flap",
+          262
+        ],
+        [
+          "open_charge_port",
+          253
+        ]
+      ],
+      "tu_phu_cao_khac": [
+        "cốp"
+      ]
+    },
+    {
+      "ham": "set_defrost",
+      "so_cau": 264,
+      "tu_khoa": "kính",
+      "do_phu": 99.6,
+      "ham_khac_cung_dung": [
+        [
+          "find_nearby",
+          140
+        ],
+        [
+          "control_window",
+          138
+        ],
+        [
+          "irrelevant_function",
+          76
+        ]
+      ],
+      "tu_phu_cao_khac": []
+    },
+    {
+      "ham": "set_hazard_lights",
+      "so_cau": 265,
+      "tu_khoa": "đèn",
+      "do_phu": 97.7,
+      "ham_khac_cung_dung": [
+        [
+          "irrelevant_function",
+          320
+        ],
+        [
+          "set_headlights",
+          266
+        ],
+        [
+          "get_vehicle_status",
+          8
+        ]
+      ],
+      "tu_phu_cao_khac": []
+    },
+    {
+      "ham": "set_headlights",
+      "so_cau": 266,
+      "tu_khoa": "đèn",
+      "do_phu": 100.0,
+      "ham_khac_cung_dung": [
+        [
+          "irrelevant_function",
+          320
+        ],
+        [
+          "set_hazard_lights",
+          259
+        ],
+        [
+          "get_vehicle_status",
+          8
+        ]
+      ],
+      "tu_phu_cao_khac": []
+    },
+    {
+      "ham": "unlock_doors",
+      "so_cau": 264,
+      "tu_khoa": "cửa",
+      "do_phu": 97.0,
+      "ham_khac_cung_dung": [
+        [
+          "irrelevant_function",
+          283
+        ],
+        [
+          "lock_doors",
+          221
+        ],
+        [
+          "operate_sunroof",
+          220
+        ]
+      ],
+      "tu_phu_cao_khac": []
+    }
+  ],
+  "dang_cau": {
+    "so_mau_duong": 6906,
+    "so_mau_am": 6897,
+    "menh_lenh_duong_%": 39.6,
+    "menh_lenh_am_%": 26.0,
+    "goi_ham_dung_neu_doan_theo_menh_lenh_%": 60.4
+  },
+  "hoi_lai": [
+    {
+      "ham": "set_ac",
+      "so_lan": 81,
+      "ty_le_%": 12.9
+    },
+    {
+      "ham": "set_defrost",
+      "so_lan": 80,
+      "ty_le_%": 12.7
+    },
+    {
+      "ham": "set_headlights",
+      "so_lan": 80,
+      "ty_le_%": 12.7
+    },
+    {
+      "ham": "set_volume",
+      "so_lan": 78,
+      "ty_le_%": 12.4
+    },
+    {
+      "ham": "play_media",
+      "so_lan": 70,
+      "ty_le_%": 11.1
+    },
+    {
+      "ham": "find_nearby",
+      "so_lan": 62,
+      "ty_le_%": 9.8
+    },
+    {
+      "ham": "close_trunk",
+      "so_lan": 40,
+      "ty_le_%": 6.3
+    },
+    {
+      "ham": "navigate_to",
+      "so_lan": 32,
+      "ty_le_%": 5.1
+    },
+    {
+      "ham": "set_fan_speed",
+      "so_lan": 31,
+      "ty_le_%": 4.9
+    },
+    {
+      "ham": "operate_sunroof",
+      "so_lan": 28,
+      "ty_le_%": 4.4
+    },
+    {
+      "ham": "control_window",
+      "so_lan": 24,
+      "ty_le_%": 3.8
+    },
+    {
+      "ham": "lock_doors",
+      "so_lan": 18,
+      "ty_le_%": 2.9
+    },
+    {
+      "ham": "set_hazard_lights",
+      "so_lan": 6,
+      "ty_le_%": 1.0
+    },
+    {
+      "ham": "get_fuel_level",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "get_battery_range",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "get_tire_pressure",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "get_vehicle_status",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "get_odometer",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "get_range_estimate",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "unlock_doors",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "open_trunk",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "open_charge_port",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "open_fuel_flap",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    },
+    {
+      "ham": "get_weather",
+      "so_lan": 0,
+      "ty_le_%": 0.0
+    }
+  ],
+  "dong_khuon": [
+    {
+      "ham": "open_fuel_flap",
+      "so_cau": 265,
+      "khuon_hay_nhat": "mở nắp bình xăng",
+      "ty_le_%": 53.2,
+      "so_cau_khac_nhau": 262
+    },
+    {
+      "ham": "close_trunk",
+      "so_cau": 302,
+      "khuon_hay_nhat": "đóng cốp sau xe",
+      "ty_le_%": 33.4,
+      "so_cau_khac_nhau": 293
+    },
+    {
+      "ham": "get_fuel_level",
+      "so_cau": 266,
+      "khuon_hay_nhat": "xăng còn đủ để",
+      "ty_le_%": 30.5,
+      "so_cau_khac_nhau": 254
+    },
+    {
+      "ham": "open_trunk",
+      "so_cau": 266,
+      "khuon_hay_nhat": "mở cốp sau xe",
+      "ty_le_%": 30.1,
+      "so_cau_khac_nhau": 251
+    },
+    {
+      "ham": "lock_doors",
+      "so_cau": 285,
+      "khuon_hay_nhat": "khóa cửa xe lại",
+      "ty_le_%": 19.6,
+      "so_cau_khac_nhau": 281
+    },
+    {
+      "ham": "irrelevant_function",
+      "so_cau": 6897,
+      "khuon_hay_nhat": "bạn có thể giúp",
+      "ty_le_%": 19.1,
+      "so_cau_khac_nhau": 6896
+    },
+    {
+      "ham": "get_range_estimate",
+      "so_cau": 258,
+      "khuon_hay_nhat": "xe còn đủ nhiên",
+      "ty_le_%": 17.4,
+      "so_cau_khac_nhau": 258
+    },
+    {
+      "ham": "get_weather",
+      "so_cau": 257,
+      "khuon_hay_nhat": "thời tiết hôm nay",
+      "ty_le_%": 17.1,
+      "so_cau_khac_nhau": 257
+    },
+    {
+      "ham": "set_hazard_lights",
+      "so_cau": 271,
+      "khuon_hay_nhat": "bật đèn cảnh báo",
+      "ty_le_%": 16.6,
+      "so_cau_khac_nhau": 266
+    },
+    {
+      "ham": "open_charge_port",
+      "so_cau": 264,
+      "khuon_hay_nhat": "mở nắp sạc xe",
+      "ty_le_%": 15.9,
+      "so_cau_khac_nhau": 261
+    },
+    {
+      "ham": "get_tire_pressure",
+      "so_cau": 257,
+      "khuon_hay_nhat": "kiểm tra áp suất",
+      "ty_le_%": 15.2,
+      "so_cau_khac_nhau": 257
+    },
+    {
+      "ham": "get_odometer",
+      "so_cau": 223,
+      "khuon_hay_nhat": "xe đã chạy được",
+      "ty_le_%": 14.8,
+      "so_cau_khac_nhau": 223
+    },
+    {
+      "ham": "operate_sunroof",
+      "so_cau": 292,
+      "khuon_hay_nhat": "mở cửa sổ trời",
+      "ty_le_%": 14.7,
+      "so_cau_khac_nhau": 289
+    },
+    {
+      "ham": "get_battery_range",
+      "so_cau": 257,
+      "khuon_hay_nhat": "xe còn bao nhiêu",
+      "ty_le_%": 12.8,
+      "so_cau_khac_nhau": 257
+    },
+    {
+      "ham": "set_volume",
+      "so_cau": 344,
+      "khuon_hay_nhat": "tăng âm lượng lên",
+      "ty_le_%": 11.6,
+      "so_cau_khac_nhau": 337
+    },
+    {
+      "ham": "unlock_doors",
+      "so_cau": 264,
+      "khuon_hay_nhat": "mở khoá cửa xe",
+      "ty_le_%": 10.6,
+      "so_cau_khac_nhau": 254
+    },
+    {
+      "ham": "control_window",
+      "so_cau": 299,
+      "khuon_hay_nhat": "hạ cửa sổ ghế",
+      "ty_le_%": 10.0,
+      "so_cau_khac_nhau": 299
+    },
+    {
+      "ham": "navigate_to",
+      "so_cau": 290,
+      "khuon_hay_nhat": "hướng dẫn tôi đến",
+      "ty_le_%": 9.3,
+      "so_cau_khac_nhau": 290
+    },
+    {
+      "ham": "set_fan_speed",
+      "so_cau": 299,
+      "khuon_hay_nhat": "tăng quạt gió lên",
+      "ty_le_%": 8.7,
+      "so_cau_khac_nhau": 295
+    },
+    {
+      "ham": "set_headlights",
+      "so_cau": 346,
+      "khuon_hay_nhat": "chuyển đèn pha sang",
+      "ty_le_%": 6.9,
+      "so_cau_khac_nhau": 343
+    },
+    {
+      "ham": "find_nearby",
+      "so_cau": 326,
+      "khuon_hay_nhat": "cho tôi biết các",
+      "ty_le_%": 6.7,
+      "so_cau_khac_nhau": 326
+    },
+    {
+      "ham": "set_defrost",
+      "so_cau": 344,
+      "khuon_hay_nhat": "kính mờ quá bật",
+      "ty_le_%": 6.1,
+      "so_cau_khac_nhau": 338
+    },
+    {
+      "ham": "get_vehicle_status",
+      "so_cau": 257,
+      "khuon_hay_nhat": "cho tôi biết tình",
+      "ty_le_%": 4.7,
+      "so_cau_khac_nhau": 257
+    },
+    {
+      "ham": "play_media",
+      "so_cau": 327,
+      "khuon_hay_nhat": "mở nhạc từ usb",
+      "ty_le_%": 4.6,
+      "so_cau_khac_nhau": 327
+    },
+    {
+      "ham": "set_ac",
+      "so_cau": 347,
+      "khuon_hay_nhat": "bật điều hòa 28",
+      "ty_le_%": 2.6,
+      "so_cau_khac_nhau": 341
+    }
+  ]
+}

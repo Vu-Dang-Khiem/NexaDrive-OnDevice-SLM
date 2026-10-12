@@ -1,0 +1,152 @@
+\section{Nexa Drive: Task and System}
+\label{sec:system}
+
+\subsection{Functions and actions}
+\label{sec:functions}
+
+The assistant controls 24 functions of a simulated car (Table~\ref{tab:functions}; full signatures in
+Appendix~\ref{app:functions}). Nineteen correspond to properties of the public Android Automotive
+\code{VehiclePropertyIds} specification \citep{android2026vhal} (for example \code{set\_ac} $\leftrightarrow$
+\code{HVAC\_POWER\_ON}, \code{HVAC\_TEMPERATURE\_SET}; \code{control\_window} $\leftrightarrow$ \code{WINDOW\_MOVE}), several
+properties being merged into one function with a position argument, as in \citet{jafarzadeh2026fixedkeys}. Navigation, nearby
+search and media follow Google's documentation for Android car apps, and weather follows CAR-bench. Value ranges
+(temperature 16--30\,°C, fan 0--7, volume 0--40) describe one simulated configuration, not a standard. A 25th token,
+\code{irrelevant\_function}, means ``refuse''.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lp{4.9cm}@{}}
+\toprule
+Group & Functions \\
+\midrule
+Status (read-only) & fuel level, battery range, tire pressure, vehicle status, odometer, range estimate, weather \\
+Climate & AC (on/off, temperature, delta, mode, zone), fan speed, defrost \\
+Access & lock, unlock$^{\ast}$, open trunk$^{\ast}$, close trunk, open charge port$^{\ast}$, open fuel flap$^{\ast}$ \\
+Windows & side windows, sunroof \\
+Lights & headlights, hazard lights \\
+Media, route & volume, play media, navigate, find nearby \\
+\bottomrule
+\end{tabular}
+\caption{The 24 functions. $^{\ast}$Sensitive functions (they open access to the car): never proposed from an implicit
+request and always confirmed when triggered by the wake word.}
+\label{tab:functions}
+\end{table}
+
+For every utterance the model chooses one of three actions:
+\begin{itemize}
+  \item \textbf{Execute} --- \vi{Hạ kính ghế phụ một nửa}{lower the passenger window halfway} $\rightarrow$\\
+  {\small\tok{nexa\_15}\code{(window="front\_right",}\\ \code{position="down", amount=50)}\tok{nexa\_end}}.
+  \item \textbf{Clarify} --- \vi{Ôi tôi nóng quá}{oh, I am so hot} $\rightarrow$\\
+  {\small\tok{nexa\_ask}\tok{nexa\_6}\code{(state="on")}\tok{nexa\_end}}; the runtime asks ``Shall I turn on the air
+  conditioning?'' and executes the stored call if the driver says yes, without calling the model again.
+  \item \textbf{Refuse} --- \vi{Đặt giúp tôi vé xem phim}{book me a movie ticket} $\rightarrow$
+  {\small\tok{nexa\_24}\code{()}\tok{nexa\_end}}.
+\end{itemize}
+Independent requests in one call are separated by \code{;}. Data policy fixed early in the project: read-only functions are
+never ``clarified'' (reading a value cannot do harm, asking only annoys the driver); a clarification keeps only arguments the
+user actually stated; sensitive functions and the high beam are never proposed from an implicit request.
+
+\subsection{Functional tokens and prompts}
+\label{sec:tokens}
+
+We add 27 tokens to the Qwen2.5 tokenizer \citep{qwen2024qwen25}: \tok{nexa\_0}\ldots\tok{nexa\_24}, \tok{nexa\_end} and
+\tok{nexa\_ask} (vocabulary 151,665 $\rightarrow$ 151,692); new embeddings are initialized to the mean of existing ones plus
+noise. Because the student is an instruction-tuned model, prompts use its native ChatML template. The call prompt is a
+one-line system message (``You are an agent that controls a car'', in Vietnamese) and the user utterance; it averages 33--39
+tokens. From data round v6 on, the user turn may start with \code{Lượt trước: <previous call>} (``previous turn''), which lets
+the model resolve follow-ups such as \vi{đóng đi}{close it}. As in Octopus~v2, we tested appending a natural-language
+description of the function after \tok{nexa\_end} (\code{Mô tả hàm: \ldots}, ``function description''; \S\ref{sec:rounds}).
+The final training set keeps it in only 2,385 of its 33,523 examples (7.1\%, refusals inherited from earlier rounds);
+at inference the model stops at \tok{nexa\_end}, so the description costs no latency. A second prompt type (the call, the function result and
+the user turn) trains the same model to phrase the answer; examples are in Appendix~\ref{app:prompts}.
+
+\subsection{Runtime pipeline}
+\label{sec:pipeline}
+
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize, minimum height=0.95cm, inner sep=3pt},
+  model/.style={box, fill=blue!10},
+  code/.style={box, fill=orange!12},
+  io/.style={box, fill=green!10},
+  arr/.style={-{Latex[length=1.6mm]}, semithick},
+  node distance=0.32cm]
+\node[io] (mic) {Microphone\\16\,kHz};
+\node[model, right=of mic] (wake) {Wake word\\``Hey Nexa''\\or push-to-talk};
+\node[model, right=of wake] (stt) {STT\\PhoWhisper-small\\int8, CPU};
+\node[code, right=of stt] (norm) {Normalize\\numbers, case;\\split multi-\\command};
+\node[model, right=of norm] (llm) {Student 1.5B\\GGUF q4\_K\_M\\\tok{nexa\_i}(args)};
+\node[code, right=of llm] (thr) {Confidence\\threshold\\0.80};
+\node[code, below=0.55cm of thr] (val) {Parser +\\validator};
+\node[code, left=of val] (safe) {Safety rules\\(vehicle state,\\source)};
+\node[io, left=of safe] (car) {Vehicle\\simulator};
+\node[code, left=of car] (resp) {Template\\answer};
+\node[model, left=of resp] (tts) {TTS\\VieNeu};
+\node[io, left=of tts] (ui) {Speaker +\\3D interface};
+\draw[arr] (mic) -- (wake); \draw[arr] (wake) -- (stt); \draw[arr] (stt) -- (norm);
+\draw[arr] (norm) -- (llm); \draw[arr] (llm) -- (thr); \draw[arr] (thr) -- (val);
+\draw[arr] (val) -- (safe); \draw[arr] (safe) -- (car); \draw[arr] (car) -- (resp);
+\draw[arr] (resp) -- (tts); \draw[arr] (tts) -- (ui);
+\end{tikzpicture}
+\caption{Runtime pipeline. Blue: learned models; orange: code; green: input/output. Clarifications and refusals leave the
+pipeline after the validator or safety step with a question or an apology; a pending call is executed when the driver
+confirms. Everything runs on the laptop CPU; the GPU is not used.}
+\label{fig:pipeline}
+\end{figure*}
+
+Figure~\ref{fig:pipeline} shows the deployed pipeline. The backend (FastAPI + WebSocket) keeps one simulated vehicle and one
+pending call per session. The student runs in \code{llama-server} from llama.cpp \citep{gerganov2023llamacpp}; prompts are
+sent as token ids produced by the Hugging Face tokenizer and outputs are decoded from token ids, because the text field of
+the server hides control tokens such as \tok{nexa\_i}. The end-of-sequence token is overridden to \tok{nexa\_end}: without it,
+uncertain refusals continued into the description seen in those 7.1\% of examples until the generation limit, which made them five to eight times
+slower (identical outputs on 400 validation prompts, total time 540\,s $\rightarrow$ 249\,s).
+
+Several small layers sit around the model; each was added after a measured failure (details in Appendix~\ref{app:runtime}):
+\begin{itemize}
+  \item \textbf{Text normalization.} The training data, written by the teacher, always starts with a capital letter. For
+  \vi{hỏng xe giữa đường rồi}{my car broke down in the middle of the road}, the lower-case version is refused (refusal
+  probability 0.68) while the capitalized one triggers a hazard-light proposal (0.99). We therefore capitalize the first
+  letter, collapse repeated letters and lower-case all-caps input before the model sees it.
+  \item \textbf{Retry without context.} If the model refuses while a previous turn is in the prompt, it is called once more
+  without the context, so that context can help a follow-up but never turns an understood request into a refusal.
+  \item \textbf{Relative-command conventions.} ``Colder'' without a number means $-2$\,°C, fan $\pm1$ level, volume $\pm3$---the
+  same rules used to label the training data.
+  \item \textbf{Multi-command splitting.} The training data contain no example that executes several independent actions, so
+  the model picks one action from \vi{bật đèn pha lên xong kiểm tra xăng xong đó mở cốp}{turn on the headlights, then check
+  the fuel, then open the trunk}. We split such utterances on explicit sequential connectors (\textit{xong}, \textit{sau
+  đó}, \textit{rồi thì}, \ldots; not on \textit{và} ``and''), run the model per segment and stop at the first segment that
+  needs clarification.
+  \item \textbf{Answer templates.} The model was trained to phrase answers from function results, but this second pass adds
+  about 1.6\,s and produced semantic errors no automatic check caught (\S\ref{sec:turn2}); the deployed system answers with
+  templates filled from the result.
+\end{itemize}
+
+\subsection{Guardrails}
+\label{sec:guardrails}
+
+Following the principle ``the model understands, code keeps the car safe'', every call passes a validator and a set of
+state-dependent rules declared in the function schema (Table~\ref{tab:safety}). The validator rejects values outside
+enumerations or ranges, asks for missing required arguments and drops unknown arguments. Each command carries its source:
+push-to-talk is treated as the driver, while the wake word can be spoken by any passenger. Mirroring a real window-lock
+button, the child lock lets the driver lower rear windows directly but asks for confirmation when the request comes through
+the wake word. The rules are covered by 917 automated tests, including scenario tests that, as in $\tau$-bench, check the
+final vehicle state rather than the wording of the answer. We did not measure guardrails with a quantitative benchmark.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}p{3.6cm}p{3.1cm}@{}}
+\toprule
+Condition & Action \\
+\midrule
+open trunk / charge port / fuel flap while driving & refuse \\
+unlock doors while driving & ask to confirm \\
+any sensitive function via wake word & ask to confirm \\
+child lock on + wake word + rear window down or sunroof open/tilt & ask to confirm \\
+driving starts with trunk, door or flap open & warn \\
+model proposes a sensitive function & drop the proposal \\
+\bottomrule
+\end{tabular}
+\caption{Runtime safety rules (code, independent of the model).}
+\label{tab:safety}
+\end{table}

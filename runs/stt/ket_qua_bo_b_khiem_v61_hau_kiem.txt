@@ -1,0 +1,22 @@
+﻿
+MỐC chữ gốc qua cùng đường: 30/40 đúng (75.0%)
+
+== bo_b_khiem_parakeet
+  cả chuỗi đúng 16/40 (40.0%) · mất so với chữ gốc 14 · được thêm 0 · theo nhóm {'ro_rang': '5/20', 'mo_ho': '3/10', 
+'ngoai_pham_vi': '8/10'}
+  WER 32.7% · CER 16.7% · STT p50 388 ms · p95 489 ms · RTF tb 0.12
+  kiểu sai: {'sai_tham_so': 8, 'sai_ham': 6, 'hoi_lai_thua': 5, 'tu_choi_nham': 3, 'goi_bua': 2}
+
+== bo_b_khiem_phowhisper-small
+  cả chuỗi đúng 22/40 (55.0%) · mất so với chữ gốc 10 · được thêm 2 · theo nhóm {'ro_rang': '7/20', 'mo_ho': '6/10', 
+'ngoai_pham_vi': '9/10'}
+  WER 19.4% · CER 9.8% · STT p50 1844 ms · p95 4716 ms · RTF tb 0.74
+  kiểu sai: {'sai_tham_so': 7, 'hoi_lai_thua': 6, 'tu_choi_nham': 2, 'sai_ham': 2, 'goi_bua': 1}
+
+== bo_b_khiem_phowhisper-medium
+  cả chuỗi đúng 19/40 (47.5%) · mất so với chữ gốc 12 · được thêm 1 · theo nhóm {'ro_rang': '6/20', 'mo_ho': '5/10', 
+'ngoai_pham_vi': '8/10'}
+  WER 16.2% · CER 8.1% · STT p50 4806 ms · p95 5136 ms · RTF tb 1.50
+  kiểu sai: {'sai_tham_so': 9, 'hoi_lai_thua': 4, 'tu_choi_nham': 3, 'sai_ham': 3, 'goi_bua': 2}
+
+

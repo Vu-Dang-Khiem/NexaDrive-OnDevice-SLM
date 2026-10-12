@@ -1,0 +1,16 @@
+\begin{abstract}
+We present \textbf{Nexa Drive}, a Vietnamese voice assistant that controls 24 functions of a simulated car and runs entirely
+on a laptop CPU. Following Octopus~v2, every function is a dedicated vocabulary token, so choosing a function is a single-token
+decision and the prompt shrinks from about 2,150 tokens (function schemas in the prompt) to 33. A Qwen2.5-1.5B-Instruct student
+is trained with LoRA on 33.5k examples distilled from a locally hosted Qwen2.5-72B-Instruct teacher and filtered by code
+checks, a two-family LLM jury and human audits. Besides executing or refusing, the model can \emph{clarify}: an implicit
+complaint such as \vi{nóng quá}{it is so hot} becomes a proposal the driver confirms. Across six data rounds evaluated on
+frozen, contamination-checked test sets with two seeds, exact McNemar tests and criteria fixed before each run, we find that
+(i) adding a sentence style to only one label creates a shortcut that contrastive pairs remove; (ii) the student is
+statistically indistinguishable from the prompted 72B teacher on clear commands and on long implicit requests, but refuses
+out-of-scope requests less reliably (77.3\% vs.\ 94.9\%); (iii) a confidence threshold on the decision token cuts wrong
+actions on the car by 29--40\%; (iv) GRPO on saturated distilled data does not reduce wrong actions; and (v) 4-bit quantization
+passes a validation check yet costs about five points on implicit requests at test time. With real speech from one speaker
+the full pipeline is correct on 63.3\% of new commands (70.0\% when typed), tolerates recorded in-car noise down to 0\,dB, and
+is woken by a custom ``Hey Nexa'' detector that catches 39 of 40 real calls at 2.86 false alarms per hour.
+\end{abstract}

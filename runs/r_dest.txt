@@ -1,0 +1,10 @@
+﻿7 | Láº§n Ä‘áº§u Ä‘i con Ä‘Æ°á»�ng nÃ y, sá»£ láº¡c láº¯m, mong chÃ³ng tá»›i. | navigate_to(destination="")
+11 | Cháº¿t rá»“i, sao giá»� má»›i nhá»› ra lÃ  Ä‘oáº¡n Ä‘Æ°á»�ng nÃ y cÃ³ tráº¡m thu phÃ­, lÃ m Æ¡n luÃ´n. | navigate_to(destination="")
+18 | Ä�i Ä‘Æ°á»�ng nÃ y láº§n Ä‘áº§u, sá»£ láº¡c quÃ¡ chá»�i, khÃ´ng biáº¿t lÃ m sao luÃ´n. | navigate_to(destination="")
+v5 má»›i: 73 / 120 cÃ¢u cÃ³ dáº«n Ä‘Æ°á»�ng
+train cÅ© (Ä‘á»‘i chá»©ng): 58 / 417
+   vÃ­ dá»¥: start|>user
+CÃ¡i app nÃ y cÃ³ khi cháº£ nhá»› Ä‘Æ°á»�ng, mÃ¬nh cÅ©ng lÄƒn tÄƒn, khÃ´ng biáº¿t Ä‘i tháº¿ nÃ o.<|im_end|>
+<|im_start|>assistant
+
+

@@ -1,0 +1,31 @@
+﻿stt_goc,cau,nhan,ghi_chu,nhom_phu
+1,"Lưng mình hơi mỏi vì ngồi lâu từ sáng tới giờ, chỉnh ghế lái ngả ra một chút giúp mình với.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+2,"Trời tối mà bên hông xe nhìn hơi khó, bật camera 360 quanh xe lên cho mình xem với.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+3,"Trong xe hơi nóng mà mình sắp chở thêm người, bật điều hòa lên giúp mình nhé.","set_ac(state=""on"")",,dev_lam_duoc_hoan_canh
+4,"Mình vừa ra đường lớn mà xe trước chạy không đều, bật giữ khoảng cách tự động giúp mình đi.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+5,"Mình quên tắt điều hòa ở phòng ngủ lúc ra khỏi nhà, tắt điều hòa phòng giúp mình với.",irrelevant_function(),,dev_ngoai_xe_hoan_canh
+6,"Mưa lất phất làm kính trước dính nước nhìn khó chịu quá, bật gạt mưa nhanh hơn cho mình.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+7,"Mình đang lái không tiện cầm điện thoại, nhắn cho mẹ là con sắp về giúp mình nhé.",irrelevant_function(),,dev_ngoai_xe_hoan_canh
+8,"Đường cao tốc bắt đầu đông xe mà mình hơi buồn ngủ, bật cảnh báo chống ngủ gật lên giúp mình.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+9,"Mình đói mà lát nữa mới tới nơi, đặt giúp mình một phần cơm gà giao về nhà đi.",irrelevant_function(),,dev_ngoai_xe_hoan_canh
+10,"Xe vào bãi hẹp mà gương bên phải dễ quẹt cột, chỉnh gương phụ xuống thấp giúp mình.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+11,"Mình đang leo dốc dài mà xe hơi ì, bật chế độ lái Sport cho mình với.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+12,"Đằng trước kính bị mờ do trời lạnh, bật sấy kính trước giúp mình nhé.","set_defrost(state=""on"", zone=""front"")",,dev_lam_duoc_hoan_canh
+13,"Mình đỗ ngoài nắng lâu nên vô lăng nóng quá, bật sưởi ghế thì không cần nhưng làm mát ghế lái giúp mình.",irrelevant_function(),câu hơi lủng củng (vô lăng nóng -> làm mát ghế); làm mát ghế không hỗ trợ -> từ chối,dev_xe_khong_ho_tro_hoan_canh
+14,"Tới chỗ rửa xe rồi mà nhân viên cần mở khoang máy, mở nắp capo giúp mình với.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+15,"Mình nghe tiếng bánh hơi lạ từ nãy giờ, kiểm tra áp suất lốp bốn bánh cho mình xem.",get_tire_pressure(),,dev_lam_duoc_hoan_canh
+16,"Mình vừa dừng đèn đỏ trên dốc, kéo phanh tay điện tử lên giúp mình cho chắc.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+17,"Sắp tới ngã rẽ mà mình chưa biết đường, dẫn mình tới Vincom Bắc Ninh đi.","navigate_to(destination=""Vincom Bắc Ninh"")",,dev_lam_duoc_hoan_canh
+18,"Mình đang đi chậm trong ngõ mà xe máy áp sát quá, gập hai gương chiếu hậu vào giúp mình.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+19,"Đèn cảnh báo làn cứ kêu liên tục trên đoạn đường xấu, tắt cảnh báo lệch làn giúp mình đi.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+20,"Mình muốn lùi vào chỗ đỗ mà phía sau khá chật, tự đỗ xe vào ô kia giúp mình với.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+21,"Trong xe ồn quá nghe nhạc không rõ, tăng âm lượng lên một chút giúp mình.",set_volume(delta=2),'một chút' không có mức chuẩn — báo chính theo hàm,dev_lam_duoc_hoan_canh
+22,"Mình vừa nhớ chưa khóa cửa nhà mà đang lái xe, khóa cửa chính ở nhà giúp mình nhé.",irrelevant_function(),,dev_ngoai_xe_hoan_canh
+23,"Đi qua đoạn bụi mịn này mình thấy mùi khó chịu, bật lọc không khí trong xe lên giúp mình.",irrelevant_function(),lọc không khí không có trong set_ac -> từ chối (bẫy gần điều hoà),dev_xe_khong_ho_tro_hoan_canh
+24,"Mình chuẩn bị ra khỏi xe mua đồ một lát, khóa hết cửa xe lại giúp mình.",lock_doors(),,dev_lam_duoc_hoan_canh
+25,"Xe hơi bí vì vừa chở nhiều người, hạ hé kính sau bên phải xuống một chút nhé.","control_window(window=""rear_right"", position=""down"", amount=20)",'hé… một chút' không có mức chuẩn — báo chính theo hàm,dev_lam_duoc_hoan_canh
+26,"Mình sợ sắp hết xăng trước khi tới nơi, tìm cây xăng gần đây nhất giúp mình.","find_nearby(category=""gas_station"")",,dev_lam_duoc_hoan_canh
+27,"Mình chở trẻ con phía sau nên hơi lo cửa mở nhầm, bật khóa trẻ em cửa sau giúp mình.",irrelevant_function(),,dev_xe_khong_ho_tro_hoan_canh
+28,"Trời bắt đầu tối mà đường này ít đèn, bật đèn pha tự động giúp mình với.","set_headlights(mode=""auto"")",,dev_lam_duoc_hoan_canh
+29,"Mình chưa kịp trả tiền phòng trọ tháng này, chuyển khoản cho chủ nhà hai triệu giúp mình.",irrelevant_function(),,dev_ngoai_xe_hoan_canh
+30,"Mình mua nhiều đồ bỏ cốp sau rồi, mở cốp sau ra giúp mình nhé.",open_trunk(),,dev_lam_duoc_hoan_canh

@@ -1,0 +1,11 @@
+﻿s42 ck1208: rÃµ rÃ ng  95.3 | mÆ¡ há»“  88.2 | tá»« chá»‘i nháº§m  0.0
+s42 ck2416: rÃµ rÃ ng  98.4 | mÆ¡ há»“  92.2 | tá»« chá»‘i nháº§m  0.0
+s42 ck3624: rÃµ rÃ ng  98.4 | mÆ¡ há»“  93.1 | tá»« chá»‘i nháº§m  0.0
+  -> CHá»ŒN s42 checkpoint-2416
+
+s7 ck1208: rÃµ rÃ ng  96.1 | mÆ¡ há»“  90.2 | tá»« chá»‘i nháº§m  0.0
+s7 ck2416: rÃµ rÃ ng  98.8 | mÆ¡ há»“  91.2 | tá»« chá»‘i nháº§m  0.0
+s7 ck3624: rÃµ rÃ ng  98.8 | mÆ¡ há»“  92.2 | tá»« chá»‘i nháº§m  0.0
+  -> CHá»ŒN s7 checkpoint-2416
+
+

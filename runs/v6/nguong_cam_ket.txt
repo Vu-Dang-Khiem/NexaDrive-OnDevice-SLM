@@ -1,0 +1,11 @@
+﻿== HIỆU CHỈNH (mục tiêu làm bừa ≤ 10%, cận trên 90%) ==
+  v5s42   n=194 | không ngưỡng: làm bừa 40 (20.6%, cận trên 24.8%) | NGƯỠNG CAM KẾT = None (làm bừa 23, cận trên 15.4%)
+  v5s7    n=194 | không ngưỡng: làm bừa 37 (19.1%, cận trên 23.2%) | NGƯỠNG CAM KẾT = None (làm bừa 18, cận trên 12.5%)
+  v61s42  n=194 | không ngưỡng: làm bừa 39 (20.1%, cận trên 24.3%) | NGƯỠNG CAM KẾT = None (làm bừa 22, cận trên 14.8%)
+  v61s7   n=194 | không ngưỡng: làm bừa 55 (28.4%, cận trên 32.9%) | NGƯỠNG CAM KẾT = None (làm bừa 31, cận trên 19.9%)
+
+== ÁP LÊN TEST ĐÃ ĐÓNG BĂNG (mỗi model ngưỡng cam kết của nó) ==
+  v5s42: KHÔNG cam kết được ở lưới ngưỡng
+  v5s7: KHÔNG cam kết được ở lưới ngưỡng
+  v61s42: KHÔNG cam kết được ở lưới ngưỡng
+  v61s7: KHÔNG cam kết được ở lưới ngưỡng

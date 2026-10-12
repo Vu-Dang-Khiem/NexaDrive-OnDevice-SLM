@@ -1,0 +1,26 @@
+{
+ "ban": 2,
+ "nguong": 0.85,
+ "lien": 3,
+ "b_fleurs_test": {
+  "cau": 857,
+  "gio": 3.149,
+  "bao_nham": 9,
+  "bao_nham_gio": 2.857908998532235,
+  "dat": false
+ },
+ "b2_bo_c_giong_nguoi_dung": {
+  "cau": 30,
+  "phut": 2.06,
+  "bao": 1,
+  "dat": false
+ },
+ "c_tu_thuc": {
+  "cau": 38,
+  "phut": 2.08,
+  "bao": 0,
+  "dat": true
+ },
+ "ms_moi_khung_80ms": 2.77,
+ "phan_tram_1_nhan_cpu": 3.5
+}

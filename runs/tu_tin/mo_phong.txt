@@ -1,0 +1,26 @@
+﻿token tá»« chá»‘i = <nexa_24>
+
+===== val_vi =====
+ ngÆ°á»¡ng | ngoÃ i pv Ä‘Ãºng | gá»�i bá»«a | rÃµ rÃ ng Ä‘Ãºng | tá»« chá»‘i nháº§m | há»�i thá»«a | Ä‘á»•i káº¿t quáº£ (cÅ©->má»›i)
+  0.00  | 1311/1318    |   7     | 1505/1546   |   0          |   2      | {}
+  0.80  | 1312/1318    |   6     | 1497/1546   |   0          |  14      | {('sai_ham', 'hoi_lai_thua'): 4, ('dung', 'hoi_lai_thua'): 8, ('goi_bua', 'dung'): 1}
+  0.90  | 1312/1318    |   5     | 1492/1546   |   1          |  19      | {('sai_ham', 'hoi_lai_thua'): 5, ('dung', 'hoi_lai_thua'): 12, ('dung', 'tu_choi_nham'): 1, ('goi_bua', 'hoi_lai_khi_phai_tu_choi'): 1, ('goi_bua', 'dung'): 1}
+  0.95  | 1312/1318    |   4     | 1479/1546   |   2          |  31      | {('dung', 'hoi_lai_thua'): 24, ('sai_ham', 'hoi_lai_thua'): 5, ('dung', 'tu_choi_nham'): 2, ('goi_bua', 'hoi_lai_khi_phai_tu_choi'): 2, ('goi_bua', 'dung'): 1}
+  0.97  | 1312/1318    |   4     | 1457/1546   |   8          |  47      | {('dung', 'hoi_lai_thua'): 40, ('dung', 'tu_choi_nham'): 8, ('sai_ham', 'hoi_lai_thua'): 5, ('goi_bua', 'hoi_lai_khi_phai_tu_choi'): 2, ('goi_bua', 'dung'): 1}
+
+===== dev_vi_2 =====
+ ngÆ°á»¡ng | ngoÃ i pv Ä‘Ãºng | gá»�i bá»«a | rÃµ rÃ ng Ä‘Ãºng | tá»« chá»‘i nháº§m | há»�i thá»«a | Ä‘á»•i káº¿t quáº£ (cÅ©->má»›i)
+  0.00  |   17/  20    |   3     |    8/  10   |   0          |   0      | {}
+  0.80  |   18/  20    |   2     |    8/  10   |   0          |   0      | {('goi_bua', 'dung'): 1}
+  0.90  |   19/  20    |   1     |    8/  10   |   0          |   0      | {('goi_bua', 'dung'): 2}
+  0.95  |   19/  20    |   1     |    7/  10   |   1          |   0      | {('goi_bua', 'dung'): 2, ('dung', 'tu_choi_nham'): 1}
+  0.97  |   19/  20    |   1     |    7/  10   |   1          |   0      | {('goi_bua', 'dung'): 2, ('dung', 'tu_choi_nham'): 1}
+
+===== ca_hai =====
+ ngÆ°á»¡ng | ngoÃ i pv Ä‘Ãºng | gá»�i bá»«a | rÃµ rÃ ng Ä‘Ãºng | tá»« chá»‘i nháº§m | há»�i thá»«a | Ä‘á»•i káº¿t quáº£ (cÅ©->má»›i)
+  0.00  | 1328/1338    |  10     | 1513/1556   |   0          |   2      | {}
+  0.80  | 1330/1338    |   8     | 1505/1556   |   0          |  14      | {('sai_ham', 'hoi_lai_thua'): 4, ('dung', 'hoi_lai_thua'): 8, ('goi_bua', 'dung'): 2}
+  0.90  | 1331/1338    |   6     | 1500/1556   |   1          |  19      | {('sai_ham', 'hoi_lai_thua'): 5, ('dung', 'hoi_lai_thua'): 12, ('dung', 'tu_choi_nham'): 1, ('goi_bua', 'hoi_lai_khi_phai_tu_choi'): 1, ('goi_bua', 'dung'): 3}
+  0.95  | 1331/1338    |   5     | 1486/1556   |   3          |  31      | {('dung', 'hoi_lai_thua'): 24, ('sai_ham', 'hoi_lai_thua'): 5, ('dung', 'tu_choi_nham'): 3, ('goi_bua', 'hoi_lai_khi_phai_tu_choi'): 2, ('goi_bua', 'dung'): 3}
+  0.97  | 1331/1338    |   5     | 1464/1556   |   9          |  47      | {('dung', 'hoi_lai_thua'): 40, ('dung', 'tu_choi_nham'): 9, ('sai_ham', 'hoi_lai_thua'): 5, ('goi_bua', 'hoi_lai_khi_phai_tu_choi'): 2, ('goi_bua', 'dung'): 3}
+
