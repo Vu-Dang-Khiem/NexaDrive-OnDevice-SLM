@@ -17,7 +17,7 @@ Qwen2.5-1.5B-Instruct and to the 72B teacher, each run once with greedy decoding
 \cmidrule(lr){2-4}
 System & Clear (74) & Amb. (39) & OOS (117) & (28) & (129) & tokens & latency \\
 \midrule
-Qwen2.5-1.5B, prompted (SIP) & 37.8 & 35.9 & 31.6 & 14.3 & -- & 2,156 & 779\,ms \\
+Qwen2.5-1.5B, prompted (SIP) & 37.8 & 35.9 & 31.6 & 14.3 & 20.9 & 2,156 & 779\,ms \\
 Qwen2.5-72B teacher, prompted (SIP) & \textbf{83.8} & 56.4 & \textbf{94.9} & 39.3 & 70.5 & 2,156 & 1,842\,ms \\
 \midrule
 Student v5, LoRA & 78.4 & 75.7 & 83.8 & 58.9 & 78.3 & 33 & \multirow{3}{*}{224\,ms$^{\dagger}$} \\
@@ -35,19 +35,25 @@ run in Table~\ref{tab:lora}. The deployed row is one seed after 4-bit quantizati
 \label{tab:main}
 \end{table*}
 
-\paragraph{Training is necessary.} With the same 1.5B model, prompting reaches 32--38\% on every group; the 1.5B prompted
-model over-triggers on 63\% of out-of-scope requests and returns invalid JSON for 10 items. Fine-tuning with functional tokens
-roughly doubles every group while the prompt is 65 times shorter.
+\paragraph{Training is necessary.} With the same 1.5B model, prompting reaches only 14--38\% on every group (21--28\% on the
+newer short, two-turn, typo and Ambig-4 sets, Table~\ref{tab:v6}); the 1.5B prompted model over-triggers on 63\% of
+out-of-scope requests and returns invalid JSON for 10 clean-test items. Fine-tuning with functional tokens roughly doubles to
+quadruples every group while the prompt is 65 times shorter.
 
 \paragraph{Against the 72B teacher.} Exact McNemar tests per seed (v6.1, unquantized, Appendix~\ref{app:seeds}) give:
 \emph{clear commands} 81.1 and 75.7 vs.\ 83.8 ($p=0.77$, $0.15$): no detectable difference; \emph{long implicit requests}
 (Ambig-4) 79.8 and 78.3 vs.\ 70.5 ($p=0.065$, $0.14$): higher but not significant; the small ambiguous group: significant for
 one seed only (tie or slightly better); \emph{out-of-scope} 82.9 and 71.8 vs.\ 94.9 ($p\le0.001$ for both): the teacher is
-clearly better. Part of the 72B's errors on clear commands are label conventions it cannot know from descriptions (an AC
+clearly better. On the v6 sets (Table~\ref{tab:v6}; the prompted baselines were run on them later with the same prompt and
+decoding) the picture is similar: \emph{short commands and paraphrases} 88.3 and 87.5 vs.\ 91.7 ($p=0.39$, $0.27$) and
+\emph{typos} 60.6 and 66.3 vs.\ 69.2 ($p=0.093$, $0.66$) are ties, \emph{new arguments} favor the student (83.3 vs.\ 70.0,
+$p=0.34$), but on \emph{two-turn follow-ups} the teacher is clearly better (81.7 vs.\ 66.7 and 58.3; $p=0.049$, $0.001$),
+although it never saw a two-turn example and receives exactly the previous call that the student receives. Part of the 72B's errors on clear commands are label conventions it cannot know from descriptions (an AC
 temperature without \code{state="on"}, ``weak lights'' $\rightarrow$ high beam). A 1.5B model can tie a 72B one on clear and
 implicit requests here because the comparison is not symmetric: the student learned this task's conventions from 33k
 examples of the teacher's \emph{filtered} outputs, whereas the teacher works zero-shot from a prompt; where general knowledge
-is needed---recognizing what the car cannot do---the larger model remains ahead.
+or reasoning over context is needed---recognizing what the car cannot do, or how a follow-up modifies the previous
+action---the larger model remains ahead.
 
 \subsection{What the data rounds taught}
 \label{sec:rounds}
@@ -162,23 +168,28 @@ register, plus two-turn data with the previous call in the prompt and typos intr
 written and frozen before any v6 model existed.
 
 \begin{table}[t]
-\centering\small
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{@{}lcccc@{}}
+\centering\footnotesize
+\setlength{\tabcolsep}{2.6pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lccccccc@{}}
 \toprule
-Mean of 2 seeds & v5 & v6 & v6.1 & \\
+& \multicolumn{3}{c}{Student (2 seeds)} & & \multicolumn{2}{c}{Prompted (SIP)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){6-7}
+& v5 & v6 & v6.1 & crit. & 1.5B & 72B \\
 \midrule
-(1) Short + paraphrase (120) & 76.3 & 88.8 & \textbf{87.9} & pass \\
-(2) Two-turn (60)$^{a}$ & 23.3 & 60.9 & \textbf{62.5} & \\
-(3) New arguments (30) & 8.4 & 83.3 & \textbf{83.3} & \\
-(4) Clear, old test (74) & 78.4 & 77.7 & 78.4 & pass \\
-(4) Out-of-scope (117) & \textbf{83.8} & 73.1 & 77.3 & \textbf{fail} \\
-(4) Ambig-4 (129) & 78.3 & 80.7 & 79.0 & pass \\
-(5) Typos (104) & 31.7 & 64.5 & \textbf{63.5} & \\
+(1) Short + paraphrase (120) & 76.3 & 88.8 & 87.9 & pass & 27.5 & \textbf{91.7} \\
+(2) Two-turn (60)$^{a}$ & 23.3 & 60.8 & 62.5 & & 28.3 & \textbf{81.7} \\
+(3) New arguments (30) & 8.4 & \textbf{83.3} & \textbf{83.3} & & 16.7 & 70.0 \\
+(4) Clear, old test (74) & 78.4 & 77.7 & 78.4 & pass & 37.8 & \textbf{83.8} \\
+(4) Out-of-scope (117) & 83.8 & 73.1 & 77.3 & fail & 31.6 & \textbf{94.9} \\
+(4) Ambig-4 (129) & 78.3 & \textbf{80.6} & 79.0 & pass & 20.9 & 70.5 \\
+(5) Typos (104) & 31.7 & 64.4 & 63.5 & & 21.2 & \textbf{69.2} \\
 \bottomrule
-\end{tabular}
-\caption{Pre-registered comparison. Criterion (1): better than v5 for both seeds (McNemar $p=0.0007$, $0.007$ for v6.1);
-(4): no group of the old tests more than 3 points below v5. $^{a}$v5 with a rule-based memory; without memory also 23.3.}
+\end{tabular}}
+\caption{Pre-registered comparison of the student rounds (criteria compare v6.1 with v5 only), with the prompted baselines
+for reference (single greedy runs; bold = best per row). Criterion (1): better than v5 for both seeds (McNemar $p=0.0007$,
+$0.007$ for v6.1); (4): no group of the old tests more than 3 points below v5. $^{a}$v5 with a rule-based memory (without
+memory also 23.3); prompted baselines receive the previous call in the user message, as the student does.}
 \label{tab:v6}
 \end{table}
 

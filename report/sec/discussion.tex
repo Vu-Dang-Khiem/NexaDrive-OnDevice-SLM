@@ -5,7 +5,9 @@
 indistinguishable from the 72B teacher while being 65 times cheaper in prompt length, about eight times faster on the same GPU
 and small enough for a laptop CPU. Its consistent weakness is knowing what it \emph{cannot} do: unsupported features that
 resemble supported ones (``honk'', ``lane-departure warning'', ``left turn signal'' $\rightarrow$ hazard lights at $p=0.99$)
-are mapped to the nearest real function, often with high confidence. Data helps (contrastive refusals, more samples) and a threshold helps against uncertain mistakes, but
+are mapped to the nearest real function, often with high confidence. Its second weakness is context: given the same previous
+call, the prompted teacher resolves two-turn follow-ups clearly better (81.7\% vs.\ 62.5\%), so the 4.7k training examples
+with a previous call (about 1.5k of them genuine follow-ups) taught the format more than the reasoning. Data helps (contrastive refusals, more samples) and a threshold helps against uncertain mistakes, but
 neither removes confidently wrong decisions; this matches the over-triggering reported for functional tokens by
 \citet{jafarzadeh2026fixedkeys}. A hybrid design that forwards uncertain requests to a larger model when a connection is
 available is the natural next step for a product.
@@ -46,5 +48,6 @@ prompted teacher, asks instead of guessing when a request is only a complaint, a
 decisions away from the car. The project's main lessons are about data and measurement rather than architecture: hard examples
 must be added in contrastive pairs, synthetic validation data hides the weaknesses that matter, and small test sets need
 several seeds and paired tests before a difference is believed. The remaining weaknesses---refusing unsupported features,
+two-turn follow-ups,
 sensitivity to quantization on ambiguous input, background speech, and false wake-ups---are measured and documented, and
 define the next steps: real-user data, a hybrid on-device/cloud design and multi-microphone input.
