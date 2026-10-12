@@ -33,7 +33,7 @@ ROUNDS = [  # name, clear, ambiguous(39), out-of-scope
     ("Combined", 78.3, 62.8, 73.0),
     ("v5 full", 79.1, 76.9, 75.6),
     ("v5 LoRA", 79.1, 76.9, 83.3),
-    ("v6.1 LoRA", 78.4, 75.7, 77.3),
+    ("v6.1 LoRA", 78.4, 75.6, 77.4),  # đếm câu: 116/148, 59/78, 181/234 (bản cũ lấy tb hai % đã làm tròn)
 ]
 fig, ax = plt.subplots(figsize=(6.3, 2.3))
 w = 0.27

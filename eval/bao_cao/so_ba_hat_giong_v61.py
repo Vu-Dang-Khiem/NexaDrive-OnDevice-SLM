@@ -26,6 +26,31 @@ PHEP = [
 ]
 
 
+def tai_s2026():
+    """Tải dự đoán test của s2026 từ volume (kiểm kích thước — đường tải hay cắt cụt âm thầm)."""
+    from pathlib import Path
+
+    import modal
+
+    vol = modal.Volume.from_name("nexa-drive")
+    kt = {e.path.rsplit("/", 1)[-1]: e.size for e in vol.listdir("/data/vi/final_v6")}
+    for tap in dict.fromkeys(t for t, _, _ in PHEP):
+        f = f"du_doan_v61s2026_{tap}.jsonl"
+        if Path("runs/v6", f).exists() and Path("runs/v6", f).stat().st_size == kt[f]:
+            continue
+        for _ in range(6):
+            du = b"".join(vol.read_file(f"/data/vi/final_v6/{f}"))
+            if len(du) == kt[f]:
+                break
+        else:
+            raise RuntimeError(f"tải {f} không đủ")
+        Path("runs/v6", f).write_bytes(du)
+
+
+if "--tai" in sys.argv:
+    tai_s2026()
+
+
 def doc(p):
     return [json.loads(x) for x in open(p, encoding="utf-8") if x.strip()]
 

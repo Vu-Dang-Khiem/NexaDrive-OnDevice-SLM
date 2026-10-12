@@ -9,7 +9,8 @@ human--human agreement baseline.
 
 \paragraph{Small sets and repeated use.} Groups contain 28--150 items and the clean test was used across many rounds; v6 and
 v6.1 were two attempts on the same test, and the Ambig-3 set was retired after one use. We trained only two seeds per
-configuration. Differences below about five points should be read as unresolved.
+configuration (three for the final one; seed standard deviations reach 5--6 points on the smaller groups,
+Table~\ref{tab:seed3}). Differences below about five points should be read as unresolved.
 
 \paragraph{One speaker, quiet room.} All real recordings (STT sets, wake-word training and test calls) come from the first
 author on a laptop microphone. Noise was added digitally from recordings, not captured while driving; music was not tested. The
@@ -32,7 +33,7 @@ state conditions and do not include cross-component rules (e.g.\ AC and windows)
 
 The assistant cannot steer, brake or accelerate; actions that open the car are refused while driving and confirmed when
 requested through the wake word. Voice recordings are of the first author only, who consented to their use. External data are
-used under their licenses: FLEURS and DEMAND (CC BY 4.0), ACAV100M features (CC BY-NC-SA 4.0, which restricts the wake-word model
+used under their licenses: FLEURS (CC BY 4.0), DEMAND (CC BY-SA 3.0), ACAV100M features (CC BY-NC-SA 4.0, which restricts the wake-word model
 to non-commercial use), the Khronos \emph{Car Concept} 3D model (CC BY 4.0). VieNeu-TTS embeds an inaudible watermark in synthetic
 speech. ChatGPT was used to generate evaluation sentences and draft labels, which were reviewed by a person. An AI assistant
 (Claude) was used for code assistance and to draft this report from the project log; all reported numbers were checked against
