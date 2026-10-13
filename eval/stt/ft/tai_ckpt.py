@@ -1,7 +1,7 @@
-"""Tải các checkpoint fine-tune STT (CTranslate2 int8) từ volume về models/stt/, kiểm KÍCH THƯỚC từng file và tải
-lại tới khi khớp (đường tải Modal -> máy này hay cắt cụt âm thầm). PLAN.md "FINE-TUNE STT".
+"""Tải các checkpoint fine-tune STT (CTranslate2 int8) từ volume về models/stt/, kiểm KÍCH THƯỚC từng file
+và tải lại tới khi khớp (đường tải Modal -> máy này hay cắt cụt âm thầm). PLAN.md "FINE-TUNE STT".
 
-    conda run -n vdk1 python -m eval.stt.ft.tai_ckpt A      # -> models/stt/phowhisper-small-ftA/ep{1,2,3}-ct2-int8
+    conda run -n vdk1 python -m eval.stt.ft.tai_ckpt A   # -> models/stt/phowhisper-small-ftA/ep*-ct2-int8
 """
 
 from __future__ import annotations
