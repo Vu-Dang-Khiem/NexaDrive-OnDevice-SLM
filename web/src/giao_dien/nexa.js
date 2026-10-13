@@ -1437,6 +1437,16 @@ function onEvent(e) {
    lịch nối tiếp -> nghe tiếng sau ~0,2–0,3 s thay vì chờ cả câu. Tắt dịch vụ giọng nói thì im lặng, không báo lỗi. ---- */
 let ctxLoa = null;   // một AudioContext dùng chung cho loa
 let dangDoc = null;  // { huy: AbortController, nguon: AudioBufferSourceNode[] }
+// Người dùng thử 2026-10-13: tiếng "nói một chữ, ngừng, nói tiếp". Âm thanh server gửi liền mạch (đã soi), nên sửa
+// khâu phát: (1) loa mở đúng 48 kHz của VieNeu — nếu loa chạy tần số khác thì mỗi đoạn bị đổi tần số RIÊNG, lệch ở
+// từng chỗ nối; (2) đệm trước 0,25 s (trước 0,05 s): các đoạn đầu chỉ dài ~85 ms, trang bận vẽ 3D là đoạn sau tới trễ.
+const TAN_SO_LOA = 48000;
+const DEM_TRUOC = 0.25;
+function moLoa() {
+  if (ctxLoa) return ctxLoa;
+  try { ctxLoa = new AudioContext({ sampleRate: TAN_SO_LOA }); } catch { ctxLoa = new AudioContext(); }
+  return ctxLoa;
+}
 function dungDoc() {   // câu mới / bấm mic / «hey nexa» thức: dừng ngay câu đang đọc
   if (!dangDoc) return;
   const d = dangDoc; dangDoc = null;
@@ -1462,7 +1472,7 @@ async function docTo(text, ngheTiep = false) {
     });
     if (!r.ok) throw new Error(String(r.status));
     const tanSo = Number(r.headers.get("X-Tan-So")) || 48000;
-    ctxLoa ??= new AudioContext();
+    moLoa();
     // trình duyệt chỉ cho phát tiếng sau lần click đầu tiên trên trang: chưa click thì resume() treo mãi ->
     // chờ tối đa 0,5 s rồi bỏ qua tiếng (vẫn hiện chữ, vẫn nghe tiếp)
     if (ctxLoa.state === "suspended") await Promise.race([ctxLoa.resume(), new Promise(ok => setTimeout(ok, 500))]);
@@ -1472,6 +1482,7 @@ async function docTo(text, ngheTiep = false) {
     const doc = r.body.getReader();
     let du = new Uint8Array(0);   // byte lẻ cuối gói mạng (mẫu 16-bit bị cắt đôi) giữ lại ghép với gói sau
     let lich = 0;                 // thời điểm đoạn kế tiếp bắt đầu phát
+    let hut = 0;                  // số lần đoạn sau tới trễ hơn lúc đoạn trước phát xong (tiếng bị ngắt)
     for (;;) {
       const { value, done } = await doc.read();
       if (done || dangDoc !== d) break;
@@ -1486,10 +1497,14 @@ async function docTo(text, ngheTiep = false) {
       for (let i = 0; i < n; i++) kenh[i] = mau[i] / 32768;
       const nguon = ctxLoa.createBufferSource();
       nguon.buffer = buf; nguon.connect(ctxLoa.destination);
-      lich = Math.max(lich, ctxLoa.currentTime + 0.05);   // đoạn tới muộn thì phát ngay, tới sớm thì nối đuôi
+      // tới kịp thì nối đuôi; đoạn đầu / tới trễ thì đệm lại DEM_TRUOC rồi phát (một lần ngắt dài hơn nhưng không ngắt lắt nhắt)
+      if (lich < ctxLoa.currentTime + 0.01) { if (lich) hut++; lich = ctxLoa.currentTime + DEM_TRUOC; }
       nguon.start(lich); lich += buf.duration;
       d.nguon.push(nguon);
     }
+    // chẩn đoán: xem ở Console (F12) hoặc gõ __nexaTieng — số đoạn, số lần hụt, tần số loa thật
+    window.__nexaTieng = { doan: d.nguon.length, hut, tanSoLoa: ctxLoa.sampleRate, tanSoTts: tanSo };
+    if (hut) console.warn("[nexa] tiếng bị hụt", window.__nexaTieng);
     if (dangDoc !== d) return;
     // Phát hết đoạn cuối thì nghe lại. HẸN GIỜ theo lịch phát chứ không gắn `onended` vào đoạn cuối: máy bận thì
     // đoạn cuối có thể phát xong TRƯỚC khi luồng báo hết (đo 2026-10-13: chỉ dư 0,2–0,8 s) -> sự kiện đã bắn mất,
@@ -1527,7 +1542,7 @@ function moKhoaAmThanh() {
     document.removeEventListener("pointerdown", mo, true); document.removeEventListener("keydown", mo, true);
     if (ev.target?.closest?.("#heyNexa")) boQuaClickWake = true;   // click mở khoá không được tắt luôn «hey nexa»
     wake?.ctx.resume();
-    ctxLoa ??= new AudioContext(); ctxLoa.resume();
+    moLoa().resume();
     if (wake) veChoGoi();
   };
   document.addEventListener("pointerdown", mo, true); document.addEventListener("keydown", mo, true);
