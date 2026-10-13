@@ -40,7 +40,7 @@ Ngoài pv    "kể chuyện cười đi"    ->  <nexa_24>()<nexa_end>           
 | Câu mơ hồ / ngoài phạm vi | hỏi lại có đề xuất cụ thể; từ chối lịch sự câu không liên quan đến xe |
 | Hội thoại hai lượt | model nhận lời gọi lượt trước trong prompt ("thôi tắt đi", "phía sau thì sao") |
 | Nhiều lệnh một câu | "bật đèn pha rồi mở cốp" được tách và thực hiện lần lượt |
-| Giọng nói | STT **PhoWhisper-small** (int8) · TTS **VieNeu** đọc từng đoạn (tiếng đầu sau ~0,24 s) |
+| Giọng nói | STT **PhoWhisper-small** (int8), fine-tune thêm trên câu lệnh xe · TTS **VieNeu** đọc từng đoạn (tiếng đầu sau ~0,24 s) |
 | Rảnh tay | mở trang là tự nghe "Hey Nexa"; gọi riêng "Hey Nexa" thì trợ lý chào và nghe lệnh; sau mỗi câu trả lời nghe tiếp 6 s, không cần gọi lại |
 | Xe 3D | three.js, mô phỏng trạng thái xe và hoạt cảnh theo lệnh |
 
@@ -117,8 +117,11 @@ AWQ. Hành động sai lên xe = gọi bừa + sai hàm + sai tham số + làm l
 8-bit gần như không mất gì so với f16; 4-bit tụt ~5 điểm ở câu mơ hồ / câu ngắn nhưng là mức duy nhất đạt mục tiêu dưới 1 giây
 ở p95.
 
-**Giọng nói** (giọng thật, 60 câu mới): nói đúng 38 / 60 so với gõ chữ 42 / 60. Wake-word: bắt 39 / 40 lần gọi, báo nhầm
-~2,9 lần / giờ trên 3,1 giờ âm thanh nền.
+**Giọng nói** (giọng thật một người, STT gốc, 60 câu): nói đúng 38 / 60 so với gõ chữ 42 / 60. **Fine-tune STT** trên câu
+lệnh xe (5.000 câu TTS nhiều giọng + FLEURS + 12 phút giọng thật) nâng số lệnh đúng trên 40 câu mới từ 24 lên 28 (gõ chữ 32;
+sai từ 24,8% → 14,5%; cùng người nói với dữ liệu train, 40 câu nên chưa có ý nghĩa thống kê), không kém trên FLEURS (người
+khác, câu thường). Chỉ dùng giọng TTS thì gần như không giúp. Wake-word: bắt 39 / 40 lần gọi, báo nhầm ~2,9 lần / giờ trên
+3,1 giờ âm thanh nền.
 
 **Thí nghiệm không thành công (vẫn báo cáo):** GRPO nối sau SFT không đạt tiêu chí khoá trước; full fine-tune kém LoRA ở câu
 ngoài phạm vi. Chi tiết, kiểm định McNemar và các hạn chế: [báo cáo](report/main.pdf).
@@ -156,6 +159,7 @@ cd web; npm install; npm run dev           # mở http://localhost:5173
 | `NEXA_NGUONG` | mặc định `0.80` | ngưỡng tự tin |
 | `NEXA_NHO` | `model` / `luat` | bộ nhớ lượt trước bằng model hay bằng luật (mặc định `model` với bản v6.1) |
 | `NEXA_LUOT_2` | `mau` (mặc định) / `model` | câu trả lời bằng câu mẫu hay để model viết |
+| `NEXA_STT` | không đặt / `goc` | dịch vụ giọng nói: mặc định bản STT fine-tune nếu có ở `models/stt/phowhisper-small-ftB/ep3-ct2-int8`, `goc` = PhoWhisper-small gốc |
 | `NEXA_STT_BEAM`, `NEXA_STT_GOI_Y` | `1`, không đặt | biến thể STT |
 
 ## Cài môi trường

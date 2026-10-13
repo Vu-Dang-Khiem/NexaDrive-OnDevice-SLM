@@ -7,9 +7,16 @@ import pytest
 from fastapi.testclient import TestClient
 
 from serve.danh_thuc import KHUNG, bo_cum_goi
-from serve.giong_noi import DocTungDoan, pcm16, tao_app
+from serve.giong_noi import STT_FT, DocTungDoan, chon_stt, pcm16, tao_app
 
 nhan: list[str] = []
+
+
+def test_chon_stt_mac_dinh_ban_fine_tune_va_ve_goc_duoc():
+    assert chon_stt(None, co_ft=True) == str(STT_FT)
+    assert chon_stt("goc", co_ft=True) is None  # NEXA_STT=goc -> PhoWhisper-small gốc
+    assert chon_stt(None, co_ft=False) is None  # máy chưa có bản fine-tune -> tự về bản gốc
+    assert chon_stt("ft", co_ft=False) is None
 
 
 def _nghe(tep: str) -> str:

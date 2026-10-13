@@ -19,7 +19,8 @@
               tiếp mà không ai nói (quay về chờ "hey nexa").
 
 STT = PhoWhisper-small int8 (chọn theo luật đã khoá trên bộ B giọng thật), CÙNG cách gọi lúc đo
-(`eval/stt/chay_stt.nap`: CPU 8 luồng, int8). Beam / gợi ý từ vựng để mặc định = cấu hình đã đo (greedy,
+(`eval/stt/chay_stt.nap`: CPU 8 luồng, int8). Mặc định dùng bản FINE-TUNE trên câu lệnh xe (`STT_FT`) nếu có
+trên máy; NEXA_STT=goc để về bản gốc. Beam / gợi ý từ vựng để mặc định = cấu hình đã đo (greedy,
 không gợi ý); đổi qua NEXA_STT_BEAM, NEXA_STT_GOI_Y=1 khi bộ D chốt biến thể khác. Chữ STT -> `chuan_cau_stt`
 (đổi số chữ -> chữ số, bỏ dấu câu cuối, hoa chữ đầu) — đúng bước đã dùng khi chấm cả chuỗi. Đường
 wake-word cắt thêm đuôi cụm gọi ("nét xa ơi…") ở đầu chữ trước (`serve.danh_thuc.bo_cum_goi`).
@@ -256,6 +257,17 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
     return app
 
 
+# PhoWhisper-small FINE-TUNE trên câu lệnh xe (bản B epoch 3: TTS nhiều giọng + FLEURS + 12 phút giọng
+# thật; PLAN.md "FINE-TUNE STT", người dùng đồng ý thay 2026-10-13). Bộ E: 24 -> 28 / 40, FLEURS không kém.
+STT_FT = Path("models/stt/phowhisper-small-ftB/ep3-ct2-int8")
+
+
+def chon_stt(bien: str | None, co_ft: bool) -> str | None:
+    """Thư mục model STT theo `NEXA_STT`: mặc định bản fine-tune NẾU có trên máy; `goc` = PhoWhisper-small gốc
+    (None = bản gốc `eval.stt.chay_stt.MO_HINH`). Thiếu bản fine-tune thì tự về bản gốc — demo vẫn chạy."""
+    return None if bien == "goc" or not co_ft else str(STT_FT)
+
+
 def tao_app_that() -> FastAPI:
     """App với model thật — gọi qua `uvicorn serve.giong_noi:tao_app_that --factory` (nạp model ~10 s)."""
     import soundfile as sf
@@ -264,7 +276,9 @@ def tao_app_that() -> FastAPI:
     from eval.stt.chay_stt import nap
 
     beam, goi_y = int(os.environ.get("NEXA_STT_BEAM", "1")), os.environ.get("NEXA_STT_GOI_Y") == "1"
-    nghe = nap("phowhisper-small", beam, goi_y)
+    thu_muc = chon_stt(os.environ.get("NEXA_STT"), STT_FT.exists())
+    print(f"[giong_noi] STT: {thu_muc or 'PhoWhisper-small gốc'}", flush=True)
+    nghe = nap("phowhisper-small", beam, goi_y, thu_muc)
     tts = Vieneu()
 
     def doc(text: str) -> bytes:
