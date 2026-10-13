@@ -48,7 +48,7 @@ from fastapi.responses import Response, StreamingResponse
 from pydantic import BaseModel
 from starlette.concurrency import run_in_threadpool
 
-from serve.danh_thuc import KHUNG, ThuLenh, bo_cum_goi, bo_dem_truoc
+from serve.danh_thuc import KHUNG, BuAmLuong, ThuLenh, bo_cum_goi, bo_dem_truoc
 from serve.so_chu import chuan_cau_stt
 
 GIONG = "Trúc Ly"
@@ -202,6 +202,7 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
             tiep = False  # đang NGHE TIẾP (không cần gọi lại) chứ không phải vừa nghe thấy "hey nexa"
             tam_dung = False
             da_dung = 0  # số mẫu âm thanh đã bỏ qua trong lần tạm dừng này
+            bu = BuAmLuong()  # mic nhỏ thì VAD không thấy tiếng nói -> bù âm lượng cho riêng VAD
             try:
                 while True:
                     tin = await ws.receive()
@@ -213,7 +214,7 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
                             tam_dung, da_dung, du = False, 0, np.zeros(0, np.int16)
                             truoc.clear()
                             bo.lam_moi()
-                            thu, tiep = ThuLenh([], vad, cho_noi_khung=CHO_NGHE_TIEP), True
+                            thu, tiep = ThuLenh([], vad, cho_noi_khung=CHO_NGHE_TIEP, bu=bu), True
                             continue
                         # chỉ xử lý khi ĐỔI trạng thái — "tiep_tuc" thừa (vd dừng loa đúng lúc vừa thức) không
                         # được xoá câu lệnh đang gom
@@ -235,11 +236,12 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
                     du = np.concatenate([du, np.frombuffer(tin["bytes"], dtype="<i2")])
                     while len(du) >= KHUNG:
                         khung, du = du[:KHUNG].copy(), du[KHUNG:]
+                        bu.cap_nhat(khung)
                         if thu is None:
                             _, thuc = bo.nghe(khung)
                             truoc.append(khung)
                             if thuc:
-                                thu, tiep = ThuLenh(list(truoc), vad, cho_noi_khung=CHO_SAU_GOI), False
+                                thu, tiep = ThuLenh(list(truoc), vad, cho_noi_khung=CHO_SAU_GOI, bu=bu), False
                                 await ws.send_json({"type": "thuc"})
                             continue
                         ket = thu.them(khung)

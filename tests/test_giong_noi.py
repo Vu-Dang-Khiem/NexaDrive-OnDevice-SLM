@@ -169,6 +169,52 @@ def test_nghe_tiep_noi_muon_van_du_thoi_gian_noi_het_cau():
         assert tin["type"] == "lenh" and tin["text"] == "Bật điều hoà 22 độ"
 
 
+class _VadCanTo:
+    """VAD "khó tính" như Silero với mic nhỏ: chỉ thấy tiếng nói khi biên độ ≥ 3000."""
+
+    def reset_states(self) -> None:
+        pass
+
+    def predict(self, khung: np.ndarray, frame_size: int = 640) -> float:
+        return 1.0 if np.abs(khung).max() >= 3000 else 0.0
+
+
+def test_mic_nho_van_thu_duoc_lenh_nho_bu_am_luong_cho_vad():
+    """Giọng thật qua mic laptop chỉ ~ −27 dBFS (biên độ ~1.400): không bù thì VAD coi như im lặng (đo
+    2026-10-13: 47 / 190 câu bị bỏ, 103 câu bị cắt). STT vẫn nhận âm thanh GỐC, không khuếch đại."""
+    nghe: list[int] = []
+
+    def stt(tep: str) -> str:
+        import wave
+
+        with wave.open(tep) as w:
+            nghe.append(int(np.abs(np.frombuffer(w.readframes(w.getnframes()), dtype="<i2")).max()))
+        return "mở cốp"
+
+    app = TestClient(tao_app(stt, lambda text: b"RIFF", lambda: (_BoGia(), _VadCanTo())))
+    with app.websocket_connect("/wake") as ws:
+        ws.send_text('{"type": "nghe_tiep"}')
+        ws.send_bytes(_khung(0, 5) + _khung(1400, 12) + _khung(0, 10))
+        assert ws.receive_json()["type"] == "lenh"
+    assert nghe == [1400]
+
+
+def test_bu_am_luong_gioi_han_va_giam_dan():
+    from serve.danh_thuc import BuAmLuong
+
+    bu = BuAmLuong()
+    assert bu.he_so == 1.0  # chưa nghe gì -> không khuếch đại
+    bu.cap_nhat(np.full(KHUNG, 1400, dtype="<i2"))
+    assert 5.5 < bu.he_so < 6.5 and 8000 < np.abs(bu.ap(np.full(4, 1400, dtype="<i2"))).max() < 8500
+    bu.cap_nhat(np.full(KHUNG, 20000, dtype="<i2"))  # tiếng to: không khuếch đại, không tràn số
+    assert bu.he_so == 1.0 and bu.ap(np.full(4, -32768, dtype="<i2")).min() == -32768
+    for _ in range(250):  # 20 s chỉ có nền rất nhỏ -> đỉnh nhớ giảm một nửa
+        bu.cap_nhat(np.full(KHUNG, 10, dtype="<i2"))
+    assert 9500 < bu.dinh < 10500
+    bu.dinh = 5.0  # gần như im lặng: khuếch đại tối đa 8 lần
+    assert bu.he_so == 8.0
+
+
 def test_wake_tam_dung_thi_khong_nghe():
     with _app_wake("mở cốp").websocket_connect("/wake") as ws:
         ws.send_text('{"type": "tam_dung"}')

@@ -111,8 +111,36 @@ class BoDanhThuc:
         return d, False
 
 
+class BuAmLuong:
+    """Bù âm lượng CHỈ cho đầu vào của VAD (âm thanh đưa STT giữ nguyên).
+
+    Đo 2026-10-13 trên 190 bản ghi giọng thật qua mic laptop (đỉnh ~ −27 dBFS): Silero VAD cho xác suất < 0,5
+    ở phần lớn khung -> ThuLenh chỉ thu ĐỦ 40 / 190 câu (103 câu bị cắt giữa chừng, 47 câu coi như im lặng).
+    Khuếch đại để đỉnh gần đây lên ~ −12 dBFS (hệ số 1–8): 164 / 190 câu thu đủ, không câu nào bị bỏ.
+    Đỉnh theo dõi giảm dần (nửa đời ~20 s) để một tiếng động lớn không làm trợ lý "điếc" lâu.
+    """
+
+    DICH = 32768 * 10 ** (-12 / 20)
+    GIAM = 0.5 ** (1 / 250)  # mỗi khung 80 ms
+
+    def __init__(self) -> None:
+        self.dinh = 0.0
+
+    def cap_nhat(self, khung: np.ndarray) -> None:
+        self.dinh = max(self.dinh * self.GIAM, float(np.abs(khung.astype(np.int32)).max()))
+
+    @property
+    def he_so(self) -> float:
+        return min(8.0, max(1.0, self.DICH / self.dinh)) if self.dinh > 0 else 1.0
+
+    def ap(self, khung: np.ndarray) -> np.ndarray:
+        g = self.he_so
+        return khung if g == 1.0 else np.clip(khung.astype(np.float32) * g, -32768, 32767).astype(np.int16)
+
+
 class ThuLenh:
-    """Gom âm thanh câu lệnh sau khi thức. `them(khung)` -> None (đang nghe) | "xong" | "huy"."""
+    """Gom âm thanh câu lệnh sau khi thức. `them(khung)` -> None (đang nghe) | "xong" | "huy".
+    `bu`: bộ bù âm lượng cho VAD (đã được `cap_nhat` bằng chính khung này trước khi gọi `them`)."""
 
     def __init__(
         self,
@@ -122,8 +150,10 @@ class ThuLenh:
         toi_da_khung: int = 100,
         cho_noi_khung: int = 50,
         nguong_vad: float = 0.5,
+        bu: BuAmLuong | None = None,
     ) -> None:
         self.khung = list(truoc)
+        self.bu = bu
         self.vad, self.im_khung, self.toi_da, self.cho_noi, self.nguong_vad = (
             vad,
             im_khung,
@@ -137,7 +167,8 @@ class ThuLenh:
     def them(self, khung: np.ndarray) -> str | None:
         self.khung.append(khung)
         self.dem += 1
-        if self.vad.predict(khung, frame_size=640) >= self.nguong_vad:
+        vao = self.bu.ap(khung) if self.bu is not None else khung
+        if self.vad.predict(vao, frame_size=640) >= self.nguong_vad:
             self.da_noi, self.im = True, 0
         elif self.da_noi:
             self.im += 1
