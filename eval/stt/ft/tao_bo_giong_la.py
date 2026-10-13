@@ -1,7 +1,7 @@
-"""Bộ G — GIỌNG LẠ (PLAN.md "FINE-TUNE STT", phép kiểm thay thế khi lumi-record-smh chưa được duyệt, 2026-10-13):
-60 câu lệnh xe từ tập test đóng băng (STT fine-tune chưa từng thấy: TTS train + bộ FT đã kiểm nhiễm với test), đọc
-bằng HAI giọng VieNeu ĐỂ DÀNH (không dùng lúc train: `tao_tts.GIU_LAI`), mỗi giọng 30 câu. Xáo seed 2035, tỉ lệ
-bộ B: 30 rõ ràng · 15 mơ hồ · 15 ngoài phạm vi. Bỏ câu có chữ viết tắt Latin / số dạng lạ (như lúc tạo TTS train).
+"""Bộ G — GIỌNG LẠ (PLAN.md "FINE-TUNE STT", phép kiểm thay thế khi lumi-record-smh chưa được duyệt):
+60 câu lệnh xe từ tập test đóng băng (STT fine-tune chưa từng thấy: TTS train + bộ FT đã kiểm nhiễm với
+test), đọc bằng HAI giọng VieNeu ĐỂ DÀNH (không dùng lúc train: `tao_tts.GIU_LAI`), mỗi giọng 30 câu. Xáo
+seed 2035, tỉ lệ bộ B: 30 rõ ràng · 15 mơ hồ · 15 ngoài phạm vi. Bỏ câu có chữ viết tắt Latin / số dạng lạ.
 
     conda run --no-capture-output -n giong_noi python -m eval.stt.ft.tao_bo_giong_la
 Ra: data/stt/bo_g/{manifest.jsonl, g*.wav} theo định dạng eval.stt.chay_stt.
@@ -51,7 +51,8 @@ def main() -> None:
         for i, r in enumerate(chon):
             g = giong[i % 2]
             am = tts.infer(r["noi"], voice=g)
-            sf.write(str(RA / f"g{i:02d}.wav"), soxr.resample(am, tts.sample_rate, 16000), 16000, subtype="PCM_16")
+            am16 = soxr.resample(am, tts.sample_rate, 16000)
+            sf.write(str(RA / f"g{i:02d}.wav"), am16, 16000, subtype="PCM_16")
             f.write(json.dumps({"id": f"g{i:02d}", "tep": f"g{i:02d}.wav", "cau": r["cau"], "giong": g,
                                 "nhom": r["nhom"], "prompt": r["prompt"], "completion": r["completion"]},
                                ensure_ascii=False) + "\n")
