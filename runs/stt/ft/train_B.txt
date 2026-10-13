@@ -1,0 +1,96 @@
+﻿✓ Initialized. View run at 
+https://modal.com/apps/khiemvudang1/main/ap-I44EyzhMxgKin6bw42Rrz5
+✓ Created objects.
+├── 🔨 Created mount C:\Users\FPT\Visual Studio code\Agent for Vehicle 
+│   System\train\modal_stt_ft.py
+└── 🔨 Created function fine_tune.
+bản B: 7100 mẫu
+  ep 1 bước 25/1329 loss 0.661 (0.42 s/bước, VRAM 15.6 GB)
+  ep 1 bước 50/1329 loss 0.205 (0.33 s/bước, VRAM 15.6 GB)
+  ep 1 bước 75/1329 loss 0.314 (0.30 s/bước, VRAM 15.6 GB)
+  ep 1 bước 100/1329 loss 0.199 (0.28 s/bước, VRAM 15.6 GB)
+  ep 1 bước 125/1329 loss 0.212 (0.27 s/bước, VRAM 15.7 GB)
+  ep 1 bước 150/1329 loss 0.064 (0.26 s/bước, VRAM 15.9 GB)
+  ep 1 bước 175/1329 loss 0.077 (0.26 s/bước, VRAM 15.9 GB)
+  ep 1 bước 200/1329 loss 0.278 (0.26 s/bước, VRAM 15.9 GB)
+  ep 1 bước 225/1329 loss 0.104 (0.25 s/bước, VRAM 15.9 GB)
+  ep 1 bước 250/1329 loss 0.212 (0.25 s/bước, VRAM 15.9 GB)
+  ep 1 bước 275/1329 loss 0.154 (0.25 s/bước, VRAM 15.9 GB)
+  ep 1 bước 300/1329 loss 0.112 (0.25 s/bước, VRAM 16.3 GB)
+  ep 1 bước 325/1329 loss 0.157 (0.25 s/bước, VRAM 16.3 GB)
+  ep 1 bước 350/1329 loss 0.195 (0.25 s/bước, VRAM 16.3 GB)
+  ep 1 bước 375/1329 loss 0.025 (0.25 s/bước, VRAM 16.3 GB)
+  ep 1 bước 400/1329 loss 0.316 (0.25 s/bước, VRAM 16.3 GB)
+  ep 1 bước 425/1329 loss 0.084 (0.24 s/bước, VRAM 16.3 GB)
+/usr/local/lib/python3.11/site-packages/transformers/modeling_utils.py:3918: UserWarning: Moving the following attributes in the config to the generation config: {'max_length': 448, 'begin_suppress_tokens': [220, 50257]}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+  lưu epoch 1 -> /vol/models/stt/phowhisper-small-ftB/ep1-ct2-int8
+  ep 2 bước 450/1329 loss 0.127 (0.29 s/bước, VRAM 16.3 GB)
+  ep 2 bước 475/1329 loss 0.078 (0.28 s/bước, VRAM 16.3 GB)
+  ep 2 bước 500/1329 loss 0.017 (0.28 s/bước, VRAM 16.3 GB)
+  ep 2 bước 525/1329 loss 0.022 (0.28 s/bước, VRAM 16.3 GB)
+  ep 2 bước 550/1329 loss 0.092 (0.28 s/bước, VRAM 16.3 GB)
+  ep 2 bước 575/1329 loss 0.094 (0.28 s/bước, VRAM 16.3 GB)
+  ep 2 bước 600/1329 loss 0.061 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 625/1329 loss 0.097 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 650/1329 loss 0.068 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 675/1329 loss 0.026 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 700/1329 loss 0.039 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 725/1329 loss 0.060 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 750/1329 loss 0.081 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 775/1329 loss 0.092 (0.27 s/bước, VRAM 16.3 GB)
+  ep 2 bước 800/1329 loss 0.057 (0.26 s/bước, VRAM 16.3 GB)
+  ep 2 bước 825/1329 loss 0.162 (0.26 s/bước, VRAM 16.3 GB)
+  ep 2 bước 850/1329 loss 0.057 (0.26 s/bước, VRAM 16.3 GB)
+  ep 2 bước 875/1329 loss 0.031 (0.26 s/bước, VRAM 16.3 GB)
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+  lưu epoch 2 -> /vol/models/stt/phowhisper-small-ftB/ep2-ct2-int8
+  ep 3 bước 900/1329 loss 0.019 (0.28 s/bước, VRAM 16.3 GB)
+  ep 3 bước 925/1329 loss 0.027 (0.28 s/bước, VRAM 16.3 GB)
+  ep 3 bước 950/1329 loss 0.006 (0.28 s/bước, VRAM 16.3 GB)
+  ep 3 bước 975/1329 loss 0.020 (0.28 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1000/1329 loss 0.007 (0.28 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1025/1329 loss 0.074 (0.28 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1050/1329 loss 0.040 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1075/1329 loss 0.094 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1100/1329 loss 0.032 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1125/1329 loss 0.042 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1150/1329 loss 0.008 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1175/1329 loss 0.003 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1200/1329 loss 0.010 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1225/1329 loss 0.036 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1250/1329 loss 0.002 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1275/1329 loss 0.020 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1300/1329 loss 0.047 (0.27 s/bước, VRAM 16.3 GB)
+  ep 3 bước 1325/1329 loss 0.001 (0.27 s/bước, VRAM 16.3 GB)
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+  lưu epoch 3 -> /vol/models/stt/phowhisper-small-ftB/ep3-ct2-int8
+{
+  "ban": "B",
+  "so_mau": 7100,
+  "checkpoint": [
+    {
+      "epoch": 1,
+      "loss_cuoi": 0.1277,
+      "ct2": "/vol/models/stt/phowhisper-small-ftB/ep1-ct2-int8"
+    },
+    {
+      "epoch": 2,
+      "loss_cuoi": 0.0313,
+      "ct2": "/vol/models/stt/phowhisper-small-ftB/ep2-ct2-int8"
+    },
+    {
+      "epoch": 3,
+      "loss_cuoi": 0.0295,
+      "ct2": "/vol/models/stt/phowhisper-small-ftB/ep3-ct2-int8"
+    }
+  ],
+  "phut": 6.2
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/khiemvudang1/main/ap-I44EyzhMxgKin6bw42Rrz5

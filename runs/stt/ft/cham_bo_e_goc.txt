@@ -1,0 +1,7 @@
+﻿Má»�C chá»¯ gá»‘c qua cÃ¹ng Ä‘Æ°á»�ng: 32/40 Ä‘Ãºng (80.0%)
+
+== bo_e_goc
+  cáº£ chuá»—i Ä‘Ãºng 24/40 (60.0%) Â· máº¥t so vá»›i chá»¯ gá»‘c 10 Â· Ä‘Æ°á»£c thÃªm 2 Â· theo nhÃ³m {'ro_rang': '6/20', 'mo_ho': '8/10', 'ngoai_pham_vi': '10/10'}
+  WER 24.8% Â· CER 13.2% Â· STT p50 2794 ms Â· p95 3135 ms Â· RTF tb 0.83
+  kiá»ƒu sai: {'hoi_lai_thua': 8, 'sai_tham_so': 5, 'tu_choi_nham': 2, 'thieu_hoi_lai': 1}
+

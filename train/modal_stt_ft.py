@@ -31,7 +31,7 @@ image = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("libsndfile1")
     .pip_install(
-        "torch==2.5.1",
+        "torch==2.8.0",  # ≥ 2.6: PhoWhisper chỉ có pytorch_model.bin, transformers chặn torch.load bản cũ
         "transformers==4.57.3",
         "accelerate>=1.0",
         "soundfile",
@@ -67,7 +67,7 @@ class LamBan:
     def __call__(self, am):
         import numpy as np
         import soxr
-        from scipy.signal import butter, sosfilt
+        from scipy.signal import butter, fftconvolve, sosfilt
 
         r = self.rng
         if r.random() < 0.5:  # đổi tốc độ 0,9–1,1 (đổi cả cao độ — như cách "speed perturbation" thường dùng)
@@ -78,7 +78,7 @@ class LamBan:
             rir = np.random.default_rng(r.randrange(1 << 30)).standard_normal(dai).astype("float32")
             rir *= np.exp(-np.arange(dai) / (dai / r.uniform(3, 6))).astype("float32")
             rir[0] = 1.0
-            am = np.convolve(am, rir / np.abs(rir).sum() * 3)[: len(am)].astype("float32")
+            am = fftconvolve(am, rir / np.abs(rir).sum() * 3)[: len(am)].astype("float32")  # FFT: nhanh
         if self.on and r.random() < 0.7:  # trộn ồn xe, SNR 0–20 dB
             on = self.on[r.randrange(len(self.on))]
             if len(on) > len(am):
@@ -148,21 +148,40 @@ def fine_tune(
     bat_dau = proc.tokenizer.convert_tokens_to_ids("<|startoftranscript|>")
     model.train()
     buoc, t0, bao_cao = 0, time.time(), {"ban": ban, "so_mau": len(ds), "checkpoint": []}
-    rng = random.Random(seed)
+    epoch_hien_tai = [0]
+
+    # Đọc file + làm bẩn + trích đặc trưng chạy SONG SONG 8 tiến trình: chạy thử 2026-10-13 làm tuần tự mất
+    # 5,84 s / bước (GPU ngồi chờ CPU) -> đắt gấp ~8 lần cần thiết.
+    class Tap(torch.utils.data.Dataset):
+        def __len__(self) -> int:
+            return len(ds)
+
+        def __getitem__(self, i: int):
+            return mau(*ds[i])
+
+    def khoi_tao_tho(k: int) -> None:  # mỗi tiến trình, mỗi epoch một dãy ngẫu nhiên riêng
+        lam_ban.rng = random.Random(seed * 100_003 + epoch_hien_tai[0] * 101 + k)
+
+    def gop(lo):
+        dt = torch.tensor(np.stack([a for a, _ in lo]), dtype=torch.float32)
+        dai = max(len(b) for _, b in lo)
+        nhan = torch.full((len(lo), dai), -100, dtype=torch.long)
+        for i, (_, b) in enumerate(lo):
+            nhan[i, : len(b)] = torch.tensor(b)
+        # model tự thêm token bắt đầu khi dịch nhãn sang đầu vào decoder -> bỏ ở nhãn cho khỏi lặp
+        if (nhan[:, 0] == bat_dau).all():
+            nhan = nhan[:, 1:]
+        return dt, nhan
+
     for ep in range(1, epochs + 1):
-        rng.shuffle(ds)
-        for k in range(buoc_moi_epoch):
-            lo = [mau(*x) for x in ds[k * batch : (k + 1) * batch]]
-            dt = torch.tensor(np.stack([a for a, _ in lo]), dtype=torch.float32).cuda()
-            dai = max(len(b) for _, b in lo)
-            nhan = torch.full((len(lo), dai), -100, dtype=torch.long)
-            for i, (_, b) in enumerate(lo):
-                nhan[i, : len(b)] = torch.tensor(b)
-            # model tự thêm token bắt đầu khi dịch nhãn sang đầu vào decoder -> bỏ ở nhãn cho khỏi lặp
-            if (nhan[:, 0] == bat_dau).all():
-                nhan = nhan[:, 1:]
+        epoch_hien_tai[0] = ep
+        nap = torch.utils.data.DataLoader(
+            Tap(), batch_size=batch, shuffle=True, drop_last=True, num_workers=8, collate_fn=gop,
+            worker_init_fn=khoi_tao_tho, generator=torch.Generator().manual_seed(seed + ep),
+        )
+        for dt, nhan in nap:
             with torch.autocast("cuda", dtype=torch.bfloat16):
-                loss = model(input_features=dt, labels=nhan.cuda()).loss
+                loss = model(input_features=dt.cuda(), labels=nhan.cuda()).loss
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             opt.step()
