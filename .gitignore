@@ -53,3 +53,7 @@ data/stt/
 Agent hệ thống xe.txt
 # nhật ký làm việc riêng — chỉ giữ local
 PLAN.md
+
+# chẩn đoán phát tiếng trên máy (có tên thiết bị âm thanh của người dùng)
+runs/giong_noi_log/chan_doan.jsonl
+runs/giong_noi_log/soi_*.wav

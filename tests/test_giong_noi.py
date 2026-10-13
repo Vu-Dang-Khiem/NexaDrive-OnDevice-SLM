@@ -261,6 +261,16 @@ def test_luu_am_thanh_va_chu_de_chan_doan(tmp_path):
     assert (tmp_path / nhat_ky[1]["tep"]).read_bytes().startswith(b"RIFF")
 
 
+def test_chan_doan_ghi_them_dong_va_bo_qua_khi_khong_bat(tmp_path):
+    tep = tmp_path / "log" / "chan_doan.jsonl"
+    c = TestClient(tao_app(_nghe, lambda text: b"RIFF", chan_doan=tep))
+    assert c.post("/chan_doan", json={"hut": 2, "thietBi": ["loa*: Loa (Realtek)"]}).json() == {"ok": True}
+    assert c.post("/chan_doan", content=b"khong phai json").json() == {"ok": False}
+    dong = [json.loads(x) for x in tep.read_text(encoding="utf-8").splitlines()]
+    assert len(dong) == 1 and dong[0]["hut"] == 2 and "luc" in dong[0]
+    assert client.post("/chan_doan", json={"hut": 1}).json() == {"ok": False}  # không cấu hình file
+
+
 def test_khong_co_bo_bao_thuc_thi_khong_co_wake():
     from starlette.websockets import WebSocketDisconnect
 

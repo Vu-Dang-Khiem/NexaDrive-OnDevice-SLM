@@ -137,7 +137,8 @@ def _wav(am: np.ndarray) -> bytes:
 def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
             tao_danh_thuc: Callable[[], tuple[Any, Any]] | None = None,
             luu: Path | None = None,
-            doc_dong: Callable[[str], tuple[int, Iterator[bytes]]] | None = None) -> FastAPI:
+            doc_dong: Callable[[str], tuple[int, Iterator[bytes]]] | None = None,
+            chan_doan: Path | None = None) -> FastAPI:
     """`nghe(đường dẫn file) -> chữ`, `doc(chữ) -> bytes wav`, `tao_danh_thuc() -> (bộ báo thức, VAD)`
     — tách ra để test không cần model thật. Không có `tao_danh_thuc` thì không có /wake. `luu`: thư mục lưu
     âm thanh + chữ mỗi lần nhận dạng (chẩn đoán). `doc_dong(chữ) -> (tần số, các đoạn PCM)` cho /tts_stream
@@ -154,6 +155,22 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
     @app.get("/health")
     async def health() -> dict[str, str]:
         return {"status": "ok"}
+
+    @app.post("/chan_doan")
+    async def nhan_chan_doan(req: Request) -> dict[str, bool]:
+        """Giao diện gửi số liệu phát tiếng của từng câu (số lần hụt, độ giật trang, thiết bị âm thanh) — ghi
+        thêm một dòng vào file trên máy để soi lỗi "tiếng bị ngắt" mà máy đo không tái hiện được."""
+        than = await req.body()
+        if chan_doan is None or len(than) > 20_000:
+            return {"ok": False}
+        try:
+            dong = json.loads(than)
+        except ValueError:
+            return {"ok": False}
+        chan_doan.parent.mkdir(parents=True, exist_ok=True)
+        with chan_doan.open("a", encoding="utf-8") as f:
+            f.write(json.dumps({"luc": time.strftime("%H:%M:%S"), **dong}, ensure_ascii=False) + "\n")
+        return {"ok": True}
 
     @app.post("/stt")
     async def stt(req: Request) -> dict[str, object]:
@@ -295,6 +312,13 @@ def tao_app_that() -> FastAPI:
     print(f"[giong_noi] STT: {thu_muc or 'PhoWhisper-small gốc'}", flush=True)
     nghe = nap("phowhisper-small", beam, goi_y, thu_muc)
     tts = Vieneu()
+    # CHẠY NÓNG: câu đầu sau khi khởi động tạo CHẬM hơn phát (đo 2026-10-13: 6,4 s cho 4,3 s tiếng, tiếng đầu 1,2 s
+    # thay vì 0,25 s) -> giao diện phát bị ngắt quãng. Đọc bỏ hai câu trước khi nhận yêu cầu.
+    t0 = time.perf_counter()
+    for cau in ("Dạ, mình nghe đây.", "Cửa đã khoá, cốp đang đóng, xăng còn sáu mươi hai phần trăm."):
+        for _ in tts.infer_stream(cau, voice=GIONG):
+            pass
+    print(f"[giong_noi] chạy nóng TTS: {time.perf_counter() - t0:.1f} s", flush=True)
 
     def doc(text: str) -> bytes:
         am = tts.infer(text, voice=GIONG)
@@ -314,4 +338,5 @@ def tao_app_that() -> FastAPI:
     # chưa train wake-word thì không có /wake; NEXA_LUU_GIONG=<thư mục> bật lưu âm thanh + chữ để chẩn đoán
     luu = Path(os.environ["NEXA_LUU_GIONG"]) if os.environ.get("NEXA_LUU_GIONG") else None
     doc_dong = DocTungDoan(lambda text: tts.infer_stream(text, voice=GIONG), tts.sample_rate)
-    return tao_app(nghe, doc, tao_danh_thuc if MO_HINH.exists() else None, luu, doc_dong)
+    return tao_app(nghe, doc, tao_danh_thuc if MO_HINH.exists() else None, luu, doc_dong,
+                   Path("runs/giong_noi_log/chan_doan.jsonl"))

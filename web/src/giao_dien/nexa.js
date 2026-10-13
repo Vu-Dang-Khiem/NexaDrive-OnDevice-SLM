@@ -1442,6 +1442,11 @@ let dangDoc = null;  // { huy: AbortController, nguon: AudioBufferSourceNode[] }
 // từng chỗ nối; (2) đệm trước 0,25 s (trước 0,05 s): các đoạn đầu chỉ dài ~85 ms, trang bận vẽ 3D là đoạn sau tới trễ.
 const TAN_SO_LOA = 48000;
 const DEM_TRUOC = 0.25;
+// Máy tạo tiếng CHẬM hơn phát (vừa khởi động dịch vụ, CPU đang bận…) thì đệm 0,25 s không đủ -> tiếng ngắt lắt nhắt.
+// Nhớ tỉ lệ (thời gian tạo / thời lượng tiếng) của các câu gần đây; > 1 thì câu sau bắt đầu phát trễ hơn một khoảng
+// vừa đủ để phát liền một mạch. Bình thường ~0,45 (tạo nhanh gấp đôi phát) -> không thêm trễ.
+let heSoTao = 0.5;
+const GIAY_MOI_KY_TU = 0.08;   // ước lượng thời lượng câu từ số ký tự (đo: 0,06–0,08 s / ký tự)
 function moLoa() {
   if (ctxLoa) return ctxLoa;
   try { ctxLoa = new AudioContext({ sampleRate: TAN_SO_LOA }); } catch { ctxLoa = new AudioContext(); }
@@ -1454,11 +1459,33 @@ function dungDoc() {   // câu mới / bấm mic / «hey nexa» thức: dừng n
   d.nguon.forEach(s => { try { s.stop(); } catch { /* đoạn chưa tới lịch phát */ } });
   guiWake({ type: "tiep_tuc" });
 }
+// CHẨN ĐOÁN tiếng bị ngắt (người dùng báo 2026-10-13, máy đo không tái hiện được): sau mỗi câu, gửi số liệu phát +
+// tên thiết bị âm thanh về dịch vụ giọng nói TRÊN MÁY (ghi runs/giong_noi_log/chan_doan.jsonl). Lỗi thì bỏ qua.
+async function guiChanDoan(soLieu) {
+  try {
+    const thietBi = (await navigator.mediaDevices.enumerateDevices()).filter(x => x.kind !== "videoinput")
+      .map(x => `${x.kind === "audiooutput" ? "loa" : "mic"}${x.deviceId === "default" ? "*" : ""}: ${x.label}`).slice(0, 14);
+    await fetch(`${CONFIG.GIONG_NOI_URL}/chan_doan`, {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...soLieu, thietBi }),
+    });
+  } catch { /* chỉ là chẩn đoán */ }
+}
 async function docTo(text, ngheTiep = false) {
   if (!text) return;
   dungDoc();
   const d = { huy: new AbortController(), nguon: [] };
   dangDoc = d;
+  // đo độ giật của trang trong lúc đọc: khoảng cách lớn nhất giữa hai khung hình, số khung chậm hơn 100 ms
+  const giat = { max: 0, so: 0, chay: true };
+  let khungTruoc = performance.now();
+  const doGiat = t => {
+    const dt = t - khungTruoc; khungTruoc = t;
+    if (dt > giat.max) giat.max = dt;
+    if (dt > 100) giat.so++;
+    if (giat.chay) requestAnimationFrame(doGiat);
+  };
+  requestAnimationFrame(doGiat);
+  const batDau = performance.now();
   // đọc xong: nghe «hey nexa» lại như thường, hoặc (hội thoại bằng giọng) nghe luôn câu lệnh tiếp theo
   const xong = () => {
     if (dangDoc !== d) return;
@@ -1483,6 +1510,10 @@ async function docTo(text, ngheTiep = false) {
     let du = new Uint8Array(0);   // byte lẻ cuối gói mạng (mẫu 16-bit bị cắt đôi) giữ lại ghép với gói sau
     let lich = 0;                 // thời điểm đoạn kế tiếp bắt đầu phát
     let hut = 0;                  // số lần đoạn sau tới trễ hơn lúc đoạn trước phát xong (tiếng bị ngắt)
+    let duMin = Infinity;         // đoạn tới sớm nhất bao nhiêu ms trước lúc phải phát (âm = tới trễ)
+    let tiengDau = 0;             // ms từ lúc gọi tới lúc đoạn đầu tới
+    let tongTieng = 0;            // giây tiếng đã nhận
+    const demDau = Math.min(3, DEM_TRUOC + Math.max(0, text.length * GIAY_MOI_KY_TU * (heSoTao - 1)));
     for (;;) {
       const { value, done } = await doc.read();
       if (done || dangDoc !== d) break;
@@ -1498,19 +1529,33 @@ async function docTo(text, ngheTiep = false) {
       const nguon = ctxLoa.createBufferSource();
       nguon.buffer = buf; nguon.connect(ctxLoa.destination);
       // tới kịp thì nối đuôi; đoạn đầu / tới trễ thì đệm lại DEM_TRUOC rồi phát (một lần ngắt dài hơn nhưng không ngắt lắt nhắt)
-      if (lich < ctxLoa.currentTime + 0.01) { if (lich) hut++; lich = ctxLoa.currentTime + DEM_TRUOC; }
-      nguon.start(lich); lich += buf.duration;
+      if (lich) duMin = Math.min(duMin, (lich - ctxLoa.currentTime) * 1000); else tiengDau = performance.now() - batDau;
+      // tới trễ: đệm lại, mỗi lần hụt đệm gấp đôi (tối đa 2 s) — thà ngừng một lần dài còn hơn ngắt từng chữ
+      if (lich < ctxLoa.currentTime + 0.01) {
+        lich = ctxLoa.currentTime + (lich ? Math.min(2, DEM_TRUOC * 2 ** ++hut) : demDau);
+      }
+      nguon.start(lich); lich += buf.duration; tongTieng += buf.duration;
       d.nguon.push(nguon);
     }
-    // chẩn đoán: xem ở Console (F12) hoặc gõ __nexaTieng — số đoạn, số lần hụt, tần số loa thật
-    window.__nexaTieng = { doan: d.nguon.length, hut, tanSoLoa: ctxLoa.sampleRate, tanSoTts: tanSo };
-    if (hut) console.warn("[nexa] tiếng bị hụt", window.__nexaTieng);
-    if (dangDoc !== d) return;
+    if (tongTieng > 0.5) heSoTao = 0.5 * heSoTao + 0.5 * ((performance.now() - batDau) / 1000 / tongTieng);
+    if (dangDoc !== d) { giat.chay = false; return; }
     // Phát hết đoạn cuối thì nghe lại. HẸN GIỜ theo lịch phát chứ không gắn `onended` vào đoạn cuối: máy bận thì
     // đoạn cuối có thể phát xong TRƯỚC khi luồng báo hết (đo 2026-10-13: chỉ dư 0,2–0,8 s) -> sự kiện đã bắn mất,
     // dịch vụ nghe bị tạm dừng mãi (gọi «hey nexa» cũng không dậy).
-    setTimeout(xong, Math.max(0, (lich - ctxLoa.currentTime) * 1000) + 60);
-  } catch { xong(); /* chưa bật dịch vụ giọng nói / đã huỷ: chỉ hiện chữ */ }
+    const taoXong = performance.now() - batDau;
+    setTimeout(() => {
+      giat.chay = false;
+      window.__nexaTieng = {
+        chu: text.slice(0, 40), doan: d.nguon.length, hut, duMin: Math.round(duMin), tiengDau: Math.round(tiengDau),
+        taoXong: Math.round(taoXong), giatMax: Math.round(giat.max), khungCham: giat.so, tanSoLoa: ctxLoa.sampleRate,
+        tanSoTts: tanSo, treLoa: Math.round(((ctxLoa.baseLatency || 0) + (ctxLoa.outputLatency || 0)) * 1000),
+        tieng: Math.round(tongTieng * 1000), demDau: Math.round(demDau * 1000), heSoTao: Math.round(heSoTao * 100) / 100,
+        quaWake: ngheTiep, micMo: !!wake,
+      };
+      guiChanDoan(window.__nexaTieng);
+      xong();
+    }, Math.max(0, (lich - ctxLoa.currentTime) * 1000) + 60);
+  } catch { giat.chay = false; xong(); /* chưa bật dịch vụ giọng nói / đã huỷ: chỉ hiện chữ */ }
 }
 
 /* ---- Wake-word «hey nexa» (PLAN.md Phase 6b): bật nút thì gửi âm thanh mic LIÊN TỤC (16 kHz int16, khung 80 ms) tới
