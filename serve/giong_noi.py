@@ -312,8 +312,8 @@ def tao_app_that() -> FastAPI:
     print(f"[giong_noi] STT: {thu_muc or 'PhoWhisper-small gốc'}", flush=True)
     nghe = nap("phowhisper-small", beam, goi_y, thu_muc)
     tts = Vieneu()
-    # CHẠY NÓNG: câu đầu sau khi khởi động tạo CHẬM hơn phát (đo 2026-10-13: 6,4 s cho 4,3 s tiếng, tiếng đầu 1,2 s
-    # thay vì 0,25 s) -> giao diện phát bị ngắt quãng. Đọc bỏ hai câu trước khi nhận yêu cầu.
+    # CHẠY NÓNG: câu đầu sau khi khởi động tạo CHẬM hơn phát (đo 2026-10-13: 6,4 s cho 4,3 s tiếng, tiếng đầu
+    # 1,2 s thay vì 0,25 s) -> giao diện phát bị ngắt quãng. Đọc bỏ hai câu trước khi nhận yêu cầu.
     t0 = time.perf_counter()
     for cau in ("Dạ, mình nghe đây.", "Cửa đã khoá, cốp đang đóng, xăng còn sáu mươi hai phần trăm."):
         for _ in tts.infer_stream(cau, voice=GIONG):
