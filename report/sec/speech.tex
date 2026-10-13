@@ -2,7 +2,8 @@
 \label{sec:speech}
 
 Voice is the primary interface; typing is a fallback. Speech recognition (STT) and synthesis (TTS) run in a separate local
-service and are used off the shelf, without fine-tuning.
+service. TTS is used off the shelf. STT was first used off the shelf (\S\ref{sec:stt}--\ref{sec:noise}); the deployed
+recognizer is a version fine-tuned on car commands (\S\ref{sec:sttft}).
 
 \subsection{Recognition, numbers and end-to-end accuracy}
 \label{sec:stt}
@@ -49,8 +50,8 @@ pronounce numbers in full, did not change at all. Re-scoring set B after the fix
 Vocabulary hints and beam search were then compared on a new set D under a pre-registered rule: greedy without hints scored
 17, hints 16, beam 5 17, both 16, so greedy was kept.
 
-\paragraph{End-to-end.} The headline numbers for the current system pool the 60 new sentences of sets C and D: \textbf{42 of 60
-(70.0\%) typed and 38 of 60 (63.3\%) spoken}, so speech costs 6.7 points. Per set the drop was 22.5 points on B (before the
+\paragraph{End-to-end.} The headline numbers for the off-the-shelf recognizer pool the 60 new sentences of sets C and D:
+\textbf{42 of 60 (70.0\%) typed and 38 of 60 (63.3\%) spoken}, so speech costs 6.7 points. Per set the drop was 22.5 points on B (before the
 fix), 10 on C and 3.3 on D. For context, SFC-Bench reports drops of 17--20 points for 8B--32B models at its easiest level
 \citep{peng2026sfc}; the settings differ in language, functions, metric and speech (synthetic there, one real speaker here),
 so we place our numbers in that range rather than compare them. The remaining speech errors are real mishearings---n/l and
@@ -60,7 +61,7 @@ model mostly handles by refusing or asking rather than acting.
 \subsection{Noise robustness}
 \label{sec:noise}
 
-All recordings were made in a quiet room, and the system has no denoising stage. We mixed the 60 C+D recordings with three
+All recordings were made in a quiet room, and the system has no denoising stage. With the off-the-shelf recognizer, we mixed the 60 C+D recordings with three
 noises at 20, 10, 5 and 0\,dB SNR relative to the speech portion: real in-car noise (DEMAND \code{TCAR}, \citealp{thiemann2013demand}),
 synthetic brown noise and Vietnamese background speech from FLEURS \citep{conneau2023fleurs}. The pre-registered rule was to try a
 denoiser only if in-car noise at 10\,dB cost more than 6 of 60 commands.
@@ -80,6 +81,76 @@ speaker as well (WER above 100\%), leaving 1 of 35 clear commands. The failure i
 separate a second voice; multi-microphone hardware or source separation would be needed. Music was not tested. Separately,
 browser audio processing (noise suppression and automatic gain) removed high-frequency consonants in the demo
 (\vi{nóng quá}{so hot} heard as \textit{lóng quá}); requesting raw audio made the demo match the measured condition.
+
+\subsection{Improving recognition}
+\label{sec:sttft}
+
+In live use the recognizer felt worse than the measured 63\%, so we looked for the cause and for a remedy, reusing the
+recordings. Every remedy was selected on set B and checked on other data under a rule written down beforehand; sets C and D
+were reused three times in this subsection and are therefore not used for the final numbers.
+
+\paragraph{The demo's audio path is not the cause.} We replayed the 60 C+D recordings through the real interface: Chromium
+used each file as a fake microphone, the page recorded it with \code{MediaRecorder} (WebM/Opus) and posted it to the same
+service. The chain was correct on 36 of 60 commands, against 38 when the WAV files were sent directly (exact McNemar
+$p=0.63$); half of the transcripts differed, but in both directions. The recognizer itself is the bottleneck: it misrecognizes
+22\% of the words even on the original files, and tiny changes in the audio change its output.
+
+\paragraph{Three training-free remedies did not help.} (i) A different recognizer: Zipformer-30M
+\citep{yao2023zipformer,hynt2025zipformervi}, a 30M-parameter transducer run with sherpa-onnx, was ten times faster (median
+0.17\,s vs.\ 1.75\,s) and had a lower WER (15.7\% vs.\ 22.0\% on C+D), yet produced \emph{fewer} correct commands (20 vs.\ 22
+on B; 32 vs.\ 38 on C+D, $p=0.18$). Its errors fall on the words that select a function---\textit{nắp xăng} (fuel flap)
+$\rightarrow$ \textit{lắp sang}, \textit{cốp} (trunk) $\rightarrow$ \textit{cúp}---whereas PhoWhisper's fall on sentence-final
+particles and filler words that the language model ignores. It failed the pre-registered rule (three more correct commands
+on B); a rule relaxed after seeing set B (lower WER, not significantly worse) would have admitted it, but with fewer correct
+commands on both sets we kept PhoWhisper. As with PhoWhisper-medium above, average WER is the wrong yardstick for spoken
+commands. (ii) Running both recognizers and keeping the transcript on which the language model is more
+confident gave exactly PhoWhisper's score (22 of 40; 38 of 60), although an oracle choice would reach 25 and 42: the
+decision-token confidence tells whether a sentence is a clear command, not whether it was heard correctly, so the model is
+just as confident on \textit{lắp sang}. (iii) Repairing misheard multi-syllable part names with the initial-consonant
+confusions common across Vietnamese regions (l/n, s/x, ch/tr, d/gi/r), from a vocabulary written before any recording, changed
+three PhoWhisper transcripts and no outcome (on 30,060 accented training sentences it altered 0.37\%, mostly injected
+typos).
+
+\paragraph{Fine-tuning the recognizer.} We then fine-tuned PhoWhisper-small on in-domain audio: 5,000 command sentences from
+the language model's \emph{training} data (contamination-checked against all test sets and recording sets), with digits
+spelled out and read by 23 of the 25 VieNeu voices; 1,500 FLEURS training utterances to preserve general Vietnamese; and, for
+variant B only, 150 new sentences read by the first author (12 minutes, repeated four times). Each sample is degraded at
+random while training: speed 0.9--1.1, synthetic reverberation, DEMAND in-car noise at 0--20\,dB SNR, a laptop-microphone
+band-pass and gain. Training takes three epochs at learning rate $10^{-5}$ (6--8 minutes on an A100); each epoch is converted
+to the same CTranslate2 int8 format, so latency is unchanged. The checkpoint was chosen on set B (ties by lower WER) and
+evaluated once on a new 40-sentence set E recorded for this purpose; forgetting was checked on 300 FLEURS test utterances and on
+set G, 60 frozen-test commands read by the two VieNeu voices held out from training.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+& Set B & \multicolumn{2}{c}{Set E (final)} & FLEURS \\
+\cmidrule(lr){3-4}
+Recognizer & /40 & /40 & WER & WER \\
+\midrule
+Typed (same chain) & 30 & 32 & -- & -- \\
+PhoWhisper-small & 22 & 24 & 24.8 & 11.6 \\
+\quad + TTS and FLEURS (A) & 23 & 25 & 21.2 & 10.7 \\
+\quad + 12 min real voice (B) & \textbf{25} & \textbf{28} & \textbf{14.5} & 10.8 \\
+\bottomrule
+\end{tabular}
+\caption{Fine-tuning the recognizer: end-to-end correct commands with the deployed language model, and word error rate
+(\%). Set B selected the checkpoint; set E was used once.}
+\label{tab:sttft}
+\end{table}
+
+Table~\ref{tab:sttft} shows that synthetic speech alone barely helps on a real voice (and raised wrong actions on set E from
+6 to 9), while adding 12 minutes of real recordings cuts the word errors by 40\% and recovers half of the gap to typed input
+(24 $\rightarrow$ 28 of 32), with wrong actions unchanged at 6. What the off-the-shelf recognizer lacked was therefore
+acoustic---this voice and this microphone---rather than vocabulary. Variant B is deployed. Three cautions apply. The gain on
+set E is five commands won and one lost ($p=0.22$), not significant with 40 items, though consistent with set B. Set E shares
+its speaker, microphone and recording session with the fine-tuning recordings, so it measures the benefit for \emph{this}
+speaker. And for other speakers we could only show absence of harm: FLEURS WER did not rise, and on set G correct commands
+went from 29 to 46 of 60 for both variants---a figure inflated by the shared TTS engine, which we read only as ``no harm''. A
+check on other real speakers giving commands is missing; the noise and wake-word experiments were run with the original
+recognizer.
 
 \subsection{Wake word}
 \label{sec:wake}

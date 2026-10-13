@@ -74,7 +74,7 @@ the user turn) trains the same model to phrase the answer; examples are in Appen
   node distance=0.32cm]
 \node[io] (mic) {Microphone\\16\,kHz};
 \node[model, right=of mic] (wake) {Wake word\\``Hey Nexa''\\or push-to-talk};
-\node[model, right=of wake] (stt) {STT\\PhoWhisper-small\\int8, CPU};
+\node[model, right=of wake] (stt) {STT\\PhoWhisper-small\\fine-tuned, int8};
 \node[code, right=of stt] (norm) {Normalize\\numbers, case;\\split multi-\\command};
 \node[model, right=of norm] (llm) {Student 1.5B\\GGUF q4\_K\_M\\\tok{nexa\_i}(args)};
 \node[code, right=of llm] (thr) {Confidence\\threshold\\0.80};

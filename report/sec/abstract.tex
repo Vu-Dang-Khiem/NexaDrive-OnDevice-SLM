@@ -12,5 +12,7 @@ refuses out-of-scope requests less reliably (77.4\% vs.\ 94.9\%) and resolves tw
 actions on the car by 29--40\%; (iv) GRPO on saturated distilled data does not reduce wrong actions; and (v) 4-bit quantization
 passes a validation check yet costs about five points on implicit requests at test time. With real speech from one speaker
 the full pipeline is correct on 63.3\% of new commands (70.0\% when typed), tolerates recorded in-car noise down to 0\,dB, and
-is woken by a custom ``Hey Nexa'' detector that catches 39 of 40 real calls at 2.86 false alarms per hour.
+is woken by a custom ``Hey Nexa'' detector that catches 39 of 40 real calls at 2.86 false alarms per hour. Fine-tuning the
+recognizer with synthetic commands plus 12 minutes of that speaker's voice raises correct commands on a further new set from
+24 to 28 of 40, whereas a faster recognizer with lower word error rate, confidence-based fusion and keyword repair do not help.
 \end{abstract}

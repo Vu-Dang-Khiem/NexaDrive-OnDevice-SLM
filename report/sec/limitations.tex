@@ -15,7 +15,9 @@ Table~\ref{tab:seed3}). Differences below about five points should be read as un
 \paragraph{One speaker, quiet room.} All real recordings (STT sets, wake-word training and test calls) come from the first
 author on a laptop microphone. Noise was added digitally from recordings, not captured while driving; music was not tested. The
 wake word was trained partly on the author's voice and may detect other speakers less reliably; it is not speaker
-verification.
+verification. The same holds for the fine-tuned recognizer: its gain was measured on the author's voice, and for other
+speakers we only verified that general Vietnamese (FLEURS) and held-out synthetic voices did not get worse; we could not obtain
+a multi-speaker set of real spoken commands in time.
 
 \paragraph{Scope.} The vehicle is simulated; navigation, nearby search and weather return simulated results. The system is
 Vietnamese only (an English extension was planned but not done). The model cannot execute several independent actions in one
