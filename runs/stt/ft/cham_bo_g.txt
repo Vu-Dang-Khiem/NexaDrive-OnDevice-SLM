@@ -1,0 +1,17 @@
+﻿Má»�C chá»¯ gá»‘c qua cÃ¹ng Ä‘Æ°á»�ng: 51/60 Ä‘Ãºng (85.0%)
+
+== bo_g_goc
+  cáº£ chuá»—i Ä‘Ãºng 29/60 (48.3%) Â· máº¥t so vá»›i chá»¯ gá»‘c 22 Â· Ä‘Æ°á»£c thÃªm 0 Â· theo nhÃ³m {'ro_rang': '11/30', 'mo_ho': '5/15', 'ngoai_pham_vi': '13/15'}
+  WER 37.0% Â· CER 17.6% Â· STT p50 1703 ms Â· p95 1792 ms Â· RTF tb 1.13
+  kiá»ƒu sai: {'tu_choi_nham': 9, 'sai_ham': 8, 'sai_tham_so': 6, 'hoi_lai_thua': 6, 'goi_bua': 2}
+
+== bo_g_ftA-ep3
+  cáº£ chuá»—i Ä‘Ãºng 46/60 (76.7%) Â· máº¥t so vá»›i chá»¯ gá»‘c 7 Â· Ä‘Æ°á»£c thÃªm 2 Â· theo nhÃ³m {'ro_rang': '20/30', 'mo_ho': '11/15', 'ngoai_pham_vi': '15/15'}
+  WER 13.6% Â· CER 6.8% Â· STT p50 1725 ms Â· p95 1852 ms Â· RTF tb 1.15
+  kiá»ƒu sai: {'sai_tham_so': 6, 'hoi_lai_thua': 3, 'sai_ham': 3, 'tu_choi_nham': 2}
+
+== bo_g_ftB-ep3
+  cáº£ chuá»—i Ä‘Ãºng 46/60 (76.7%) Â· máº¥t so vá»›i chá»¯ gá»‘c 8 Â· Ä‘Æ°á»£c thÃªm 3 Â· theo nhÃ³m {'ro_rang': '22/30', 'mo_ho': '9/15', 'ngoai_pham_vi': '15/15'}
+  WER 13.0% Â· CER 6.0% Â· STT p50 1742 ms Â· p95 1834 ms Â· RTF tb 1.15
+  kiá»ƒu sai: {'sai_tham_so': 5, 'sai_ham': 5, 'hoi_lai_thua': 3, 'tu_choi_nham': 1}
+
