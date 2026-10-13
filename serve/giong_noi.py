@@ -54,7 +54,12 @@ from serve.so_chu import chuan_cau_stt
 GIONG = "Trúc Ly"
 TOI_DA_BYTE = 10_000_000  # ~ vài phút âm thanh nén — lệnh trên xe chỉ vài giây
 CHO_SAU_GOI = 25  # thức rồi mà 2 s không ai nói -> coi là CHỈ GỌI "hey nexa" (chào, rồi nghe tiếp)
-CHO_NGHE_TIEP = 75  # nghe câu lệnh tiếp theo không cần gọi lại: chờ người nói tối đa 6 s
+# Nghe câu lệnh tiếp theo không cần gọi lại: chờ người nói tối đa 10 s (trước 6 s — người dùng thử 2026-10-13
+# thấy ngắn, chưa kịp nghĩ lệnh kế tiếp đã phải gọi lại; trợ lý thật để ~5–8 s).
+CHO_NGHE_TIEP = 125
+# Tạm dừng (loa đang đọc) tối đa 30 s rồi TỰ nghe lại: giao diện lỡ không gửi "tiep_tuc" / "nghe_tiep" (tab
+# treo, lỗi phát tiếng…) thì trợ lý không được "điếc" mãi. Câu trả lời dài nhất đọc ~10 s.
+TAM_DUNG_TOI_DA = 16000 * 30
 
 
 class YeuCauDoc(BaseModel):
@@ -196,6 +201,7 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
             thu: ThuLenh | None = None
             tiep = False  # đang NGHE TIẾP (không cần gọi lại) chứ không phải vừa nghe thấy "hey nexa"
             tam_dung = False
+            da_dung = 0  # số mẫu âm thanh đã bỏ qua trong lần tạm dừng này
             try:
                 while True:
                     tin = await ws.receive()
@@ -204,7 +210,7 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
                     if tin.get("text"):
                         loai = json.loads(tin["text"]).get("type")
                         if loai == "nghe_tiep":  # đọc xong câu trả lời -> nghe lệnh kế tiếp, không cần gọi
-                            tam_dung, du = False, np.zeros(0, np.int16)
+                            tam_dung, da_dung, du = False, 0, np.zeros(0, np.int16)
                             truoc.clear()
                             bo.lam_moi()
                             thu, tiep = ThuLenh([], vad, cho_noi_khung=CHO_NGHE_TIEP), True
@@ -212,12 +218,19 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
                         # chỉ xử lý khi ĐỔI trạng thái — "tiep_tuc" thừa (vd dừng loa đúng lúc vừa thức) không
                         # được xoá câu lệnh đang gom
                         if (loai == "tam_dung") != tam_dung and loai in ("tam_dung", "tiep_tuc"):
-                            tam_dung = loai == "tam_dung"
+                            tam_dung, da_dung = loai == "tam_dung", 0
                             thu, tiep, du = None, False, np.zeros(0, np.int16)
                             truoc.clear()
                             bo.lam_moi()
                         continue
-                    if tam_dung or not tin.get("bytes"):
+                    if not tin.get("bytes"):
+                        continue
+                    if tam_dung:
+                        da_dung += len(tin["bytes"]) // 2
+                        if da_dung < TAM_DUNG_TOI_DA:
+                            continue
+                        tam_dung, da_dung = False, 0  # quá lâu không được báo nghe lại -> tự nghe lại
+                        bo.lam_moi()
                         continue
                     du = np.concatenate([du, np.frombuffer(tin["bytes"], dtype="<i2")])
                     while len(du) >= KHUNG:

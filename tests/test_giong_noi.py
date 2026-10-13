@@ -7,7 +7,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from serve.danh_thuc import KHUNG, bo_cum_goi
-from serve.giong_noi import STT_FT, DocTungDoan, chon_stt, pcm16, tao_app
+from serve.giong_noi import CHO_NGHE_TIEP, STT_FT, DocTungDoan, chon_stt, pcm16, tao_app
 
 nhan: list[str] = []
 
@@ -152,10 +152,21 @@ def test_nghe_tiep_khong_can_goi_lai():
 def test_nghe_tiep_ma_im_thi_quay_ve_cho_goi():
     with _app_wake("mở cốp").websocket_connect("/wake") as ws:
         ws.send_text('{"type": "nghe_tiep"}')
-        ws.send_bytes(_khung(0, 75))  # 6 s im
+        ws.send_bytes(_khung(0, CHO_NGHE_TIEP))  # im hết thời gian nghe tiếp (10 s)
         assert ws.receive_json() == {"type": "het_tiep"}
         ws.send_bytes(_khung(5000))  # quay về: lại nghe "hey nexa" như thường
         assert ws.receive_json() == {"type": "thuc"}
+
+
+def test_nghe_tiep_noi_muon_van_du_thoi_gian_noi_het_cau():
+    """Bắt đầu nói ở giây thứ 8 của thời gian nghe tiếp, nói 4 s: không bị cắt giữa câu, không bị huỷ."""
+    with _app_wake("bật điều hoà hai hai độ").websocket_connect("/wake") as ws:
+        ws.send_text('{"type": "nghe_tiep"}')
+        ws.send_bytes(_khung(0, 100))  # im 8 s
+        ws.send_bytes(_khung(300, 49))  # nói gần 4 s — chưa đủ 10 khung im nên CHƯA được kết thúc
+        ws.send_bytes(_khung(0, 10))
+        tin = ws.receive_json()
+        assert tin["type"] == "lenh" and tin["text"] == "Bật điều hoà 22 độ"
 
 
 def test_wake_tam_dung_thi_khong_nghe():
@@ -163,6 +174,17 @@ def test_wake_tam_dung_thi_khong_nghe():
         ws.send_text('{"type": "tam_dung"}')
         ws.send_bytes(_khung(5000, 2))  # loa đang đọc: không báo
         ws.send_text('{"type": "tiep_tuc"}')
+        ws.send_bytes(_khung(5000))
+        assert ws.receive_json() == {"type": "thuc"}
+
+
+def test_wake_tam_dung_qua_lau_thi_tu_nghe_lai():
+    """Giao diện lỡ không báo "tiep_tuc" (tab treo, lỗi phát tiếng): sau 30 s tạm dừng phải tự nghe lại."""
+    with _app_wake("mở cốp").websocket_connect("/wake") as ws:
+        ws.send_text('{"type": "tam_dung"}')
+        for _ in range(374):  # 29,9 s: vẫn tạm dừng
+            ws.send_bytes(_khung(5000))
+        ws.send_bytes(_khung(0))  # đủ 30 s -> tự nghe lại
         ws.send_bytes(_khung(5000))
         assert ws.receive_json() == {"type": "thuc"}
 

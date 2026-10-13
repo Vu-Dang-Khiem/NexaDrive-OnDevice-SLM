@@ -1491,8 +1491,10 @@ async function docTo(text, ngheTiep = false) {
       d.nguon.push(nguon);
     }
     if (dangDoc !== d) return;
-    const cuoi = d.nguon.at(-1);
-    if (cuoi) cuoi.onended = xong; else xong();   // phát hết đoạn cuối thì nghe «hey nexa» lại
+    // Phát hết đoạn cuối thì nghe lại. HẸN GIỜ theo lịch phát chứ không gắn `onended` vào đoạn cuối: máy bận thì
+    // đoạn cuối có thể phát xong TRƯỚC khi luồng báo hết (đo 2026-10-13: chỉ dư 0,2–0,8 s) -> sự kiện đã bắn mất,
+    // dịch vụ nghe bị tạm dừng mãi (gọi «hey nexa» cũng không dậy).
+    setTimeout(xong, Math.max(0, (lich - ctxLoa.currentTime) * 1000) + 60);
   } catch { xong(); /* chưa bật dịch vụ giọng nói / đã huỷ: chỉ hiện chữ */ }
 }
 
@@ -1507,10 +1509,10 @@ let wake = null;   // { ws, ctx, luong, node }
 let cheDoNoi = false;   // lượt hiện tại đến từ giọng nói qua «hey nexa» (gui(..., "wake_word")) -> đọc xong thì nghe tiếp
 const CHAO = "Dạ, mình nghe đây.";
 function guiWake(tin) { if (wake?.ws.readyState === WebSocket.OPEN) wake.ws.send(JSON.stringify(tin)); }
-function batNgheTiep() {   // nghe câu lệnh tiếp theo ~6 s, KHÔNG cần gọi lại «hey nexa»; im lặng thì server gửi het_tiep
+function batNgheTiep() {   // nghe câu lệnh tiếp theo ~10 s, KHÔNG cần gọi lại «hey nexa»; im lặng thì server gửi het_tiep
   guiWake({ type: "nghe_tiep" });
   wakeBtn.classList.add("nghe");
-  setText(saidEl, "Mình đang nghe tiếp… (im lặng thì quay về chờ «hey nexa»)", true);
+  setText(saidEl, "Đang nghe lệnh tiếp theo (khoảng 10 giây)… cứ nói, không cần gọi lại", true);
 }
 function veChoGoi() {
   cheDoNoi = false;
@@ -1564,6 +1566,8 @@ async function batWake() {
       docTo(CHAO, true);
     } else if (m.type === "het_tiep" || m.type === "huy") {
       veChoGoi();
+      // nói rõ là ĐÃ hết giờ nghe tiếp — người dùng thử 2026-10-13 tưởng trợ lý vẫn nghe nên nói lệnh trần
+      if (m.type === "het_tiep") setText(saidEl, "Hết giờ nghe tiếp — gọi «hey nexa» rồi nói lệnh (hoặc bấm micro)", true);
     } else if (m.type === "lenh") {
       wakeBtn.classList.remove("nghe");
       if (m.text) gui(m.text, "wake_word"); else veChoGoi();

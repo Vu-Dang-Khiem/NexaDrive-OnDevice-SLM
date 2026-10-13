@@ -131,7 +131,7 @@ class ThuLenh:
             cho_noi_khung,
             nguong_vad,
         )
-        self.da_noi, self.im, self.dem = False, 0, 0
+        self.da_noi, self.im, self.dem, self.dem_noi = False, 0, 0, 0
         vad.reset_states()
 
     def them(self, khung: np.ndarray) -> str | None:
@@ -141,11 +141,14 @@ class ThuLenh:
             self.da_noi, self.im = True, 0
         elif self.da_noi:
             self.im += 1
-        if self.da_noi and self.im >= self.im_khung:
-            return "xong"
-        if not self.da_noi and self.dem >= self.cho_noi:
-            return "huy"
-        return "xong" if self.dem >= self.toi_da else None
+        if self.da_noi:
+            self.dem_noi += 1
+            if self.im >= self.im_khung:
+                return "xong"
+            # độ dài tối đa tính TỪ LÚC BẮT ĐẦU NÓI — trước đây tính từ lúc bắt đầu chờ: ở chế độ nghe tiếp
+            # nói muộn thì câu bị cắt sớm (bắt đầu ở giây 5 chỉ còn 3 s); chờ quá 8 s thì im lặng bị nhận dạng
+            return "xong" if self.dem_noi >= self.toi_da else None
+        return "huy" if self.dem >= self.cho_noi else None
 
     def am_thanh(self) -> np.ndarray:
         return np.concatenate(self.khung) if self.khung else np.zeros(0, np.int16)
