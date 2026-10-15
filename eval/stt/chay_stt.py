@@ -102,8 +102,12 @@ def nap(stt: str, beam: int = 1, goi_y: bool = False, thu_muc: str | None = None
         doan, _ = m.transcribe(tep, language="vi", beam_size=beam, without_timestamps=True,
                                condition_on_previous_text=False, vad_filter=False,
                                initial_prompt=GOI_Y if goi_y else None)
+        doan = list(doan)
+        # độ tự tin thấp nhất trong các đoạn — dịch vụ giọng nói dùng để bỏ chữ "bịa" khi chỉ có tiếng nền
+        nghe.logprob = min((d.avg_logprob for d in doan), default=0.0)
         return " ".join(d.text.strip() for d in doan).strip()
 
+    nghe.logprob = 0.0
     return nghe
 
 

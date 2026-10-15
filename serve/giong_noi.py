@@ -294,6 +294,24 @@ def tao_app(nghe: Callable[[str], str], doc: Callable[[str], bytes],
 STT_FT = Path("models/stt/phowhisper-small-ftB/ep3-ct2-int8")
 
 
+# Chặn chữ "BỊA": gặp đoạn chỉ có tiếng nền, STT (nhất là bản fine-tune — chưa từng học mẫu "không có lời")
+# vẫn đọc ra cả câu ("có lẽ tôi đã thấy…"). Đo 2026-10-15: 70 đoạn tiếng nền -> 70/70 ra chữ, độ tự tin trung
+# bình (avg_logprob thấp nhất) −0,99…−0,57; 70 câu lệnh thật −0,22…0 -> ngưỡng −0,4 ở giữa.
+# no_speech_prob luôn 0 nên không dùng được.
+NGUONG_LOGPROB = -0.4
+
+
+def loc_chu_bia(nghe: Callable[[str], str]) -> Callable[[str], str]:
+    """Bọc STT: chữ có độ tự tin dưới ngưỡng -> coi như không nghe được gì (giao diện báo "không nghe rõ",
+    đường «hey nexa» quay về chờ) thay vì gửi câu bịa cho trợ lý."""
+
+    def nghe_loc(tep: str) -> str:
+        chu = nghe(tep)
+        return "" if chu and getattr(nghe, "logprob", 0.0) < NGUONG_LOGPROB else chu
+
+    return nghe_loc
+
+
 def chon_stt(bien: str | None, co_ft: bool) -> str | None:
     """Thư mục model STT theo `NEXA_STT`: mặc định bản fine-tune NẾU có trên máy; `goc` = PhoWhisper-small gốc
     (None = bản gốc `eval.stt.chay_stt.MO_HINH`). Thiếu bản fine-tune thì tự về bản gốc — demo vẫn chạy."""
@@ -310,7 +328,7 @@ def tao_app_that() -> FastAPI:
     beam, goi_y = int(os.environ.get("NEXA_STT_BEAM", "1")), os.environ.get("NEXA_STT_GOI_Y") == "1"
     thu_muc = chon_stt(os.environ.get("NEXA_STT"), STT_FT.exists())
     print(f"[giong_noi] STT: {thu_muc or 'PhoWhisper-small gốc'}", flush=True)
-    nghe = nap("phowhisper-small", beam, goi_y, thu_muc)
+    nghe = loc_chu_bia(nap("phowhisper-small", beam, goi_y, thu_muc))
     tts = Vieneu()
     # CHẠY NÓNG: câu đầu sau khi khởi động tạo CHẬM hơn phát (đo 2026-10-13: 6,4 s cho 4,3 s tiếng, tiếng đầu
     # 1,2 s thay vì 0,25 s) -> giao diện phát bị ngắt quãng. Đọc bỏ hai câu trước khi nhận yêu cầu.

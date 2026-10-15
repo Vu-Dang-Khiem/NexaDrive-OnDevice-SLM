@@ -12,6 +12,21 @@ from serve.giong_noi import CHO_NGHE_TIEP, STT_FT, DocTungDoan, chon_stt, pcm16,
 nhan: list[str] = []
 
 
+def test_loc_chu_bia_khi_stt_khong_tu_tin():
+    from serve.giong_noi import NGUONG_LOGPROB, loc_chu_bia
+
+    def stt(tep: str) -> str:
+        return {"nen": "có lẽ tôi đã thấy rất nhiều", "lenh": "mở cốp"}[tep]
+
+    nghe = loc_chu_bia(stt)
+    stt.logprob = -0.84  # tiếng nền: STT vẫn đọc ra cả câu nhưng không tự tin
+    assert nghe("nen") == ""
+    stt.logprob = -0.05  # lệnh thật
+    assert nghe("lenh") == "mở cốp"
+    stt.logprob = NGUONG_LOGPROB + 0.01
+    assert nghe("lenh") == "mở cốp"
+
+
 def test_chon_stt_mac_dinh_ban_fine_tune_va_ve_goc_duoc():
     assert chon_stt(None, co_ft=True) == str(STT_FT)
     assert chon_stt("goc", co_ft=True) is None  # NEXA_STT=goc -> PhoWhisper-small gốc
