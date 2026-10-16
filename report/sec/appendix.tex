@@ -296,7 +296,7 @@ A (230, TTS) & 185 & 148 & 151 & 155 & synthetic \\
 B (40) & 30 & 15 & 21 & 18 & selection \\
 B, after fix & 30 & 16 & 22 & 19 & post-hoc \\
 C (30) & 24 & 14 & 21 & 19 & new \\
-D (30) & 18 & -- & 17 & -- & new \\
+D (30) & 18 & 12 & 17 & 15 & new \\
 \bottomrule
 \end{tabular}}
 \caption{End-to-end correct commands per recognizer and set (v6.1 seed 42, q4, threshold 0.80; set A row after the
@@ -306,8 +306,7 @@ normalization fix). WER of PhoWhisper-small: A 17.9\%, B 20.2\%, C 23.0\%, D 20.
 
 Table~\ref{tab:sttall} gives all speech results. For the noise experiment, each noise segment is drawn at a random offset with a
 fixed seed and scaled so that the ratio between the power of the speech portion (silence trimmed at 35\,dB) and the noise
-matches the target SNR; the mixed audio is stored for listening. STT latency grows slightly with noise (median 1.7 $\rightarrow$
-2.0\,s).
+matches the target SNR. STT latency grows slightly with noise (median 1.7 $\rightarrow$ 2.0\,s).
 
 The wake-word detector uses the streaming mel-spectrogram and embedding ONNX models of openWakeWord (about 3\,ms per 80\,ms
 frame) and a scikit-learn MLP trained with \code{partial\_fit} on batches mixing our negatives (30\%), ACAV100M features (35\%)
@@ -327,7 +326,7 @@ for both versions, so a new negative test set would be needed for further versio
   \item \textbf{Clarification on chit-chat}: \vi{Nhìn hàng phượng này lại nhớ hồi đi học ghê}{seeing these flame trees reminds
   me of school} $\rightarrow$ ``open the sunroof?'' ($p=0.96$).
   \item \textbf{Speech}: \vi{vặn nhỏ loa}{turn the speaker down} heard as \textit{vận nhỏ là}; \vi{Hủy}{cancel} heard as
-  \textit{Quỳ} (a name), which led to an over-trigger; ``26 degrees'' heard as \textit{hay xấu thủ}.
+  \textit{Quỳ}, which led to an over-trigger; ``26 degrees'' heard as \textit{hay xấu thủ}.
   \item \textbf{Fixed by data}: \vi{Hạ kính ghế phụ}{lower the passenger window} $\rightarrow$ defrost (R1);
   \vi{bật pha}{high beam on} $\rightarrow$ refused (v5), correct in v6.1; \vi{giảm nhiệt độ điều hòa}{lower the AC temperature}
   $\rightarrow$ AC off (v5), \code{delta=-2} in v6.1.

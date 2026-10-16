@@ -47,6 +47,11 @@ data/stt/
 # khác
 .DS_Store
 *.log
+# file trung gian khi biên dịch LaTeX
+report/*.blg
+report/*.aux
+report/*.bbl
+report/*.out
 .claude/
 *.pptx
 ~$*

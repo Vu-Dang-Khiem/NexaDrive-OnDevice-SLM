@@ -1,0 +1,163 @@
+{"id": "t000", "text": "Xăng còn 62%, đi được khoảng 260,4 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Xem giúp tôi mức xăng còn lại", "loai": "AssistantTurn"}
+{"id": "t001", "text": "Pin còn 80%, chạy điện được khoảng 280 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Kiểm tra pin xe giúp tôi", "loai": "AssistantTurn"}
+{"id": "t002", "text": "Bánh sau bên trái đang non, nên bơm lên 32 PSI.", "tap": "test_vi_sach_v2", "cau_lenh": "Áp suất lốp hiện tại thế nào", "loai": "AssistantTurn"}
+{"id": "t003", "text": "Cửa đã khoá, cốp đang đóng, xăng còn 62%, pin còn 80%.", "tap": "test_vi_sach_v2", "cau_lenh": "Kiểm tra xem có cửa nào chưa đóng chặt không", "loai": "AssistantTurn"}
+{"id": "t004", "text": "Xe đã đi 23.450 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Xe đi được bao nhiêu cây số rồi", "loai": "AssistantTurn"}
+{"id": "t005", "text": "Xe đã đi 14571,1 mi.", "tap": "test_vi_sach_v2", "cau_lenh": "Xem odo theo dặm giúp tôi", "loai": "AssistantTurn"}
+{"id": "t006", "text": "Xe còn đi được khoảng 540,4 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Còn đi được tầm bao nhiêu km nữa thì hết xăng", "loai": "AssistantTurn"}
+{"id": "t007", "text": "Xe còn đi được khoảng 540,4 km, đủ cho chuyến 200 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Đi 200 km nữa có phải đổ xăng dọc đường không", "loai": "AssistantTurn"}
+{"id": "t008", "text": "Xe còn đi được khoảng 540,4 km, đủ cho chuyến 50 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Chạy thêm 50 km nữa có đủ không", "loai": "AssistantTurn"}
+{"id": "t009", "text": "Đã bật điều hoà 26 độ cho ghế lái.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật điều hòa 26 độ ghế lái", "loai": "AssistantTurn"}
+{"id": "t010", "text": "Đã bật điều hoà 22 độ.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật điều hòa 22 độ hộ cái", "loai": "AssistantTurn"}
+{"id": "t011", "text": "Đã bật điều hoà 20 độ.", "tap": "test_vi_sach_v2", "cau_lenh": "Giảm nhiệt độ xuống 20 độ giùm", "loai": "AssistantTurn"}
+{"id": "t012", "text": "Đã tắt điều hoà.", "tap": "test_vi_sach_v2", "cau_lenh": "Tắt điều hòa đi cho đỡ tốn điện", "loai": "AssistantTurn"}
+{"id": "t013", "text": "Đã bật điều hoà 25 độ cho ghế phụ.", "tap": "test_vi_sach_v2", "cau_lenh": "Chỉnh điều hòa ghế phụ 25 độ", "loai": "AssistantTurn"}
+{"id": "t014", "text": "Đã giảm nhiệt độ điều hoà xuống 22 độ.", "tap": "test_vi_sach_v2", "cau_lenh": "Hạ nhiệt độ cabin xuống mát nhất có thể", "loai": "AssistantTurn"}
+{"id": "t015", "text": "Đã bật điều hoà 24 độ cho hàng ghế sau.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật điều hòa hàng ghế sau 24 độ", "loai": "AssistantTurn"}
+{"id": "t016", "text": "Đã chỉnh quạt gió mức 7.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật quạt gió mức to nhất", "loai": "AssistantTurn"}
+{"id": "t017", "text": "Đã chỉnh quạt gió mức 1.", "tap": "test_vi_sach_v2", "cau_lenh": "Giảm gió điều hòa xuống mức 1", "loai": "AssistantTurn"}
+{"id": "t018", "text": "Đã tắt quạt gió.", "tap": "test_vi_sach_v2", "cau_lenh": "Tắt quạt gió", "loai": "AssistantTurn"}
+{"id": "t019", "text": "Đã bật sấy kính trước.", "tap": "test_vi_sach_v2", "cau_lenh": "Sấy kính chắn gió phía trước", "loai": "AssistantTurn"}
+{"id": "t020", "text": "Đã bật sấy kính sau.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật sấy kính hậu giùm", "loai": "AssistantTurn"}
+{"id": "t021", "text": "Đã bật sấy cả kính trước lẫn kính sau.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật sấy cả kính trước lẫn kính sau", "loai": "AssistantTurn"}
+{"id": "t022", "text": "Đã khoá tất cả cửa.", "tap": "test_vi_sach_v2", "cau_lenh": "Khóa hết cửa lại giúp tôi", "loai": "AssistantTurn"}
+{"id": "t023", "text": "Đã mở khoá cửa.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở khóa cửa bên phụ", "loai": "AssistantTurn"}
+{"id": "t024", "text": "Đã mở cốp sau.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở cốp giúp tôi để đồ vào", "loai": "AssistantTurn"}
+{"id": "t025", "text": "Đã đóng cốp sau.", "tap": "test_vi_sach_v2", "cau_lenh": "Cốp đang mở đóng lại giúp cái", "loai": "AssistantTurn"}
+{"id": "t026", "text": "Đã mở nắp cổng sạc.", "tap": "test_vi_sach_v2", "cau_lenh": "Sắp cắm sạc rồi mở nắp sạc đi", "loai": "AssistantTurn"}
+{"id": "t027", "text": "Đã mở nắp bình xăng.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở nắp bình xăng hộ cái", "loai": "AssistantTurn"}
+{"id": "t028", "text": "Đã hạ kính ghế phụ, đang mở 50%.", "tap": "test_vi_sach_v2", "cau_lenh": "Hạ kính ghế phụ xuống một nửa", "loai": "AssistantTurn"}
+{"id": "t029", "text": "Đã hạ tất cả kính, đang mở 100%.", "tap": "test_vi_sach_v2", "cau_lenh": "Hạ hết bốn kính cửa sổ xuống", "loai": "AssistantTurn"}
+{"id": "t030", "text": "Đã hạ kính ghế phụ, đang mở 20%.", "tap": "test_vi_sach_v2", "cau_lenh": "Hạ hé kính bên phụ khoảng 20%", "loai": "AssistantTurn"}
+{"id": "t031", "text": "Đã nâng tất cả kính. Đã khoá tất cả cửa.", "tap": "test_vi_sach_v2", "cau_lenh": "Kéo hết kính xe lên rồi khóa cửa", "loai": "AssistantTurn"}
+{"id": "t032", "text": "Đã mở cửa sổ trời 50%.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở cửa sổ trời khoảng một nửa", "loai": "AssistantTurn"}
+{"id": "t033", "text": "Đã tắt đèn pha.", "tap": "test_vi_sach_v2", "cau_lenh": "Tắt đèn xe đi", "loai": "AssistantTurn"}
+{"id": "t034", "text": "Đã bật đèn khẩn cấp.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật đèn hazard lên", "loai": "AssistantTurn"}
+{"id": "t035", "text": "Âm lượng đang ở mức 15.", "tap": "test_vi_sach_v2", "cau_lenh": "Tăng âm lượng lên xíu", "loai": "AssistantTurn"}
+{"id": "t036", "text": "Âm lượng đang ở mức 5.", "tap": "test_vi_sach_v2", "cau_lenh": "Vặn nhỏ loa xuống mức 5", "loai": "AssistantTurn"}
+{"id": "t037", "text": "Đang phát Sơn Tùng M-TP.", "tap": "test_vi_sach_v2", "cau_lenh": "Bật nhạc Sơn Tùng M-TP", "loai": "AssistantTurn"}
+{"id": "t038", "text": "Đang phát VOV Giao thông.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở kênh VOV Giao thông", "loai": "AssistantTurn"}
+{"id": "t039", "text": "Đang phát nhạc acoustic thư giãn.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở playlist nhạc acoustic thư giãn", "loai": "AssistantTurn"}
+{"id": "t040", "text": "Đang phát Playlist đề xuất.", "tap": "test_vi_sach_v2", "cau_lenh": "Phát nhạc qua Bluetooth điện thoại", "loai": "AssistantTurn"}
+{"id": "t041", "text": "Đã tìm đường tới sân bay Nội Bài: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_vi_sach_v2", "cau_lenh": "Tra đường tới sân bay Nội Bài tránh trạm thu phí", "loai": "AssistantTurn"}
+{"id": "t042", "text": "Đã tìm đường tới nhà: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_vi_sach_v2", "cau_lenh": "Chỉ đường về nhà", "loai": "AssistantTurn"}
+{"id": "t043", "text": "Đã tìm đường tới công ty: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_vi_sach_v2", "cau_lenh": "Dẫn đường đến công ty", "loai": "AssistantTurn"}
+{"id": "t044", "text": "Đã tìm đường tới số 10 đường Nguyễn Huệ quận 1: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_vi_sach_v2", "cau_lenh": "Tra đường về số 10 đường Nguyễn Huệ quận 1", "loai": "AssistantTurn"}
+{"id": "t045", "text": "Đã tìm đường tới Vincom Bà Triệu: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_vi_sach_v2", "cau_lenh": "Chỉ đường tới Vincom Bà Triệu tránh đường cao tốc", "loai": "AssistantTurn"}
+{"id": "t046", "text": "Tìm thấy 2 trạm sạc gần đây, gần nhất: charging_station_1 — 3.0 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Tìm trạm sạc xe điện gần đây", "loai": "AssistantTurn"}
+{"id": "t047", "text": "Tìm thấy 2 bãi đỗ xe gần đây, gần nhất: parking_1 — 3.0 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Tìm bãi gửi xe ô tô xung quanh đây", "loai": "AssistantTurn"}
+{"id": "t048", "text": "Tìm thấy 2 nhà hàng gần đây, gần nhất: restaurant_1 — 3.0 km.", "tap": "test_vi_sach_v2", "cau_lenh": "Tìm quán ăn quanh đây trong vòng 5 km", "loai": "AssistantTurn"}
+{"id": "t049", "text": "Thời tiết Hà Nội 3 ngày tới: nhiều mây, khoảng 28,2 độ.", "tap": "test_vi_sach_v2", "cau_lenh": "Ba ngày nữa Hà Nội thời tiết ra sao", "loai": "AssistantTurn"}
+{"id": "t050", "text": "Thời tiết Đà Lạt 5 ngày tới: nhiều mây, khoảng 28,2 độ.", "tap": "test_vi_sach_v2", "cau_lenh": "Cuối tuần Đà Lạt có nắng không", "loai": "AssistantTurn"}
+{"id": "t051", "text": "Điều hoà đang tắt. Bạn có muốn mình bật điều hoà không?", "tap": "test_vi_sach_v2", "cau_lenh": "Nóng quá", "loai": "ClarifyTurn"}
+{"id": "t052", "text": "Bạn có muốn mình bật sưởi cho ấm không?", "tap": "test_vi_sach_v2", "cau_lenh": "Lạnh quá tay chân buốt hết", "loai": "ClarifyTurn"}
+{"id": "t053", "text": "Điều hoà đang tắt. Bạn có muốn mình bật điều hoà cho hàng ghế sau không?", "tap": "test_vi_sach_v2", "cau_lenh": "Hàng ghế sau kêu nóng nãy giờ", "loai": "ClarifyTurn"}
+{"id": "t054", "text": "Các kính đều đang đóng. Điều hoà đang tắt. Bạn muốn mình hạ tất cả kính hay bật điều hoà?", "tap": "test_vi_sach_v2", "cau_lenh": "Sao trong xe ngột ngạt thế này", "loai": "ClarifyTurn"}
+{"id": "t055", "text": "Các kính đều đang đóng. Bạn có muốn mình hạ tất cả kính không?", "tap": "test_vi_sach_v2", "cau_lenh": "Mùi xe khó chịu quá", "loai": "ClarifyTurn"}
+{"id": "t056", "text": "Cửa sổ trời đang đóng. Bạn có muốn mình mở cửa sổ trời không?", "tap": "test_vi_sach_v2", "cau_lenh": "Trời đẹp thế này ngồi bí trong xe phí quá", "loai": "ClarifyTurn"}
+{"id": "t057", "text": "Quạt gió đang tắt. Bạn có muốn mình chỉnh quạt gió mức 6 không?", "tap": "test_vi_sach_v2", "cau_lenh": "Gió điều hòa yếu như đuổi ruồi", "loai": "ClarifyTurn"}
+{"id": "t058", "text": "Quạt gió đang tắt. Bạn có muốn mình chỉnh quạt gió mức 2 không?", "tap": "test_vi_sach_v2", "cau_lenh": "Quạt gió ồn quá", "loai": "ClarifyTurn"}
+{"id": "t059", "text": "Bạn có muốn mình bật sấy kính không?", "tap": "test_vi_sach_v2", "cau_lenh": "Kính lái mờ tịt chẳng nhìn thấy gì", "loai": "ClarifyTurn"}
+{"id": "t060", "text": "Đèn pha đang ở chế độ tự động. Bạn có muốn mình bật đèn chiếu gần không?", "tap": "test_vi_sach_v2", "cau_lenh": "Đường tối quá chẳng thấy gì", "loai": "ClarifyTurn"}
+{"id": "t061", "text": "Đèn pha đang ở chế độ tự động. Bạn có muốn mình chuyển đèn pha sang tự động không?", "tap": "test_vi_sach_v2", "cau_lenh": "Trời sẩm tối rồi đấy", "loai": "ClarifyTurn"}
+{"id": "t062", "text": "Bạn có muốn mình bật đèn khẩn cấp không?", "tap": "test_vi_sach_v2", "cau_lenh": "Xe chết máy giữa đường rồi", "loai": "ClarifyTurn"}
+{"id": "t063", "text": "Bạn có muốn mình giảm âm lượng 3 mức không?", "tap": "test_vi_sach_v2", "cau_lenh": "Ồn quá nhức hết cả đầu", "loai": "ClarifyTurn"}
+{"id": "t064", "text": "Bạn có muốn mình tăng âm lượng 3 mức không?", "tap": "test_vi_sach_v2", "cau_lenh": "Nhạc gì mà bé tí như muỗi kêu", "loai": "ClarifyTurn"}
+{"id": "t065", "text": "Bạn có muốn mình phát nhạc không?", "tap": "test_vi_sach_v2", "cau_lenh": "Đi đường buồn quá chẳng có gì nghe", "loai": "ClarifyTurn"}
+{"id": "t066", "text": "Bạn có muốn mình tìm nhà hàng gần đây không?", "tap": "test_vi_sach_v2", "cau_lenh": "Đói bụng cồn cào rồi", "loai": "ClarifyTurn"}
+{"id": "t067", "text": "Bạn có muốn mình tìm quán cà phê gần đây không?", "tap": "test_vi_sach_v2", "cau_lenh": "Khát nước cháy cổ", "loai": "ClarifyTurn"}
+{"id": "t068", "text": "Bạn có muốn mình tìm cây ATM gần đây không?", "tap": "test_vi_sach_v2", "cau_lenh": "Cần rút ít tiền mặt mà chẳng biết chỗ nào", "loai": "ClarifyTurn"}
+{"id": "t069", "text": "Bạn có muốn mình tìm bãi đỗ xe gần đây không?", "tap": "test_vi_sach_v2", "cau_lenh": "Đỗ xe ở đâu quanh đây bây giờ", "loai": "ClarifyTurn"}
+{"id": "t070", "text": "Bạn muốn mình kiểm tra mức xăng hay tìm cây xăng gần đây?", "tap": "test_vi_sach_v2", "cau_lenh": "Xe sắp cạn bình rồi thì phải", "loai": "ClarifyTurn"}
+{"id": "t071", "text": "Thời tiết Hà Nội hôm nay: nhiều mây, khoảng 28,2 độ.", "tap": "test_vi_sach_v2", "cau_lenh": "Trời âm u thế này sắp mưa to rồi", "loai": "AssistantTurn"}
+{"id": "t072", "text": "Các kính đều đang đóng. Bạn có muốn mình nâng tất cả kính không?", "tap": "test_vi_sach_v2", "cau_lenh": "Bụi bay vào cay hết cả mắt", "loai": "ClarifyTurn"}
+{"id": "t073", "text": "Cửa sổ trời đang đóng. Bạn có muốn mình đóng cửa sổ trời không?", "tap": "test_vi_sach_v2", "cau_lenh": "Nắng rọi thẳng vào đầu rát quá", "loai": "ClarifyTurn"}
+{"id": "t074", "text": "Bạn có muốn mình dẫn đường tới nhà không?", "tap": "test_vi_sach_v2", "cau_lenh": "Không biết đường về nhà thế nào", "loai": "ClarifyTurn"}
+{"id": "t075", "text": "Xin lỗi, việc này mình chưa làm được. Mình có thể giúp điều hoà, cửa, kính, đèn, âm lượng, dẫn đường hoặc kiểm tra tình trạng xe.", "tap": "test_vi_sach_v2", "cau_lenh": "Mở cửa cuốn phòng khách nhà tôi lên", "loai": "AssistantTurn"}
+{"id": "t076", "text": "Bạn có muốn mình khoá cửa xe không?", "tap": "test_vi_bo_sung", "cau_lenh": "Để cái laptop ở ghế sau mà chạy vào tiệm có năm phút, chắc không sao đâu nhỉ", "loai": "ClarifyTurn"}
+{"id": "t077", "text": "Bạn có muốn mình đóng cốp sau không?", "tap": "test_vi_bo_sung", "cau_lenh": "Ơ cái đèn báo trên màn hình sáng nãy giờ, hình như đằng sau chưa sập xuống", "loai": "ClarifyTurn"}
+{"id": "t078", "text": "Bạn có muốn mình dẫn đường tới chợ huyện không?", "tap": "test_vi_bo_sung", "cau_lenh": "Lần đầu về quê vợ, chỉ nhớ lờ mờ là gần chợ huyện", "loai": "ClarifyTurn"}
+{"id": "t079", "text": "Bạn có muốn mình dẫn đường tới sân bay không?", "tap": "test_vi_bo_sung", "cau_lenh": "Chín giờ phải có mặt ở sân bay mà giờ chả biết đi lối nào cho nhanh", "loai": "ClarifyTurn"}
+{"id": "t080", "text": "Bạn có muốn mình dẫn đường tới khách sạn không?", "tap": "test_vi_bo_sung", "cau_lenh": "Bạn gửi cái địa chỉ khách sạn mà đọc chả hiểu nó nằm ở đâu", "loai": "ClarifyTurn"}
+{"id": "t081", "text": "Bạn muốn mình dẫn đường tới bệnh viện hay tìm bệnh viện gần đây?", "tap": "test_vi_bo_sung", "cau_lenh": "Đi vòng vòng nãy giờ vẫn chưa thấy cái bệnh viện đâu", "loai": "ClarifyTurn"}
+{"id": "t082", "text": "Các kính đều đang đóng. Bạn có muốn mình hạ kính ghế lái không?", "tap": "test_vi_bo_sung", "cau_lenh": "Có anh bảo vệ đang gõ gõ vào kính phía tôi", "loai": "ClarifyTurn"}
+{"id": "t083", "text": "Bạn có muốn mình tìm cây xăng gần đây không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Kim xăng sát vạch đỏ rồi, không biết quanh đây có chỗ nào đổ không.", "loai": "ClarifyTurn"}
+{"id": "t084", "text": "Quạt gió đang tắt. Điều hoà đang tắt. Bạn muốn mình chỉnh quạt gió mức 2 hay tắt điều hoà?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Gió thổi mạnh quá cảm giác nổi hết cả da gà rồi.", "loai": "ClarifyTurn"}
+{"id": "t085", "text": "Bạn có muốn mình dẫn đường tới Bệnh viện Bạch Mai không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Lát phải có mặt ở Bệnh viện Bạch Mai mà em chẳng nhớ đi lối nào.", "loai": "ClarifyTurn"}
+{"id": "t086", "text": "Các kính đều đang đóng. Bạn muốn mình đóng cốp sau hay nâng tất cả kính?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Mưa hắt cả vào chỗ hành lý rồi, ướt hết mấy thùng giấy bây giờ.", "loai": "ClarifyTurn"}
+{"id": "t087", "text": "Bạn muốn mình làm gì cụ thể ạ?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Tiếng nhạc ồn quá,trẻ con không ngủ được.", "loai": "AssistantTurn"}
+{"id": "t088", "text": "Các kính đều đang đóng. Bạn có muốn mình nâng kính ghế phụ không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Mưa tạt bên ghế phụ ướt cả tay áo em rồi.", "loai": "ClarifyTurn"}
+{"id": "t089", "text": "Cửa sổ trời đang đóng. Bạn có muốn mình hé cửa sổ trời không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Đỗ đây hóng mát mà phía trên đầu thoáng thêm tí nữa thì thích nhỉ.", "loai": "ClarifyTurn"}
+{"id": "t090", "text": "Điều hoà đang tắt. Các kính đều đang đóng. Bạn muốn mình bật điều hoà hay hạ tất cả kính?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Xe phơi nắng cả trưa, ngồi vào nóng chảy cả mồ hôi.", "loai": "ClarifyTurn"}
+{"id": "t091", "text": "Bạn muốn mình tìm trạm sạc gần đây hay kiểm tra pin?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Pin xe còn có tám phần trăm, thế này chắc chẳng về nổi đến nhà.", "loai": "ClarifyTurn"}
+{"id": "t092", "text": "Bạn muốn mình kiểm tra tình trạng xe hay khoá cửa xe?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Nãy để xe bãi đỗ xe mà mải chạy vội xuống xếp hàng mua đồ quá giờ không biết đã khóa xe chưa.", "loai": "ClarifyTurn"}
+{"id": "t093", "text": "Các kính đều đang đóng. Cửa sổ trời đang đóng. Bạn muốn mình hạ tất cả kính hay mở cửa sổ trời?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Em hơi say xe, giờ chỉ muốn hít một hơi không khí ngoài trời.", "loai": "ClarifyTurn"}
+{"id": "t094", "text": "Bạn có muốn mình dẫn đường tới 25 Lý Thường Kiệt không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Bạn gửi địa chỉ 25 Lý Thường Kiệt rồi mà em vẫn chưa hình dung từ đây sang đấy kiểu gì.", "loai": "ClarifyTurn"}
+{"id": "t095", "text": "Bạn có muốn mình dẫn đường tới khách sạn Daewoo không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Anh vừa nhắn cuộc họp chuyển sang khách sạn Daewoo rồi, mình lại đang đi về phía công ty.", "loai": "ClarifyTurn"}
+{"id": "t096", "text": "Bạn có muốn mình dẫn đường tới Aeon Mall Long Biên không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Hình như mình vừa đi quá lối rẽ vào Aeon Mall Long Biên rồi thì phải.", "loai": "ClarifyTurn"}
+{"id": "t097", "text": "Bạn có muốn mình dẫn đường tới sân bay Nội Bài không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Còn một tiếng nữa hết giờ làm thủ tục ở Nội Bài, em sốt ruột quá.", "loai": "ClarifyTurn"}
+{"id": "t098", "text": "Bạn có muốn mình dẫn đường tới Vincom Bà Triệu không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Quán ở đây nghỉ rồi, chắc phải sang Vincom Bà Triệu ăn thôi.", "loai": "ClarifyTurn"}
+{"id": "t099", "text": "Bạn có muốn mình dẫn đường tới ga Hà Nội không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Bố vừa xuống tàu ở ga Hà Nội, đang đứng đợi mình ngoài cổng rồi.", "loai": "ClarifyTurn"}
+{"id": "t100", "text": "Bạn có muốn mình tắt đèn khẩn cấp không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Xe chạy bình thường lại rồi mà hai mũi tên trên bảng đồng hồ vẫn chớp cùng nhau.", "loai": "ClarifyTurn"}
+{"id": "t101", "text": "Bạn có muốn mình dẫn đường tới FPT Cầu Giấy không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Hôm nay buổi đầu đi làm ở FPT Cầu Giấy, em còn chưa biết tòa nhà nằm chỗ nào.", "loai": "ClarifyTurn"}
+{"id": "t102", "text": "Bạn có muốn mình tìm bệnh viện gần đây không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Mẹ đau bụng mãi không đỡ, chắc phải có bác sĩ khám mới yên tâm, mà khu này mình chẳng quen chỗ nào.", "loai": "ClarifyTurn"}
+{"id": "t103", "text": "Bạn có muốn mình dẫn đường tới Hồ Tây không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Đằng nào cũng được về sớm, em muốn ghé Hồ Tây ngồi một lát trước khi về nhà.", "loai": "ClarifyTurn"}
+{"id": "t104", "text": "Bạn có muốn mình dẫn đường tới tòa Keangnam không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Laptop vẫn để ở văn phòng trong tòa Keangnam, không quay lại lấy thì mai em chẳng có gì làm.", "loai": "ClarifyTurn"}
+{"id": "t105", "text": "Điều hoà đang tắt. Bạn có muốn mình tắt điều hoà không?", "tap": "test_vi_mo_ho_4", "cau_lenh": "Gió trời đủ mát rồi, làm lạnh trong xe nữa chỉ tốn điện.", "loai": "ClarifyTurn"}
+{"id": "t106", "text": "Đã hạ kính ghế phụ, đang mở 100%.", "tap": "test_v6_mot_luot", "cau_lenh": "Hạ kính ghế phụ", "loai": "AssistantTurn"}
+{"id": "t107", "text": "Đã tìm đường tới Sầm Sơn: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_v6_mot_luot", "cau_lenh": "Dẫn tới Sầm Sơn", "loai": "AssistantTurn"}
+{"id": "t108", "text": "Đã hé cửa sổ trời 30%.", "tap": "test_v6_mot_luot", "cau_lenh": "Hé cửa sổ trời", "loai": "AssistantTurn"}
+{"id": "t109", "text": "Đã bật điều hoà 24 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Bật điều hoà đi", "loai": "AssistantTurn"}
+{"id": "t110", "text": "Quạt gió đang tắt rồi.", "tap": "test_v6_mot_luot", "cau_lenh": "Giảm quạt gió xuống", "loai": "AssistantTurn"}
+{"id": "t111", "text": "Đã bật đèn chiếu gần.", "tap": "test_v6_mot_luot", "cau_lenh": "Chuyển sang đèn cốt", "loai": "AssistantTurn"}
+{"id": "t112", "text": "Tìm thấy 2 cây ATM gần đây, gần nhất: atm_1 — 3.0 km.", "tap": "test_v6_mot_luot", "cau_lenh": "Tìm ATM gần đây", "loai": "AssistantTurn"}
+{"id": "t113", "text": "Âm lượng đang ở mức 9.", "tap": "test_v6_mot_luot", "cau_lenh": "Vặn nhỏ tiếng lại", "loai": "AssistantTurn"}
+{"id": "t114", "text": "Đã tắt đèn khẩn cấp.", "tap": "test_v6_mot_luot", "cau_lenh": "Tắt đèn khẩn cấp", "loai": "AssistantTurn"}
+{"id": "t115", "text": "Đã tăng quạt gió lên mức 1.", "tap": "test_v6_mot_luot", "cau_lenh": "Quạt gió mạnh lên", "loai": "AssistantTurn"}
+{"id": "t116", "text": "Đã đóng cửa sổ trời.", "tap": "test_v6_mot_luot", "cau_lenh": "Đóng cửa sổ trời", "loai": "AssistantTurn"}
+{"id": "t117", "text": "Đã nâng tất cả kính.", "tap": "test_v6_mot_luot", "cau_lenh": "Kéo kính lên hết", "loai": "AssistantTurn"}
+{"id": "t118", "text": "Đã chuyển đèn pha sang tự động.", "tap": "test_v6_mot_luot", "cau_lenh": "Đèn pha tự động", "loai": "AssistantTurn"}
+{"id": "t119", "text": "Đã tắt sấy kính.", "tap": "test_v6_mot_luot", "cau_lenh": "Tắt sấy kính nhé", "loai": "AssistantTurn"}
+{"id": "t120", "text": "Đã tìm đường tới Huế: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_v6_mot_luot", "cau_lenh": "Tìm đường tới Huế", "loai": "AssistantTurn"}
+{"id": "t121", "text": "Thời tiết Hà Nội ngày mai: nhiều mây, khoảng 28,2 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Mai có nắng không?", "loai": "AssistantTurn"}
+{"id": "t122", "text": "Đã hạ kính ghế lái, đang mở 20%.", "tap": "test_v6_mot_luot", "cau_lenh": "Hé kính bên lái", "loai": "AssistantTurn"}
+{"id": "t123", "text": "Đã tìm đường tới Vinh: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_v6_mot_luot", "cau_lenh": "Chỉ đường đi Vinh", "loai": "AssistantTurn"}
+{"id": "t124", "text": "Đang phát nhạc vàng.", "tap": "test_v6_mot_luot", "cau_lenh": "Cho nghe nhạc vàng", "loai": "AssistantTurn"}
+{"id": "t125", "text": "Đã bật đèn chiếu xa.", "tap": "test_v6_mot_luot", "cau_lenh": "Bật pha chiếu xa", "loai": "AssistantTurn"}
+{"id": "t126", "text": "Đã mở cửa sổ trời 100%.", "tap": "test_v6_mot_luot", "cau_lenh": "Mở cửa sổ trời", "loai": "AssistantTurn"}
+{"id": "t127", "text": "Đã bật điều hoà 25 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Máy lạnh 25 độ", "loai": "AssistantTurn"}
+{"id": "t128", "text": "Đã hạ kính ghế lái, đang mở 50%.", "tap": "test_v6_mot_luot", "cau_lenh": "Kéo kiếng bên tài xuống nửa chừng giùm chị.", "loai": "AssistantTurn"}
+{"id": "t129", "text": "Đã chỉnh quạt gió mức 2.", "tap": "test_v6_mot_luot", "cau_lenh": "Hạ nấc gió máy lạnh xuống số hai nha.", "loai": "AssistantTurn"}
+{"id": "t130", "text": "Đã tìm đường tới Ga quốc nội sân bay Tân Sơn Nhất: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_v6_mot_luot", "cau_lenh": "Dẫn chị ra Tân Sơn Nhất, ga quốc nội.", "loai": "AssistantTurn"}
+{"id": "t131", "text": "Đang phát cải lương.", "tap": "test_v6_mot_luot", "cau_lenh": "Mở cho chú nghe cải lương một chút.", "loai": "AssistantTurn"}
+{"id": "t132", "text": "Xe còn đi được khoảng 540,4 km, đủ cho chuyến 80 km.", "tap": "test_v6_mot_luot", "cau_lenh": "Nhiêu đây xăng chạy nổi tám chục cây nữa không?", "loai": "AssistantTurn"}
+{"id": "t133", "text": "Đã bật điều hoà 23 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Để máy lạnh hai mươi ba độ giùm anh.", "loai": "AssistantTurn"}
+{"id": "t134", "text": "Xe còn đi được khoảng 540,4 km, đủ cho chuyến 100 km.", "tap": "test_v6_mot_luot", "cau_lenh": "Xe còn đủ sức chạy thêm trăm cây không?", "loai": "AssistantTurn"}
+{"id": "t135", "text": "Đã tìm đường tới Hồ Gươm: khoảng 7,3 km, mất chừng 12 phút.", "tap": "test_v6_mot_luot", "cau_lenh": "Chỉ đường ra Hồ Gươm cho mình.", "loai": "AssistantTurn"}
+{"id": "t136", "text": "Đã bật điều hoà 26 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Máy lạnh cho về hai sáu giùm tui.", "loai": "AssistantTurn"}
+{"id": "t137", "text": "Thời tiết Đà Nẵng hôm nay: nhiều mây, khoảng 28,2 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Chiều ni Đà Nẵng có đổ mưa không em?", "loai": "AssistantTurn"}
+{"id": "t138", "text": "Đang phát VOV giao thông.", "tap": "test_v6_mot_luot", "cau_lenh": "Cho anh nghe VOV giao thông đi.", "loai": "AssistantTurn"}
+{"id": "t139", "text": "Âm lượng đang ở mức 13.", "tap": "test_v6_mot_luot", "cau_lenh": "Nhích tiếng loa lên một nấc thôi nha.", "loai": "AssistantTurn"}
+{"id": "t140", "text": "Đã nâng kính ghế lái.", "tap": "test_v6_mot_luot", "cau_lenh": "Kính chỗ bác tài kéo lên kín luôn.", "loai": "AssistantTurn"}
+{"id": "t141", "text": "Đã hạ hai kính trước, đang mở 100%.", "tap": "test_v6_mot_luot", "cau_lenh": "Hạ hết cả kính bên tài lẫn bên phụ phía trước xuống.", "loai": "AssistantTurn"}
+{"id": "t142", "text": "Đã nâng hai kính sau.", "tap": "test_v6_mot_luot", "cau_lenh": "Hai cái kính hàng ghế sau kéo lên kín giùm tui.", "loai": "AssistantTurn"}
+{"id": "t143", "text": "Đã tăng nhiệt độ điều hoà lên 26 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Chỉnh máy lạnh ấm hơn tí đi em.", "loai": "AssistantTurn"}
+{"id": "t144", "text": "Đã nâng hai kính trước.", "tap": "test_v6_mot_luot", "cau_lenh": "Kéo kín hai kính trước lại, cả bên lái lẫn bên phụ nhé.", "loai": "AssistantTurn"}
+{"id": "t145", "text": "Đã tăng nhiệt độ điều hoà lên 27 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Tăng nhiệt độ máy lạnh thêm ba độ nữa nha.", "loai": "AssistantTurn"}
+{"id": "t146", "text": "Đã hạ hai kính sau, đang mở 50%.", "tap": "test_v6_mot_luot", "cau_lenh": "Cho cả hai cửa kính đằng sau xuống một nửa thôi.", "loai": "AssistantTurn"}
+{"id": "t147", "text": "Đã bật sưởi 24 độ cho ấm.", "tap": "test_v6_mot_luot", "cau_lenh": "Mở sưởi trong xe lên cho bác.", "loai": "AssistantTurn"}
+{"id": "t148", "text": "Đã bật sưởi 28 độ cho ấm.", "tap": "test_v6_mot_luot", "cau_lenh": "Chuyển điều hoà sang sưởi, để 28 độ giúp mình.", "loai": "AssistantTurn"}
+{"id": "t149", "text": "Đã bật làm lạnh 23 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Chuyển điều hoà sang làm lạnh ở 23 độ đi.", "loai": "AssistantTurn"}
+{"id": "t150", "text": "Đã bật sưởi 27 độ cho ấm.", "tap": "test_v6_mot_luot", "cau_lenh": "Sưởi ấm khoang xe giúp chị, đặt 27 độ nhé.", "loai": "AssistantTurn"}
+{"id": "t151", "text": "Đã giảm nhiệt độ điều hoà xuống 23 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Hạ nhiệt độ điều hoà xuống một độ nữa thôi.", "loai": "AssistantTurn"}
+{"id": "t152", "text": "Đã hạ hai kính sau, đang mở 20%.", "tap": "test_v6_mot_luot", "cau_lenh": "Hé cả hai kính sau một chút cho thoáng giùm anh.", "loai": "AssistantTurn"}
+{"id": "t153", "text": "Đã hạ hai kính trước, đang mở 50%.", "tap": "test_v6_mot_luot", "cau_lenh": "Hai bên kính hàng ghế trước cho xuống ngang nhau, tầm nửa cửa nhé.", "loai": "AssistantTurn"}
+{"id": "t154", "text": "Đã bật làm lạnh 24 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Bật điều hoà chế độ lạnh cho anh.", "loai": "AssistantTurn"}
+{"id": "t155", "text": "Đã giảm nhiệt độ điều hoà xuống 21 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Chỉnh máy lạnh lạnh thêm ba độ so với bây giờ nhé.", "loai": "AssistantTurn"}
+{"id": "t156", "text": "Đã tăng nhiệt độ điều hoà lên 25 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Nhích điều hoà lên thêm một độ nữa cho chị.", "loai": "AssistantTurn"}
+{"id": "t157", "text": "Đã bật làm lạnh 21 độ.", "tap": "test_v6_mot_luot", "cau_lenh": "Máy lạnh bật chế độ lạnh, lấy 21 độ nhé.", "loai": "AssistantTurn"}
+{"id": "t158", "text": "Đã nâng hai kính sau, còn mở 50%.", "tap": "test_v6_mot_luot", "cau_lenh": "Nâng hai kính hàng sau lên ngang nửa cửa giúp mình.", "loai": "AssistantTurn"}
+{"id": "t159", "text": "Chào bạn, mình là NexaAI, mình có thể giúp gì cho bạn nhỉ?", "tap": "xa_giao", "cau_lenh": "Xin chào", "loai": "AssistantTurn"}
+{"id": "t160", "text": "Mình là NexaAI, trợ lý giọng nói trên xe, chạy ngay trên máy, không cần mạng. Mình giúp được điều hoà, quạt gió, sấy kính, khoá cửa, cốp, kính, cửa sổ trời, đèn, âm lượng, nhạc, dẫn đường, tìm chỗ gần đây, xem thời tiết và kiểm tra tình trạng xe.", "tap": "xa_giao", "cau_lenh": "Bạn là ai", "loai": "AssistantTurn"}
+{"id": "t161", "text": "Mình giúp được điều hoà, quạt gió, sấy kính, khoá cửa, cốp, kính, cửa sổ trời, đèn, âm lượng, nhạc, dẫn đường, tìm chỗ gần đây, xem thời tiết và kiểm tra tình trạng xe. Bạn cứ nói tự nhiên, ví dụ \"bật điều hoà 22 độ\" hay \"mở cốp\" nhé.", "tap": "xa_giao", "cau_lenh": "Bạn làm được gì", "loai": "AssistantTurn"}
+{"id": "t162", "text": "Không có gì đâu, cần gì bạn cứ gọi NexaAI nhé!", "tap": "xa_giao", "cau_lenh": "Cảm ơn nhé", "loai": "AssistantTurn"}

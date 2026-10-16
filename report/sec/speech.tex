@@ -41,7 +41,9 @@ the number-normalization fix.}
 PhoWhisper-medium had the lowest word error rate but fewer correct commands: WER weighs every word equally, while one wrong
 number or part name breaks a command (medium heard ``25 degrees'' as \textit{hai găm độ}). Synthetic speech overrated
 Parakeet (WER 21.5\% on set A, 33.3\% on real voice): the CTC model glues or splits syllables on real speech, while the
-Whisper decoder uses linguistic context.
+Whisper decoder uses linguistic context. The ranking held on the new sets C and D, scored afterwards for reference only:
+PhoWhisper-small 21 and 17 of 30 correct commands, PhoWhisper-medium 19 and 15, Parakeet 14 and 12
+(Table~\ref{tab:sttall}).
 
 \paragraph{A bug found by real voice.} Of the 11 commands PhoWhisper-small lost on set B, three were caused by our own
 normalizer: Vietnamese speakers say \textit{hai hai độ} for 22 degrees, and the normalizer added the digits (4 degrees). After
@@ -152,6 +154,15 @@ went from 29 to 46 of 60 for both variants---a figure inflated by the shared TTS
 check on other real speakers giving commands is missing; the noise and wake-word experiments were run with the original
 recognizer.
 
+\paragraph{Invented text on background noise.} The fine-tuning data contain no audio without speech, and the VAD gain
+described in \S\ref{sec:wake} occasionally lets background noise through as speech (8 of 190 ten-second background
+segments cut from our recordings, against 0 without the gain). On such segments the fine-tuned recognizer invented a whole
+sentence every time (70 of 70). Whisper's no-speech probability was always zero, but the average token log-probability
+separates the two cases: $-0.99$ to $-0.57$ on background noise, $-0.22$ to $0$ on real commands. Transcripts below $-0.4$
+are discarded as ``not heard''. On all 140 real commands of sets B--E none is discarded (lowest $-0.26$), so every number
+above is unchanged. The threshold was set on background noise from the same recordings; a television or a passenger talking
+is not filtered.
+
 \subsection{Wake word}
 \label{sec:wake}
 
@@ -192,10 +203,36 @@ frames $\ge0.85$. CPU: about 3.5\% of one core.}
 
 Version 2 detects almost every real call in every style (normal, fast, quiet, from 1--1.5\,m, with \textit{ơi}, followed
 directly by a command), but false alarms doubled on continuous read speech, and one of the author's car commands triggered it
-(Table~\ref{tab:wake}). We deploy version 2 and report that it meets the detection target but not the false-alarm target. A false
-wake-up either times out after about four seconds of silence or sends the next overheard sentence to the assistant, which
-usually refuses it; sensitive functions always require confirmation for wake-word commands. Because ACAV100M features are
+(Table~\ref{tab:wake}). We deploy version 2 and report that it meets the detection target but not the false-alarm target. If
+nobody speaks for 2\,s after a detection, the call is treated as a bare ``Hey Nexa'': the assistant greets the driver and
+listens for 10\,s, then returns to waiting for the wake word. A false wake-up therefore produces an audible greeting, or sends
+the next overheard sentence to the assistant, which usually refuses it; sensitive functions always require confirmation for
+wake-word commands. After every answer the service also listens for 10\,s for a follow-up without the wake word.
+
+\paragraph{Quiet microphone.} In live use, commands spoken after the wake word were sometimes ignored or cut off. The laptop
+microphone records quietly (peaks around $-27$\,dBFS) and Silero VAD missed speech: replaying the 190 real command
+recordings (set E and the fine-tuning set) through the command capture, only 40 were captured whole, 103 were cut
+mid-sentence and 47 were dropped. The service now amplifies the signal \emph{for the VAD only}, with an adaptive gain of
+1--8$\times$ that brings the recent peak to $-12$\,dBFS (20\,s half-life); the recognizer still receives the original audio, so
+no STT number changes. On the same recordings 164 commands were captured whole, 26 were cut and none was dropped. The gain was
+chosen on these recordings (one speaker, one microphone). Because ACAV100M features are
 licensed CC BY-NC-SA, the detector may only be used non-commercially.
+
+\subsection{Speech synthesis}
+\label{sec:tts}
+
+TTS is used off the shelf because it does not affect what the car does: it only reads the template answer after the decision
+has been made. We still checked its intelligibility automatically. Every utterance of the four single-turn test sets was run
+through the runtime with the reference call as the model output, which gives the 163 distinct answers the assistant actually
+speaks (80 of them contain numbers such as \textit{260,4 km} or \textit{62\%}). VieNeu read them with the deployed voice and two
+recognizers transcribed them: the off-the-shelf PhoWhisper-small, which has never heard VieNeu (the fine-tuned one was trained
+on its voices), and Zipformer-30M as a second judge. Both sides are normalized to spoken form (digits to words, one tone-mark
+convention, no punctuation). On the 143 answers that contain only Vietnamese syllables, the word error rates are 3.1\% and
+1.2\% (74\% and 88\% of the answers transcribed exactly), lower than PhoWhisper's 11.6\% on human read speech (FLEURS). On the
+20 answers with foreign words, names or identifiers they are 26.9\% and 18.6\%: the assistant's name \textit{NexaAI},
+\textit{Playlist}, \textit{VOV} or \textit{PSI} are read with Vietnamese spelling rules. The check also exposed a template
+error: nearby-search answers read out the simulator's internal identifiers (\textit{charging\_station\_1 --- 3.0 km}).
+Intelligibility measured by a recognizer is not naturalness; we ran no listening test.
 
 \subsection{Latency}
 \label{sec:latency}
@@ -204,5 +241,9 @@ On the laptop CPU a spoken command takes about 2.5\,s from end of speech to the 
 for a 2--5\,s utterance, the model about 0.5\,s, and TTS about 0.25\,s until the first audio. The answer is synthesized and
 streamed chunk by chunk, and the interface plays each chunk while the next one is generated. On ten answers this cut the time
 to first audio from a median of 798\,ms (worst 2.8\,s for a three-part answer) when waiting for the whole sentence to 241\,ms
-(worst 285\,ms). Synthesis runs faster than playback (0.85\,s for 2.7\,s of audio), so chunks play without gaps. Each extra
-segment of a multi-command utterance adds about 0.5\,s. The laptop's 4\,GB GPU is not used.
+(worst 285\,ms). Synthesis runs faster than playback (0.85\,s for 2.7\,s of audio), so chunks play without gaps; a later
+measurement on 20 answers gave 207\,ms to first audio (worst 249\,ms) and a real-time factor of 0.37--0.41. Each extra
+segment of a multi-command utterance adds about 0.5\,s. The laptop's 4\,GB GPU is not used. These numbers require the
+laptop's performance power mode: in its default mode the CPU ran at about 60\% of its nominal clock during synthesis, the
+real-time factor rose to 1.1 and the first audio to about 0.55\,s, so speech was produced slower than it was played and
+playback stuttered.

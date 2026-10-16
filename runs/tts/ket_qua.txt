@@ -1,0 +1,116 @@
+Đo độ rõ TTS (VieNeu, giọng Trúc Ly): 163 câu trả lời khác nhau của trợ lý
+Tổng 1899 từ · 8082 ký tự · 80 câu có số
+
+== Giám khảo phowhisper-small
+  tất cả        163 câu · WER   6.4% · nghe đúng trọn 108/163 (66%)
+  câu có số      80 câu · WER   6.3% · nghe đúng trọn 53/80 (66%)
+  câu không số   83 câu · WER   6.6% · nghe đúng trọn 55/83 (66%)
+  thuần Việt    143 câu · WER   3.1% · nghe đúng trọn 106/143 (74%)
+  có từ ngoại    20 câu · WER  26.9% · nghe đúng trọn 2/20 (10%)
+  CER (ký tự) 3.5%
+
+== Giám khảo zipformer
+  tất cả        163 câu · WER   3.6% · nghe đúng trọn 129/163 (79%)
+  câu có số      80 câu · WER   3.6% · nghe đúng trọn 64/80 (80%)
+  câu không số   83 câu · WER   3.7% · nghe đúng trọn 65/83 (78%)
+  thuần Việt    143 câu · WER   1.2% · nghe đúng trọn 126/143 (88%)
+  có từ ngoại    20 câu · WER  18.6% · nghe đúng trọn 3/20 (15%)
+  CER (ký tự) 2.0%
+
+== Cả hai giám khảo cùng nghe sai: 29/163 câu (nghi TTS đọc chưa rõ)
+  [t046] định nói: Tìm thấy 2 trạm sạc gần đây, gần nhất: charging_station_1 — 3.0 km.
+         phowhispe: tìm thấy hai trạm xả gần đây gần nhất tr hành gạch dưới tây sơn gạch dưới một ba ki lô mét.
+         zipformer: tìm thấy hai trạm sạc gần đây gần nhất cha trình gạch dưới station gạch dưới một ba ki lô mét
+  [t112] định nói: Tìm thấy 2 cây ATM gần đây, gần nhất: atm_1 — 3.0 km.
+         phowhispe: tìm thấy hai cây ai t m gần đây gần nhất hất thêm đến ba ki lô mét.
+         zipformer: tìm thấy hai cây atm gần đây gần nhất ht một đến ba ki lô mét
+  [t047] định nói: Tìm thấy 2 bãi đỗ xe gần đây, gần nhất: parking_1 — 3.0 km.
+         phowhispe: tìm thấy hai bãi đỗ xe gần đây gần nhất pắc kinh một đến ba ki lô mét.
+         zipformer: tìm thấy hai bãi đỗ xe gần đây gần nhất pakin một đến ba ki lô mét
+  [t048] định nói: Tìm thấy 2 nhà hàng gần đây, gần nhất: restaurant_1 — 3.0 km.
+         phowhispe: tìm thấy hai nhà hàng gần đây gần nhất rét gion một đến ba ki lô mét.
+         zipformer: tìm thấy hai nhà hàng gần đây gần nhất retron một đến ba ki lô mét
+  [t160] định nói: Mình là NexaAI, trợ lý giọng nói trên xe, chạy ngay trên máy, không cần mạng. Mình giúp được điều hoà, quạt gió, sấy kính, khoá cửa, cốp, kính, cửa sổ trời, đèn, âm lượng, nhạc, dẫn đường, tìm chỗ gần đây, xem thời tiết và kiểm tra tình trạng xe.
+         phowhispe: mình là nét xa ai ai trợ lý giọng nói trên xe chạy ngay trên máy không cần mạng mình giúp được điều hòa quạt gió xoáy kính khóa cửa cốp kính cửa sổ trời đèn âm lượng nhạc dẫn đường tìm chỗ gần đây xem thời tiết và kiểm tra tình trạng xe.
+         zipformer: mình là nextsa ai trợ lý giọng nói trên xe chạy ngay trên máy không cần mạng mình rút được điều hòa quạt gió sấy kính khóa cửa cốp kính cửa sổ trời đèn âm lượng nhạc dẫn đường tìm chỗ gần đây xem thời tiết và kiểm tra tình trạng xe
+  [t002] định nói: Bánh sau bên trái đang non, nên bơm lên 32 PSI.
+         phowhispe: bánh sau bên trái đang non nên bơm lên bà mẹ hài pia s ỳ.
+         zipformer: bánh sau bên trái đang non nên bơm lên ba mươi hai psy
+  [t037] định nói: Đang phát Sơn Tùng M-TP.
+         phowhispe: đảng phát sơn tùng mờ thành phố.
+         zipformer: đang phát sơn tùng mở thành phố
+  [t039] định nói: Đang phát nhạc acoustic thư giãn.
+         phowhispe: nàng phát nhạc ở cổ tích thư giãn.
+         zipformer: đang phát nhạc ở khu stick thư giãn
+  [t040] định nói: Đang phát Playlist đề xuất.
+         phowhispe: nang pháp lây lít đề xuất.
+         zipformer: nam pháp playlist đề xuất
+  [t038] định nói: Đang phát VOV Giao thông.
+         phowhispe: đang phát về ổ về giao thông.
+         zipformer: đang phát v ov giao thông
+  [t045] định nói: Đã tìm đường tới Vincom Bà Triệu: khoảng 7,3 km, mất chừng 12 phút.
+         phowhispe: đã tìm đường tới vinh côn bà triệu khoảng bảy phẩy ba ki lô mét mất chừng mười hai phút.
+         zipformer: đã tìm đường tới vinh com ba triệu khoảng bảy phẩy ba ki lô mét mất chừng mười hai phút
+  [t057] định nói: Quạt gió đang tắt. Bạn có muốn mình chỉnh quạt gió mức 6 không?
+         phowhispe: quả gió đang tắt bạn có muốn bình chỉnh quả gió mức sáu không.
+         zipformer: quả gió đang tắt bạn có muốn mình chỉnh quả gió mức sáu không
+  [t058] định nói: Quạt gió đang tắt. Bạn có muốn mình chỉnh quạt gió mức 2 không?
+         phowhispe: quả gió đang tắt bạn có muốn mình chỉnh quả gió mức hay không.
+         zipformer: quả gió đang tắt bạn có muốn mình chỉnh quả gió mức hai không
+  [t159] định nói: Chào bạn, mình là NexaAI, mình có thể giúp gì cho bạn nhỉ?
+         phowhispe: chào bạn mình là nách sai ai mình có thể giúp gì cho bạn nhỉ.
+         zipformer: chào bạn mình là next ai mình có thể giúp gì cho bạn nhỉ
+  [t162] định nói: Không có gì đâu, cần gì bạn cứ gọi NexaAI nhé!
+         phowhispe: không có gì đâu cần gì bạn cứ gọi nicole ai ai nhé.
+         zipformer: không có gì đâu cần gì bạn cứ gọi nixal ai nhé
+  [t017] định nói: Đã chỉnh quạt gió mức 1.
+         phowhispe: đã chỉnh quả gió mấp một.
+         zipformer: đã chỉnh qua gió mốc một
+  [t096] định nói: Bạn có muốn mình dẫn đường tới Aeon Mall Long Biên không?
+         phowhispe: bạn có muốn mình dẫn đường tới edward long biên không.
+         zipformer: bạn có muốn mình dẫn đường tới emor long biên không
+  [t104] định nói: Bạn có muốn mình dẫn đường tới tòa Keangnam không?
+         phowhispe: bạn có muốn mình dẫn đường tới toà kim nam không.
+         zipformer: bạn có muốn mình dẫn đường tới tòa kinh nam không
+  [t020] định nói: Đã bật sấy kính sau.
+         phowhispe: đã mật sấy kín sau.
+         zipformer: đã bật giấy kính sau
+  [t095] định nói: Bạn có muốn mình dẫn đường tới khách sạn Daewoo không?
+         phowhispe: bạn có muốn mình dẫn đường tới khách sạn điêu buôn không.
+         zipformer: bạn có muốn mình dẫn đường tới khách sạn diego không
+  [t003] định nói: Cửa đã khoá, cốp đang đóng, xăng còn 62%, pin còn 80%.
+         phowhispe: cửa đã khóa cốt đang đóng xăng còn sáu mươi hai phần trăm pin còn tám mươi phần trăm.
+         zipformer: cửa đã khóa cốt đang đóng xăng còn sáu mươi hai phần trăm pin còn tám mươi phần trăm
+  [t013] định nói: Đã bật điều hoà 25 độ cho ghế phụ.
+         phowhispe: đã bất điều hòa hai mươi lăm độ cho ghế phụ.
+         zipformer: đã mất điều hòa hai mươi lăm độ cho ghế phụ
+  [t019] định nói: Đã bật sấy kính trước.
+         phowhispe: đã bật giày kính trước.
+         zipformer: đã bật giấy kính trước
+  [t021] định nói: Đã bật sấy cả kính trước lẫn kính sau.
+         phowhispe: đã bật giấy cả kính trước lẫn kính sau.
+         zipformer: đã bật giấy cả kính trước lẫn kính sau
+  [t059] định nói: Bạn có muốn mình bật sấy kính không?
+         phowhispe: bạn có muốn mình vật sấy kính không.
+         zipformer: bạn có muốn mình bật giấy kính không
+  [t115] định nói: Đã tăng quạt gió lên mức 1.
+         phowhispe: đã tăng quạt gió lên bước một.
+         zipformer: đã tăng quạt gió lên bước một
+  [t119] định nói: Đã tắt sấy kính.
+         phowhispe: đã tắt giấy kính.
+         zipformer: đã tắt giấy kính
+  [t122] định nói: Đã hạ kính ghế lái, đang mở 20%.
+         phowhispe: đã gạc kính ghế lái đang mở hai mươi phần trăm.
+         zipformer: đã hạ tính ghế lái đang mở hai mươi phần trăm
+  [t125] định nói: Đã bật đèn chiếu xa.
+         phowhispe: đã bật đèn chiều xa.
+         zipformer: đã bật đèn chiều xa
+
+== Từ khoá xe bị CẢ HAI giám khảo nghe mất (số câu mất / số câu có từ)
+  bật     1/ 30  t013
+  cốp     1/  7  t003
+  mức     2/ 14  t017 t115
+  quạt    3/ 11  t017 t057 t058
+  sấy     3/  7  t019 t021 t119
+
+== Tốc độ tạo tiếng (cả câu, CPU): tạo p50 2381 ms cho p50 2.3 s tiếng · RTF p50 1.04 · lớn nhất 1.23

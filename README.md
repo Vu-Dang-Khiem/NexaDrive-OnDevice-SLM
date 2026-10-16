@@ -40,8 +40,8 @@ Ngoài pv    "kể chuyện cười đi"    ->  <nexa_24>()<nexa_end>           
 | Câu mơ hồ / ngoài phạm vi | hỏi lại có đề xuất cụ thể; từ chối lịch sự câu không liên quan đến xe |
 | Hội thoại hai lượt | model nhận lời gọi lượt trước trong prompt ("thôi tắt đi", "phía sau thì sao") |
 | Nhiều lệnh một câu | "bật đèn pha rồi mở cốp" được tách và thực hiện lần lượt |
-| Giọng nói | STT **PhoWhisper-small** (int8), fine-tune thêm trên câu lệnh xe · TTS **VieNeu** đọc từng đoạn (tiếng đầu sau ~0,24 s) |
-| Rảnh tay | mở trang là tự nghe "Hey Nexa"; gọi riêng "Hey Nexa" thì trợ lý chào và nghe lệnh; sau mỗi câu trả lời nghe tiếp 6 s, không cần gọi lại |
+| Giọng nói | STT **PhoWhisper-small** (int8), fine-tune thêm trên câu lệnh xe · TTS **VieNeu** đọc từng đoạn (tiếng đầu sau ~0,2 s) |
+| Rảnh tay | mở trang là tự nghe "Hey Nexa"; gọi riêng "Hey Nexa" thì trợ lý chào và nghe lệnh; sau mỗi câu trả lời nghe tiếp 10 s, không cần gọi lại |
 | Xe 3D | three.js, mô phỏng trạng thái xe và hoạt cảnh theo lệnh |
 
 ## Kiến trúc lúc chạy
@@ -76,7 +76,7 @@ flowchart LR
 ```
 
 Mọi lựa chọn (checkpoint, mức nén, ngưỡng, phiên bản) đều làm trên **val / tập hiệu chỉnh**; **tập test đóng băng** (câu do
-ChatGPT viết độc lập với dữ liệu train, người duyệt nhãn) chỉ dùng để báo cáo và không bao giờ sửa sau khi đã thấy điểm.
+GPT6-Astra viết độc lập với dữ liệu train, người duyệt nhãn) chỉ dùng để báo cáo và không bao giờ sửa sau khi đã thấy điểm.
 
 ## Kết quả
 
@@ -85,8 +85,8 @@ ChatGPT viết độc lập với dữ liệu train, người duyệt nhãn) ch�
 | Hệ thống | Chạy trên | Dung lượng | Prompt | Độ trễ p50 | Rõ ràng | Ngoài phạm vi | Mơ hồ dài | Câu ngắn | Hành động sai lên xe |
 |---|---|---|---|---|---|---|---|---|---|
 | **Nexa Drive (bản triển khai)** | **CPU laptop** | **1,04 GB** | **33 token** | **0,46 s** | 77,0 | 88,0 | **74,4** | 79,2 | **29** |
-| Qwen2.5-72B + mô tả hàm | GPU A100 80 GB | ~40 GB | ~2.400 token | 1,1–1,8 s | **83,8** | **94,9** | 70,5 | **91,7** | 32 |
-| Qwen2.5-1.5B chưa train + mô tả hàm | GPU | 3,1 GB | ~2.400 token | 0,8 s | 37,8 | 31,6 | 20,9 | 27,5 | 95 |
+| Qwen2.5-72B + mô tả hàm | GPU A100 80 GB | ~40 GB | 2.156 token | 1,1–1,8 s | **83,8** | **94,9** | 70,5 | **91,7** | 32 |
+| Qwen2.5-1.5B chưa train + mô tả hàm | GPU | 3,1 GB | 2.156 token | 0,8 s | 37,8 | 31,6 | 20,9 | 27,5 | 95 |
 
 Độ trễ của hai model so sánh đo trên GPU A100 (vLLM), bản triển khai đo trên CPU laptop (llama.cpp). Dung lượng 72B là bản 4-bit
 AWQ. Hành động sai lên xe = gọi bừa + sai hàm + sai tham số + làm luôn khi lẽ ra phải hỏi lại, trên 230 câu test sạch.
@@ -100,7 +100,7 @@ AWQ. Hành động sai lên xe = gọi bừa + sai hàm + sai tham số + làm l
 | Qwen2.5-72B + mô tả hàm trong prompt | 83,8 | 56,4 | 94,9 | 70,5 | 91,7 | 81,7 | 69,2 |
 | Qwen2.5-1.5B chưa train + mô tả hàm trong prompt | 37,8 | 35,9 | 31,6 | 20,9 | 27,5 | 28,3 | 21,2 |
 
-- So với 72B (prompt dài ~2.400 token, GPU A100), model 1,5B (prompt 33 token, CPU) **ngang ở câu rõ ràng, câu ngắn và câu gõ
+- So với 72B (prompt dài 2.156 token, GPU A100), model 1,5B (prompt 33 token, CPU) **ngang ở câu rõ ràng, câu ngắn và câu gõ
   sai** (khác biệt không có ý nghĩa thống kê), **có xu hướng hơn ở câu mơ hồ** (72B ít hỏi lại; McNemar p 0,04–0,07 tuỳ hạt
   giống), nhưng **72B hơn rõ ở câu ngoài phạm vi** (p ≤ 0,001) **và câu hai lượt** (p 0,049 / 0,001).
 - Cùng cách nhắc bằng prompt, model 1,5B chưa train chỉ đúng 21–38% — huấn luyện là phần tạo ra khác biệt.
@@ -121,7 +121,12 @@ AWQ. Hành động sai lên xe = gọi bừa + sai hàm + sai tham số + làm l
 lệnh xe (5.000 câu TTS nhiều giọng + FLEURS + 12 phút giọng thật) nâng số lệnh đúng trên 40 câu mới từ 24 lên 28 (gõ chữ 32;
 sai từ 24,8% → 14,5%; cùng người nói với dữ liệu train, 40 câu nên chưa có ý nghĩa thống kê), không kém trên FLEURS (người
 khác, câu thường). Chỉ dùng giọng TTS thì gần như không giúp. Wake-word: bắt 39 / 40 lần gọi, báo nhầm ~2,9 lần / giờ trên
-3,1 giờ âm thanh nền.
+3,15 giờ giọng đọc tiếng Việt liên tục (FLEURS test), không tự thức khi trợ lý đang nói.
+
+**Đọc trả lời (TTS VieNeu, dùng sẵn):** cho VieNeu đọc 163 câu trả lời thật của hệ thống rồi để PhoWhisper-small gốc nghe lại
+— câu tiếng Việt sai 3,1% số chữ (cùng STT nghe người thật đọc: 11,6%), câu có tên riêng / tiếng Anh sai 26,9%. Tiếng đầu
+0,21 s, tạo tiếng nhanh hơn phát ~2,5 lần. Các số độ trễ đo khi máy ở chế độ hiệu năng cao; ở chế độ tiết kiệm điện CPU chỉ
+chạy ~60% xung, TTS tạo chậm hơn phát và giọng bị ngắt quãng.
 
 **Thí nghiệm không thành công (vẫn báo cáo):** GRPO nối sau SFT không đạt tiêu chí khoá trước; full fine-tune kém LoRA ở câu
 ngoài phạm vi. Chi tiết, kiểm định McNemar và các hạn chế: [báo cáo](report/main.pdf).
@@ -146,9 +151,14 @@ cd web; npm install; npm run dev           # mở http://localhost:5173
 - **Không có model:** bỏ `NEXA_MO_HINH` → backend chạy **model giả** (luật từ khoá) để thử toàn bộ luồng và giao diện.
 - **Không bật dịch vụ giọng nói:** gõ chữ vẫn dùng được; câu trả lời chỉ hiện chữ.
 - **Rảnh tay:** trình duyệt chặn mic / loa tới lần tương tác đầu → bấm một lần bất kỳ đâu trên trang, rồi nói "Hey Nexa, mở cốp".
+- **Laptop:** cắm sạc và bật chế độ hiệu năng cao (Windows "Best performance" + chế độ hiệu năng của hãng máy). Ở chế độ tiết
+  kiệm điện CPU chạy chậm, TTS tạo tiếng chậm hơn tốc độ phát nên giọng đọc bị ngắt quãng.
+- Lệnh nhạy cảm (mở khoá, mở cốp, nắp xăng, cổng sạc) nói qua "Hey Nexa" sẽ được **hỏi xác nhận** — cố ý, vì ai trong xe cũng gọi
+  được; bấm nút mic thì làm luôn.
 
 > **File model không có trong repo** (dung lượng lớn). Cần đặt: `models/gguf/lora-v61-s42-q4_k_m.gguf` + `models/gguf/tokenizer/`,
-> `models/stt/phowhisper-small-ct2-int8/`, `models/wake/`. Cách tạo lại từ đầu: mục "Huấn luyện lại" bên dưới.
+> STT `models/stt/phowhisper-small-ftB/ep3-ct2-int8/` (bản fine-tune, dùng mặc định) hoặc `models/stt/phowhisper-small-ct2-int8/`
+> (bản gốc, tự dùng khi thiếu bản fine-tune), `models/wake/`. Cách tạo lại từ đầu: mục "Huấn luyện lại" bên dưới.
 
 ### Biến môi trường backend (`serve/app.py`)
 
@@ -170,7 +180,7 @@ cd web; npm install; npm run dev           # mở http://localhost:5173
   `<nexa_end>` làm token kết thúc (`--override-kv tokenizer.ggml.eos_token_id=int:151690`).
 - **Node 20+** cho `web/`.
 
-Kiểm thử: `python -m pytest -q` (941 test) và `ruff check .` trong env `vdk1`.
+Kiểm thử: `python -m pytest -q` (963 test) và `ruff check .` trong env `vdk1`.
 
 ### Huấn luyện lại (cần tài khoản [Modal](https://modal.com), GPU A100)
 
@@ -184,6 +194,8 @@ modal run --detach train/modal_train.py::lora_finetune --thu-muc-data final_v6_1
 - Sinh dữ liệu bằng teacher 72B: `gen/modal_app.py`; dựng từng vòng dữ liệu: `gen/dung_vong_*.py`.
 - Chuyển GGUF: `convert_hf_to_gguf.py` của llama.cpp (f16) rồi `llama-quantize … q4_K_M`.
 - Đo độ tự tin / chấm bản GGUF: `eval/do_tu_tin_gguf.py`; chọn ngưỡng: `eval/nguong_v6.py`; chấm test: `eval/cham_v6.py`.
+- Fine-tune STT: dữ liệu `eval/stt/ft/` (TTS, FLEURS, ghi âm), train `train/modal_stt_ft.py`; chấm cả chuỗi giọng nói
+  `eval/stt/chay_stt.py` + `eval/stt/cham_chuoi.py`; đo độ rõ / tốc độ TTS `eval/tts/`.
 - Token Modal lưu ở `~/.modal.toml`, không để trong repo.
 
 ## Cấu trúc thư mục
@@ -203,8 +215,14 @@ modal run --detach train/modal_train.py::lora_finetune --thu-muc-data final_v6_1
 
 ## Hạn chế
 
-- Tập test là câu tổng hợp (ChatGPT viết, một người duyệt), một số nhóm nhỏ (39 câu) nên khoảng tin cậy rộng.
-- Đánh giá giọng nói nhỏ (60 câu, ít người nói), tiếng ồn xe là trộn nhân tạo; độ trễ đo trên CPU laptop, không phải phần cứng xe.
+- Tập test là câu tổng hợp (GPT6-Astra viết, một người duyệt), một số nhóm nhỏ (39 câu) nên khoảng tin cậy rộng.
+- 72B vẫn hơn rõ ở câu ngoài phạm vi (94,9 so với 88,0) và câu hai lượt; nén 4-bit tụt 5–10 điểm ở câu mơ hồ so với bản chưa nén.
+- Giọng nói chỉ đo trên **một người nói**, phòng yên tĩnh; tiếng ồn xe là trộn nhân tạo; độ trễ đo trên CPU laptop, không phải
+  phần cứng xe. Wake-word báo nhầm ~2,9 lần / giờ (mục tiêu ≤ 1). Người khác nói chen làm chuỗi giọng nói kém đi rõ rệt.
+- STT fine-tune chưa học mẫu "không có lời": chữ bịa trên tiếng nền được chặn bằng ngưỡng độ tự tin, nhưng tiếng TV / người nói
+  chuyện thì không chặn được.
+- TTS đọc tên riêng / từ tiếng Anh (NexaAI, Playlist, PSI) theo cách đọc tiếng Việt; câu trả lời "tìm địa điểm gần" còn đọc mã nội
+  bộ của xe mô phỏng.
 - Đóng nắp xăng / cổng sạc đang xử lý bằng luật viết tay (schema chỉ có hàm mở); câu gõ không dấu chưa bắt được.
 - Chỉ tiếng Việt; tiếng Anh là hướng phát triển.
 

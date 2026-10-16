@@ -39,7 +39,7 @@ scores 51\% on the clean test.
 The test sets are small (74 clear commands; one item is 1.35 points), so we use Wilson intervals \citep{wilson1927} and the
 exact two-sided McNemar test \citep{mcnemar1947} on paired outputs. McNemar accounts for the choice of test items but not for
 training randomness: when we retrained round R2 with a second seed on identical data, 33 of 230 items changed outcome and
-McNemar between the two seeds gave $p=0.005$. From then on every configuration was trained with two seeds, results are the
+McNemar between the two seeds gave $p=0.005$. From then on every configuration was trained with two seeds (three for the final one, Appendix~\ref{app:seeds}), results are the
 mean of the two, and a difference is claimed only if the mean difference exceeds the spread between seeds and, for paired
 tests, if it is significant for both seeds in the same direction (one seed: ``tie or slightly better''). The criteria for
 accepting each round, choosing thresholds and compression levels were recorded before the corresponding test run, and we

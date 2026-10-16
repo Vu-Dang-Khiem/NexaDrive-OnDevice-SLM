@@ -1,7 +1,7 @@
 \begin{abstract}
 We present \textbf{Nexa Drive}, a Vietnamese voice assistant that controls 24 functions of a simulated car and runs entirely
 on a laptop CPU. Following Octopus~v2, every function is a dedicated vocabulary token, so choosing a function is a single-token
-decision and the prompt shrinks from about 2,150 tokens (function schemas in the prompt) to 33. A Qwen2.5-1.5B-Instruct student
+decision and the prompt shrinks from about 2,150 tokens to 33. A Qwen2.5-1.5B-Instruct student
 is trained with LoRA on 33.5k examples distilled from a locally hosted Qwen2.5-72B-Instruct teacher and filtered by code
 checks, a two-family LLM jury and human audits. Besides executing or refusing, the model can \emph{clarify}: an implicit
 complaint such as \vi{nóng quá}{it is so hot} becomes a proposal the driver confirms. Across six data rounds evaluated on

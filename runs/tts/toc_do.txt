@@ -1,0 +1,3 @@
+Tốc độ VieNeu (giọng Trúc Ly, CPU), 20 câu, máy rảnh:
+  cả câu (infer):       RTF p50 0.37 · lớn nhất 0.40
+  từng đoạn (stream):   tiếng đầu p50 207 ms · lớn nhất 249 ms · RTF p50 0.41 · lớn nhất 0.43

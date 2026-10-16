@@ -24,12 +24,13 @@ Student v5, LoRA & 78.4 & 75.6 & 83.8 & 58.9 & 78.3 & 33 & \multirow{3}{*}{224\,
 Student v6.1, LoRA & 78.4 & 75.6 & 77.4 & 58.9 & \textbf{79.1} & 33 & \\
 Student v6.1 + threshold 0.85 & 75.0 & 74.4 & 82.1 & 58.9 & \textbf{79.1} & 33 & \\
 \midrule
-Deployed: v6.1 s42, 4-bit, $\tau$ 0.80 & 77.0 & 64.1 & 88.0 & 50.0 & 74.4 & 33 & 520\,ms$^{\ddagger}$ \\
+Deployed: v6.1 s42, 4-bit, $\tau$ 0.80 & 77.0 & 64.1 & 88.0 & 50.0 & 74.4 & 33 & 463\,ms$^{\ddagger}$ \\
 \bottomrule
 \end{tabular}
 \caption{Accuracy (\%) on the frozen evaluation sets. Student rows are means of two seeds, unquantized; baselines are single
 greedy runs; OOS = out-of-scope. Latency: A100 with vLLM, one query at a time ($^{\dagger}$measured for an earlier student
-with the same prompt length); $^{\ddagger}$laptop CPU, llama.cpp. The v5 row comes from the same re-generation as v6.1 and differs by at most two items per group from the original v5
+with the same prompt length); $^{\ddagger}$laptop CPU, llama.cpp (520\,ms in the first scoring session,
+\S\ref{sec:quant}). The v5 row comes from the same re-generation as v6.1 and differs by at most two items per group from the original v5
 run in Table~\ref{tab:lora}. The deployed row is one seed after 4-bit quantization with the threshold
 (\S\ref{sec:quant}).}
 \label{tab:main}
@@ -283,7 +284,9 @@ q4\_K\_M because the choice was made by a fixed rule on non-test data, and note 
 distribution shift. q8\_0 is the safer choice on stronger hardware: it is 1.7$\times$ larger and, in the same session, 1.8$\times$
 slower than q4\_K\_M (median 856 vs.\ 463\,ms). With the threshold, all three levels make the same number of wrong actions on
 the clean test (29). On the laptop CPU (i5-12500H, 8 threads) the deployed model needed 520\,ms at the median and 961\,ms at
-the 95th percentile per decision in the first scoring session (463 and 832\,ms in the second).
+the 95th percentile per decision in the first scoring session (463 and 832\,ms in the second). On the clean test the
+deployed model makes 29 wrong actions on the car, the prompted 72B teacher 32 and the prompted 1.5B model 95; we did not test
+the difference between 29 and 32 for significance.
 
 \begin{table}[t]
 \centering\small

@@ -120,6 +120,11 @@ Several small layers sit around the model; each was added after a measured failu
   \item \textbf{Answer templates.} The model was trained to phrase answers from function results, but this second pass adds
   about 1.6\,s and produced semantic errors no automatic check caught (\S\ref{sec:turn2}); the deployed system answers with
   templates filled from the result.
+  \item \textbf{Closing the fuel flap and charge port.} The schema can open these flaps but has no function that closes them
+  (many cars close them by hand), so the model maps \vi{đóng nắp xăng}{close the fuel flap} to the nearest function, which
+  \emph{opens} it. A runtime rule recognizes a closing verb before the flap name, or \vi{đóng đi}{close it} right after one was
+  opened, and closes the flap without calling the model; the interface marks the action as rule-based. Unusual phrasings and
+  input without diacritics are not covered; the principled fix is a closing function and another training round.
 \end{itemize}
 
 \subsection{Guardrails}
@@ -130,7 +135,7 @@ state-dependent rules declared in the function schema (Table~\ref{tab:safety}). 
 enumerations or ranges, asks for missing required arguments and drops unknown arguments. Each command carries its source:
 push-to-talk is treated as the driver, while the wake word can be spoken by any passenger. Mirroring a real window-lock
 button, the child lock lets the driver lower rear windows directly but asks for confirmation when the request comes through
-the wake word. The rules are covered by 917 automated tests, including scenario tests that, as in $\tau$-bench, check the
+the wake word. The rules are covered by 963 automated tests, including scenario tests that, as in $\tau$-bench, check the
 final vehicle state rather than the wording of the answer. We did not measure guardrails with a quantitative benchmark.
 
 \begin{table}[t]
