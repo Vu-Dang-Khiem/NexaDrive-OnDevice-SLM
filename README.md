@@ -231,6 +231,11 @@ modal run --detach train/modal_train.py::lora_finetune --thu-muc-data final_v6_1
 Mã nguồn: [MIT](LICENSE). Model, dữ liệu và tài nguyên bên thứ ba giữ giấy phép riêng (dưới đây). Tập test / hiệu chỉnh đóng
 băng nằm ở `data/processed/final/` để chấm lại được kết quả.
 
+**Bản ghi âm giọng nói không công khai.** Các bộ giọng thật dùng để đánh giá và fine-tune — bộ B, C, D, E (140 câu lệnh), bộ
+fine-tune STT (150 câu, 12 phút) và 86 lần gọi "Hey Nexa" (train và đo wake-word) — do tác giả tự ghi âm bằng micro laptop.
+Vì là giọng nói cá nhân, các file âm thanh **không đưa lên repo**; repo chỉ có kết quả chấm dạng chữ (câu lệnh, chữ STT nghe ra,
+đúng / sai) trong `runs/stt/` và `runs/wake/`. Câu của các bộ này lấy từ tập test đóng băng ở trên.
+
 ## Tham khảo và giấy phép bên thứ ba
 
 - Octopus v2 (Chen & Li, 2024) — functional token. Qwen2.5 (Apache-2.0). PhoWhisper (VinAI). VieNeu-TTS (Apache-2.0).

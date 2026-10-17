@@ -59,6 +59,6 @@ Agent hệ thống xe.txt
 # nhật ký làm việc riêng — chỉ giữ local
 PLAN.md
 
-# chẩn đoán phát tiếng trên máy (có tên thiết bị âm thanh của người dùng)
-runs/giong_noi_log/chan_doan.jsonl
-runs/giong_noi_log/soi_*.wav
+# nhật ký giọng nói của demo: bản ghi mic giọng người dùng (.webm) + chữ STT + chẩn đoán phát tiếng — KHÔNG công khai
+runs/giong_noi_log/
+*.webm
