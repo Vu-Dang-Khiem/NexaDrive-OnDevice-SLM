@@ -16,7 +16,6 @@ gen/modal_app.py::sinh_v6.
 
 from __future__ import annotations
 
-import json
 import random
 import re
 import unicodedata
@@ -578,5 +577,3 @@ def them_nhieu(s: str, rng: random.Random) -> tuple[str, str]:
     return bo_dau(loi_go(s, rng)), "bo_dau_loi_go"
 
 
-def json_dong(x: Any) -> str:
-    return json.dumps(x, ensure_ascii=False)

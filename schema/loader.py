@@ -12,9 +12,9 @@
     CATALOG.render_reply_prompt(query, call, result)  # Prompt B (lượt 2)
     CATALOG.function_description_block()              # doc dài, chỉ đưa cho teacher
     CATALOG.json_schema("set_ac")                     # JSON Schema cho tham số
-    CATALOG.export_scene_actions()                    # ghi web/src/sceneActions.json
+    CATALOG.scene_actions()                           # id camera / hoạt cảnh / HUD (endpoint /schema/actions)
 
-Chạy như script để tạo lại file scene cho frontend và in tóm tắt:
+Chạy như script để in tóm tắt (map token, mẫu prompt):
 
     python schema/loader.py
 """
@@ -31,7 +31,6 @@ import yaml
 SCHEMA_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCHEMA_DIR.parent
 YAML_PATH = SCHEMA_DIR / "functions.yaml"
-SCENE_ACTIONS_PATH = REPO_ROOT / "web" / "src" / "sceneActions.json"
 
 _PY_TO_JSON_TYPE = {
     "string": "string",
@@ -280,12 +279,6 @@ class Catalog:
             },
         }
 
-    def export_scene_actions(self, path: Path = SCENE_ACTIONS_PATH) -> Path:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        payload = json.dumps(self.scene_actions(), indent=2, ensure_ascii=False)
-        path.write_text(payload + "\n", encoding="utf-8")
-        return path
-
     # ── kiểm tra toàn vẹn ────────────────────────────────────────────────
     def validate(self) -> None:
         indices = [f.index for f in self.functions]
@@ -361,9 +354,7 @@ if __name__ == "__main__":
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
 
-    out = CATALOG.export_scene_actions()
-    print(f"{len(CATALOG.functions)} hàm, {len(CATALOG.special_tokens)} token đặc biệt")
-    print(f"đã ghi {out.relative_to(REPO_ROOT)}\n")
+    print(f"{len(CATALOG.functions)} hàm, {len(CATALOG.special_tokens)} token đặc biệt\n")
 
     print("map functional token:")
     for tok, name in CATALOG.nexa_to_name.items():

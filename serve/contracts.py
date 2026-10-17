@@ -5,7 +5,7 @@ Server -> client:  một hoặc nhiều ServerEvent (assistant_turn | clarify | 
 
 Scene 3D được điều khiển hoàn toàn bằng `ui_actions` trong assistant_turn, nên
 frontend không cần biết ngữ nghĩa của hàm — chỉ cần biết id camera/animation/hud,
-vốn sinh ra từ schema/functions.yaml qua web/src/sceneActions.json.
+khai báo trong schema/functions.yaml (xem endpoint /schema/actions).
 """
 
 from __future__ import annotations

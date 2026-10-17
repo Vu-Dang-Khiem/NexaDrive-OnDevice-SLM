@@ -6,7 +6,7 @@
 #   • prompt cho teacher sinh data (Phase 2)
 #   • Prompt A / Prompt B lúc train và lúc chạy (bọc ChatML vì student là Instruct)
 #   • JSON Schema để validate tham số lúc runtime
-#   • web/src/sceneActions.json cho scene 3D
+#   • id camera / hoạt cảnh / HUD cho scene 3D (endpoint /schema/actions)
 #
 # Giải thích các trường của mỗi hàm:
 #   index        int   -> thành <nexa_{index}>. PHẢI liên tục từ 0 và KHÔNG ĐỔI về sau.
